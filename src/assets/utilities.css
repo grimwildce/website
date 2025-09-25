@@ -1,0 +1,79 @@
+@utility bg-page {
+  @apply bg-slate-50 dark:bg-slate-950;
+}
+
+@utility bg-panel-1 {
+  @apply bg-slate-200 dark:bg-slate-800;
+}
+
+@utility bg-panel-2 {
+  @apply bg-slate-300 dark:bg-slate-700;
+}
+
+@utility bg-panel-3 {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
+
+@utility bg-panel-row-alt {
+  @apply bg-slate-500/10;
+}
+
+@utility bg-sidebar {
+  @apply bg-slate-100 dark:bg-slate-900;
+}
+
+@utility bg-sidebar-active {
+  @apply bg-slate-300/50 dark:bg-slate-700/40;
+}
+
+@utility bg-solid {
+  @apply bg-slate-800 dark:bg-slate-200;
+}
+
+@utility bg-input {
+  @apply bg-slate-200 dark:bg-slate-700;
+}
+
+@utility bg-checked {
+  @apply bg-cyan-400 dark:bg-cyan-600;
+}
+
+@utility border-solid {
+  @apply border-slate-800 dark:border-slate-200;
+}
+
+@utility border-strong {
+  @apply border-slate-700 dark:border-slate-300;
+}
+
+@utility border-base {
+  @apply border-slate-400 dark:border-slate-600;
+}
+
+@utility border-muted {
+  @apply border-slate-300 dark:border-slate-700;
+}
+
+@utility border-sidebar {
+  @apply border-slate-200/60 dark:border-slate-800/50;
+}
+
+@utility text-solid-color {
+  @apply text-gray-100 dark:text-gray-950;
+}
+
+@utility text-heading-color {
+  @apply text-gray-950 dark:text-gray-100;
+}
+
+@utility text-strong-color {
+  @apply text-gray-900 dark:text-gray-200;
+}
+
+@utility text-base-color {
+  @apply text-gray-800 dark:text-gray-300;
+}
+
+@utility text-muted-color {
+  @apply text-gray-500 dark:text-gray-400;
+}

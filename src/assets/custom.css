@@ -1,0 +1,84 @@
+.text-muted-color :is(b, strong) {
+  @apply text-base-color font-semibold;
+}
+
+table.columns > :is(tbody, thead) > tr > :is(th, td):not(:first-child) {
+  @apply border-l border-muted;
+}
+
+table.striped {
+  @apply border-b-2 border-solid;
+}
+
+table.striped > thead > tr {
+  @apply bg-solid;
+}
+
+table.striped > thead > tr > th {
+  @apply text-solid-color;
+}
+
+table.striped > thead > tr:first-child > th:first-child {
+  @apply rounded-tl-sm;
+}
+
+table.striped > thead > tr:first-child > th:last-child {
+  @apply rounded-tr-sm;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+  @apply bg-panel-1;
+}
+
+table.solid {
+  @apply border-b-2 border-solid;
+}
+
+table.solid > thead > tr {
+  @apply bg-solid;
+}
+
+table.solid > thead > tr > th {
+  @apply text-solid-color;
+}
+
+table.solid > thead > tr:first-child > th:first-child {
+  @apply rounded-tl-sm;
+}
+
+table.solid > thead > tr:first-child > th:last-child {
+  @apply rounded-tr-sm;
+}
+
+table.solid > tbody > tr {
+  @apply bg-panel-1;
+}
+
+table.crucible {
+  @apply border-b-2 border-solid;
+}
+
+table.crucible > thead > tr {
+  @apply bg-solid;
+}
+
+table.crucible > thead > tr > th {
+  @apply text-solid-color;
+}
+
+table.crucible > thead > tr:first-child > th:first-child {
+  @apply rounded-tl-sm;
+}
+
+table.crucible > thead > tr:first-child > th:last-child {
+  @apply rounded-tr-sm;
+}
+
+table.crucible > tbody > tr:nth-child(12n + 1),
+table.crucible > tbody > tr:nth-child(12n + 2),
+table.crucible > tbody > tr:nth-child(12n + 3),
+table.crucible > tbody > tr:nth-child(12n + 4),
+table.crucible > tbody > tr:nth-child(12n + 5),
+table.crucible > tbody > tr:nth-child(12n + 6) {
+  @apply bg-panel-1;
+}
