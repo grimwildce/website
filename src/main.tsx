@@ -9,7 +9,7 @@ import Chapter07 from "@/books/core/Chapter07";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Navigate,
   Route,
@@ -18,7 +18,7 @@ import {
 
 import "./index.css";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="grimwild" element={<Navigate to="/grimwild/about" replace />} />
