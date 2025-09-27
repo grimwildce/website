@@ -69,8 +69,6 @@ const getMarginSizeDefault = (defaultMargin?: MarginSize): Record<MarginSide, st
 export const getMarginSize = (margin?: MarginSize, defaultMarginProp?: MarginSize): string => {
   const defaultMargin = getMarginSizeDefault(defaultMarginProp);
 
-  console.log("Default Margin:", defaultMargin);
-
   if (!margin) return defaultMargin.both;
 
   if (typeof margin === "string") {
