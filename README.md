@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# Grimwild Community Edition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+**Grimwild Community Edition** is a fan-supported edition of Grimwild, a cinematic fantasy tabletop
+roleplaying game based on the Moxie system by J.D. Maxwell and Oddity Press. It is designed to grow
+and evolve with its community and is open licensed under CC BY 4.0, making all text free for
+personal or commercial use—for adventures, rules supplements, or entirely new games.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Developer Setup
 
-## Expanding the ESLint configuration
+This project uses [Devbox](https://www.jetpack.io/devbox/) for local development and
+[Vite](https://vitejs.dev/) for the React/TypeScript app.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Getting Started
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+   ```sh
+   git clone https://github.com/grimwildce/website.git
+   cd grimwild-ce
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Install Devbox (if you don’t have it):**
+   See [Devbox installation instructions](https://www.jetify.com/docs/devbox/installing_devbox/).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Start your Devbox shell:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```sh
+   devbox shell
+   ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Install dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+5. **Start the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+6. **Open [http://localhost:5173](http://localhost:5173) in your browser.**
+
+---
