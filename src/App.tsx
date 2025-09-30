@@ -7,10 +7,13 @@ import { Outlet } from "react-router";
 
 const navigation: NavigationItem[] = [
   {
+    name: "About",
+    href: "/"
+  },
+  {
     name: "Grimwild",
     href: "/grimwild",
     children: [
-      { name: "About", href: "/grimwild/about" },
       { name: "Chapter 1: Gameplay", href: "/grimwild/chapter-1" },
       { name: "Chapter 2: GM Toolkit", href: "/grimwild/chapter-2" },
       { name: "Chapter 3: Adventurers", href: "/grimwild/chapter-3" },
@@ -85,11 +88,7 @@ const App = () => {
       </div>
 
       <main className="lg:pl-72">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl w-full">
-            <Outlet />
-          </div>
-        </div>
+        <Outlet />
       </main>
     </>
   );

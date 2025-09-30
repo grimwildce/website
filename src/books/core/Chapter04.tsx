@@ -1,3 +1,4 @@
+import Page from "@/components/app/Page";
 import Heading from "@/components/ui/Heading";
 import List from "@/components/ui/List";
 import Table from "@/components/ui/Table";
@@ -5,8 +6,7 @@ import Text from "@/components/ui/Text";
 
 const Chapter04 = () => {
   return (
-    <>
-      <Heading level={1}>EXPLORATION</Heading>
+    <Page title="Exploration" pretitle="Chapter 4:">
       <Heading level={2}>EXPLORING THE GRIMWILD</Heading>
       <Text>
         Exploration is an adventure, and this pointcrawl system captures that spirit. It's about
@@ -1483,7 +1483,7 @@ const Chapter04 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-    </>
+    </Page>
   );
 };
 

@@ -82,3 +82,15 @@ table.crucible > tbody > tr:nth-child(12n + 5),
 table.crucible > tbody > tr:nth-child(12n + 6) {
   @apply bg-panel-1;
 }
+
+table.simple > thead > tr:last-child > th {
+  @apply border-b border-base;
+}
+
+table.simple > tbody > tr > td:not(:last-child) {
+  @apply border-r border-base;
+}
+
+.text-solid-color .text-heading-color {
+  @apply text-solid-color;
+}

@@ -1,4 +1,5 @@
-import ChapterTitle from "@/components/ChapterTitle";
+import Page from "@/components/app/Page";
+import CoreTalent from "@/components/CoreTalent";
 import PathCard from "@/components/PathCard";
 import StepList from "@/components/StepList";
 import Em from "@/components/ui/Em";
@@ -6,7 +7,10 @@ import Grid from "@/components/ui/Grid";
 import Heading from "@/components/ui/Heading";
 import Line from "@/components/ui/Line";
 import List from "@/components/ui/List";
+import Move from "@/components/ui/Move";
+import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
+import Stack from "@/components/ui/Stack";
 import Strong from "@/components/ui/Strong";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
@@ -25,15 +29,14 @@ import WarlockEye from "@/svgs/game_icons/WarlockEye";
 
 const Chapter03 = () => {
   return (
-    <>
-      <ChapterTitle description="Chapter 3">Adventurers</ChapterTitle>
+    <Page title="Adventurers" pretitle="Chapter 3:">
       <Heading level={2}>Starting a Campaign</Heading>
       <Text>
         Start each campaign with a <Strong>session zero</Strong>, a campaign brainstorming and
         character creation session where you get everyone on the same page about themes, setting,
         and the kind of game you want to play. Remember, think about it like a TV series!
       </Text>
-      <StepList>
+      <StepList margin="large">
         <StepList.Item>
           <Strong smallCaps>Choose a Theme &amp; Setting</Strong>: <Em>The GM</Em> leads the
           discussion on what campaign themes and settings sound fun. Choose a setting or build one
@@ -71,11 +74,11 @@ const Chapter03 = () => {
         within that type of party.
       </Text>
       <Panel border>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Concept</Strong>: Choose 2 that you see your party as and 1 that you
           definitely aren't.
         </Text>
-        <Table variant="blank" fullWidth>
+        <Table margin="small" variant="blank" fullWidth>
           <Table.Body>
             <Table.Row>
               <Table.Cell>Adventurers</Table.Cell>
@@ -200,7 +203,7 @@ const Chapter03 = () => {
         </Strong>{" "}
         and you can check the website for digital character sheets and other online play tools.
       </Text>
-      <StepList>
+      <StepList margin="large">
         <StepList.Item>
           <Strong smallCaps>Backgrounds</Strong>: Choose{" "}
           <Strong>
@@ -296,166 +299,433 @@ const Chapter03 = () => {
       </StepList>
       <Heading level={3}>Backgrounds</Heading>
       <Text>
-        Backgrounds are the pillars of your backstory, revealing key aspects of who you are. They
-        determine what counts as set dressing—tools of the trade and the story details you can add.
-        Start with a simple word or phrase, leaving room for growth as your backstory is revealed
-        during play. They're just dots to connect later.
+        <Strong>Backgrounds</Strong> are the pillars of your backstory, revealing key aspects of who
+        you are. They determine what counts as set dressing—tools of the trade and the story details
+        you can add. Start with a simple word or phrase, leaving room for growth as your backstory
+        is revealed during play.{" "}
+        <Strong>
+          <Em>They're just dots to connect later</Em>
+        </Strong>
+        .
       </Text>
       <Text>
-        Backgrounds include your heritage (next page), social class, or profession. Each background
-        comes with three wises—evocative phrases that highlight areas of knowledge, experience, or
-        awareness from that background. They're especially useful for declaring story details,
-        providing prompts and ideas to bring into play.
+        Backgrounds include your{" "}
+        <Strong>
+          <Em>heritage</Em>
+        </Strong>{" "}
+        (<Em>next page</Em>),{" "}
+        <Strong>
+          <Em>social class</Em>
+        </Strong>
+        , or{" "}
+        <Strong>
+          <Em>profession</Em>
+        </Strong>
+        . Each background comes with three <Strong>wises</Strong>—evocative phrases that highlight
+        areas of knowledge, experience, or awareness from that background. They're especially useful
+        for declaring story details, providing prompts and ideas to bring into play.
       </Text>
       <Text>
-        You have two backgrounds. You can choose from the list (below), use the Heritage crucible
-        (next page), or use either of those as guidelines to create your own. Backgrounds and their
-        wises should fit the campaign world and be approved by the GM. A heritage background isn't
-        required if you prefer it as just set dressing.
+        <Strong>
+          <Em>You have two backgrounds</Em>
+        </Strong>
+        . You can choose from the list (<Em>below</Em>), use the Heritage crucible (
+        <Em>next page</Em>), or use either of those as guidelines to create your own. Backgrounds
+        and their wises should fit the campaign world and be approved by the GM. A heritage
+        background isn't required if you prefer it as just set dressing.
       </Text>
-      <Text>Your backgrounds serve as a clear sign of the important aspects of who you are.</Text>
-      <List variant="ordered">
-        <List.Item>
+      <Text>
+        <Strong>
+          Your backgrounds serve as a clear sign of the important aspects of who you are.
+        </Strong>
+      </Text>
+      <List variant="unordered">
+        <List.Item muted>
           You might have grown up poor on the streets, but if you have the Ragamuffin background,
           you learned a lot from that experience and it's a core part of who you are.
         </List.Item>
-        <List.Item>
+        <List.Item muted>
           You might be a dwarf, but having the Dwarf of the Iron Hills background lets you set the
           scope of what it means to be a person from that heritage.
         </List.Item>
-        <List.Item>
+        <List.Item muted>
           A fighter with the Warrior and Noble backgrounds feels substantially different than one
           with the Scoun drel and Eccentric backgrounds.
         </List.Item>
       </List>
-      <Table>
+      <Table margin="large" textSize="small" variant="striped">
         <Table.Head>
           <Table.Row>
             <Table.HeaderCell>BACKGROUNDS &amp; WISES</Table.HeaderCell>
-            <Table.HeaderCell>Also known as…</Table.HeaderCell>
+            <Table.HeaderCell>
+              <Em>Also known as…</Em>
+            </Table.HeaderCell>
           </Table.Row>
         </Table.Head>
         <Table.Body>
           <Table.Row>
             <Table.Cell>
-              CHARLATAN, wise in social graces, spotting marks, and timely misdirects.
+              <Strong smallCaps>Charlatan</Strong>, wise in{" "}
+              <Strong>
+                <Em>social graces</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>spotting marks</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>timely misdirects</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>spy, swindler</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>spy, swindler</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              CLERGY, wise in allegories, signs of sin, and faiths of the world.
+              <Strong smallCaps>Clergy</Strong>, wise in{" "}
+              <Strong>
+                <Em>allegories</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>signs of sin</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>faiths of the world</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>cultist, priest</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>cultist, priest</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              COMMONER, wise in local customs, practical wisdom, and superstitions.
+              <Strong smallCaps>Commoner</Strong>, wise in{" "}
+              <Strong>
+                <Em>local customs</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>practical wisdom</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>superstitions</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>farmer, villager</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>farmer, villager</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              CRAFTER, wise in crafting quality, trade contacts, and wear and tear.
+              <Strong smallCaps>Crafter</Strong>, wise in{" "}
+              <Strong>
+                <Em>crafting quality</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>trade contacts</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>wear and tear</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>artisan, smith</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>artisan, smith</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              DRIFTER, wise in chance meetings, faraway tales, and lay of the land.
+              <Strong smallCaps>Drifter</Strong>, wise in{" "}
+              <Strong>
+                <Em>chance meetings</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>faraway tales</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>lay of the land</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>explorer, vagabond</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>explorer, vagabond</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              ENTERTAINER, wise in legends and tales, crowd behaviors, and stage presence.
+              <Strong smallCaps>Entertainer</Strong>, wise in{" "}
+              <Strong>
+                <Em>legends and tales</Em>
+              </Strong>
+              , crowd behaviors, and{" "}
+              <Strong>
+                <Em>stage presence</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>storyteller, minstrel</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>storyteller, minstrel</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              ECCENTRIC, wise in hard truths, random facts, and strange snacks.
+              <Strong smallCaps>Eccentric</Strong>, wise in random facts
+              <Strong>
+                <Em>hard truths</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>random facts</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>strange snacks</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>hermit, recluse</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>hermit, recluse</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              HEALER, wise in comfort foods, signs of ailment, and herbal properties.
+              <Strong smallCaps>Healer</Strong>, wise in signs of ailment
+              <Strong>
+                <Em>comfort foods</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>signs of ailment</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>herbal properties</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>chirurgeon, herbalist</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>HUNTER, wise in survival, tracks, and wildlife behavior.</Table.Cell>
-            <Table.Cell>pathfinder, trapper</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>chirurgeon, herbalist</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              MARINER, wise in nautical lore, seafaring, and weather patterns.
+              <Strong smallCaps>Hunter</Strong>, wise in{" "}
+              <Strong>
+                <Em>survival</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>tracks</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>wildlife behavior</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>pirate, sailor</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>MYSTIC, wise in ancient prophecies, leylines, and symbology.</Table.Cell>
-            <Table.Cell>occultist, seer</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>NOBLE, wise in diplomacy, influential contacts, and luxuries.</Table.Cell>
-            <Table.Cell>aristocrat, diplomat</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>RAGAMUFFIN, wise in hidden paths, rumors, and street smarts.</Table.Cell>
-            <Table.Cell>cutpurse, urchin</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>pathfinder, trapper</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              SAGE, wise in ancient histories, peoples of the world, and philosophy.
+              <Strong smallCaps>Mariner</Strong>, wise in{" "}
+              <Strong>
+                <Em>nautical lore</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>seafaring</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>weather patterns</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>lorekeeper, scholar</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>pirate, sailor</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              SCOUNDREL, wise in escape routes, signs of weakness, and shady connections.
+              <Strong smallCaps>Mystic</Strong>, wise in{" "}
+              <Strong>
+                <Em>ancient prophecies</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>leylines</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>symbology</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>brigand, thief</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>occultist, seer</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              TRADER, wise in cultural tastes, people's desires, and rare goods.
+              <Strong smallCaps>Noble</Strong>, wise in{" "}
+              <Strong>
+                <Em>diplomacy</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>influential contacts</Em>
+              </Strong>
+              , and luxuries.
             </Table.Cell>
-            <Table.Cell>merchant, peddler</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>aristocrat, diplomat</Muted>
+            </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              WARRIOR, wise in battle plans, military contacts, and war stories.
+              <Strong smallCaps>Ragamuffin</Strong>, wise in{" "}
+              <Strong>
+                <Em>hidden paths</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>rumors</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>street smarts</Em>
+              </Strong>
+              .
             </Table.Cell>
-            <Table.Cell>sellsword, soldier</Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>cutpurse, urchin</Muted>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Strong smallCaps>Sage</Strong>, wise in{" "}
+              <Strong>
+                <Em>ancient histories</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>peoples of the world</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>philosophy</Em>
+              </Strong>
+              .
+            </Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>lorekeeper, scholar</Muted>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Strong smallCaps>Scoundrel</Strong>, wise{" "}
+              <Strong>
+                <Em>in escape routes</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>signs of weakness</Em>
+              </Strong>
+              , and
+              <Strong>
+                <Em>shady connections</Em>
+              </Strong>
+              .
+            </Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>brigand, thief</Muted>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Strong smallCaps>Trader</Strong>, wise in{" "}
+              <Strong>
+                <Em>cultural tastes</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>people's desires</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                <Em>rare goods</Em>
+              </Strong>
+              .
+            </Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>merchant, peddler</Muted>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Strong smallCaps>Warrior</Strong>, wise in{" "}
+              <Strong>
+                <Em>battle plans</Em>
+              </Strong>
+              ,{" "}
+              <Strong>
+                <Em>military contacts</Em>
+              </Strong>
+              , and{" "}
+              <Strong>
+                ``
+                <Em>war stories</Em>
+              </Strong>
+              .
+            </Table.Cell>
+            <Table.Cell>
+              <Muted allCaps>sellsword, soldier</Muted>
+            </Table.Cell>
           </Table.Row>
         </Table.Body>
       </Table>
-      <Text>HERITAGE</Text>
+      <Heading level={6} as="h4">
+        Heritage
+      </Heading>
       <Text>
-        Heritage reflects your culture, ancestry, and homeland. Use the Heritage Crucible below for
-        inspiration: roll three words, pick two, and combine them. You can interpret these words
-        literally or figuratively, or use them as they are.
+        <Strong>Heritage</Strong> reflects your culture, ancestry, and homeland. Use the Heritage
+        Crucible below for inspiration: roll three words, pick two, and combine them. You can
+        interpret these words literally or figuratively, or use them as they are.
       </Text>
       <Text>
-        Once you set your heritage, give it three wises. The backgrounds (previous page) can serve
-        as inspiration. These wises reflect traits commonly shared by most people from your
-        heritage. This continues throughout the game as you figure out more about your people
-        through play. In short, you know what the Orcs of the Verdant Boglands are like because you
-        are one!
+        <Strong>Once you set your heritage, give it three wises</Strong>. The backgrounds (
+        <Em>previous page</Em>) can serve as inspiration. These wises reflect traits commonly shared
+        by most people from your heritage. This continues throughout the game as you figure out more
+        about your people through play. In short,{" "}
+        <Strong>
+          <Em>you know what the Orcs of the Verdant Boglands are like because you are one!</Em>
+        </Strong>
       </Text>
       <Text>
-        HERITAGE TALENT: Some heritages have innate capabilities beyond their wises. You can link
-        the second talent at character creation to your heritage, or work with the GM to create one.
-        This makes it a common trait amongst your people.
+        <Strong smallCaps>Heritage Talent</Strong>: Some heritages have innate capabilities beyond
+        their wises. You can link the second talent at character creation to your heritage, or work
+        with the GM to create one. This makes it a common trait amongst your people.
       </Text>
-      <List variant="ordered">
-        <List.Item>
+      <List variant="unordered">
+        <List.Item muted>
           The Turtlefolk have a thick shell, represented with the Bulwark talent.
         </List.Item>
-        <List.Item>The Birdfolk can fly, so you create a talent to represent it.</List.Item>
-        <List.Item>
+        <List.Item muted>The Birdfolk can fly, so you create a talent to represent it.</List.Item>
+        <List.Item muted>
           The Halflings of the Great Caverns can see in total darkness, so you create a talent.
         </List.Item>
       </List>
@@ -463,237 +733,219 @@ const Chapter03 = () => {
         If something isn't strong enough to warrant a talent, work with the GM to add it in as set
         dressing—a bit of flavor, but can't be relied upon to impact scenes.
       </Text>
-      <Text>HERITAGE CRUCIBLE</Text>
-      <Text>Roll 1 of each, choose 2 or 3, then interpret the results.</Text>
-      <Text>FOLK</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>Vagrants</Table.Cell>
-            <Table.Cell>Riders</Table.Cell>
-            <Table.Cell>Gnomes</Table.Cell>
-            <Table.Cell>Dwarves</Table.Cell>
-            <Table.Cell>Nomads</Table.Cell>
-            <Table.Cell>Elves</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>Birdfolk</Table.Cell>
-            <Table.Cell>Clans</Table.Cell>
-            <Table.Cell>Pilgrims</Table.Cell>
-            <Table.Cell>Tieflings</Table.Cell>
-            <Table.Cell>Cityfolk</Table.Cell>
-            <Table.Cell>Orcs</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>Wayfarers</Table.Cell>
-            <Table.Cell>Seafarers</Table.Cell>
-            <Table.Cell>Turtlefolk</Table.Cell>
-            <Table.Cell>Goliaths</Table.Cell>
-            <Table.Cell>Humans</Table.Cell>
-            <Table.Cell>Forestfolk</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>Goblins</Table.Cell>
-            <Table.Cell>Tribes</Table.Cell>
-            <Table.Cell>Citizens</Table.Cell>
-            <Table.Cell>Dragonborn</Table.Cell>
-            <Table.Cell>Halflings</Table.Cell>
-            <Table.Cell>Cavefolk</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>Islanders</Table.Cell>
-            <Table.Cell>Keepers</Table.Cell>
-            <Table.Cell>Marauders</Table.Cell>
-            <Table.Cell>Tradesfolk</Table.Cell>
-            <Table.Cell>Merchants</Table.Cell>
-            <Table.Cell>Raiders</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>Fisherfolk</Table.Cell>
-            <Table.Cell>Settlers</Table.Cell>
-            <Table.Cell>Carvers</Table.Cell>
-            <Table.Cell>Valleyfolk</Table.Cell>
-            <Table.Cell>Skywatchers</Table.Cell>
-            <Table.Cell>Outcasts</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Line />
-      <Text>MOOD</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>Twisted</Table.Cell>
-            <Table.Cell>Lush</Table.Cell>
-            <Table.Cell>Scorched</Table.Cell>
-            <Table.Cell>Rolling</Table.Cell>
-            <Table.Cell>Abyssal</Table.Cell>
-            <Table.Cell>Feral</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>Steel</Table.Cell>
-            <Table.Cell>Floating</Table.Cell>
-            <Table.Cell>Echoing</Table.Cell>
-            <Table.Cell>Bountiful</Table.Cell>
-            <Table.Cell>Desolate</Table.Cell>
-            <Table.Cell>Serene</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>Verdant</Table.Cell>
-            <Table.Cell>Crimson</Table.Cell>
-            <Table.Cell>Misty</Table.Cell>
-            <Table.Cell>Great</Table.Cell>
-            <Table.Cell>Rocky</Table.Cell>
-            <Table.Cell>Whispering</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>Golden</Table.Cell>
-            <Table.Cell>Shattered</Table.Cell>
-            <Table.Cell>Glimmering</Table.Cell>
-            <Table.Cell>Sunken</Table.Cell>
-            <Table.Cell>Windswept</Table.Cell>
-            <Table.Cell>Grim</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>Emerald</Table.Cell>
-            <Table.Cell>Haunted</Table.Cell>
-            <Table.Cell>Distant</Table.Cell>
-            <Table.Cell>Coastal</Table.Cell>
-            <Table.Cell>Howling</Table.Cell>
-            <Table.Cell>Prosperous</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>Burning</Table.Cell>
-            <Table.Cell>Enchanted</Table.Cell>
-            <Table.Cell>Silent</Table.Cell>
-            <Table.Cell>Gloomy</Table.Cell>
-            <Table.Cell>Eternal</Table.Cell>
-            <Table.Cell>Restless</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Line />
-      <Text>LAND</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>Peaks</Table.Cell>
-            <Table.Cell>Kingdom</Table.Cell>
-            <Table.Cell>Desert</Table.Cell>
-            <Table.Cell>Plains</Table.Cell>
-            <Table.Cell>Sea</Table.Cell>
-            <Table.Cell>Glaciers</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>Confederacy</Table.Cell>
-            <Table.Cell>Wilds</Table.Cell>
-            <Table.Cell>Canyons</Table.Cell>
-            <Table.Cell>North</Table.Cell>
-            <Table.Cell>Meadows</Table.Cell>
-            <Table.Cell>Sands</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>Fjords</Table.Cell>
-            <Table.Cell>Marsh</Table.Cell>
-            <Table.Cell>Highlands</Table.Cell>
-            <Table.Cell>Moors</Table.Cell>
-            <Table.Cell>Outposts</Table.Cell>
-            <Table.Cell>Wastelands</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>Coast</Table.Cell>
-            <Table.Cell>Isles</Table.Cell>
-            <Table.Cell>Caverns</Table.Cell>
-            <Table.Cell>Ruins</Table.Cell>
-            <Table.Cell>Cliffs</Table.Cell>
-            <Table.Cell>Coalition</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>Badlands</Table.Cell>
-            <Table.Cell>Thickets</Table.Cell>
-            <Table.Cell>Fenlands</Table.Cell>
-            <Table.Cell>Hollows</Table.Cell>
-            <Table.Cell>Boomtown</Table.Cell>
-            <Table.Cell>Blightlands</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>Boglands</Table.Cell>
-            <Table.Cell>Jungletown</Table.Cell>
-            <Table.Cell>Borderlands</Table.Cell>
-            <Table.Cell>Underworld</Table.Cell>
-            <Table.Cell>Riverlands</Table.Cell>
-            <Table.Cell>Groves</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <List variant="ordered">
-        <List.Item>
-          ELVES OF BOOMTOWN, wise in alchemicals, trade contacts, and tales of far lands.
+      <Panel
+        title="Heritage Crucible"
+        description="Roll 1 of each, choose 2 or 3, then interpret the results."
+        border
+        rowBorders
+      >
+        <Panel.Row>
+          <Table textSize="small" margin="none" fullWidth>
+            <Table.Head>
+              <Table.Row>
+                <Table.HeaderCell colSpan={6} align="center" allCaps>
+                  Folk
+                </Table.HeaderCell>
+              </Table.Row>
+            </Table.Head>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell padding="tight">Vagrants</Table.Cell>
+                <Table.Cell padding="tight">Riders</Table.Cell>
+                <Table.Cell padding="tight">Gnomes</Table.Cell>
+                <Table.Cell padding="tight">Dwarves</Table.Cell>
+                <Table.Cell padding="tight">Nomads</Table.Cell>
+                <Table.Cell padding="tight">Elves</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Birdfolk</Table.Cell>
+                <Table.Cell padding="tight">Clans</Table.Cell>
+                <Table.Cell padding="tight">Pilgrims</Table.Cell>
+                <Table.Cell padding="tight">Tieflings</Table.Cell>
+                <Table.Cell padding="tight">Cityfolk</Table.Cell>
+                <Table.Cell padding="tight">Orcs</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Wayfarers</Table.Cell>
+                <Table.Cell padding="tight">Seafarers</Table.Cell>
+                <Table.Cell padding="tight">Turtlefolk</Table.Cell>
+                <Table.Cell padding="tight">Goliaths</Table.Cell>
+                <Table.Cell padding="tight">Humans</Table.Cell>
+                <Table.Cell padding="tight">Forestfolk</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Goblins</Table.Cell>
+                <Table.Cell padding="tight">Tribes</Table.Cell>
+                <Table.Cell padding="tight">Citizens</Table.Cell>
+                <Table.Cell padding="tight">Dragonborn</Table.Cell>
+                <Table.Cell padding="tight">Halflings</Table.Cell>
+                <Table.Cell padding="tight">Cavefolk</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Islanders</Table.Cell>
+                <Table.Cell padding="tight">Keepers</Table.Cell>
+                <Table.Cell padding="tight">Marauders</Table.Cell>
+                <Table.Cell padding="tight">Tradesfolk</Table.Cell>
+                <Table.Cell padding="tight">Merchants</Table.Cell>
+                <Table.Cell padding="tight">Raiders</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Fisherfolk</Table.Cell>
+                <Table.Cell padding="tight">Settlers</Table.Cell>
+                <Table.Cell padding="tight">Carvers</Table.Cell>
+                <Table.Cell padding="tight">Valleyfolk</Table.Cell>
+                <Table.Cell padding="tight">Skywatchers</Table.Cell>
+                <Table.Cell padding="tight">Outcasts</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+        <Panel.Row>
+          <Table textSize="small" margin="none" fullWidth>
+            <Table.Head>
+              <Table.Row>
+                <Table.HeaderCell colSpan={6} align="center" allCaps>
+                  Mood
+                </Table.HeaderCell>
+              </Table.Row>
+            </Table.Head>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell padding="tight">Twisted</Table.Cell>
+                <Table.Cell padding="tight">Lush</Table.Cell>
+                <Table.Cell padding="tight">Scorched</Table.Cell>
+                <Table.Cell padding="tight">Rolling</Table.Cell>
+                <Table.Cell padding="tight">Abyssal</Table.Cell>
+                <Table.Cell padding="tight">Feral</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Steel</Table.Cell>
+                <Table.Cell padding="tight">Floating</Table.Cell>
+                <Table.Cell padding="tight">Echoing</Table.Cell>
+                <Table.Cell padding="tight">Bountiful</Table.Cell>
+                <Table.Cell padding="tight">Desolate</Table.Cell>
+                <Table.Cell padding="tight">Serene</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Verdant</Table.Cell>
+                <Table.Cell padding="tight">Crimson</Table.Cell>
+                <Table.Cell padding="tight">Misty</Table.Cell>
+                <Table.Cell padding="tight">Great</Table.Cell>
+                <Table.Cell padding="tight">Rocky</Table.Cell>
+                <Table.Cell padding="tight">Whispering</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Golden</Table.Cell>
+                <Table.Cell padding="tight">Shattered</Table.Cell>
+                <Table.Cell padding="tight">Glimmering</Table.Cell>
+                <Table.Cell padding="tight">Sunken</Table.Cell>
+                <Table.Cell padding="tight">Windswept</Table.Cell>
+                <Table.Cell padding="tight">Grim</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Emerald</Table.Cell>
+                <Table.Cell padding="tight">Haunted</Table.Cell>
+                <Table.Cell padding="tight">Distant</Table.Cell>
+                <Table.Cell padding="tight">Coastal</Table.Cell>
+                <Table.Cell padding="tight">Howling</Table.Cell>
+                <Table.Cell padding="tight">Prosperous</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Burning</Table.Cell>
+                <Table.Cell padding="tight">Enchanted</Table.Cell>
+                <Table.Cell padding="tight">Silent</Table.Cell>
+                <Table.Cell padding="tight">Gloomy</Table.Cell>
+                <Table.Cell padding="tight">Eternal</Table.Cell>
+                <Table.Cell padding="tight">Restless</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+        <Panel.Row>
+          <Table textSize="small" margin="none" fullWidth>
+            <Table.Head>
+              <Table.Row>
+                <Table.HeaderCell colSpan={6} align="center" allCaps>
+                  Land
+                </Table.HeaderCell>
+              </Table.Row>
+            </Table.Head>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell padding="tight">Peaks</Table.Cell>
+                <Table.Cell padding="tight">Kingdom</Table.Cell>
+                <Table.Cell padding="tight">Desert</Table.Cell>
+                <Table.Cell padding="tight">Plains</Table.Cell>
+                <Table.Cell padding="tight">Sea</Table.Cell>
+                <Table.Cell padding="tight">Glaciers</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Confederacy</Table.Cell>
+                <Table.Cell padding="tight">Wilds</Table.Cell>
+                <Table.Cell padding="tight">Canyons</Table.Cell>
+                <Table.Cell padding="tight">North</Table.Cell>
+                <Table.Cell padding="tight">Meadows</Table.Cell>
+                <Table.Cell padding="tight">Sands</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Fjords</Table.Cell>
+                <Table.Cell padding="tight">Marsh</Table.Cell>
+                <Table.Cell padding="tight">Highlands</Table.Cell>
+                <Table.Cell padding="tight">Moors</Table.Cell>
+                <Table.Cell padding="tight">Outposts</Table.Cell>
+                <Table.Cell padding="tight">Wastelands</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Coast</Table.Cell>
+                <Table.Cell padding="tight">Isles</Table.Cell>
+                <Table.Cell padding="tight">Caverns</Table.Cell>
+                <Table.Cell padding="tight">Ruins</Table.Cell>
+                <Table.Cell padding="tight">Cliffs</Table.Cell>
+                <Table.Cell padding="tight">Coalition</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Badlands</Table.Cell>
+                <Table.Cell padding="tight">Thickets</Table.Cell>
+                <Table.Cell padding="tight">Fenlands</Table.Cell>
+                <Table.Cell padding="tight">Hollows</Table.Cell>
+                <Table.Cell padding="tight">Boomtown</Table.Cell>
+                <Table.Cell padding="tight">Blightlands</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell padding="tight">Boglands</Table.Cell>
+                <Table.Cell padding="tight">Jungletown</Table.Cell>
+                <Table.Cell padding="tight">Borderlands</Table.Cell>
+                <Table.Cell padding="tight">Underworld</Table.Cell>
+                <Table.Cell padding="tight">Riverlands</Table.Cell>
+                <Table.Cell padding="tight">Groves</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+      </Panel>
+      <List variant="unordered">
+        <List.Item muted>
+          <Strong smallCaps>Elves of Boomtown</Strong>, wise in <Strong>alchemicals</Strong>,{" "}
+          <Strong>trade contacts</Strong>, and <Strong>tales of far lands</Strong>.
         </List.Item>
-        <List.Item>
-          CITYFOLK OF THE SERENE KINGDOM, wise in cultural tastes, signs of sin, and rare goods.
+        <List.Item muted>
+          <Strong smallCaps>Cityfolk of the Serene Kingdom</Strong>, wise in{" "}
+          <Strong>cultural tastes</Strong>, <Strong>signs of sin</Strong>, and{" "}
+          <Strong>rare goods</Strong>.
         </List.Item>
-        <List.Item>
-          VAGRANTS OF THE BURNING BARRENS, wise in comfort foods, survival, and war stories.
+        <List.Item muted>
+          <Strong smallCaps>Vagrants of the Burning Barrens</Strong>, wise in{" "}
+          <Strong>comfort foods</Strong>,<Strong>survival</Strong>, and <Strong>war stories</Strong>
+          .
         </List.Item>
       </List>
       <Text>
-        EVOLVING BACKGROUNDS: Backgrounds can evolve as the story unfolds. Start with a simple name
-        and leave room for growth as your backstory is revealed. Don't corner your character growth
-        before starting. You might start as a Mariner, refine it to Pirate, then expand on it to
-        Blackthorn Reaver or First Mate under Captain Stormclaw as it comes up in the story. Or you
-        can just keep it simple!
+        <Strong smallCaps>Evolving Backgrounds</Strong>: Backgrounds can evolve as the story
+        unfolds. Start with a simple name and leave room for growth as your backstory is revealed.
+        Don't corner your character growth before starting. You might start as a <Em>Mariner</Em>,
+        refine it to <Em>Pirate</Em>, then expand on it to <Em>Blackthorn Reaver</Em> or{" "}
+        <Em>First Mate under Captain Stormclaw</Em> as it comes up in the story. Or you can just
+        keep it simple!
       </Text>
       <Heading level={2}>Paths &amp; Talents</Heading>
       <Text>
@@ -704,45 +956,51 @@ const Chapter03 = () => {
       </Text>
       <List variant="ordered">
         <List.Item>
-          Core Growth: Your core talent powers up as you level. For “every 2 levels,” gain bonuses
-          at levels 2, 4, 6. For “every 3 levels,” it's 3, 6. Remember that 7 is the maximum level.
+          <Strong>Core Growth</Strong>: Your core talent powers up as you level. For “every 2
+          levels,” gain bonuses at levels 2, 4, 6. For “every 3 levels,” it's 3, 6. Remember that 7
+          is the maximum level.
         </List.Item>
         <List.Item>
-          Cross-Path Talents: You're free to choose talents from other paths if they fit your char
-          acter's story. Just explain how your character picked up these skills—it's a great way to
-          add depth to your character.
+          <Strong>Cross-Path Talents</Strong>: You're free to choose talents from other paths if
+          they fit your char acter's story. Just explain how your character picked up these
+          skills—it's a great way to add depth to your character.
         </List.Item>
         <List.Item>
-          Re-Skin Talents: To avoid redundancy, similar talents across paths have been avoided.
-          Instead, you're encouraged to “re-skin” talents to fit your character's theme. For
-          example, the Bulwark (armor) talent could be reinterpreted as a magical mage shield for a
-          wizard.
+          <Strong>Re-Skin Talents</Strong>: To avoid redundancy, similar talents across paths have
+          been avoided. Instead, you're encouraged to “re-skin” talents to fit your character's
+          theme. For example, the Bulwark (armor) talent could be reinterpreted as a magical mage
+          shield for a wizard.
         </List.Item>
         <List.Item>
-          Push Yourself: Some talents require you to push yourself to activate. These talents can be
-          activated once per session for free. After the first use, you must push yourself as normal
-          to activate it again, marking a relevant stat. Choose your moments wisely.
+          <Strong>Push Yourself</Strong>: Some talents require you to push yourself to activate.
+          <Strong>
+            <Em>These talents can be activated once per session for free</Em>
+          </Strong>
+          . After the first use, you must push yourself as normal to activate it again, marking a
+          relevant stat. Choose your moments wisely.
         </List.Item>
         <List.Item>
-          “When Given Time”: This phrase included in several talents means you need time to do what
-          the talent lets you, but how long that is leaves room for interpretation. Go with what
-          makes sense, but at the very least it's a narrative beat, a PC action, or some time
-          unhindered by disruptive forces. Use story rolls or group consensus to decide what counts.
+          <Strong>“When Given Time”</Strong>: This phrase included in several talents means you need
+          time to do what the talent lets you, but how long that is leaves room for interpretation.
+          Go with what makes sense, but at the very least it's a narrative beat, a PC action, or
+          some time unhindered by disruptive forces. Use story rolls or group consensus to decide
+          what counts.
         </List.Item>
         <List.Item>
-          “Always”: When a talent includes this specific wording, it means you have narrative
-          permission to almost always do what's indicated. However, this can be stopped by a GM
-          COunter move. It's best to think that “always” means 95% of the time.
+          <Strong>“Always”</Strong>: When a talent includes this specific wording, it means you have
+          narrative permission to almost always do what's indicated. However, this can be stopped by
+          a <Move>GM Counter</Move> move. It's best to think that “always” means 95% of the time.
         </List.Item>
         <List.Item>
-          Choices: Italicized words separated by em dashes represent lists of choices, like: one—
-          two—three. These represent a limited amount of options you must choose from. If instead a
-          talent suggests a type of choice, saying “you can do things like A and B”, then you can
-          extrapolate that out into other similar actions.
+          <Strong>Choices</Strong>: Italicized words separated by em dashes represent lists of
+          choices, like: <Em>one—two—three</Em>. These represent a limited amount of options you
+          must choose from. If instead a talent suggests a type of choice, saying{" "}
+          <Em>“you can do things like A and B”</Em>, then you can extrapolate that out into other
+          similar actions.
         </List.Item>
         <List.Item>
-          On a Perfect: Any talent that allows you to do something on a perfect, it also triggers on
-          a critical.
+          <Strong>On a Perfect</Strong>: Any talent that allows you to do something on a perfect, it
+          also triggers on a critical.
         </List.Item>
         <List.Item>
           Optional Character Building: Some paths include additional character-building fea tures,
@@ -750,9 +1008,10 @@ const Chapter03 = () => {
           them up.
         </List.Item>
         <List.Item>
-          Roleplaying Advice: Some paths include advice on roleplaying that character path,
-          especially on parts that might be somewhat unfamiliar. It's entirely optional, but if they
-          resonate with you, lean into them to make those aspects important in the game.
+          <Strong>Roleplaying Advice</Strong>: Some paths include advice on roleplaying that
+          character path, especially on parts that might be somewhat unfamiliar. It's entirely
+          optional, but if they resonate with you, lean into them to make those aspects important in
+          the game.
         </List.Item>
       </List>
       <Text>
@@ -760,150 +1019,263 @@ const Chapter03 = () => {
         to help flesh out your characters, as well as party-building questions that help link
         together characters' backstories and add depth to their relationships.
       </Text>
-      <Heading level={2}>Bard</Heading>
-      <Text>ALSO: Minstrel, Orator, Warlord</Text>
+      <Heading level={2} pretitle="Path of the">
+        Bard
+      </Heading>
       <Text>
-        You spin tales and songs that stir emotions, inspire bravery, and turn simple deeds into
-        legends.
+        <Strong allCaps>Also</Strong>:{" "}
+        <Strong>
+          <Em>Minstrel, Orator, Warlord</Em>
+        </Strong>
       </Text>
-      <blockquote>
-        <Text>BARDSONG (CORE TALENT)</Text>
+      <Text>
+        <Em>
+          You spin tales and songs that stir emotions, inspire bravery, and turn simple deeds into
+          legends.
+        </Em>
+      </Text>
+      <CoreTalent
+        name="Bardsong"
+        growth="Every 3 levels, gain +1 bardsong and +1 melody per session."
+        margin="large"
+      >
         <Text>
-          Each session, you can sing 3 bardsongs, rolling Presence. Sing one to pull off a potent
-          feat of emotional influence, like eliciting a vex response in an NPC, buffing a group of
-          allies, or inflicting hindrances on enemies. You can also sing one to interrupt an impact
-          move. A bardsong's effect flows from its composition. Choose a style, tune, and impact
-          (below) that matches the effect.
+          Each session, you can sing <Strong>3 bardsongs</Strong>, rolling Presence. Sing one to
+          pull off a{" "}
+          <Strong>
+            <Em>potent feat of emotional influence</Em>
+          </Strong>
+          , like <Em>eliciting a vex response in an NPC</Em>, <Em>buffing a group of allies</Em>, or{" "}
+          <Em>inflicting hindrances on enemies</Em>. You can also sing one to{" "}
+          <Strong>
+            <Em>interrupt</Em>
+          </Strong>{" "}
+          an impact move. A bardsong's effect flows from its composition. Choose a{" "}
+          <Strong>
+            <Em>style</Em>
+          </Strong>
+          ,{" "}
+          <Strong>
+            <em>tune</em>
+          </Strong>
+          , and{" "}
+          <Strong>
+            <Em>impact</Em>
+          </Strong>{" "}
+          (<Em>below</Em>) that matches the effect.
         </Text>
         <Text>
-          Each session, you can also sing 3 melodies, spur of the moment tunes without specific
-          composition. Spend them to: assist without risk—calm or intensify a vex response—clear a
-          mark. These don't require a roll. You cannot affect yourself.
+          Each session, you can also sing <Strong>3 melodies</Strong>, spur of the moment tunes
+          without specific composition. Spend them to: assist <Em>without risk</Em>—
+          <Em>calm or intensify a vex response</Em>—<Em>clear a mark</Em>. These don't require a
+          roll. You cannot affect yourself.
         </Text>
-        <Line />
-        <Text>GROWTH: Every 3 levels, gain +1 bardsong and +1 melody per session.</Text>
-      </blockquote>
-      <Text>SONG COMPOSITION</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>STYLE</Table.HeaderCell>
-            <Table.HeaderCell>(+) TUNE</Table.HeaderCell>
-            <Table.HeaderCell>(of) IMPACT</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>chaotic</Table.Cell>
-            <Table.Cell>anthem</Table.Cell>
-            <Table.Cell>affection</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>dire</Table.Cell>
-            <Table.Cell>aria</Table.Cell>
-            <Table.Cell>awe</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>fiery</Table.Cell>
-            <Table.Cell>ballad</Table.Cell>
-            <Table.Cell>calm</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>gentle</Table.Cell>
-            <Table.Cell>chant</Table.Cell>
-            <Table.Cell>despair</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>haunting</Table.Cell>
-            <Table.Cell>ditty</Table.Cell>
-            <Table.Cell>fear</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>playful</Table.Cell>
-            <Table.Cell>hymn</Table.Cell>
-            <Table.Cell>fury</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>nostalgic</Table.Cell>
-            <Table.Cell>ode</Table.Cell>
-            <Table.Cell>hope</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>rousing</Table.Cell>
-            <Table.Cell>requiem</Table.Cell>
-            <Table.Cell>joy</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>vicious</Table.Cell>
-            <Table.Cell>rhapsody</Table.Cell>
-            <Table.Cell>mockery</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>whimsical</Table.Cell>
-            <Table.Cell>serenade</Table.Cell>
-            <Table.Cell>wonder</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <blockquote>
-        <Text>STYLE</Text>
-        <Text>How you feel when you're singing the song.</Text>
-      </blockquote>
-      <blockquote>
-        <Text>TUNE</Text>
-        <Text>A familiar form that anyone can recognize.</Text>
-      </blockquote>
-      <blockquote>
-        <Text>IMPACT</Text>
-        <Text>How you want the song to make them feel.</Text>
-      </blockquote>
+      </CoreTalent>
+      <Panel
+        title="Song Composition"
+        description="[Style] + [Tune] of [Impact]"
+        margin="large"
+        border
+      >
+        <Stack direction="row" spacing="large" wrap>
+          <Stack.Item flex={1} flexShrink="none">
+            <Table margin="none" textSize="small" variant="simple" fullWidth>
+              <Table.Head>
+                <Table.Row>
+                  <Table.HeaderCell align="center">STYLE</Table.HeaderCell>
+                  <Table.HeaderCell align="center">TUNE</Table.HeaderCell>
+                  <Table.HeaderCell align="center">IMPACT</Table.HeaderCell>
+                </Table.Row>
+              </Table.Head>
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>chaotic</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>anthem</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>affection</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>dire</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>aria</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>awe</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>fiery</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>ballad</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>calm</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>gentle</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>chant</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>despair</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>haunting</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>ditty</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>fear</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>playful</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>hymn</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>fury</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>nostalgic</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>ode</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>hope</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>rousing</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>requiem</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>joy</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>vicious</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>rhapsody</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>mockery</Em>
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell align="center">
+                    <Em>whimsical</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>serenade</Em>
+                  </Table.Cell>
+                  <Table.Cell align="center">
+                    <Em>wonder</Em>
+                  </Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
+          </Stack.Item>
+          <Stack flex={2} minWidth="medium" spaceBetween>
+            <Stack.Item>
+              <Text align="center" margin="none">
+                <Strong allCaps>Style</Strong>
+              </Text>
+              <Text align="center" margin="none">
+                How you feel when you're singing the song.
+              </Text>
+            </Stack.Item>
+            <Stack.Item>
+              <Text align="center" margin="none">
+                <Strong allCaps>Tune</Strong>
+              </Text>
+              <Text align="center" margin="none">
+                A familiar form that anyone can recognize.
+              </Text>
+            </Stack.Item>
+            <Stack.Item>
+              <Text align="center" margin="none">
+                <Strong allCaps>Impact</Strong>
+              </Text>
+              <Text align="center" margin="none">
+                How you want the song to make them feel.
+              </Text>
+            </Stack.Item>
+          </Stack>
+        </Stack>
+      </Panel>
       <Text>
         Below are some example compositions and how potent feats of emotional influence can be
         brought into play:
       </Text>
-      <List variant="ordered">
-        <List.Item>
-          Haunting Requiem of Fear: The villagers abandon their homes, terrified of shadows that
-          aren't there.
+      <List variant="unordered">
+        <List.Item textSize="small" muted>
+          <Strong>Haunting Requiem of Fear</Strong>: The villagers abandon their homes, terrified of
+          shadows that aren't there.
         </List.Item>
-        <List.Item>
-          Playful Ballad of Joy: A tense negotiation dissolves into laughter, everyone suddenly
-          sharing joyful stories.
+        <List.Item textSize="small" muted>
+          <Strong>Playful Ballad of Joy</Strong>: A tense negotiation dissolves into laughter,
+          everyone suddenly sharing joyful stories.
         </List.Item>
-        <List.Item>
-          Whimsical Serenade of Wonder: The towering golem halts, transfixed by the sudden beauty of
-          a flower.
+        <List.Item textSize="small" muted>
+          <Strong>Whimsical Serenade of Wonder</Strong>: The towering golem halts, transfixed by the
+          sudden beauty of a flower.
         </List.Item>
-        <List.Item>
-          Dire Chant of Despair: The dragon, mid-flight, veers away in terror, retreating to its
-          lair in panic.
+        <List.Item textSize="small" muted>
+          <Strong>Dire Chant of Despair</Strong>: The dragon, mid-flight, veers away in terror,
+          retreating to its lair in panic.
         </List.Item>
-        <List.Item>
-          Fiery Anthem of Fury: A normally docile treant uproots itself, thrashing wildly, lashing
-          out at all nearby.
+        <List.Item textSize="small" muted>
+          <Strong>Fiery Anthem of Fury</Strong>: A normally docile treant uproots itself, thrashing
+          wildly, lashing out at all nearby.
         </List.Item>
-        <List.Item>
-          Nostalgic Ode of Hope: War-weary soldiers rally, tears flowing, as they march against
-          impossible odds.
+        <List.Item textSize="small" muted>
+          <Strong>Nostalgic Ode of Hope</Strong>: War-weary soldiers rally, tears flowing, as they
+          march against impossible odds.
         </List.Item>
-        <List.Item>
-          Chaotic Hymn of Mockery: The proud king stumbles, embarrassed, as the crowd laughs
-          uncontrollably.
+        <List.Item textSize="small" muted>
+          <Strong>Chaotic Hymn of Mockery</Strong>: The proud king stumbles, embarrassed, as the
+          crowd laughs uncontrollably.
         </List.Item>
-        <List.Item>
-          Rousing Rhapsody of Affection: The rampaging dire wolf stops and nuzzles someone nearby,
-          tail wagging.
+        <List.Item textSize="small" muted>
+          <Strong>Rousing Rhapsody of Affection</Strong>: The rampaging dire wolf stops and nuzzles
+          someone nearby, tail wagging.
         </List.Item>
-        <List.Item>
-          Gentle Anthem of Calm: The hydra lowers its heads, each one slowly settling into peaceful
-          slumber.
+        <List.Item textSize="small" muted>
+          <Strong>Gentle Anthem of Calm</Strong>: The hydra lowers its heads, each one slowly
+          settling into peaceful slumber.
         </List.Item>
-        <List.Item>
-          Vicious Ditty of Fury: A tavern erupts in wanton destruction, patrons consumed by primal
-          rage.
+        <List.Item textSize="small" muted>
+          <Strong>Vicious Ditty of Fury</Strong>: A tavern erupts in wanton destruction, patrons
+          consumed by primal rage.
         </List.Item>
       </List>
-      <Text>BARD TALENTS</Text>
+      <Heading level={3}>Bard Talents</Heading>
       <Text>BARDIC LORE</Text>
       <Text>
         You gain any 3 wises and 1 extra story per session. You take +1d on any story rolls
@@ -3293,7 +3665,7 @@ const Chapter03 = () => {
           </List.Item>
         </List>
       </blockquote>
-    </>
+    </Page>
   );
 };
 

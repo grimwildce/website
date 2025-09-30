@@ -62,6 +62,54 @@ const getMarginSizeDefault = (defaultMargin?: MarginSize): Record<MarginSide, st
   }
 };
 
+const expandMargin = (margin?: MarginSize): MarginObject => {
+  if (!margin) {
+    return {
+      both: defaultMarginValue
+    };
+  }
+
+  if (typeof margin === "string") {
+    return {
+      both: margin
+    };
+  }
+
+  const { both, top, bottom } = margin;
+  if (both) {
+    return {
+      both
+    };
+  } else {
+    return {
+      top: top || defaultMarginValue,
+      bottom: bottom || defaultMarginValue
+    };
+  }
+};
+
+export const resolveMargin = (
+  margin?: MarginSize,
+  defaultMargin?: MarginSize
+): MarginSize | undefined => {
+  if (!margin) return defaultMargin;
+  if (!defaultMargin) return margin;
+
+  const expandedMargin = expandMargin(margin);
+  const expandedDefaultMargin = expandMargin(defaultMargin);
+
+  if (expandedMargin.both) {
+    return expandedMargin;
+  }
+
+  const { top, bottom } = expandedMargin;
+  const { both: defaultBoth, top: defaultTop, bottom: defaultBottom } = expandedDefaultMargin;
+  return {
+    top: top || defaultBoth || defaultTop,
+    bottom: bottom || defaultBoth || defaultBottom
+  };
+};
+
 // Accepts a string:
 //   margin="small"
 // Or an object:
