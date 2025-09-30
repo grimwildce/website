@@ -1,7 +1,8 @@
+import Page from "@/components/app/Page";
+
 const Chapter05 = () => {
   return (
-    <>
-      <h1>MONSTERS</h1>
+    <Page title="Monsters" pretitle="Chapter 5:">
       <h2>PAINTING MONSTROUS SCENES</h2>
       <p>
         This chapter features nearly 100 monster blocks designed to help you, the GM, create vivid
@@ -7363,7 +7364,7 @@ const Chapter05 = () => {
           </table>
         </blockquote>
       </blockquote>
-    </>
+    </Page>
   );
 };
 

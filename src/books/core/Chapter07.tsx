@@ -1,7 +1,8 @@
+import Page from "@/components/app/Page";
+
 const Chapter07 = () => {
   return (
-    <>
-      <h1>EXTRAS</h1>
+    <Page title="Extras" pretitle="Chapter 7:">
       <h2>FLAVORS OF FANTASY</h2>
       <p>
         With a few quick rules tweaks, you can shift the base assumptions of Grimwild over to other
@@ -2849,7 +2850,7 @@ const Chapter07 = () => {
         care about something, but they also let them signal that they really do care about
         something. My advice to those skeptical is this: just try it.
       </p>
-    </>
+    </Page>
   );
 };
 

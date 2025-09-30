@@ -1,8 +1,8 @@
+import Page from "@/components/app/Page";
 import Battleground from "@/components/Battleground";
 import CampaignPool from "@/components/CampaignPool";
 import Challenge from "@/components/Challenge";
 import ChallengeSuspense from "@/components/ChallengeSuspense";
-import ChapterTitle from "@/components/ChapterTitle";
 import Descriptor from "@/components/Descriptor";
 import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
@@ -21,8 +21,7 @@ import { faBurst, faExclamation, faQuestion } from "@fortawesome/free-solid-svg-
 
 const Chapter02 = () => {
   return (
-    <>
-      <ChapterTitle description="Chapter 2">GM Toolkit</ChapterTitle>
+    <Page title="GM Toolkit" pretitle="Chapter 2:">
       <Heading level={2}>Running Grimwild</Heading>
       <Text>
         As the GM, you play the game by a different set of rules, utilizing the tools laid out in
@@ -847,7 +846,7 @@ const Chapter02 = () => {
         proactive presence in the scene. Give them traits that prompt impact moves, triggered by the
         fiction <Muted>(protect the body)</Muted> for dynamic interactions.
       </Text>
-      <Panel title="Negotiating Peace in a Civil War" margin="large" variant="blank" border>
+      <Panel title="Negotiating Peace in a Civil War" variant="blank" border>
         <Grid>
           <Challenge
             title="Duchess Lysandra"
@@ -900,7 +899,7 @@ const Chapter02 = () => {
           </Muted>
         </Text>
       </Panel>
-      <Panel title="Conspiracy Within the Order" margin="large" variant="blank" border>
+      <Panel title="Conspiracy Within the Order" variant="blank" border>
         <Grid>
           <Challenge
             title="False Prophets"
@@ -945,7 +944,7 @@ const Chapter02 = () => {
           </Muted>
         </Text>
       </Panel>
-      <Panel title="The Great Red Dragon" margin="large" variant="blank" border>
+      <Panel title="The Great Red Dragon" variant="blank" border>
         <Grid>
           <Stack spacing="medium" margin="none">
             <Challenge
@@ -2137,7 +2136,7 @@ const Chapter02 = () => {
           shared imagination space. When the mechanics flow like this, the system sings.
         </Text>
       </Panel>
-    </>
+    </Page>
   );
 };
 

@@ -1,4 +1,4 @@
-import ChapterTitle from "@/components/ChapterTitle";
+import Page from "@/components/app/Page";
 import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
 import ExternalLink from "@/components/ui/ExternalLink";
@@ -14,8 +14,7 @@ import Text from "@/components/ui/Text";
 
 const Chapter01 = () => {
   return (
-    <>
-      <ChapterTitle description="Chapter 1">Gameplay</ChapterTitle>
+    <Page title="Gameplay" pretitle="Chapter 1:">
       <Heading level={2}>What is Grimwild?</Heading>
       <Text>
         <Em>
@@ -2860,7 +2859,7 @@ const Chapter01 = () => {
           roleplaying.
         </Text>
       </Panel>
-    </>
+    </Page>
   );
 };
 

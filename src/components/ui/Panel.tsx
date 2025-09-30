@@ -18,6 +18,7 @@ type PanelProps = {
   flex?: FlexSize;
   border?: boolean;
   centerTitle?: boolean;
+  rowBorders?: boolean;
   children: ReactNode;
 };
 
@@ -25,18 +26,19 @@ const Panel = ({
   title,
   description,
   textSize,
-  margin,
+  margin = "large",
   variant = "normal",
-  border = false,
-  centerTitle = false,
+  border,
+  centerTitle,
+  rowBorders,
   flex,
   children
 }: PanelProps) => {
   const hasTitle = typeof title !== "undefined";
-  const hasPanelRows = hasChildElementOfType(children, PanelRow);
+  const hasPanelRows = hasChildElementOfType(children, "Panel.Row");
 
   const containerCss = classNames(
-    "flex flex-col",
+    "flex flex-col shrink-0",
     getMarginSize(margin),
     getTextSize(textSize),
     getFlexSize(flex),
@@ -55,7 +57,8 @@ const Panel = ({
     "rounded-t-sm": !hasTitle && !border,
     "rounded-b-sm": !border,
     "[&>.panel-row:nth-child(even)]:bg-panel-row-alt": hasPanelRows,
-    "[&>.panel-row:last-child]:rounded-b-sm": hasPanelRows && !border
+    "[&>.panel-row:last-child]:rounded-b-sm": hasPanelRows && !border,
+    "[&>.panel-row:not(:last-child)]:border-b border-muted": hasPanelRows && rowBorders
   });
 
   return (
@@ -77,6 +80,7 @@ type PanelRowProps = {
 const PanelRow = ({ children }: PanelRowProps) => {
   return <div className="panel-row p-4 -mx-4">{children}</div>;
 };
+PanelRow.displayName = "Panel.Row";
 
 Panel.Row = PanelRow;
 export default Panel;

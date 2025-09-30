@@ -1,14 +1,16 @@
+import Muted from "@/components/ui/Muted";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
+import { getTextSize, type TextSize } from "@/utils/textSize";
 import classNames from "classnames";
 import type { ReactNode } from "react";
 
 type ListTag = "ul" | "ol";
 type ListProps = {
-  variant?: "unordered" | "ordered" | "blank";
-  children: ReactNode;
   margin?: MarginSize;
   spacing?: SpacingSize;
+  variant?: "unordered" | "ordered" | "blank";
+  children: ReactNode;
 };
 
 const List = ({ children, variant = "unordered", margin, spacing = "small" }: ListProps) => {
@@ -23,11 +25,19 @@ const List = ({ children, variant = "unordered", margin, spacing = "small" }: Li
 };
 
 type ItemProps = {
+  textSize?: TextSize;
+  muted?: boolean;
   children: ReactNode;
 };
 
-const Item = ({ children }: ItemProps) => {
-  return <li>{children}</li>;
+const Item = ({ textSize = "medium", muted, children }: ItemProps) => {
+  const itemCss = classNames(getTextSize(textSize), {
+    "[&::marker]:text-muted-color": muted
+  });
+
+  return (
+    <li className={itemCss}>{muted ? <Muted size={textSize}>{children}</Muted> : children}</li>
+  );
 };
 
 List.Item = Item;

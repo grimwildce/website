@@ -1,5 +1,5 @@
+import About from "@/About";
 import App from "@/App";
-import About from "@/books/core/About";
 import Chapter01 from "@/books/core/Chapter01";
 import Chapter02 from "@/books/core/Chapter02";
 import Chapter03 from "@/books/core/Chapter03";
@@ -21,7 +21,8 @@ import "./index.css";
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="grimwild" element={<Navigate to="/grimwild/about" replace />} />
+      <Route index element={<About />} />
+      <Route path="grimwild" element={<Navigate to="/grimwild/chapter-1" replace />} />
       <Route path="grimwild/about" element={<About />} />
       <Route path="grimwild/chapter-1" element={<Chapter01 />} />
       <Route path="grimwild/chapter-2" element={<Chapter02 />} />

@@ -6,7 +6,7 @@ import { getVerticalAlign, type VerticalAlign } from "@/utils/verticalAlign";
 import classNames from "classnames";
 import { type ReactNode } from "react";
 
-type TableVariant = "blank" | "striped" | "columns" | "solid" | "crucible";
+type TableVariant = "blank" | "striped" | "columns" | "solid" | "crucible" | "simple";
 type TableProps = {
   children: ReactNode;
   margin?: MarginSize;
@@ -22,16 +22,17 @@ const Table = ({
   fullWidth = false,
   variant = "blank"
 }: TableProps) => {
-  const tableCss = classNames(
-    variant,
-    "table-auto border-collapse",
-    getMarginSize(margin),
-    getTextSize(textSize),
-    {
-      "w-full": fullWidth
-    }
+  const containerCss = classNames("overflow-x-auto", getMarginSize(margin), getTextSize(textSize), {
+    "w-full": fullWidth
+  });
+  const tableCss = classNames(variant, "table-auto border-collapse", {
+    "w-full": fullWidth
+  });
+  return (
+    <div className={containerCss}>
+      <table className={tableCss}>{children}</table>
+    </div>
   );
-  return <table className={tableCss}>{children}</table>;
 };
 
 type TableHeadProps = {
