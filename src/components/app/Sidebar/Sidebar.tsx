@@ -7,7 +7,7 @@ type SidebarProps = {
 
 const Sidebar = ({ navigation, onSelect }: SidebarProps) => {
   return (
-    <div className="relative flex grow flex-col overflow-y-auto border-r px-6 gap-5 border-sidebar bg-sidebar">
+    <div className="relative flex grow flex-col overflow-y-auto border-r px-6 gap-5 border-muted bg-panel-1">
       <div className="h-16 shrink-0 text-heading-color font-heading flex flex-col justify-center">
         <div className="flex items-baseline justify-between">
           <div className="font-bold text-lg">Grimwild</div>

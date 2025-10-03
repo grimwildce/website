@@ -1,6 +1,7 @@
 import ChallengeSuspense from "@/components/ChallengeSuspense";
 import ReferenceList, { type ReferenceItem } from "@/components/ReferenceList";
 import Line from "@/components/ui/Line";
+import SmallCaps from "@/components/ui/SmallCaps";
 import Strong from "@/components/ui/Strong";
 import { getDepth, type DepthValue } from "@/utils/depth";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
@@ -57,8 +58,10 @@ const Challenge = ({
 
   return (
     <div className={containerCss}>
-      <div className="bg-solid text-solid-color font-text-sc font-bold px-4 py-1 rounded-t-sm">
-        {poolSize}d | {title}
+      <div className="bg-solid text-solid-color font-bold px-4 py-1 rounded-t-sm">
+        <SmallCaps>
+          {poolSize}d | {title}
+        </SmallCaps>
       </div>
       {hasPanels && <ReferenceList className={referencesCss} references={references} />}
       <div className="absolute top-5 right-1">

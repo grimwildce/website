@@ -1,5 +1,6 @@
-.text-muted-color :is(b, strong) {
-  @apply text-base-color font-semibold;
+.small-caps {
+  font-size: 0.875em;
+  text-transform: uppercase;
 }
 
 table.columns > :is(tbody, thead) > tr > :is(th, td):not(:first-child) {

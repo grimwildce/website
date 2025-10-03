@@ -42,7 +42,7 @@ const Item = ({ item, onSelect }: ItemProps) => {
         <Disclosure as="div" defaultOpen={isOpen}>
           <DisclosureButton
             className={classNames(
-              "group flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-base-color hover:bg-sidebar-active hover:cursor-pointer"
+              "group flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-base-color hover:bg-panel-2 hover:cursor-pointer"
             )}
           >
             <FontAwesomeIcon
@@ -57,8 +57,8 @@ const Item = ({ item, onSelect }: ItemProps) => {
               <li
                 key={subItem.name}
                 className={classNames("first:rounded-t-md last:rounded-b-md", {
-                  "bg-sidebar-active": isActive(subItem),
-                  "hover:bg-sidebar-active": !isActive(subItem)
+                  "bg-panel-2": isActive(subItem),
+                  "hover:bg-panel-2": !isActive(subItem)
                 })}
               >
                 <Link
@@ -78,8 +78,8 @@ const Item = ({ item, onSelect }: ItemProps) => {
           className={classNames(
             "block rounded-sm py-2 pr-2 pl-10 text-sm/6 font-semibold text-base-color",
             {
-              "bg-sidebar-active": isActive(item),
-              "hover:bg-sidebar-active": !isActive(item)
+              "bg-panel-2": isActive(item),
+              "hover:bg-panel-2": !isActive(item)
             }
           )}
           onClick={onSelect}

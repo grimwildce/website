@@ -1,5 +1,5 @@
 @layer base {
   :is(b, strong) {
-    @apply text-strong-color font-bold;
+    @apply font-bold;
   }
 }
