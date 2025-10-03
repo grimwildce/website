@@ -39,17 +39,12 @@ const Challenge = ({
   const hasMoves = moves.length > 0;
   const hasPanels = references.length > 0;
 
-  const containerCss = classNames(
-    "relative text-sm",
-    getTextSize(textSize),
-    getMarginSize(margin),
-    {
-      "w-full": width === "full",
-      "w-xs": width === "large",
-      "w-64": width === "medium",
-      "w-56": width === "small"
-    }
-  );
+  const containerCss = classNames("text-sm", getTextSize(textSize), getMarginSize(margin), {
+    "w-full": width === "full",
+    "w-xs": width === "large",
+    "w-64": width === "medium",
+    "w-56": width === "small"
+  });
   const referencesCss = classNames(
     "bg-panel-3 px-4 py-1 italic text-sm space-y-1",
     getDepth(depth + 1)
@@ -58,15 +53,16 @@ const Challenge = ({
 
   return (
     <div className={containerCss}>
-      <div className="bg-solid text-solid-color font-bold px-4 py-1 rounded-t-sm">
+      <div className="relative bg-solid text-solid-color font-bold px-4 py-1 rounded-t-sm">
         <SmallCaps>
           {poolSize}d | {title}
         </SmallCaps>
+        <div className="absolute -bottom-3 right-1">
+          <ChallengeSuspense />
+        </div>
       </div>
       {hasPanels && <ReferenceList className={referencesCss} references={references} />}
-      <div className="absolute top-5 right-1">
-        <ChallengeSuspense />
-      </div>
+
       <div className={contentCss}>
         {hasTraits && (
           <ul className="space-y-1">

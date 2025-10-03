@@ -740,7 +740,7 @@ const Chapter03 = () => {
         rowBorders
       >
         <Panel.Row>
-          <Table textSize="small" margin="none" fullWidth>
+          <Table padding="tight" textSize="small" margin="none" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -750,58 +750,58 @@ const Chapter03 = () => {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell padding="tight">Vagrants</Table.Cell>
-                <Table.Cell padding="tight">Riders</Table.Cell>
-                <Table.Cell padding="tight">Gnomes</Table.Cell>
-                <Table.Cell padding="tight">Dwarves</Table.Cell>
-                <Table.Cell padding="tight">Nomads</Table.Cell>
-                <Table.Cell padding="tight">Elves</Table.Cell>
+                <Table.Cell>Vagrants</Table.Cell>
+                <Table.Cell>Riders</Table.Cell>
+                <Table.Cell>Gnomes</Table.Cell>
+                <Table.Cell>Dwarves</Table.Cell>
+                <Table.Cell>Nomads</Table.Cell>
+                <Table.Cell>Elves</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Birdfolk</Table.Cell>
-                <Table.Cell padding="tight">Clans</Table.Cell>
-                <Table.Cell padding="tight">Pilgrims</Table.Cell>
-                <Table.Cell padding="tight">Tieflings</Table.Cell>
-                <Table.Cell padding="tight">Cityfolk</Table.Cell>
-                <Table.Cell padding="tight">Orcs</Table.Cell>
+                <Table.Cell>Birdfolk</Table.Cell>
+                <Table.Cell>Clans</Table.Cell>
+                <Table.Cell>Pilgrims</Table.Cell>
+                <Table.Cell>Tieflings</Table.Cell>
+                <Table.Cell>Cityfolk</Table.Cell>
+                <Table.Cell>Orcs</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Wayfarers</Table.Cell>
-                <Table.Cell padding="tight">Seafarers</Table.Cell>
-                <Table.Cell padding="tight">Turtlefolk</Table.Cell>
-                <Table.Cell padding="tight">Goliaths</Table.Cell>
-                <Table.Cell padding="tight">Humans</Table.Cell>
-                <Table.Cell padding="tight">Forestfolk</Table.Cell>
+                <Table.Cell>Wayfarers</Table.Cell>
+                <Table.Cell>Seafarers</Table.Cell>
+                <Table.Cell>Turtlefolk</Table.Cell>
+                <Table.Cell>Goliaths</Table.Cell>
+                <Table.Cell>Humans</Table.Cell>
+                <Table.Cell>Forestfolk</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Goblins</Table.Cell>
-                <Table.Cell padding="tight">Tribes</Table.Cell>
-                <Table.Cell padding="tight">Citizens</Table.Cell>
-                <Table.Cell padding="tight">Dragonborn</Table.Cell>
-                <Table.Cell padding="tight">Halflings</Table.Cell>
-                <Table.Cell padding="tight">Cavefolk</Table.Cell>
+                <Table.Cell>Goblins</Table.Cell>
+                <Table.Cell>Tribes</Table.Cell>
+                <Table.Cell>Citizens</Table.Cell>
+                <Table.Cell>Dragonborn</Table.Cell>
+                <Table.Cell>Halflings</Table.Cell>
+                <Table.Cell>Cavefolk</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Islanders</Table.Cell>
-                <Table.Cell padding="tight">Keepers</Table.Cell>
-                <Table.Cell padding="tight">Marauders</Table.Cell>
-                <Table.Cell padding="tight">Tradesfolk</Table.Cell>
-                <Table.Cell padding="tight">Merchants</Table.Cell>
-                <Table.Cell padding="tight">Raiders</Table.Cell>
+                <Table.Cell>Islanders</Table.Cell>
+                <Table.Cell>Keepers</Table.Cell>
+                <Table.Cell>Marauders</Table.Cell>
+                <Table.Cell>Tradesfolk</Table.Cell>
+                <Table.Cell>Merchants</Table.Cell>
+                <Table.Cell>Raiders</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Fisherfolk</Table.Cell>
-                <Table.Cell padding="tight">Settlers</Table.Cell>
-                <Table.Cell padding="tight">Carvers</Table.Cell>
-                <Table.Cell padding="tight">Valleyfolk</Table.Cell>
-                <Table.Cell padding="tight">Skywatchers</Table.Cell>
-                <Table.Cell padding="tight">Outcasts</Table.Cell>
+                <Table.Cell>Fisherfolk</Table.Cell>
+                <Table.Cell>Settlers</Table.Cell>
+                <Table.Cell>Carvers</Table.Cell>
+                <Table.Cell>Valleyfolk</Table.Cell>
+                <Table.Cell>Skywatchers</Table.Cell>
+                <Table.Cell>Outcasts</Table.Cell>
               </Table.Row>
             </Table.Body>
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table textSize="small" margin="none" fullWidth>
+          <Table padding="tight" textSize="small" margin="none" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -811,58 +811,58 @@ const Chapter03 = () => {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell padding="tight">Twisted</Table.Cell>
-                <Table.Cell padding="tight">Lush</Table.Cell>
-                <Table.Cell padding="tight">Scorched</Table.Cell>
-                <Table.Cell padding="tight">Rolling</Table.Cell>
-                <Table.Cell padding="tight">Abyssal</Table.Cell>
-                <Table.Cell padding="tight">Feral</Table.Cell>
+                <Table.Cell>Twisted</Table.Cell>
+                <Table.Cell>Lush</Table.Cell>
+                <Table.Cell>Scorched</Table.Cell>
+                <Table.Cell>Rolling</Table.Cell>
+                <Table.Cell>Abyssal</Table.Cell>
+                <Table.Cell>Feral</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Steel</Table.Cell>
-                <Table.Cell padding="tight">Floating</Table.Cell>
-                <Table.Cell padding="tight">Echoing</Table.Cell>
-                <Table.Cell padding="tight">Bountiful</Table.Cell>
-                <Table.Cell padding="tight">Desolate</Table.Cell>
-                <Table.Cell padding="tight">Serene</Table.Cell>
+                <Table.Cell>Steel</Table.Cell>
+                <Table.Cell>Floating</Table.Cell>
+                <Table.Cell>Echoing</Table.Cell>
+                <Table.Cell>Bountiful</Table.Cell>
+                <Table.Cell>Desolate</Table.Cell>
+                <Table.Cell>Serene</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Verdant</Table.Cell>
-                <Table.Cell padding="tight">Crimson</Table.Cell>
-                <Table.Cell padding="tight">Misty</Table.Cell>
-                <Table.Cell padding="tight">Great</Table.Cell>
-                <Table.Cell padding="tight">Rocky</Table.Cell>
-                <Table.Cell padding="tight">Whispering</Table.Cell>
+                <Table.Cell>Verdant</Table.Cell>
+                <Table.Cell>Crimson</Table.Cell>
+                <Table.Cell>Misty</Table.Cell>
+                <Table.Cell>Great</Table.Cell>
+                <Table.Cell>Rocky</Table.Cell>
+                <Table.Cell>Whispering</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Golden</Table.Cell>
-                <Table.Cell padding="tight">Shattered</Table.Cell>
-                <Table.Cell padding="tight">Glimmering</Table.Cell>
-                <Table.Cell padding="tight">Sunken</Table.Cell>
-                <Table.Cell padding="tight">Windswept</Table.Cell>
-                <Table.Cell padding="tight">Grim</Table.Cell>
+                <Table.Cell>Golden</Table.Cell>
+                <Table.Cell>Shattered</Table.Cell>
+                <Table.Cell>Glimmering</Table.Cell>
+                <Table.Cell>Sunken</Table.Cell>
+                <Table.Cell>Windswept</Table.Cell>
+                <Table.Cell>Grim</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Emerald</Table.Cell>
-                <Table.Cell padding="tight">Haunted</Table.Cell>
-                <Table.Cell padding="tight">Distant</Table.Cell>
-                <Table.Cell padding="tight">Coastal</Table.Cell>
-                <Table.Cell padding="tight">Howling</Table.Cell>
-                <Table.Cell padding="tight">Prosperous</Table.Cell>
+                <Table.Cell>Emerald</Table.Cell>
+                <Table.Cell>Haunted</Table.Cell>
+                <Table.Cell>Distant</Table.Cell>
+                <Table.Cell>Coastal</Table.Cell>
+                <Table.Cell>Howling</Table.Cell>
+                <Table.Cell>Prosperous</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Burning</Table.Cell>
-                <Table.Cell padding="tight">Enchanted</Table.Cell>
-                <Table.Cell padding="tight">Silent</Table.Cell>
-                <Table.Cell padding="tight">Gloomy</Table.Cell>
-                <Table.Cell padding="tight">Eternal</Table.Cell>
-                <Table.Cell padding="tight">Restless</Table.Cell>
+                <Table.Cell>Burning</Table.Cell>
+                <Table.Cell>Enchanted</Table.Cell>
+                <Table.Cell>Silent</Table.Cell>
+                <Table.Cell>Gloomy</Table.Cell>
+                <Table.Cell>Eternal</Table.Cell>
+                <Table.Cell>Restless</Table.Cell>
               </Table.Row>
             </Table.Body>
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table textSize="small" margin="none" fullWidth>
+          <Table padding="tight" textSize="small" margin="none" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -872,52 +872,52 @@ const Chapter03 = () => {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell padding="tight">Peaks</Table.Cell>
-                <Table.Cell padding="tight">Kingdom</Table.Cell>
-                <Table.Cell padding="tight">Desert</Table.Cell>
-                <Table.Cell padding="tight">Plains</Table.Cell>
-                <Table.Cell padding="tight">Sea</Table.Cell>
-                <Table.Cell padding="tight">Glaciers</Table.Cell>
+                <Table.Cell>Peaks</Table.Cell>
+                <Table.Cell>Kingdom</Table.Cell>
+                <Table.Cell>Desert</Table.Cell>
+                <Table.Cell>Plains</Table.Cell>
+                <Table.Cell>Sea</Table.Cell>
+                <Table.Cell>Glaciers</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Confederacy</Table.Cell>
-                <Table.Cell padding="tight">Wilds</Table.Cell>
-                <Table.Cell padding="tight">Canyons</Table.Cell>
-                <Table.Cell padding="tight">North</Table.Cell>
-                <Table.Cell padding="tight">Meadows</Table.Cell>
-                <Table.Cell padding="tight">Sands</Table.Cell>
+                <Table.Cell>Confederacy</Table.Cell>
+                <Table.Cell>Wilds</Table.Cell>
+                <Table.Cell>Canyons</Table.Cell>
+                <Table.Cell>North</Table.Cell>
+                <Table.Cell>Meadows</Table.Cell>
+                <Table.Cell>Sands</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Fjords</Table.Cell>
-                <Table.Cell padding="tight">Marsh</Table.Cell>
-                <Table.Cell padding="tight">Highlands</Table.Cell>
-                <Table.Cell padding="tight">Moors</Table.Cell>
-                <Table.Cell padding="tight">Outposts</Table.Cell>
-                <Table.Cell padding="tight">Wastelands</Table.Cell>
+                <Table.Cell>Fjords</Table.Cell>
+                <Table.Cell>Marsh</Table.Cell>
+                <Table.Cell>Highlands</Table.Cell>
+                <Table.Cell>Moors</Table.Cell>
+                <Table.Cell>Outposts</Table.Cell>
+                <Table.Cell>Wastelands</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Coast</Table.Cell>
-                <Table.Cell padding="tight">Isles</Table.Cell>
-                <Table.Cell padding="tight">Caverns</Table.Cell>
-                <Table.Cell padding="tight">Ruins</Table.Cell>
-                <Table.Cell padding="tight">Cliffs</Table.Cell>
-                <Table.Cell padding="tight">Coalition</Table.Cell>
+                <Table.Cell>Coast</Table.Cell>
+                <Table.Cell>Isles</Table.Cell>
+                <Table.Cell>Caverns</Table.Cell>
+                <Table.Cell>Ruins</Table.Cell>
+                <Table.Cell>Cliffs</Table.Cell>
+                <Table.Cell>Coalition</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Badlands</Table.Cell>
-                <Table.Cell padding="tight">Thickets</Table.Cell>
-                <Table.Cell padding="tight">Fenlands</Table.Cell>
-                <Table.Cell padding="tight">Hollows</Table.Cell>
-                <Table.Cell padding="tight">Boomtown</Table.Cell>
-                <Table.Cell padding="tight">Blightlands</Table.Cell>
+                <Table.Cell>Badlands</Table.Cell>
+                <Table.Cell>Thickets</Table.Cell>
+                <Table.Cell>Fenlands</Table.Cell>
+                <Table.Cell>Hollows</Table.Cell>
+                <Table.Cell>Boomtown</Table.Cell>
+                <Table.Cell>Blightlands</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell padding="tight">Boglands</Table.Cell>
-                <Table.Cell padding="tight">Jungletown</Table.Cell>
-                <Table.Cell padding="tight">Borderlands</Table.Cell>
-                <Table.Cell padding="tight">Underworld</Table.Cell>
-                <Table.Cell padding="tight">Riverlands</Table.Cell>
-                <Table.Cell padding="tight">Groves</Table.Cell>
+                <Table.Cell>Boglands</Table.Cell>
+                <Table.Cell>Jungletown</Table.Cell>
+                <Table.Cell>Borderlands</Table.Cell>
+                <Table.Cell>Underworld</Table.Cell>
+                <Table.Cell>Riverlands</Table.Cell>
+                <Table.Cell>Groves</Table.Cell>
               </Table.Row>
             </Table.Body>
           </Table>
@@ -1079,122 +1079,122 @@ const Chapter03 = () => {
       >
         <Stack direction="row" spacing="large" wrap>
           <Stack.Item flex={1} flexShrink="none">
-            <Table margin="none" textSize="small" variant="simple" fullWidth>
+            <Table align="center" margin="none" textSize="small" variant="simple" fullWidth>
               <Table.Head>
                 <Table.Row>
-                  <Table.HeaderCell align="center">STYLE</Table.HeaderCell>
-                  <Table.HeaderCell align="center">TUNE</Table.HeaderCell>
-                  <Table.HeaderCell align="center">IMPACT</Table.HeaderCell>
+                  <Table.HeaderCell>STYLE</Table.HeaderCell>
+                  <Table.HeaderCell>TUNE</Table.HeaderCell>
+                  <Table.HeaderCell>IMPACT</Table.HeaderCell>
                 </Table.Row>
               </Table.Head>
               <Table.Body>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>chaotic</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>anthem</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>affection</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>dire</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>aria</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>awe</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>fiery</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>ballad</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>calm</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>gentle</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>chant</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>despair</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>haunting</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>ditty</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>fear</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>playful</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>hymn</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>fury</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>nostalgic</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>ode</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>hope</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>rousing</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>requiem</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>joy</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>vicious</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>rhapsody</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>mockery</Em>
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>whimsical</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>serenade</Em>
                   </Table.Cell>
-                  <Table.Cell align="center">
+                  <Table.Cell>
                     <Em>wonder</Em>
                   </Table.Cell>
                 </Table.Row>
