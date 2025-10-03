@@ -50,20 +50,20 @@ const Chapter02 = () => {
         <Em>Are you rolling for the fish or the fisherman?</Em>
       </Text>
       <Panel border>
-        <Table margin="small" variant="columns" fullWidth>
+        <Table align="center" margin="small" variant="columns" fullWidth>
           <Table.Body>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>
                   <Strong>1d Bad Odds</Strong>
                 </Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>
                   <Strong>2d Even Odds</Strong>
                 </Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>
                   <Strong>3d Good Odds</Strong>
                 </Em>
@@ -85,8 +85,7 @@ const Chapter02 = () => {
           </List.Item>
         </List>
       </Panel>
-      <Line />
-      <Table variant="crucible" fullWidth>
+      <Table textSize="small" variant="crucible" fullWidth>
         <Table.Head>
           <Table.Row>
             <Table.HeaderCell colSpan={6}>
@@ -196,8 +195,8 @@ const Chapter02 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Grid>
-        <Panel>
+      <Grid margin="large">
+        <Panel margin="none">
           <Text>
             <Em>
               <Strong>What's inside the temple?</Strong>
@@ -208,7 +207,7 @@ const Chapter02 = () => {
             Interpret: <Em>Forgotten artifact</Em>
           </Text>
         </Panel>
-        <Panel>
+        <Panel margin="none">
           <Text>
             <Em>
               <Strong>Why is the village so quiet?</Strong>
@@ -219,7 +218,7 @@ const Chapter02 = () => {
             Interpret: Plotting rebellion
           </Text>
         </Panel>
-        <Panel>
+        <Panel margin="none">
           <Text>
             <Em>
               <Strong>What caused the havoc?</Strong>
@@ -1930,10 +1929,9 @@ const Chapter02 = () => {
       <Text>
         At the edge of catastrophe, the fighter tries to right the course. They spend spark and the
         rogue and wizard jump in to assist. Before they roll, you make another move—
-        <Move>Violent Winds</Move>
-        puts a second thorn onto the roll, and you declare dire stakes at this pivotal moment. If
-        this fails, the pools are rolled and one or more of the PCs is going overboard into
-        shark-infested waters. Everyone grabs their dice.
+        <Move>Violent Winds</Move> puts a second thorn onto the roll, and you declare dire stakes at
+        this pivotal moment. If this fails, the pools are rolled and one or more of the PCs is going
+        overboard into shark-infested waters. Everyone grabs their dice.
       </Text>
       <Panel>
         <Text size="small" muted>

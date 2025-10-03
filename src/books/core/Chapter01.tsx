@@ -872,55 +872,31 @@ const Chapter01 = () => {
         ) and a nature (<Em>right</Em>) below, or write your own. Interpret them as makes sense.
       </Text>
       <Panel border>
-        <Table margin="small" variant="columns" fullWidth>
+        <Table align="center" margin="small" variant="columns" fullWidth allCaps>
           <Table.Body>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Deep
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Affection
-              </Table.Cell>
+              <Table.Cell>Deep</Table.Cell>
+              <Table.Cell>Affection</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Complex
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Camaraderie
-              </Table.Cell>
+              <Table.Cell>Complex</Table.Cell>
+              <Table.Cell>Camaraderie</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Growing
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Curiosity
-              </Table.Cell>
+              <Table.Cell>Growing</Table.Cell>
+              <Table.Cell>Curiosity</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Lowkey
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Doubts
-              </Table.Cell>
+              <Table.Cell>Lowkey</Table.Cell>
+              <Table.Cell>Doubts</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Playful
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Respect
-              </Table.Cell>
+              <Table.Cell>Playful</Table.Cell>
+              <Table.Cell>Respect</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center" allCaps>
-                Tense
-              </Table.Cell>
-              <Table.Cell align="center" allCaps>
-                Rivalry
-              </Table.Cell>
+              <Table.Cell>Tense</Table.Cell>
+              <Table.Cell>Rivalry</Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
@@ -1047,84 +1023,78 @@ const Chapter01 = () => {
         </Muted>
       </Text>
       <Panel border>
-        <Table margin="small" variant="columns" fullWidth>
+        <Table align="center" margin="small" variant="columns" fullWidth>
           <Table.Head>
             <Table.Row>
-              <Table.HeaderCell align="center" smallCaps>
-                Ambitions
-              </Table.HeaderCell>
-              <Table.HeaderCell align="center" smallCaps>
-                Struggles
-              </Table.HeaderCell>
-              <Table.HeaderCell align="center" smallCaps>
-                Growth
-              </Table.HeaderCell>
+              <Table.HeaderCell smallCaps>Ambitions</Table.HeaderCell>
+              <Table.HeaderCell smallCaps>Struggles</Table.HeaderCell>
+              <Table.HeaderCell smallCaps>Growth</Table.HeaderCell>
             </Table.Row>
           </Table.Head>
           <Table.Body>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Build a Reputation</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Come Unraveled</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Embrace Change</Em>
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Explore the World</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Doubt Convictions</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Escape My Past</Em>
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Finish the Mission</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Feed My Vices</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Find Belonging</Em>
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Make Things Right</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Flirt with Betrayal</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Just Enjoy Life</Em>
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Satisfy Desires</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Keep a Secret</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Prove Myself</Em>
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Uncover the Truth</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Survive the Storm</Em>
               </Table.Cell>
-              <Table.Cell align="center">
+              <Table.Cell>
                 <Em>Settle Debts</Em>
               </Table.Cell>
             </Table.Row>
@@ -2008,7 +1978,7 @@ const Chapter01 = () => {
         </Em>
         , like those below, are best.
       </Text>
-      <Table variant="solid" fullWidth>
+      <Table align="center" variant="solid" fullWidth>
         <Table.Head>
           <Table.Row>
             <Table.HeaderCell colSpan={2} align="center" allCaps>
@@ -2018,55 +1988,55 @@ const Chapter01 = () => {
         </Table.Head>
         <Table.Body>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Ancient Knowledge</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Harness Energy</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Artifact or Relic</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Item of Great Import</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Auspicious Timing</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Sacred Dance</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Circle of Casters</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Sacrificial Offering</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Divine Guidance</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Sanctified Ground</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Enchanted Location</Em>
             </Table.Cell>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Specific Helper</Em>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell align="center">
+            <Table.Cell>
               <Em>Exotic Ingredients</Em>
             </Table.Cell>
             <Table.Cell></Table.Cell>

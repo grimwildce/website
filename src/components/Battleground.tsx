@@ -75,24 +75,24 @@ const Battleground = ({ title, features, threats, enemies, margin }: Battlegroun
       <div className="bg-panel-1 rounded-b">
         {(hasFeatures || hasThreats) && (
           <div className="p-2">
-            <Table variant="blank" margin="none">
+            <Table padding="tight" variant="blank" margin="none">
               <Table.Body>
                 {hasFeatures && (
                   <Table.Row>
-                    <Table.HeaderCell padding="tight" verticalAlign="top" smallCaps>
+                    <Table.HeaderCell verticalAlign="top" smallCaps>
                       Features
                     </Table.HeaderCell>
-                    <Table.Cell padding="tight">
+                    <Table.Cell>
                       <em>{features.join(", ")}</em>
                     </Table.Cell>
                   </Table.Row>
                 )}
                 {hasThreats && (
                   <Table.Row>
-                    <Table.HeaderCell padding="tight" verticalAlign="top" smallCaps>
+                    <Table.HeaderCell verticalAlign="top" smallCaps>
                       Threats
                     </Table.HeaderCell>
-                    <Table.Cell padding="tight">
+                    <Table.Cell>
                       {threats.map((threat) => (
                         <Threat threat={threat} key={threat.name} />
                       ))}

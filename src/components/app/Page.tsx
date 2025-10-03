@@ -29,19 +29,14 @@ const Page = ({ title, pretitle, children }: PageProps) => {
 
   return (
     <>
-      <div className="h-24 sticky top-16 left-0 w-full z-30 lg:top-0">
-        <div className="flex flex-col">
-          <div className="flex flex-col justify-center bg-panel-2 h-20 shadow">
-            <PageContainer>
-              {hasPretitle && hasTitle && (
-                <Heading level={1} pretitle={pretitle} margin="none" noBorder>
-                  {title}
-                </Heading>
-              )}
-            </PageContainer>
-          </div>
-          <div className="h-4 bg-topbar-transition"></div>
-        </div>
+      <div className="flex flex-col justify-center bg-panel-2 h-20 shadow sticky top-16 left-0 w-full z-30 lg:top-0">
+        <PageContainer>
+          {hasPretitle && hasTitle && (
+            <Heading level={1} pretitle={pretitle} margin="none" noBorder>
+              {title}
+            </Heading>
+          )}
+        </PageContainer>
       </div>
       <PageContainer>{children}</PageContainer>
     </>
