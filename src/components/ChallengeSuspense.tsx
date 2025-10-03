@@ -19,10 +19,10 @@ const ChallengeSuspense = ({ size = "medium" }: ChallengeSuspenseProps) => {
   );
 
   return (
-    <div className="inline space-x-0.25">
+    <span className="space-x-0.25">
       <input id={id1} type="checkbox" className={inputCss} />
       <input id={id2} type="checkbox" className={inputCss} />
-    </div>
+    </span>
   );
 };
 
