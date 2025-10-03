@@ -1,3 +1,4 @@
+import SmallCaps from "@/components/ui/SmallCaps";
 import { type ReactNode } from "react";
 
 type MoveProps = {
@@ -5,7 +6,11 @@ type MoveProps = {
 };
 
 const Move = ({ children }: MoveProps) => {
-  return <span className="font-light font-text-sc">{children}</span>;
+  return (
+    <span className="font-light">
+      <SmallCaps>{children}</SmallCaps>
+    </span>
+  );
 };
 
 export default Move;

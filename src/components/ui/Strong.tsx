@@ -1,3 +1,4 @@
+import SmallCaps from "@/components/ui/SmallCaps";
 import { type MutuallyExclusiveBooleanProps } from "@/utils/customTypes";
 import classNames from "classnames";
 import { type ReactNode } from "react";
@@ -8,11 +9,14 @@ type StrongProps = {
 
 const Strong = ({ allCaps, smallCaps, children }: StrongProps) => {
   const strongCss = classNames({
-    uppercase: allCaps,
-    "font-text-sc": smallCaps
+    uppercase: allCaps
   });
 
-  return <strong className={strongCss}>{children}</strong>;
+  return (
+    <strong className={strongCss}>
+      {smallCaps ? <SmallCaps>{children}</SmallCaps> : children}
+    </strong>
+  );
 };
 
 export default Strong;

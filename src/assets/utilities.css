@@ -1,5 +1,5 @@
 @utility bg-page {
-  @apply bg-slate-50 dark:bg-slate-950;
+  @apply bg-slate-50 dark:bg-slate-900;
 }
 
 @utility bg-topbar-transition {
@@ -20,14 +20,6 @@
 
 @utility bg-panel-row-alt {
   @apply bg-slate-500/10;
-}
-
-@utility bg-sidebar {
-  @apply bg-slate-100 dark:bg-slate-900;
-}
-
-@utility bg-sidebar-active {
-  @apply bg-slate-300/50 dark:bg-slate-700/40;
 }
 
 @utility bg-solid {
@@ -58,10 +50,6 @@
   @apply border-slate-300 dark:border-slate-700;
 }
 
-@utility border-sidebar {
-  @apply border-slate-200/60 dark:border-slate-800/50;
-}
-
 @utility text-solid-color {
   @apply text-gray-100 dark:text-gray-950;
 }
@@ -70,14 +58,10 @@
   @apply text-gray-950 dark:text-gray-100;
 }
 
-@utility text-strong-color {
+@utility text-base-color {
   @apply text-gray-900 dark:text-gray-200;
 }
 
-@utility text-base-color {
-  @apply text-gray-800 dark:text-gray-300;
-}
-
 @utility text-muted-color {
-  @apply text-gray-500 dark:text-gray-400;
+  @apply text-gray-600 dark:text-gray-400;
 }

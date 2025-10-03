@@ -1,6 +1,7 @@
 import ChallengeSuspense from "@/components/ChallengeSuspense";
 import Line from "@/components/ui/Line";
 import Muted from "@/components/ui/Muted";
+import SmallCaps from "@/components/ui/SmallCaps";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 import CrossedSwords from "@/svgs/rpg_awesome/CrossedSwords";
@@ -66,7 +67,9 @@ const Battleground = ({ title, features, threats, enemies, margin }: Battlegroun
   return (
     <div className={containerCss}>
       <div className="flex justify-between w-full items-center bg-solid text-solid-color rounded-t px-4 py-1 font-bold">
-        <div className="font-text-sc">{title}</div>
+        <div>
+          <SmallCaps>{title}</SmallCaps>
+        </div>
         <CrossedSwords />
       </div>
       <div className="bg-panel-1 rounded-b">

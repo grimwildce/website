@@ -1,6 +1,7 @@
 import ReferenceList, { type ReferenceItem } from "@/components/ReferenceList";
 import Line from "@/components/ui/Line";
 import Muted from "@/components/ui/Muted";
+import SmallCaps from "@/components/ui/SmallCaps";
 import Text from "@/components/ui/Text";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
@@ -56,8 +57,8 @@ const CampaignPool = ({ name, traits, pools, references, margin }: CampaignPoolP
 
   return (
     <div className={containerCss}>
-      <div className="bg-solid text-solid-color rounded-t-sm px-4 py-1 font-bold font-text-sc">
-        {name}
+      <div className="bg-solid text-solid-color rounded-t-sm px-4 py-1 font-bold">
+        <SmallCaps>{name}</SmallCaps>
       </div>
       {hasReferences && (
         <ReferenceList

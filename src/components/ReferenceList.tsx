@@ -1,3 +1,4 @@
+import SmallCaps from "@/components/ui/SmallCaps";
 import { faLink, faLock, type IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -21,9 +22,9 @@ const ReferenceList = ({ className, references }: ReferenceListProps) => {
   return (
     <ul className={className}>
       {references.map((ref, index) => (
-        <li key={index} className="font-text-sc">
+        <li key={index}>
           <FontAwesomeIcon icon={referenceIcon[ref.type]} className="mr-1" />
-          {ref.target}
+          <SmallCaps>{ref.target}</SmallCaps>
         </li>
       ))}
     </ul>

@@ -1,3 +1,4 @@
+import SmallCaps from "@/components/ui/SmallCaps";
 import { type MutuallyExclusiveBooleanProps } from "@/utils/customTypes";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getTextAlign, type TextAlign } from "@/utils/textAlign";
@@ -91,13 +92,12 @@ const TableCell = ({
     getTextAlign(align),
     getVerticalAlign(verticalAlign),
     {
-      uppercase: allCaps,
-      "font-text-sc": smallCaps
+      uppercase: allCaps
     }
   );
   return (
     <td className={cellCss} colSpan={colSpan}>
-      {children}
+      {smallCaps ? <SmallCaps>{children}</SmallCaps> : children}
     </td>
   );
 };
@@ -120,18 +120,17 @@ const TableHeaderCell = ({
   smallCaps
 }: TableHeaderCellProps) => {
   const cellCss = classNames(
-    "font-bold text-strong-color",
+    "font-bold",
     getCellPaddingSize(padding),
     getTextAlign(align),
     getVerticalAlign(verticalAlign),
     {
-      uppercase: allCaps,
-      "font-text-sc": smallCaps
+      uppercase: allCaps
     }
   );
   return (
     <th className={cellCss} colSpan={colSpan}>
-      {children}
+      {smallCaps ? <SmallCaps>{children}</SmallCaps> : children}
     </th>
   );
 };
