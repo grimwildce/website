@@ -5,7 +5,7 @@ import { getTextSize, type TextSize } from "@/utils/textSize";
 import classNames from "classnames";
 import type { ReactNode } from "react";
 
-type TextProps = {
+export type TextProps = {
   children?: ReactNode;
   align?: TextAlign;
   margin?: MarginSize;
