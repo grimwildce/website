@@ -58,7 +58,8 @@ const Panel = ({
     "rounded-b-sm": !border,
     "[&>.panel-row:nth-child(even)]:bg-panel-row-alt": hasPanelRows,
     "[&>.panel-row:last-child]:rounded-b-sm": hasPanelRows && !border,
-    "[&>.panel-row:not(:last-child)]:border-b border-muted": hasPanelRows && rowBorders
+    "[&>.panel-row:not(:last-child)]:border-b [&>.panel-row:not(:last-child)]:border-muted":
+      hasPanelRows && rowBorders
   });
 
   return (

@@ -2,6 +2,7 @@ import Page from "@/components/app/Page";
 import CoreTalent from "@/components/CoreTalent";
 import PathCard from "@/components/PathCard";
 import StepList from "@/components/StepList";
+import Talent from "@/components/Talent";
 import Em from "@/components/ui/Em";
 import Grid from "@/components/ui/Grid";
 import Heading from "@/components/ui/Heading";
@@ -13,6 +14,7 @@ import Panel from "@/components/ui/Panel";
 import Stack from "@/components/ui/Stack";
 import Strong from "@/components/ui/Strong";
 import Table from "@/components/ui/Table";
+import Tag from "@/components/ui/Tag";
 import Text from "@/components/ui/Text";
 import BatteredAxe from "@/svgs/game_icons/BatteredAxe";
 import Cowled from "@/svgs/game_icons/Cowled";
@@ -1276,47 +1278,68 @@ const Chapter03 = () => {
         </List.Item>
       </List>
       <Heading level={3}>Bard Talents</Heading>
-      <Text>BARDIC LORE</Text>
-      <Text>
-        You gain any 3 wises and 1 extra story per session. You take +1d on any story rolls
-        pertaining to what you know or story details you add.
-      </Text>
-      <Text>DYNAMIC ENTRANCE</Text>
-      <Text>
-        You can always appear in a scene anywhere and anytime, limited only by your physical
-        capabilities. Make a 3d story roll to Set the Scene for your entrance.
-      </Text>
-      <Text>FORKED TONGUE</Text>
-      <Text>
-        When given time, you can tell potent lies like telling the king you're their bastard or a
-        prophecy foretelling the fall of the capital. You can push yourself to do it on the spot.
-      </Text>
-      <Text>FRIENDLY FACE</Text>
-      <Text>
-        In any new town or district of a city you go to, you can always: get recognized by a
-        fan—know someone useful—quickly make a friend. They'll gladly do you a reasonable favor.
-        Take spark if you promise to pay them back.
-      </Text>
-      <Text>INFLUENCE</Text>
-      <Text>
-        Twice per session, you can invoke an ally's bond with you to increase their die roll result
-        by 1 (3→4). You don't have to be in the same scene—they might recall a memory.
-      </Text>
-      <Text>JACK OF ALL TRADES</Text>
-      <Text>Increase one of your stats that's a 1 to a 2. You also take +1d on montage rolls.</Text>
-      <blockquote>
-        <Text>WORDPLAY</Text>
-        <Text>
+      <Talent name="Bardic Lore">
+        <Talent.Text>
+          You gain any 3 wises and 1 extra story per session. You take +1d on any story rolls
+          pertaining to what you know or story details you add.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Dynamic Entrance">
+        <Talent.Text>
+          You can always appear in a scene anywhere and anytime, limited only by your physical
+          capabilities. Make a 3d story roll to <Move>Set the Scene</Move> for your entrance.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Forked Tongue">
+        <Talent.Text>
+          When given time, you can tell{" "}
+          <Strong>
+            <Em>potent lies</Em>
+          </Strong>{" "}
+          like <Em>telling the king you're their bastard</Em> or{" "}
+          <Em>a prophecy foretelling the fall of the capital</Em>. You can{" "}
+          <Strong>push yourself</Strong> to do it on the spot.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Friendly Face">
+        <Talent.Text>
+          In any new town or district of a city you go to, you can always:{" "}
+          <Em>get recognized by a fan</Em>—<Em>know someone useful</Em>—
+          <Em>quickly make a friend</Em>. They'll gladly do you a reasonable favor.{" "}
+          <Strong>Take spark</Strong> if you promise to pay them back.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Influence">
+        <Talent.Text>
+          Twice per session, you can{" "}
+          <Strong>
+            <Em>invoke an ally's bond with you</Em>
+          </Strong>{" "}
+          to increase their die roll result by 1 <Muted>(3→4)</Muted>. You don't have to be in the
+          same scene—they might recall a memory.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Jack of All Trades">
+        <Talent.Text>
+          Increase one of your stats that's a 1 to a 2. You also take +1d on montage rolls.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Wordplay">
+        <Talent.Text>
           On a perfect defense roll when the situation allows for verbal quips, you make them:
-          embarrass themself—let a secret slip—focus on or lose track of you. Once per session, you
-          can goad the GM into spending suspense on conversation.
-        </Text>
+          <Em>embarrass themself</Em>—<Em>let a secret slip</Em>—
+          <Em>focus on or lose track of you</Em>. Once per session, you can goad the GM into
+          spending suspense on conversation.
+        </Talent.Text>
+      </Talent>
+      <Panel>
         <Text>
-          BARDIC INSTRUMENTS(S) [ADVICE]: Your instrument or instruments are an important part of
-          what makes you a bard. Weave them into scenes when you can. Try to find an instrument that
-          both matches your PC's personality and can work in many scenes.
+          <Strong smallCaps>Bardic Instrument(s)</Strong> <Tag>Advice</Tag>: Your instrument or
+          instruments are an important part of what makes you a bard. Weave them into scenes when
+          you can. Try to find an instrument that both matches your PC's personality and can work in
+          many scenes.
         </Text>
-        <Table>
+        <Table variant="simple" textSize="small" fullWidth>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell>String</Table.HeaderCell>
@@ -1364,44 +1387,61 @@ const Chapter03 = () => {
             </Table.Row>
           </Table.Body>
         </Table>
-      </blockquote>
-      <Heading level={2}>Berserker</Heading>
-      <Text>ALSO: Juggernaut, Reaver, Warbringer</Text>
+      </Panel>
+      <Heading level={2} pretitle="Path of the">
+        Berserker
+      </Heading>
       <Text>
-        You don't just fight—you crush anything and everything in your path until nothing stands
-        before you.
+        <Strong allCaps>Also</Strong>:{" "}
+        <Strong>
+          <Em>Juggernaut, Reaver, Warbringer</Em>
+        </Strong>
       </Text>
-      <blockquote>
-        <Text>FRENZY (CORE TALENT)</Text>
+      <Text>
+        <Em>
+          You don't just fight—you crush anything and everything in your path until nothing stands
+          before you.
+        </Em>
+      </Text>
+      <CoreTalent
+        name="Frenzy"
+        growth="Every 3 levels, gain 1 free activation of this per session."
+      >
         <Text>
-          Once per session, or when you get bloodied or take vex, you can enter a frenzy for a
-          scene. During the frenzy, you can only take aggressive actions. You also:
+          Once per session, or when you get bloodied or take vex, you can enter a{" "}
+          <Strong>frenzy</Strong> for a scene. During the frenzy, you can only take aggressive
+          actions. You also:
         </Text>
-        <List variant="ordered">
+        <List variant="unordered">
           <List.Item>
             Take +1d for each mark you have and ignore all thorns from harm and marks.
           </List.Item>
           <List.Item>
-            Inflict collateral damage on each action roll, regardless of the outcome. You must
-            choose one: send something flying—smash mooks—throw insults—wreck something.
+            Inflict{" "}
+            <Strong>
+              <Em>collateral damage</Em>
+            </Strong>{" "}
+            on each action roll, regardless of the outcome. You must choose one:{" "}
+            <Em>send something flying</Em>—<Em>smash mooks</Em>—<Em>throw insults</Em>—
+            <Em>wreck something</Em>.
           </List.Item>
           <List.Item>
             Always get a final action when dropped. On a critical, ignore getting dropped.
           </List.Item>
         </List>
         <Text>
-          You can only exit a frenzy when no challenger stands before you, you get dropped, or you
-          push yourself to calm down.
+          You can only exit a frenzy when <Em>no challenger stands before you</Em>, you get dropped,
+          or you <Strong>push yourself</Strong> to calm down.
         </Text>
-        <Line />
-        <Text>GROWTH: Every 3 levels, gain 1 free activation of this per session.</Text>
-      </blockquote>
-      <Text>FRENZY SOURCE [OPTIONAL]</Text>
-      <Text>
+      </CoreTalent>
+      <Text margin={{ top: "large", bottom: "small" }}>
+        <Strong allCaps>Frenzy Source</Strong> <Tag>Optional</Tag>
+      </Text>
+      <Text margin={{ top: "small" }}>
         Where does your wild power and ability to withstand pain come from? Choose 2 and smash them
         together to form the source and 1 that you have disdain for.
       </Text>
-      <List variant="ordered">
+      <List variant="unordered" columns={2} italic>
         <List.Item>Ritualistic preparation</List.Item>
         <List.Item>Trained tolerance to pain</List.Item>
         <List.Item>Long consumption of strange substances</List.Item>
@@ -1415,12 +1455,14 @@ const Chapter03 = () => {
         <List.Item>Binding your spirit to a physical totem</List.Item>
         <List.Item>You really don't know why you're like this</List.Item>
       </List>
-      <Text>SCARS [OPTIONAL]</Text>
-      <Text>
+      <Text margin={{ top: "large", bottom: "small" }}>
+        <Strong allCaps>Scars</Strong> <Tag>Optional</Tag>
+      </Text>
+      <Text margin={{ top: "small" }}>
         Your ability to ignore pain has led you to take far more damage than most warriors. What
         scars do you bear that show your reckless nature? Choose 3 that you can show off.
       </Text>
-      <List variant="ordered">
+      <List variant="unordered" columns={3} italic>
         <List.Item>Crookedly broken nose</List.Item>
         <List.Item>Web of deep cut scars</List.Item>
         <List.Item>Permanently split knuckles</List.Item>
@@ -1440,200 +1482,268 @@ const Chapter03 = () => {
         <List.Item>Busted in skull</List.Item>
         <List.Item>Not a scratch on you</List.Item>
       </List>
-      <Text>BERSERKER TALENTS</Text>
-      <Text>FEARSOME</Text>
+      <Heading level={3}>Berserker Talents</Heading>
+      <Talent name="Fearsome">
+        <Talent.Text>
+          Your presence instills fear in others. The GM judges an NPC's response, or you can spend
+          story to set it: <Em>hostile</Em>—<Em>nervous</Em>—<Em>respectful</Em>—<Em>scared</Em>.
+          You can <Strong>push yourself</Strong> to pull off a{" "}
+          <Strong>
+            <Em>potent feat of intimidation</Em>
+          </Strong>
+          , like <Em>staring down a dragon</Em> or <Em>demanding to see the king</Em>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Flesh Wounds">
+        <Talent.Text>
+          When you take physical damage, only a disaster can drop you. You can get bloodied multiple
+          times. Each extra time inflicts +1t on rolls. These extra thorns can never be ignored
+          <Muted>(e.g., Frenzy and Oathsworn talents)</Muted> and they also apply thorns to any
+          attempt to heal you.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Into the Fray">
+        <Talent.Text>
+          When you're the first into an intense situation,{" "}
+          <Strong>
+            <Em>5s count as 6s, but 4s count as 1s</Em>
+          </Strong>{" "}
+          on your first roll. You also <Strong>setup</Strong> the first person following you
+          regardless of your roll outcome.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Joyful Warrior">
+        <Talent.Text>
+          On a critical or when bloodied in battle, you <Strong>take spark</Strong> and can:{" "}
+          <Em>clear one mark from each ally</Em>—
+          <Em>bring a dropped (not dead) ally back into the scene</Em>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Mighty">
+        <Talent.Text>
+          When given time, you can pull off{" "}
+          <Strong>
+            <Em>potent feats of raw strength</Em>
+          </Strong>
+          , like <Em>uprooting a tree</Em> or <Em>breaking through a castle gate</Em>. You can{" "}
+          <Strong>push yourself</Strong> to do it on the spot.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Overkill">
+        <Talent.Text>
+          On a critical when bringing violence, threats, or destruction to bear, you can:{" "}
+          <Em>cause an extra secondary effect</Em>—<Em>roll a task pool twice</Em>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Warsongs" prohibited="Bard">
+        <Talent.Text>
+          Each session, you can sing 2 bardsongs (<Em>pg. 54</Em>). Write down the composition of
+          the only 3 songs you know.
+        </Talent.Text>
+      </Talent>
+      <Heading level={2} pretitle="Path of the">
+        Cleric
+      </Heading>
       <Text>
-        Your presence instills fear in others. The GM judges an NPC's response, or you can spend
-        story to set it: hostile—nervous—respectful—scared. You can push yourself to pull off a
-        potent feat of intimidation, like staring down a dragon or demanding to see the king.
+        <Strong allCaps>Also</Strong>:{" "}
+        <Strong>
+          <Em>Priest, Zealot, Chosen One</Em>
+        </Strong>
       </Text>
-      <Text>FLESH WOUNDS</Text>
       <Text>
-        When you take physical damage, only a disaster can drop you. You can get bloodied multiple
-        times. Each extra time inflicts +1t on rolls. These extra thorns can never be ignored (e.g.,
-        Frenzy and Oathsworn talents) and they also apply thorns to any attempt to heal you.
+        <Em>
+          You serve as a conduit for the divine, channeling holy power to safeguard the faithful and
+          do your god's bidding.
+        </Em>
       </Text>
-      <Text>INTO THE FRAY</Text>
-      <Text>
-        When you're the first into an intense situation, 5s count as 6s, but 4s count as 1s on your
-        first roll. You also setup the first person following you regardless of your roll outcome.
-      </Text>
-      <Text>JOYFUL WARRIOR</Text>
-      <Text>
-        On a critical or when bloodied in battle, you take spark and can: clear one mark from each
-        ally—bring a dropped (not dead) ally back into the scene.
-      </Text>
-      <Text>MIGHTY</Text>
-      <Text>
-        When given time, you can pull off potent feats of raw strength, like uprooting a tree or
-        breaking through a castle gate. You can push yourself to do it on the spot.
-      </Text>
-      <Text>OVERKILL</Text>
-      <Text>
-        On a critical when bringing violence, threats, or destruction to bear, you can: cause an
-        extra secondary effect—roll a task pool twice.
-      </Text>
-      <Text>Warsongs [PROHIBITED: BARD]</Text>
-      <Text>
-        Each session, you can sing 2 bardsongs (pg. 54). Write down the composition of the only 3
-        songs you know.
-      </Text>
-      <Heading level={2}>Cleric</Heading>
-      <Text>ALSO: Priest, Zealot, Chosen One</Text>
-      <Text>
-        You serve as a conduit for the divine, channeling holy power to safeguard the faithful and
-        do your god's bidding.
-      </Text>
-      <blockquote>
-        <Text>CHANNEL DIVINITY (CORE TALENT)</Text>
+      <CoreTalent
+        name="Channel Divinity"
+        growth="Every 2 levels, increase one domain pool by 1d (max 8d)"
+      >
         <Text>
           Your god grants you spellcasting ability. You roll a domain pool to cast and that domain
           pool and your god's epithet serve as touchstones.
         </Text>
         <Text>
-          Create your god (below). You have 1 major domain, a 6d power pool, and 2 minor domains,
-          each a 4d power pool. These pools replenish each session. You can drop 1d and roll the
-          domain to cast a potent spell.
+          Create your god (<Em>below</Em>). You have <Strong>1 major domain</Strong>, a 6d power
+          pool, and <Strong>2 minor domains</Strong>, each a 4d power pool. These pools replenish
+          each session. You can drop 1d and roll the domain to cast a{" "}
+          <Strong>
+            <Em>potent spell</Em>
+          </Strong>
+          .
         </Text>
-        <Line />
-        <Text>GROWTH: Every 2 levels, increase one domain pool by 1d (max 8d).</Text>
-      </blockquote>
-      <Text>CREATE YOUR GOD</Text>
+      </CoreTalent>
       <Text>
-        Create your god by naming them and giving them a thematic epithet (e.g., Zerenda, Goddess of
-        Storms). You are expected to follow its tenets, though not a strict requirement. Choose 1
-        major domain and 2 minor domains from below, or make your own:
+        <Strong allCaps>Create Your God</Strong>
       </Text>
-      <List variant="ordered">
-        <List.Item>
-          <Text>BLESSING • Enhance with buffs, provide utility, and bring good fortune.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Pick up the weak and vulnerable. Create happiness when none exists.
-            </List.Item>
-            <List.Item>
-              Magic: Bless a battlehammer. Walk on water. Fill the forlorn duke's heart with hope.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>DIVINATION • Unveil secrets, provide foresight, and commune with spirits.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Uncover and share hidden truths. Respect and act on divine signs.
-            </List.Item>
-            <List.Item>
-              Magic: Find a safe path. Reveal where the thief is hiding. Know tomorrow's weather.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>DOMINION • Influence, command, and control sentient creatures.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Enforce peace and stability. Inspire others through your actions.
-            </List.Item>
-            <List.Item>
-              Magic: Convince someone to help you. Make someone forget something. Calm an angry mob.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>HEALING • Heal wounds, cure diseases, and wash away mental anguish.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Bring healing to those truly in need. Comfort the distressed.
-            </List.Item>
-            <List.Item>
-              Magic: Heal a broken bone. Relieve someone of stress. Stop the bleeding.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>RADIANCE • Dispel darkness with light and purge evil with holy fire.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Burn out corruption at its source. Point out the error in someone's ways.
-            </List.Item>
-            <List.Item>
-              Magic: Cauterize a wound. Destroy a skeleton. Reveal an invisible enemy.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>WARDING • Provide protection and defense for those in need.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Protect those who cannot defend themselves &amp; strengthen communities.
-            </List.Item>
-            <List.Item>
-              Magic: Shield an ally from harm. Block a doorway. Create sentries.
-            </List.Item>
-          </List>
-        </List.Item>
-        <List.Item>
-          <Text>WRATH • Inflict damage and curses upon those deserving.</Text>
-          <List variant="ordered">
-            <List.Item>
-              Tenets: Deliver punishment to those deserving it, keeping your mercy for the rare few
-              worth saving.
-            </List.Item>
-            <List.Item>
-              Magic: Shatter the killer's weapon. Blind a traitor. Curse a thief with misfortune.
-            </List.Item>
-          </List>
-        </List.Item>
-      </List>
-      <Text>CLERIC TALENTS</Text>
-      <Text>BLESSED</Text>
       <Text>
-        Once per session, you can re-roll a roll you just made as your god attempts to intervene.
-        The re-roll is made without any thorns on it. On a perfect, take spark.
+        Create your god by naming them and giving them a thematic epithet (
+        <Em>e.g., Zerenda, Goddess of Storms</Em>). You are expected to follow its tenets, though
+        not a strict requirement. Choose 1 major domain and 2 minor domains from below, or make your
+        own:
       </Text>
-      <Text>DEVOUT</Text>
-      <Text>
-        Intelligent creatures recognize you as a person of deep honesty and only your most hated
-        enemies would treat you with a lack of respect or doubt your word. You are never seriously
-        injured or killed by an enemy, unless they have no choice. Any creature with speech will
-        always hear you out. This aura is upheld by your unwavering commitment—you must push
-        yourself to act in bad faith (no free activation).
-      </Text>
-      <Text>HEALER</Text>
-      <Text>
-        You take +1d when you heal someone, with magic or treatment. On a critical, both of you take
-        spark.
-      </Text>
-      <Text>IRON WILL</Text>
-      <Text>
-        Each session, you have a 3d Iron Will resource pool. When you get rattled or take vex, roll
-        the pool. If dice remain, ignore the damage. If the situation allows for it, you can also
-        lash out at the cause or a bystander and: instill dread in their heart—sow doubt in their
-        mind.
-      </Text>
-      <Text>RINGS FALSE</Text>
-      <Text>
-        You always know when someone is lying, though not necessarily the truth. You take +1d on a
-        follow-up if you reveal you know they're lying.
-      </Text>
-      <Text>SERMONS</Text>
-      <Text>
-        When given time, you can pull off potent feats of persuasion in the name of your beliefs,
-        like commanding a crowd to bring the duke for judgment or showing the goblins the glory of
-        your god. You can also push yourself to do it on the spot. One time only, you can make this
-        a ritual-level effect.
-      </Text>
-      <Text>SHEPHERD</Text>
-      <Text>
-        When you assist an ally on a defense roll that would leave them rattled or with vex, you can
-        invoke your bond to take +1d on the roll. On a perfect, you both take spark.
-      </Text>
-      <blockquote>
+      <Panel border rowBorders>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Blessing</Strong> • Enhance with buffs, provide utility, and bring good
+            fortune.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Pick up the weak and vulnerable. Create happiness when none
+            exists.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Bless a battlehammer. Walk on water. Fill the forlorn duke's
+            heart with hope.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Divination</Strong> • Unveil secrets, provide foresight, and commune
+            with spirits.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Uncover and share hidden truths. Respect and act on divine
+            signs.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Find a safe path. Reveal where the thief is hiding. Know
+            tomorrow's weather.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Dominion</Strong> • Influence, command, and control sentient creatures.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Enforce peace and stability. Inspire others through your
+            actions.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Convince someone to help you. Make someone forget something.
+            Calm an angry mob.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Healing</Strong> • Heal wounds, cure diseases, and wash away mental
+            anguish.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Bring healing to those truly in need. Comfort the distressed.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Heal a broken bone. Relieve someone of stress. Stop the
+            bleeding.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Radiance</Strong> • Dispel darkness with light and purge evil with holy
+            fire.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Burn out corruption at its source. Point out the error in
+            someone's ways.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Cauterize a wound. Destroy a skeleton. Reveal an invisible
+            enemy.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Warding</Strong> • Provide protection and defense for those in need.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Protect those who cannot defend themselves &amp; strengthen
+            communities.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Shield an ally from harm. Block a doorway. Create sentries.
+          </Text>
+        </Panel.Row>
+        <Panel.Row>
+          <Text margin="small">
+            <Strong allCaps>Wrath</Strong> • Inflict damage and curses upon those deserving.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Tenets</Strong>: Deliver punishment to those deserving it, keeping your mercy
+            for the rare few worth saving.
+          </Text>
+          <Text margin="small" size="small" muted>
+            <Strong>Magic</Strong>: Shatter the killer's weapon. Blind a traitor. Curse a thief with
+            misfortune.
+          </Text>
+        </Panel.Row>
+      </Panel>
+      <Heading level={3}>Cleric Talents</Heading>
+      <Talent name="Blessed">
+        <Talent.Text>
+          Once per session, you can re-roll a roll you just made as your god attempts to intervene.
+          The re-roll is made without any thorns on it. On a perfect, <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Devout">
+        <Talent.Text>
+          Intelligent creatures recognize you as a person of deep honesty and only your most hated
+          enemies would treat you with a lack of respect or doubt your word. You are never seriously
+          injured or killed by an enemy, unless they have no choice. Any creature with speech will
+          always hear you out. This aura is upheld by your unwavering commitment—you must{" "}
+          <Strong>push yourself</Strong> to act in bad faith (<Em>no free activation</Em>).
+        </Talent.Text>
+      </Talent>
+      <Talent name="Healer">
+        <Talent.Text>
+          You take +1d when you heal someone, with magic or treatment. On a critical, both of you
+          <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Iron Will">
+        <Talent.Text>
+          Each session, you have a <Strong>3d Iron Will</Strong> resource pool. When you get rattled
+          or take vex, roll the pool. If dice remain, ignore the damage. If the situation allows for
+          it, you can also lash out at the cause or a bystander and:{" "}
+          <Em>instill dread in their heart</Em>—<Em>sow doubt in their mind</Em>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Rings False">
+        <Talent.Text>
+          You always know when someone is lying, though not necessarily the truth. You take +1d on a
+          follow-up if you reveal you know they're lying.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Sermons">
+        <Talent.Text>
+          When given time, you can pull off{" "}
+          <Strong>
+            <Em>potent feats of persuasion in the name of your beliefs</Em>
+          </Strong>
+          , like <Em>commanding a crowd to bring the duke for judgment</Em> or{" "}
+          <Em>showing the goblins the glory of your god</Em>. You can also{" "}
+          <Strong>push yourself</Strong> to do it on the spot. One time only, you can make this a
+          ritual-level effect.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Shepherd">
+        <Talent.Text>
+          When you assist an ally on a defense roll that would leave them rattled or with vex, you
+          can{" "}
+          <Strong>
+            <Em>invoke your bond</Em>
+          </Strong>{" "}
+          to take +1d on the roll. On a perfect, you both <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <Panel>
         <Text>
-          HOLY SYMBOL [ADVICE]: Deities and the religions that grow around them will almost
-          universally express their following with a recognizable symbol. Draw your own on your
-          sheet using those below as inspiration, or choose one of these!
+          <Strong smallCaps>Holy Symbol</Strong> <Tag>Advice</Tag>: Deities and the religions that
+          grow around them will almost universally express their following with a recognizable
+          symbol. Draw your own on your sheet using those below as inspiration, or choose one of
+          these!
         </Text>
-      </blockquote>
+      </Panel>
       <Heading level={2}>Druid</Heading>
       <Text>ALSO: Shapeshifter, Grovekeeper, Wildling</Text>
       <Text>
