@@ -1,36 +1,36 @@
-import Link from "@/components/app/VerticalNav/Link";
+import Link from "@/components/app/AppNavigation/Link";
 import { faBook, faChevronRight, type IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import classNames from "classnames";
 import { useLocation } from "react-router";
 
-type NestedNavigationItem = {
+type NestedAppNavigationItem = {
   name: string;
   href: string;
   icon?: IconDefinition;
 };
-export type NavigationItem = {
-  children?: NestedNavigationItem[];
-} & NestedNavigationItem;
+export type AppNavigationItem = {
+  children?: NestedAppNavigationItem[];
+} & NestedAppNavigationItem;
 
 type ItemProps = {
-  item: NavigationItem;
+  item: AppNavigationItem;
   onSelect?: () => void;
 };
 
 const Item = ({ item, onSelect }: ItemProps) => {
   const location = useLocation();
 
-  const isActive = (item: NavigationItem | NestedNavigationItem) => {
+  const isActive = (item: AppNavigationItem | NestedAppNavigationItem) => {
     return location.pathname === item.href;
   };
 
-  const isParentOfActive = (item: NavigationItem | NestedNavigationItem) => {
+  const isParentOfActive = (item: AppNavigationItem | NestedAppNavigationItem) => {
     return location.pathname.startsWith(item.href + "/");
   };
 
-  const isActiveOrPareentOfActive = (item: NavigationItem | NestedNavigationItem) => {
+  const isActiveOrPareentOfActive = (item: AppNavigationItem | NestedAppNavigationItem) => {
     return isActive(item) || isParentOfActive(item);
   };
 

@@ -40,12 +40,12 @@ const Heading = ({
   const defaultMargin: MarginSize = level <= 3 ? { top: "large", bottom: "medium" } : "medium";
 
   const pretitleCss = classNames("font-bold font-text uppercase", {
-    "text-lg leading-5 scroll-mt-": level === 1,
+    "text-lg leading-5": level === 1,
     "text-base leading-2": level === 2,
     "text-sm": level >= 3
   });
   const headingCss = classNames(
-    "font-heading font-bold text-heading-color uppercase scroll-mt-28",
+    "font-heading font-bold text-heading-color uppercase scroll-mt-52 lg:scroll-mt-36",
     headingSizeCss[level],
     !hasPretitle && getMarginSize(margin, defaultMargin),
     {

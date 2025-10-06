@@ -1,4 +1,4 @@
-import ListContext, { type ListContextType } from "@/components/ui/List/ListContext";
+import ListContext, { type ListContextProps } from "@/components/ui/List/ListContext";
 import { getListColumns, type ListColumnsValue } from "@/utils/listColumns";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
@@ -12,7 +12,7 @@ type ListProps = {
   variant?: "unordered" | "ordered" | "blank";
   children: ReactNode;
   columns?: ListColumnsValue;
-} & ListContextType;
+} & ListContextProps;
 
 const List = ({
   children,

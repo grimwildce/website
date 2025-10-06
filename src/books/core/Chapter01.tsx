@@ -1,4 +1,4 @@
-import Page from "@/components/app/Page";
+import Page, { type PageNavigationItem } from "@/components/app/Page";
 import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
 import ExternalLink from "@/components/ui/ExternalLink";
@@ -12,10 +12,59 @@ import Strong from "@/components/ui/Strong";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 
+const navigation: PageNavigationItem[] = [
+  { name: "What is Grimwild?", anchor: "#what-is-grimwild" },
+  {
+    name: "Getting Started",
+    anchor: "#getting-started",
+    children: [{ name: "Gameplay Overview", anchor: "#gameplay-overview" }]
+  },
+  { name: "Play with Moxie", anchor: "#play-with-moxie" },
+  {
+    name: "Core Rules",
+    anchor: "#core-rules",
+    children: [
+      { name: "Working Together", anchor: "#working-together" },
+      { name: "Dice Rolls", anchor: "#dice-rolls" },
+      { name: "Diminishing Pools", anchor: "#diminishing-pools" },
+      { name: "Narrative Weight", anchor: "#narrative-weight" },
+      { name: "Character Details", anchor: "#character-details" },
+      { name: "Creative Freedom", anchor: "#creative-freedom" },
+      { name: "Story Arcs", anchor: "#story-arcs" },
+      { name: "Damage & Recovery", anchor: "#damage-recovery" },
+      { name: "Odds & Ends", anchor: "#odds-ends" }
+    ]
+  },
+  {
+    name: "Spellcasting",
+    anchor: "#spellcasting",
+    children: [
+      { name: "Touchstones", anchor: "#touchstones" },
+      { name: "Rituals", anchor: "#rituals" }
+    ]
+  },
+  {
+    name: "Treasure",
+    anchor: "#treasure",
+    children: [
+      { name: "Arcana", anchor: "#arcana" },
+      { name: "Designing Arcana", anchor: "#designing-arcana" }
+    ]
+  },
+  { name: "Examples of Play", anchor: "#examples-of-play" }
+];
+
 const Chapter01 = () => {
   return (
-    <Page title="Gameplay" pretitle="Chapter 1:">
-      <Heading level={2}>What is Grimwild?</Heading>
+    <Page
+      bookTitle="Grimwild Community Edition"
+      title="Gameplay"
+      pretitle="Chapter 1:"
+      navigation={navigation}
+    >
+      <Heading level={2} id="what-is-grimwild">
+        What is Grimwild?
+      </Heading>
       <Text>
         <Em>
           <Strong>Grimwild is a game of cinematic fantasy adventure</Strong>
@@ -74,7 +123,9 @@ const Chapter01 = () => {
         growing together over time give compelling reason to stay together and focused. It's a TV
         show that you're the main characters of, messy and fun and full of surprises.
       </Text>
-      <Heading level={2}>Getting Started</Heading>
+      <Heading level={2} id="getting-started">
+        Getting Started
+      </Heading>
       <Text>
         <Em>Grimwild</Em>'s a tabletop roleplaying game, which this book assumes you're familiar
         with. The basics aren't covered here, but there are plenty of resources online and you can
@@ -206,7 +257,9 @@ const Chapter01 = () => {
           <Strong>Made with Moxie</Strong> : Most of chapters 1 and 2 are the core Moxie system.
         </List.Item>
       </List>
-      <Heading level={3}>Gameplay Overview</Heading>
+      <Heading level={3} id="gameplay-overview">
+        Gameplay Overview
+      </Heading>
       <Text>
         <Em>Grimwild</Em> is built with the{" "}
         <Em>
@@ -300,7 +353,9 @@ const Chapter01 = () => {
         <Strong>diminishing pools</Strong> to create and track tension and{" "}
         <Strong>challenges</Strong> to represent the toughest, most interesting obstacles PCs face.
       </Text>
-      <Heading level={2}>Play with Moxie</Heading>
+      <Heading level={2} id="play-with-moxie">
+        Play with Moxie
+      </Heading>
       <Text>
         <Em>Grimwild</Em> is built with the <Em>Moxie</Em> ruleset and designed for{" "}
         <Strong>cinematic gameplay</Strong>. The heart of that is{" "}
@@ -482,7 +537,9 @@ const Chapter01 = () => {
         ! Find reasons to get into the spotlight, push story arcs forward, and make fun scenes. When
         there's no opportunity, add some details to the story to create one!
       </Text>
-      <Heading level={2}>Core Rules</Heading>
+      <Heading level={2} id="core-rules">
+        Core Rules
+      </Heading>
       <Text>
         <Strong allCaps>Core Mechanic</Strong>. When things get risky and dramatic, roll to see what
         happens. Grab a few d6 dice (d) equal to the stat the GM picks to test, roll them, and take
@@ -559,7 +616,9 @@ const Chapter01 = () => {
         things much worse. If a roll somehow turns out to have no effect{" "}
         <Muted>(the guard was already dead)</Muted>, you learn new info or setup for a follow-up.
       </Text>
-      <Heading level={3}>Working Together</Heading>
+      <Heading level={3} id="working-together">
+        Working Together
+      </Heading>
       <Text>
         <Strong allCaps>Assist</Strong>. Help another PC on a roll. State{" "}
         <Strong>how &amp; why</Strong>, then{" "}
@@ -597,7 +656,9 @@ const Chapter01 = () => {
         </Em>{" "}
         to represent it.
       </Text>
-      <Heading level={3}>Dice Roles</Heading>
+      <Heading level={3} id="dice-rolls">
+        Dice Rolls
+      </Heading>
       <Text>
         <Strong allCaps>Action Roll</Strong>. Roll to pull off something risky. State{" "}
         <Strong>how &amp; why</Strong>, clarifying your intent. The GM picks the stat that matches
@@ -685,7 +746,9 @@ const Chapter01 = () => {
           </Em>
         </Muted>
       </Text>
-      <Heading level={3}>Diminishing Pools</Heading>
+      <Heading level={3} id="diminishing-pools">
+        Diminishing Pools
+      </Heading>
       <Text>
         <Strong allCaps>Pools</Strong>. A set of d6s used to track things like time, resources, or
         effort. When triggered (🎲), roll the pool and <Strong>drop</Strong> 1d for each 1-3 result.
@@ -741,7 +804,9 @@ const Chapter01 = () => {
           usually written in italics.
         </Em>
       </Text>
-      <Heading level={3}>Narrative Weight</Heading>
+      <Heading level={3} id="narrative-weight">
+        Narrative Weight
+      </Heading>
       <Text>
         <Strong allCaps>Vantage</Strong>. Your character's frame of reference, the sum of your
         backstory, talents, and the current fiction—everything on your sheet and what's affecting
@@ -784,7 +849,9 @@ const Chapter01 = () => {
         Update details as the story unfolds, announcing the change and giving a vignette to{" "}
         <Em>give it weight</Em> and <Em>clearly convey</Em> the change to the other players.
       </Text>
-      <Heading level={3}>Character Details</Heading>
+      <Heading level={3} id="character-details">
+        Character Details
+      </Heading>
       <Text>
         <Strong allCaps>Background</Strong>. Your heritage, upbringing, and profession—the core of
         your vantage. You choose any two that most influences who you are now. Each gives you three
@@ -912,7 +979,9 @@ const Chapter01 = () => {
         </Em>
         .
       </Text>
-      <Heading level={3}>Creative Freedom</Heading>
+      <Heading level={3} id="creative-freedom">
+        Creative Freedom
+      </Heading>
       <Text>
         <Strong allCaps>Set Dressing</Strong>. Add minor, common sense details freely. Make
         assumptions and add <Em>set dressing</Em> to scenes to play off of to keep things flowing
@@ -998,7 +1067,9 @@ const Chapter01 = () => {
         There are <Em>gray zones</Em> between set dressing, story details, and details simply too
         impactful to add. Set boundaries with your group.
       </Text>
-      <Heading level={3}>Story Arcs</Heading>
+      <Heading level={3} id="story-arcs">
+        Story Arcs
+      </Heading>
       <Text>
         Evocative phrases that give your PC and group a thematic direction. Find out where they lead
         through play— they're a starting direction, not the destination.
@@ -1123,7 +1194,9 @@ const Chapter01 = () => {
         struggles (<Em>flirt with betrayal</Em>), get group permission—limiting them to a few
         sessions and involving everyone makes it more fun.
       </Text>
-      <Heading level={3}>Damage &amp; Recovery</Heading>
+      <Heading level={3} id="damage-recovery">
+        Damage &amp; Recovery
+      </Heading>
       <Text>
         <Strong allCaps>Marks</Strong>. Light damage, a temporary hindrance to a stat{" "}
         <Muted>(winded, confused)</Muted>.{" "}
@@ -1295,7 +1368,9 @@ const Chapter01 = () => {
         heal, including relevant conditions, and reset per-session talents. The GM rolls faction
         pools, then picks one and depletes it completely to move the story forward.
       </Text>
-      <Heading level={3}>Odds &amp; Ends</Heading>
+      <Heading level={3} id="odds-ends">
+        Odds &amp; Ends
+      </Heading>
       <Text>
         <Strong allCaps>Potency</Strong>. The ability to pull off <Em>jaw-dropping</Em> feats. When
         you have potency on a task, you ignore thorns from difficulty (
@@ -1464,7 +1539,9 @@ const Chapter01 = () => {
         <Strong allCaps>Level</Strong>. A PC starts at level 1 and can go up to level 7. This takes
         6 months of weekly play. For longer play, slow down progression.
       </Text>
-      <Heading level={2}>Spellcasting</Heading>
+      <Heading level={2} id="spellcasting">
+        Spellcasting
+      </Heading>
       <Text>
         <Strong>Spellcasting</Strong> is the ability to harness magic, acquired through talents or
         arcana. While each style has its quirks, they all follow the same <Em>laws of magic</Em>.
@@ -1619,7 +1696,9 @@ const Chapter01 = () => {
           </Muted>
         </List.Item>
       </List>
-      <Heading level={3}>Touchstones</Heading>
+      <Heading level={3} id="touchstones">
+        Touchstones
+      </Heading>
       <Text>
         Spellcasting ability comes with touchstones and all magic effects must logically align with
         them, making sense and feeling natural. If it feels like a <Em>reach</Em>, it's beyond the
@@ -1945,7 +2024,9 @@ const Chapter01 = () => {
         can make a story roll if it's unclear. The more powerful the potion, the more dice you roll
         for the story roll.
       </Text>
-      <Heading level={3}>Rituals</Heading>
+      <Heading level={3} id="rituals">
+        Rituals
+      </Heading>
       <Text>
         <Strong>Rituals</Strong> can accomplish magical effects far beyond what can be done with
         even potent spells, equal to the labor of an entire team of people over an extended period,
@@ -2093,7 +2174,9 @@ const Chapter01 = () => {
           </Muted>
         </Text>
       </Panel>
-      <Heading level={2}>Treasure</Heading>
+      <Heading level={2} id="treasure">
+        Treasure
+      </Heading>
       <Text>
         <Strong>Treasure</Strong> is the currency of an adventurer, useful in trade with the
         powerful entities in the world to further your own aims. Your skills put you beyond worrying
@@ -2303,7 +2386,9 @@ const Chapter01 = () => {
           .
         </Text>
       </Panel>
-      <Heading level={3}>Arcana</Heading>
+      <Heading level={3} id="arcana">
+        Arcana
+      </Heading>
       <Text>
         <Strong>Arcana</Strong> are rare artifacts of power, magic imbued in them through ritual or
         other esoteric forces. They grant{" "}
@@ -2352,7 +2437,9 @@ const Chapter01 = () => {
           <Em>have ritual-level effects.</Em>
         </List.Item>
       </List>
-      <Heading level={3}>Designing Arcana</Heading>
+      <Heading level={3} id="designing-arcana">
+        Designing Arcana
+      </Heading>
       <Text>
         Arcana are generally tools for the GM, crafted to fit the campaign. The GM Crucible (
         <Em>pg. 29</Em>) is a great source of inspiration for designing them.
@@ -2428,7 +2515,9 @@ const Chapter01 = () => {
           arcana, as well as a thorough random potion generator!
         </Text>
       </Panel>
-      <Heading level={2}>Examples of Play</Heading>
+      <Heading level={2} id="examples-of-play">
+        Examples of Play
+      </Heading>
       <Text>
         You tell the GM you want to punch the guy in the face, so he calls for a Brawn roll.
         Confused, you rewind a bit and explain that you're sucker punching him, and it's mostly just

@@ -1,4 +1,4 @@
-import Page from "@/components/app/Page";
+import Page, { type PageNavigationItem } from "@/components/app/Page";
 import Battleground from "@/components/Battleground";
 import CampaignPool from "@/components/CampaignPool";
 import Challenge from "@/components/Challenge";
@@ -19,10 +19,34 @@ import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 import { faBurst, faExclamation, faQuestion } from "@fortawesome/free-solid-svg-icons";
 
+const navigation: PageNavigationItem[] = [
+  { name: "Running Grimwild", anchor: "#running-grimwild" },
+  {
+    name: "GM Rules",
+    anchor: "#gm-rules",
+    children: [
+      { name: "Challenges", anchor: "#challenges" },
+      { name: "Vigilance", anchor: "#vigilance" },
+      { name: "Combat Kit", anchor: "#combat-kit" },
+      { name: "Running Combats", anchor: "#running-combats" },
+      { name: "Factions", anchor: "#factions" },
+      { name: "GM with Moxie", anchor: "#gm-with-moxie" }
+    ]
+  },
+  { name: "Examples of Play", anchor: "#examples-of-play" }
+];
+
 const Chapter02 = () => {
   return (
-    <Page title="GM Toolkit" pretitle="Chapter 2:">
-      <Heading level={2}>Running Grimwild</Heading>
+    <Page
+      bookTitle="Grimwild Community Edition"
+      title="GM Toolkit"
+      pretitle="Chapter 2:"
+      navigation={navigation}
+    >
+      <Heading level={2} id="running-grimwild">
+        Running Grimwild
+      </Heading>
       <Text>
         As the GM, you play the game by a different set of rules, utilizing the tools laid out in
         this chapter to craft an engaging and dynamic game. You wield GM moves and suspense to drive
@@ -237,7 +261,9 @@ const Chapter02 = () => {
         <Muted>(3, 1 = 31: precarious or 13: broken)</Muted>. Let your mind drift towards the most
         evocative, then drill down on it and interpret what it might mean.
       </Text>
-      <Heading level={2}>GM Rules</Heading>
+      <Heading level={2} id="gm-rules">
+        GM Rules
+      </Heading>
       <Text>
         <Strong allCaps>GM Moves</Strong>. A framework for good GMing practices and{" "}
         <Em>
@@ -656,7 +682,9 @@ const Chapter02 = () => {
           trying to find yet another way to attempt something they've already failed at.
         </Text>
       </Panel>
-      <Heading level={3}>Challenges</Heading>
+      <Heading level={3} id="challenges">
+        Challenges
+      </Heading>
       <Text>
         <Strong allCaps>Challenges</Strong>. A framework to represent{" "}
         <Em>
@@ -1006,7 +1034,9 @@ const Chapter02 = () => {
           </Muted>
         </Text>
       </Panel>
-      <Heading level={3}>Vigilance</Heading>
+      <Heading level={3} id="vigilance">
+        Vigilance
+      </Heading>
       <Text>
         <Strong allCaps>Vigilance</Strong>. The assumed alertness of the PCs, avoiding overly
         cautious gameplay to keep the focus on the action.
@@ -1195,7 +1225,9 @@ const Chapter02 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={3}>Combat Kit</Heading>
+      <Heading level={3} id="combat-kit">
+        Combat Kit
+      </Heading>
       <Text>
         GM tools to create dynamic{" "}
         <Strong>
@@ -1388,7 +1420,9 @@ const Chapter02 = () => {
           ]}
         />
       </Grid>
-      <Heading level={3}>Running Combats</Heading>
+      <Heading level={3} id="running-combats">
+        Running Combats
+      </Heading>
       <Text>
         When a fight breaks out, the action flows naturally, following the spotlight. There are no
         specific rules that differentiate combat from any other scene.
@@ -1464,7 +1498,9 @@ const Chapter02 = () => {
         <Strong>Enemy Magic</Strong>: Enemy magic doesn't follow the same rules as PC magic. It
         manifests through GM moves and is constrained only by the fiction.
       </Text>
-      <Heading level={3}>Factions</Heading>
+      <Heading level={3} id="factions">
+        Factions
+      </Heading>
       <Text>
         <Strong allCaps>Factions</Strong>. Track off-screen developments of major forces, creating a
         feeling of a living world beyond the PCs. They have:
@@ -1628,7 +1664,9 @@ const Chapter02 = () => {
           </Muted>
         </Text>
       </Panel>
-      <Heading level={3}>GM with Moxie</Heading>
+      <Heading level={3} id="gm-with-moxie">
+        GM with Moxie
+      </Heading>
       <Text>
         <Strong>
           <Em>Map fiction to rules</Em>
@@ -1751,7 +1789,9 @@ const Chapter02 = () => {
           <Em>So are you pissed off or cool with it?</Em>
         </List.Item>
       </List>
-      <Heading level={2}>Examples of Play</Heading>
+      <Heading level={2} id="examples-of-play">
+        Examples of Play
+      </Heading>
       <Text>
         The cleric charges the Minotaur King. This minotaur is a powerful foe and the thorns it
         inflicts when fighting it must reflect that, so you make it +2t and call for a Brawn roll:

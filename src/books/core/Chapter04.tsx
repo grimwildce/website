@@ -6,7 +6,7 @@ import Text from "@/components/ui/Text";
 
 const Chapter04 = () => {
   return (
-    <Page title="Exploration" pretitle="Chapter 4:">
+    <Page bookTitle="Grimwild Community Edition" title="Exploration" pretitle="Chapter 4:">
       <Heading level={2}>EXPLORING THE GRIMWILD</Heading>
       <Text>
         Exploration is an adventure, and this pointcrawl system captures that spirit. It's about
