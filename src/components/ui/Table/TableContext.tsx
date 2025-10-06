@@ -5,7 +5,7 @@ import { type TextSize } from "@/utils/textSize";
 import { type VerticalAlign } from "@/utils/verticalAlign";
 import { createContext } from "react";
 
-export type TableContextType = {
+export type TableContextProps = {
   align?: TextAlign;
   padding?: CellPaddingSize;
   textSize?: TextSize;
@@ -13,6 +13,6 @@ export type TableContextType = {
   italic?: boolean;
 } & MutuallyExclusiveBooleanProps<"allCaps" | "smallCaps">;
 
-const TableContext = createContext<TableContextType>({});
+const TableContext = createContext<TableContextProps>({});
 
 export default TableContext;

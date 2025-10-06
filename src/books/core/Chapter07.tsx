@@ -2,7 +2,7 @@ import Page from "@/components/app/Page";
 
 const Chapter07 = () => {
   return (
-    <Page title="Extras" pretitle="Chapter 7:">
+    <Page bookTitle="Grimwild Community Edition" title="Extras" pretitle="Chapter 7:">
       <h2>FLAVORS OF FANTASY</h2>
       <p>
         With a few quick rules tweaks, you can shift the base assumptions of Grimwild over to other

@@ -1,4 +1,4 @@
-import TableContext, { type TableContextType } from "@/components/ui/Table/TableContext";
+import TableContext, { type TableContextProps } from "@/components/ui/Table/TableContext";
 import { getMarginSize, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
 import { type ReactNode } from "react";
@@ -9,7 +9,7 @@ type TableProps = {
   fullWidth?: boolean;
   margin?: MarginSize;
   variant?: TableVariant;
-} & TableContextType;
+} & TableContextProps;
 
 const Table = ({ children, fullWidth, margin, variant = "blank", ...context }: TableProps) => {
   const containerCss = classNames("overflow-x-auto", getMarginSize(margin), {

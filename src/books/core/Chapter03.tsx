@@ -1,4 +1,4 @@
-import Page from "@/components/app/Page";
+import Page, { type PageNavigationItem } from "@/components/app/Page";
 import CoreTalent from "@/components/CoreTalent";
 import PathCard from "@/components/PathCard";
 import StepList from "@/components/StepList";
@@ -29,10 +29,80 @@ import SwordsEmblem from "@/svgs/game_icons/SwordsEmblem";
 import TemplarShield from "@/svgs/game_icons/TemplarShield";
 import WarlockEye from "@/svgs/game_icons/WarlockEye";
 
+const navigation: PageNavigationItem[] = [
+  { name: "Starting a Campaign", anchor: "#starting-a-campaign" },
+  { name: "Adventurer Paths", anchor: "#adventurer-paths" },
+  {
+    name: "Character Creation",
+    anchor: "#character-creation",
+    children: [{ name: "Backgrounds", anchor: "#backgrounds" }]
+  },
+  { name: "Paths & Talents", anchor: "#paths-and-talents" },
+  { name: "Bard", anchor: "#bard", children: [{ name: "Bard Talents", anchor: "#bard-talents" }] },
+  {
+    name: "Berserker",
+    anchor: "#berserker",
+    children: [{ name: "Berserker Talents", anchor: "#berserker-talents" }]
+  },
+  {
+    name: "Cleric",
+    anchor: "#cleric",
+    children: [{ name: "Cleric Talents", anchor: "#cleric-talents" }]
+  },
+  {
+    name: "Druid",
+    anchor: "#druid",
+    children: [{ name: "Druid Talents", anchor: "#druid-talents" }]
+  },
+  {
+    name: "Fighter",
+    anchor: "#fighter",
+    children: [{ name: "Fighter Talents", anchor: "#fighter-talents" }]
+  },
+  { name: "Monk", anchor: "#monk", children: [{ name: "Monk Talents", anchor: "#monk-talents" }] },
+  {
+    name: "Paladin",
+    anchor: "#paladin",
+    children: [{ name: "Paladin Talents", anchor: "#paladin-talents" }]
+  },
+  {
+    name: "Ranger",
+    anchor: "#ranger",
+    children: [{ name: "Ranger Talents", anchor: "#ranger-talents" }]
+  },
+  {
+    name: "Rogue",
+    anchor: "#rogue",
+    children: [{ name: "Rogue Talents", anchor: "#rogue-talents" }]
+  },
+  {
+    name: "Sorcerer",
+    anchor: "#sorcerer",
+    children: [{ name: "Sorcerer Talents", anchor: "#sorcerer-talents" }]
+  },
+  {
+    name: "Warlock",
+    anchor: "#warlock",
+    children: [{ name: "Warlock Talents", anchor: "#warlock-talents" }]
+  },
+  {
+    name: "Wizard",
+    anchor: "#wizard",
+    children: [{ name: "Wizard Talents", anchor: "#wizard-talents" }]
+  }
+];
+
 const Chapter03 = () => {
   return (
-    <Page title="Adventurers" pretitle="Chapter 3:">
-      <Heading level={2}>Starting a Campaign</Heading>
+    <Page
+      bookTitle="Grimwild Community Edition"
+      title="Adventurers"
+      pretitle="Chapter 3:"
+      navigation={navigation}
+    >
+      <Heading level={2} id="starting-a-campaign">
+        Starting a Campaign
+      </Heading>
       <Text>
         Start each campaign with a <Strong>session zero</Strong>, a campaign brainstorming and
         character creation session where you get everyone on the same page about themes, setting,
@@ -108,7 +178,9 @@ const Chapter03 = () => {
         concept they <Strong>want</Strong> to play as and one they <Strong>won't</Strong> play as,
         then reveal them.
       </Text>
-      <Heading level={2}>Adventurer Paths</Heading>
+      <Heading level={2} id="adventurer-paths">
+        Adventurer Paths
+      </Heading>
       <Text>
         <Strong>Paths</Strong> are collections of talents grouped by common adventuring themes. Each
         has a <Strong>core talent</Strong> and <Strong>core growth</Strong>—your core talent gets
@@ -191,7 +263,9 @@ const Chapter03 = () => {
           margin="none"
         />
       </Grid>
-      <Heading level={2}>Character Creation</Heading>
+      <Heading level={2} id="character-creation">
+        Character Creation
+      </Heading>
       <Text>
         Follow the steps below to create your character. This order is often the simplest, but you
         should begin where your imagination takes you. Character sheets for each path and a blank
@@ -299,7 +373,9 @@ const Chapter03 = () => {
           </Text>
         </StepList.Item>
       </StepList>
-      <Heading level={3}>Backgrounds</Heading>
+      <Heading level={3} id="backgrounds">
+        Backgrounds
+      </Heading>
       <Text>
         <Strong>Backgrounds</Strong> are the pillars of your backstory, revealing key aspects of who
         you are. They determine what counts as set dressing—tools of the trade and the story details
@@ -700,7 +776,7 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={6} as="h4">
+      <Heading level={4} id="heritage">
         Heritage
       </Heading>
       <Text>
@@ -949,7 +1025,9 @@ const Chapter03 = () => {
         <Em>First Mate under Captain Stormclaw</Em> as it comes up in the story. Or you can just
         keep it simple!
       </Text>
-      <Heading level={2}>Paths &amp; Talents</Heading>
+      <Heading level={2} id="paths-and-talents">
+        Paths &amp; Talents
+      </Heading>
       <Text>
         The remainder of this chapter details the 12 adventurer paths available in the game. Below,
         you'll find explanations of common options and terms used throughout the paths. These
@@ -1021,7 +1099,7 @@ const Chapter03 = () => {
         to help flesh out your characters, as well as party-building questions that help link
         together characters' backstories and add depth to their relationships.
       </Text>
-      <Heading level={2} pretitle="Path of the">
+      <Heading level={2} pretitle="Path of the" id="bard">
         Bard
       </Heading>
       <Text>
@@ -1277,7 +1355,9 @@ const Chapter03 = () => {
           consumed by primal rage.
         </List.Item>
       </List>
-      <Heading level={3}>Bard Talents</Heading>
+      <Heading level={3} id="bard-talents">
+        Bard Talents
+      </Heading>
       <Talent name="Bardic Lore">
         <Talent.Text>
           You gain any 3 wises and 1 extra story per session. You take +1d on any story rolls
@@ -1388,7 +1468,7 @@ const Chapter03 = () => {
           </Table.Body>
         </Table>
       </Panel>
-      <Heading level={2} pretitle="Path of the">
+      <Heading level={2} pretitle="Path of the" id="berserker">
         Berserker
       </Heading>
       <Text>
@@ -1482,7 +1562,9 @@ const Chapter03 = () => {
         <List.Item>Busted in skull</List.Item>
         <List.Item>Not a scratch on you</List.Item>
       </List>
-      <Heading level={3}>Berserker Talents</Heading>
+      <Heading level={3} id="berserker-talents">
+        Berserker Talents
+      </Heading>
       <Talent name="Fearsome">
         <Talent.Text>
           Your presence instills fear in others. The GM judges an NPC's response, or you can spend
@@ -1541,7 +1623,7 @@ const Chapter03 = () => {
           the only 3 songs you know.
         </Talent.Text>
       </Talent>
-      <Heading level={2} pretitle="Path of the">
+      <Heading level={2} pretitle="Path of the" id="cleric">
         Cleric
       </Heading>
       <Text>
@@ -1678,7 +1760,9 @@ const Chapter03 = () => {
           </Text>
         </Panel.Row>
       </Panel>
-      <Heading level={3}>Cleric Talents</Heading>
+      <Heading level={3} id="cleric-talents">
+        Cleric Talents
+      </Heading>
       <Talent name="Blessed">
         <Talent.Text>
           Once per session, you can re-roll a roll you just made as your god attempts to intervene.
@@ -1744,7 +1828,9 @@ const Chapter03 = () => {
           these!
         </Text>
       </Panel>
-      <Heading level={2}>Druid</Heading>
+      <Heading level={2} pretitle="Path of the" id="druid">
+        Druid
+      </Heading>
       <Text>ALSO: Shapeshifter, Grovekeeper, Wildling</Text>
       <Text>
         You embrace and embody the untamed power of the natural world, transforming into beasts and
@@ -1866,7 +1952,9 @@ const Chapter03 = () => {
         <List.Item>Crocodile: Swamp camouflage</List.Item>
         <List.Item>Honey Badger: Iron Will (pg. 59)</List.Item>
       </List>
-      <Text>DRUID TALENTS</Text>
+      <Heading level={3} id="druid-talents">
+        Druid Talents
+      </Heading>
       <Text>AWAKEN</Text>
       <Text>
         Once per scene, you may awaken a living natural feature—plants, animals, insects, fungi, or
@@ -2054,7 +2142,9 @@ const Chapter03 = () => {
         dismiss, but not control: dense fog—diving temperatures—heavy rain—snowfall—strong winds—
         thunder. You can perform weather rituals without ritual anchors.
       </Text>
-      <Heading level={2}>Fighter</Heading>
+      <Heading level={2} pretitle="Path of the" id="fighter">
+        Fighter
+      </Heading>
       <Text>ALSO: Blademaster, Duelist, Sergeant</Text>
       <Text>
         You become one with your weapon, and through it, you find your real purpose in this life.
@@ -2159,7 +2249,9 @@ const Chapter03 = () => {
         narrow hall, flails wrapping around shields) can add a lot to the scene. Use your wises
         creatively, and remember, combat is freeform, so stretch your imagination.
       </Text>
-      <Text>FIGHTER TALENTS</Text>
+      <Heading level={3} id="fighter-talents">
+        Fighter Talents
+      </Heading>
       <Text>ARCANE TRAINING [PROHIBITED: WIZARD]</Text>
       <Text>
         You have spellcasting as the Spellcraft talent (pg. 76). You roll Wits and can cast 3 spells
@@ -2215,7 +2307,9 @@ const Chapter03 = () => {
           Sunder: Break their gear to limit their options or get around their defenses.
         </List.Item>
       </List>
-      <Heading level={2}>Monk</Heading>
+      <Heading level={2} pretitle="Path of the" id="monk">
+        Monk
+      </Heading>
       <Text>ALSO: Martial Artist, Mystic, Wanderer</Text>
       <Text>
         Your body is a vessel through which you channel your discipline into grace, precision, and
@@ -2458,7 +2552,9 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Text>MONK TALENTS</Text>
+      <Heading level={3} id="monk-talents">
+        Monk Talents
+      </Heading>
       <Text>FLOW STATE</Text>
       <Text>
         After an action or defense roll, you can always keep the spotlight to prevent the GM from
@@ -2502,7 +2598,9 @@ const Chapter03 = () => {
         When putting your life or something you hold equally dear on the line, 5s count as 6s, but
         4s count as 1s. This generally occurs with dire stakes or after being bloodied in battle.
       </Text>
-      <Heading level={2}>Paladin</Heading>
+      <Heading level={2} pretitle="Path of the" id="paladin">
+        Paladin
+      </Heading>
       <Text>ALSO: Crusader, Champion, Justiciar</Text>
       <Text>
         You have sworn an oath and your unwavering dedication gives you powerful conviction, which
@@ -2571,7 +2669,9 @@ const Chapter03 = () => {
           only once.
         </Text>
       </blockquote>
-      <Text>PALADIN TALENTS</Text>
+      <Heading level={3} id="paladin-talents">
+        Paladin Talents
+      </Heading>
       <Text>AEGIS</Text>
       <Text>
         You take +1d when defending with a shield and can use it to make a defense roll in a nearby
@@ -2654,7 +2754,9 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={2}>Ranger</Heading>
+      <Heading level={2} pretitle="Path of the" id="ranger">
+        Ranger
+      </Heading>
       <Text>ALSO: Beastmaster, Pathfinder, Trapper</Text>
       <Text>
         You stalk relentlessly, moving unseen through the wilderness, tracking your prey with deadly
@@ -2754,7 +2856,9 @@ const Chapter03 = () => {
           Predictable Instincts: Easily baited or lured, reacts predictably to threats, overcommits.
         </List.Item>
       </List>
-      <Text>RANGER TALENTS</Text>
+      <Heading level={3} id="ranger-talents">
+        Ranger Talents
+      </Heading>
       <Text>ANIMAL COMPANION</Text>
       <Text>
         You're accompanied by a fiercely loyal animal. Each PC adds a reciprocal bond with it.
@@ -2823,7 +2927,9 @@ const Chapter03 = () => {
           removes marks.
         </List.Item>
       </List>
-      <Heading level={2}>Rogue</Heading>
+      <Heading level={2} pretitle="Path of the" id="rogue">
+        Rogue
+      </Heading>
       <Text>ALSO: Assassin, Cutpurse, Infiltrator</Text>
       <Text>
         You live and operate in the margins, striking unseen and disappearing before anyone knows
@@ -2944,7 +3050,9 @@ const Chapter03 = () => {
         REACTION: I did what I had to do—I was set up—It was a misunderstanding—I'd do it again in a
         heartbeat—I completely forgot I did that—I've made peace with it—Never again. Or write one!
       </Text>
-      <Heading level={2}>Rogue Talents</Heading>
+      <Heading level={3} id="rogue-talents">
+        Rogue Talents
+      </Heading>
       <Text>ACCORDING TO PLAN</Text>
       <Text>
         You gain 1 story per session and can spend story to flashback to utilizing subterfuge in a
@@ -3017,7 +3125,9 @@ const Chapter03 = () => {
         <List.Item>escape route</List.Item>
         <List.Item>safe this way</List.Item>
       </List>
-      <Heading level={2}>Sorcerer</Heading>
+      <Heading level={2} pretitle="Path of the" id="sorcerer">
+        Sorcerer
+      </Heading>
       <Text>ALSO: Channeler, Elementalist, Stormcaller</Text>
       <Text>
         You are a conduit for ancient and unpredictable forces, shaping spells out of the raw magic
@@ -3197,7 +3307,9 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Text>SORCERER TALENTS</Text>
+      <Heading level={3} id="sorcerer-talents">
+        Sorcerer Talents
+      </Heading>
       <Text>ELDRITCH GROWTH</Text>
       <Text>
         The maelstrom of magic has twisted your body. You gain a permanent physical feature like
@@ -3238,7 +3350,9 @@ const Chapter03 = () => {
         When you or a nearby ally gets bloodied, rattled, or dropped, you take +1d and potency on
         your next spell if you immediately lash out.
       </Text>
-      <Heading level={2}>Warlock</Heading>
+      <Heading level={2} pretitle="Path of the" id="warlock">
+        Warlock
+      </Heading>
       <Text>ALSO: Blessed One, Cursed One, Occultist</Text>
       <Text>
         You have made a pact with a greater being—power in exchange for service, a pact that may
@@ -3420,7 +3534,9 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Text>WARLOCK TALENTS</Text>
+      <Heading level={3} id="warlock-talents">
+        Warlock Talents
+      </Heading>
       <Text>ELDRITCH WEAPONRY</Text>
       <Text>
         On a perfect when using cantrip utility as a weapon, you can push yourself to also inflict a
@@ -3465,7 +3581,9 @@ const Chapter03 = () => {
         eyesight with no obstruction requires no roll, otherwise make a story roll. You can bring
         others, taking +1t per person.
       </Text>
-      <Heading level={2}>Wizard</Heading>
+      <Heading level={2} pretitle="Path of the" id="wizard">
+        Wizard
+      </Heading>
       <Text>ALSO: Diviner, Summoner, Witch</Text>
       <Text>
         You wield arcane power through precise knowledge, casting spells from an ever-expanding
@@ -3714,7 +3832,9 @@ const Chapter03 = () => {
         <List.Item>NECROMANCY: Manipulates life, death, and the undead.</List.Item>
         <List.Item>TRANSMUTATION: Transforms matter and alters physical properties.</List.Item>
       </List>
-      <Text>WIZARD TALENTS</Text>
+      <Heading level={3} id="wizard-talents">
+        Wizard Talents
+      </Heading>
       <Text>ALCHEMIST</Text>
       <Text>
         Each session, you have a 4d Potions resource pool. You can have a minor potion and roll the

@@ -1,19 +1,17 @@
-import Sidebar, { type NavigationItem } from "@/components/app/Sidebar";
+import AppNavigation, { type AppNavigationItem } from "@/components/app/AppNavigation";
+import Container from "@/components/app/Container";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from "@headlessui/react";
-import { useState } from "react";
-import { Outlet } from "react-router";
+import { useEffect, useState } from "react";
+import { Outlet, useLocation } from "react-router";
 
-const navigation: NavigationItem[] = [
+const navigation: AppNavigationItem[] = [
   {
-    name: "About",
-    href: "/"
-  },
-  {
-    name: "Grimwild",
+    name: "Grimwild Community Edition",
     href: "/grimwild",
     children: [
+      { name: "About", href: "/grimwild/about" },
       { name: "Chapter 1: Gameplay", href: "/grimwild/chapter-1" },
       { name: "Chapter 2: GM Toolkit", href: "/grimwild/chapter-2" },
       { name: "Chapter 3: Adventurers", href: "/grimwild/chapter-3" },
@@ -26,6 +24,19 @@ const navigation: NavigationItem[] = [
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      // Wait for DOM to render
+      setTimeout(() => {
+        const el = document.getElementById(location.hash.slice(1));
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+    }
+  }, [location]);
 
   const handleMobileSidebarSelect = () => {
     setSidebarOpen(false);
@@ -62,29 +73,33 @@ const App = () => {
               </div>
             </TransitionChild>
 
-            <Sidebar navigation={navigation} onSelect={handleMobileSidebarSelect} />
+            <AppNavigation navigation={navigation} onSelect={handleMobileSidebarSelect} />
           </DialogPanel>
         </div>
       </Dialog>
 
       {/* Static sidebar for desktop */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-        <Sidebar navigation={navigation} />
+        <AppNavigation navigation={navigation} />
       </div>
 
-      <div className="sticky top-0 z-40 flex items-center lg:hidden bg-panel-1 h-16 px-4 sm:px-6">
-        <button
-          type="button"
-          onClick={() => setSidebarOpen(true)}
-          className="mr-1 hover:bg-panel-2 rounded-md p-1"
-        >
-          <span className="sr-only">Open sidebar</span>
-          <FontAwesomeIcon icon={faBars} className="size-6" aria-hidden="true" />
-        </button>
-        <div className="flex-1 flex items-baseline font-heading">
-          <div className="font-bold text-heading-color">Grimwild</div>
-          <div className="font-heading ml-2 text-sm italic text-muted-color">Community Edition</div>
-        </div>
+      <div className="sticky top-0 z-40 bg-panel-1 lg:hidden">
+        <Container>
+          <div className="flex items-center h-16">
+            <button
+              type="button"
+              onClick={() => setSidebarOpen(true)}
+              className="mr-1 hover:bg-panel-2 rounded-md p-1"
+            >
+              <span className="sr-only">Open site navigation</span>
+              <FontAwesomeIcon icon={faBars} size="lg" aria-hidden="true" />
+            </button>
+            <div className="flex-1">
+              <span className="font-heading text-heading-color font-bold text-lg">Grimwild</span>
+              <span className="text-muted-color text-base ml-2">Community Hub</span>
+            </div>
+          </div>
+        </Container>
       </div>
 
       <main className="lg:pl-72">
