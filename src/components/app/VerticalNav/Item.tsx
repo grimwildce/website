@@ -1,12 +1,14 @@
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "@/components/app/VerticalNav/Link";
+import { faBook, faChevronRight, type IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import classNames from "classnames";
-import { Link, useLocation } from "react-router";
+import { useLocation } from "react-router";
 
 type NestedNavigationItem = {
   name: string;
   href: string;
+  icon?: IconDefinition;
 };
 export type NavigationItem = {
   children?: NestedNavigationItem[];
@@ -42,41 +44,49 @@ const Item = ({ item, onSelect }: ItemProps) => {
         <Disclosure as="div" defaultOpen={isOpen}>
           <DisclosureButton
             className={classNames(
-              "group flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-base-color hover:bg-panel-2 hover:cursor-pointer"
+              "group flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-base-color hover:cursor-pointer"
             )}
           >
             <FontAwesomeIcon
+              icon={item.icon ?? faBook}
+              aria-hidden="true"
+              size="lg"
+              className="shrink-0"
+            />
+            <div className="flex-1">{item.name}</div>
+            <FontAwesomeIcon
               icon={faChevronRight}
               aria-hidden="true"
-              className="size-5 shrink-0 text-base-color group-data-open:rotate-90"
+              className="shrink-0 group-data-open:rotate-90"
             />
-            {item.name}
           </DisclosureButton>
           <DisclosurePanel as="ul" className="mt-1 px-2">
-            {item.children.map((subItem) => (
-              <li
-                key={subItem.name}
-                className={classNames("first:rounded-t-md last:rounded-b-md", {
-                  "bg-panel-2": isActive(subItem),
-                  "hover:bg-panel-2": !isActive(subItem)
-                })}
-              >
-                <Link
-                  to={subItem.href}
-                  className={classNames("block py-2 pr-2 pl-9 text-sm/6 text-base-color")}
-                  onClick={onSelect}
+            <ul className="space-y-0.5">
+              {item.children.map((subItem) => (
+                <li
+                  key={subItem.name}
+                  className={classNames("rounded-md hover:cursor-pointer", {
+                    "bg-panel-2": isActive(subItem),
+                    "hover:bg-panel-2": !isActive(subItem)
+                  })}
                 >
-                  {subItem.name}
-                </Link>
-              </li>
-            ))}
+                  <Link
+                    to={subItem.href}
+                    className={classNames("block py-2 pr-2 pl-9 text-sm/6 text-base-color")}
+                    onClick={onSelect}
+                  >
+                    {subItem.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </DisclosurePanel>
         </Disclosure>
       ) : (
         <Link
           to={item.href}
           className={classNames(
-            "block rounded-sm py-2 pr-2 pl-10 text-sm/6 font-semibold text-base-color",
+            "flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-base-color hover:cursor-pointer",
             {
               "bg-panel-2": isActive(item),
               "hover:bg-panel-2": !isActive(item)
@@ -84,6 +94,12 @@ const Item = ({ item, onSelect }: ItemProps) => {
           )}
           onClick={onSelect}
         >
+          <FontAwesomeIcon
+            icon={item.icon ?? faBook}
+            aria-hidden="true"
+            size="lg"
+            className="shrink-0 text-base-color"
+          />
           {item.name}
         </Link>
       )}

@@ -1,11 +1,11 @@
-import Item, { type NavigationItem } from "@/components/app/Sidebar/Item";
+import Item, { type NavigationItem } from "@/components/app/VerticalNav/Item";
 
-type SidebarProps = {
+type VerticalNavProps = {
   navigation: NavigationItem[];
   onSelect?: () => void;
 };
 
-const Sidebar = ({ navigation, onSelect }: SidebarProps) => {
+const VerticalNav = ({ navigation, onSelect }: VerticalNavProps) => {
   return (
     <div className="relative flex grow flex-col overflow-y-auto border-r px-6 gap-5 border-muted bg-panel-1">
       <div className="h-16 shrink-0 text-heading-color font-heading flex flex-col justify-center">
@@ -17,7 +17,7 @@ const Sidebar = ({ navigation, onSelect }: SidebarProps) => {
       <nav className="relative flex flex-1 flex-col">
         <ul role="list" className="flex flex-1 flex-col">
           <li>
-            <ul role="list" className="-mx-2">
+            <ul role="list" className="-mx-2 space-y-1">
               {navigation.map((item) => (
                 <Item key={item.name} item={item} onSelect={onSelect} />
               ))}
@@ -29,4 +29,4 @@ const Sidebar = ({ navigation, onSelect }: SidebarProps) => {
   );
 };
 
-export default Sidebar;
+export default VerticalNav;

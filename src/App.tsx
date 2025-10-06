@@ -1,14 +1,15 @@
-import Sidebar, { type NavigationItem } from "@/components/app/Sidebar";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import VerticalNav, { type NavigationItem } from "@/components/app/VerticalNav";
+import { faBars, faFile, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from "@headlessui/react";
-import { useState } from "react";
-import { Outlet } from "react-router";
+import { useEffect, useState } from "react";
+import { Outlet, useLocation } from "react-router";
 
 const navigation: NavigationItem[] = [
   {
     name: "About",
-    href: "/"
+    href: "/",
+    icon: faFile
   },
   {
     name: "Grimwild",
@@ -26,6 +27,19 @@ const navigation: NavigationItem[] = [
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      // Wait for DOM to render
+      setTimeout(() => {
+        const el = document.getElementById(location.hash.slice(1));
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+    }
+  }, [location]);
 
   const handleMobileSidebarSelect = () => {
     setSidebarOpen(false);
@@ -62,14 +76,14 @@ const App = () => {
               </div>
             </TransitionChild>
 
-            <Sidebar navigation={navigation} onSelect={handleMobileSidebarSelect} />
+            <VerticalNav navigation={navigation} onSelect={handleMobileSidebarSelect} />
           </DialogPanel>
         </div>
       </Dialog>
 
       {/* Static sidebar for desktop */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-        <Sidebar navigation={navigation} />
+        <VerticalNav navigation={navigation} />
       </div>
 
       <div className="sticky top-0 z-40 flex items-center lg:hidden bg-panel-1 h-16 px-4 sm:px-6">

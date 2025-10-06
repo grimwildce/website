@@ -6,16 +6,17 @@ import type { ElementType, ReactNode } from "react";
 type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 type HeadingTag = `h${HeadingLevel}`;
 type HeadingProps = {
-  children: ReactNode;
-  pretitle?: string;
   level: HeadingLevel;
+  children: ReactNode;
+  id?: string;
+  pretitle?: string;
   as?: HeadingTag;
   center?: boolean;
   margin?: MarginSize;
   noBorder?: boolean;
 };
 
-const textSize: Record<HeadingLevel, string> = {
+const headingSizeCss: Record<HeadingLevel, string> = {
   1: "text-4xl",
   2: "text-3xl",
   3: "text-2xl",
@@ -24,19 +25,28 @@ const textSize: Record<HeadingLevel, string> = {
   6: "text-base"
 };
 
-const Heading = ({ pretitle, level = 1, as, margin, center, noBorder, children }: HeadingProps) => {
+const Heading = ({
+  level = 1,
+  children,
+  id,
+  pretitle,
+  as,
+  center,
+  margin,
+  noBorder
+}: HeadingProps) => {
   const hasPretitle = pretitle && pretitle.length > 0;
   const Tag: ElementType = as ?? (`h${level}` as HeadingTag);
   const defaultMargin: MarginSize = level <= 3 ? { top: "large", bottom: "medium" } : "medium";
 
   const pretitleCss = classNames("font-bold font-text uppercase", {
-    "text-lg leading-5": level === 1,
+    "text-lg leading-5 scroll-mt-": level === 1,
     "text-base leading-2": level === 2,
     "text-sm": level >= 3
   });
   const headingCss = classNames(
-    "font-heading font-bold text-heading-color uppercase",
-    textSize[level],
+    "font-heading font-bold text-heading-color uppercase scroll-mt-28",
+    headingSizeCss[level],
     !hasPretitle && getMarginSize(margin, defaultMargin),
     {
       "text-center": center,
@@ -44,13 +54,19 @@ const Heading = ({ pretitle, level = 1, as, margin, center, noBorder, children }
     }
   );
 
+  const heading = (
+    <Tag id={id} className={headingCss}>
+      {children}
+    </Tag>
+  );
+
   const headingContent = hasPretitle ? (
     <Stack spacing="none" margin={resolveMargin(margin, defaultMargin)}>
       <div className={pretitleCss}>{pretitle}</div>
-      <Tag className={headingCss}>{children}</Tag>
+      {heading}
     </Stack>
   ) : (
-    <Tag className={headingCss}>{children}</Tag>
+    heading
   );
 
   return headingContent;
