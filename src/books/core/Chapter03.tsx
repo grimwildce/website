@@ -1,5 +1,6 @@
 import Page, { type PageNavigationItem } from "@/components/app/Page";
 import CoreTalent from "@/components/CoreTalent";
+import Path from "@/components/Path";
 import PathCard from "@/components/PathCard";
 import SectionHeading from "@/components/SectionHeading";
 import StepList from "@/components/StepList";
@@ -40,57 +41,47 @@ const navigation: PageNavigationItem[] = [
     children: [{ name: "Backgrounds", anchor: "#backgrounds" }]
   },
   { name: "Paths & Talents", anchor: "#paths-and-talents" },
-  { name: "Bard", anchor: "#bard", children: [{ name: "Bard Talents", anchor: "#bard-talents" }] },
+  { name: "Bard", anchor: "#bard" },
   {
     name: "Berserker",
-    anchor: "#berserker",
-    children: [{ name: "Berserker Talents", anchor: "#berserker-talents" }]
+    anchor: "#berserker"
   },
   {
     name: "Cleric",
-    anchor: "#cleric",
-    children: [{ name: "Cleric Talents", anchor: "#cleric-talents" }]
+    anchor: "#cleric"
   },
   {
     name: "Druid",
-    anchor: "#druid",
-    children: [{ name: "Druid Talents", anchor: "#druid-talents" }]
+    anchor: "#druid"
   },
   {
     name: "Fighter",
-    anchor: "#fighter",
-    children: [{ name: "Fighter Talents", anchor: "#fighter-talents" }]
+    anchor: "#fighter"
   },
-  { name: "Monk", anchor: "#monk", children: [{ name: "Monk Talents", anchor: "#monk-talents" }] },
+  { name: "Monk", anchor: "#monk" },
   {
     name: "Paladin",
-    anchor: "#paladin",
-    children: [{ name: "Paladin Talents", anchor: "#paladin-talents" }]
+    anchor: "#paladin"
   },
   {
     name: "Ranger",
-    anchor: "#ranger",
-    children: [{ name: "Ranger Talents", anchor: "#ranger-talents" }]
+    anchor: "#ranger"
   },
   {
     name: "Rogue",
-    anchor: "#rogue",
-    children: [{ name: "Rogue Talents", anchor: "#rogue-talents" }]
+    anchor: "#rogue"
   },
   {
     name: "Sorcerer",
-    anchor: "#sorcerer",
-    children: [{ name: "Sorcerer Talents", anchor: "#sorcerer-talents" }]
+    anchor: "#sorcerer"
   },
   {
     name: "Warlock",
-    anchor: "#warlock",
-    children: [{ name: "Warlock Talents", anchor: "#warlock-talents" }]
+    anchor: "#warlock"
   },
   {
     name: "Wizard",
-    anchor: "#wizard",
-    children: [{ name: "Wizard Talents", anchor: "#wizard-talents" }]
+    anchor: "#wizard"
   }
 ];
 
@@ -869,24 +860,20 @@ const Chapter03 = () => {
         to help flesh out your characters, as well as party-building questions that help link
         together characters' backstories and add depth to their relationships.
       </Text>
-      <Heading level={2} pretitle="Path of the" id="bard">
-        Bard
-      </Heading>
-      <Text>
-        <Strong allCaps>Also</Strong>: <StrongEm>Minstrel, Orator, Warlord</StrongEm>
-      </Text>
-      <Text>
-        <Em>
-          You spin tales and songs that stir emotions, inspire bravery, and turn simple deeds into
-          legends.
-        </Em>
-      </Text>
+      <Path id="bard" name="Bard" also={["Minstrel", "Orator", "Warlord"]}>
+        <Text>
+          <Em>
+            You spin tales and songs that stir emotions, inspire bravery, and turn simple deeds into
+            legends.
+          </Em>
+        </Text>
+      </Path>
       <CoreTalent
         name="Bardsong"
         growth="Every 3 levels, gain +1 bardsong and +1 melody per session."
         margin="large"
       >
-        <Text>
+        <Text margin="small">
           Each session, you can sing <Strong>3 bardsongs</Strong>, rolling Presence. Sing one to
           pull off a <StrongEm>potent feat of emotional influence</StrongEm>, like{" "}
           <Em>eliciting a vex response in an NPC</Em>, <Em>buffing a group of allies</Em>, or{" "}
@@ -898,7 +885,7 @@ const Chapter03 = () => {
           </Strong>
           , and <StrongEm>impact</StrongEm> (<Em>below</Em>) that matches the effect.
         </Text>
-        <Text>
+        <Text margin="small">
           Each session, you can also sing <Strong>3 melodies</Strong>, spur of the moment tunes
           without specific composition. Spend them to: assist{" "}
           <Em>without risk—calm or intensify a vex response—clear a mark</Em>. These don't require a
@@ -911,7 +898,7 @@ const Chapter03 = () => {
         margin="large"
         border
       >
-        <Stack direction="row" spacing="large" wrap>
+        <Stack direction="row" spacing="large" margin="small" wrap>
           <Stack.Item flex={1} flexShrink="none">
             <Table align="center" margin="none" textSize="small" variant="simple" fullWidth>
               <Table.Head>
@@ -1109,9 +1096,7 @@ const Chapter03 = () => {
           consumed by primal rage.
         </List.Item>
       </List>
-      <Heading level={3} id="bard-talents">
-        Bard Talents
-      </Heading>
+      <Heading level={3}>Bard Talents</Heading>
       <Talent name="Bardic Lore">
         <Talent.Text>
           You gain any 3 wises and 1 extra story per session. You take +1d on any story rolls
@@ -1159,13 +1144,13 @@ const Chapter03 = () => {
         </Talent.Text>
       </Talent>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Bardic Instrument(s)</Strong> <Tag>Advice</Tag>: Your instrument or
           instruments are an important part of what makes you a bard. Weave them into scenes when
           you can. Try to find an instrument that both matches your PC's personality and can work in
           many scenes.
         </Text>
-        <Table variant="simple" textSize="small" fullWidth>
+        <Table variant="simple" textSize="small" margin="small" fullWidth>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell>String</Table.HeaderCell>
@@ -1214,28 +1199,24 @@ const Chapter03 = () => {
           </Table.Body>
         </Table>
       </Panel>
-      <Heading level={2} pretitle="Path of the" id="berserker">
-        Berserker
-      </Heading>
-      <Text>
-        <Strong allCaps>Also</Strong>: <StrongEm>Juggernaut, Reaver, Warbringer</StrongEm>
-      </Text>
-      <Text>
-        <Em>
-          You don't just fight—you crush anything and everything in your path until nothing stands
-          before you.
-        </Em>
-      </Text>
+      <Path id="berserker" name="Berserker" also={["Juggernaut", "Reaver", "Warbringer"]}>
+        <Text>
+          <Em>
+            You don't just fight—you crush anything and everything in your path until nothing stands
+            before you.
+          </Em>
+        </Text>
+      </Path>
       <CoreTalent
         name="Frenzy"
         growth="Every 3 levels, gain 1 free activation of this per session."
       >
-        <Text>
+        <Text margin="small">
           Once per session, or when you get bloodied or take vex, you can enter a{" "}
           <Strong>frenzy</Strong> for a scene. During the frenzy, you can only take aggressive
           actions. You also:
         </Text>
-        <List variant="unordered">
+        <List margin="small" variant="unordered">
           <List.Item>
             Take +1d for each mark you have and ignore all thorns from harm and marks.
           </List.Item>
@@ -1248,7 +1229,7 @@ const Chapter03 = () => {
             Always get a final action when dropped. On a critical, ignore getting dropped.
           </List.Item>
         </List>
-        <Text>
+        <Text margin="small">
           You can only exit a frenzy when <Em>no challenger stands before you</Em>, you get dropped,
           or you <Strong>push yourself</Strong> to calm down.
         </Text>
@@ -1301,9 +1282,7 @@ const Chapter03 = () => {
         <List.Item>Busted in skull</List.Item>
         <List.Item>Not a scratch on you</List.Item>
       </List>
-      <Heading level={3} id="berserker-talents">
-        Berserker Talents
-      </Heading>
+      <Heading level={3}>Berserker Talents</Heading>
       <Talent name="Fearsome">
         <Talent.Text>
           Your presence instills fear in others. The GM judges an NPC's response, or you can spend
@@ -1354,27 +1333,23 @@ const Chapter03 = () => {
           the only 3 songs you know.
         </Talent.Text>
       </Talent>
-      <Heading level={2} pretitle="Path of the" id="cleric">
-        Cleric
-      </Heading>
-      <Text>
-        <Strong allCaps>Also</Strong>: <StrongEm>Priest, Zealot, Chosen One</StrongEm>
-      </Text>
-      <Text>
-        <Em>
-          You serve as a conduit for the divine, channeling holy power to safeguard the faithful and
-          do your god's bidding.
-        </Em>
-      </Text>
+      <Path id="cleric" name="Cleric" also={["Priest", "Zealot", "Chosen One"]}>
+        <Text>
+          <Em>
+            You serve as a conduit for the divine, channeling holy power to safeguard the faithful
+            and do your god's bidding.
+          </Em>
+        </Text>
+      </Path>
       <CoreTalent
         name="Channel Divinity"
         growth="Every 2 levels, increase one domain pool by 1d (max 8d)"
       >
-        <Text>
+        <Text margin="small">
           Your god grants you spellcasting ability. You roll a domain pool to cast and that domain
           pool and your god's epithet serve as touchstones.
         </Text>
-        <Text>
+        <Text margin="small">
           Create your god (<Em>below</Em>). You have <Strong>1 major domain</Strong>, a 6d power
           pool, and <Strong>2 minor domains</Strong>, each a 4d power pool. These pools replenish
           each session. You can drop 1d and roll the domain to cast a{" "}
@@ -1483,9 +1458,7 @@ const Chapter03 = () => {
           </Text>
         </Panel.Row>
       </Panel>
-      <Heading level={3} id="cleric-talents">
-        Cleric Talents
-      </Heading>
+      <Heading level={3}>Cleric Talents</Heading>
       <Talent name="Blessed">
         <Talent.Text>
           Once per session, you can re-roll a roll you just made as your god attempts to intervene.
@@ -1539,38 +1512,34 @@ const Chapter03 = () => {
         </Talent.Text>
       </Talent>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Holy Symbol</Strong> <Tag>Advice</Tag>: Deities and the religions that
           grow around them will almost universally express their following with a recognizable
           symbol. Draw your own on your sheet using those below as inspiration, or choose one of
           these!
         </Text>
       </Panel>
-      <Heading level={2} pretitle="Path of the" id="druid">
-        Druid
-      </Heading>
-      <Text>
-        <Strong allCaps>Also</Strong>: <StrongEm>Shapeshifter, Grovekeeper, Wildling</StrongEm>
-      </Text>
-      <Text>
-        <Em>
-          You embrace and embody the untamed power of the natural world, transforming into beasts
-          and channeling the spirit of the wild.
-        </Em>
-      </Text>
-      <CoreTalent name="Wild Shape" growth="Every 2 levels, increase your Wild Shape pool by 1d.">
+      <Path id="druid" name="Druid" also={["Shapeshifter", "Grovekeeper", "Wildling"]}>
         <Text>
+          <Em>
+            You embrace and embody the untamed power of the natural world, transforming into beasts
+            and channeling the spirit of the wild.
+          </Em>
+        </Text>
+      </Path>
+      <CoreTalent name="Wild Shape" growth="Every 2 levels, increase your Wild Shape pool by 1d.">
+        <Text margin="small">
           You can shift into the form of any beast you're familiar with. You have a{" "}
           <StrongEm>4d Wild Shape</StrongEm>
           resource pool, rolled when you shift—at 0d, you fail to turn into that form. The pool
           replenishes after each scene.
         </Text>
-        <Text>
+        <Text margin="small">
           You take on the form's physical qualities and feral instincts. Move your stat points
           around to represent this, with a min. of 1 and max. of 3 in a stat. You lose access to any
           talent related to your own physical form.
         </Text>
-        <Text>
+        <Text margin="small">
           Some forms are more difficult to shift into. For each <StrongEm>wild talent</StrongEm>{" "}
           (max 2) a form has, drop 1d from the pool before rolling it. These are things like
           <Em>aquatic</Em>, <Em>smaller than a cat</Em>, <Em>bigger than a bear</Em>,{" "}
@@ -1684,9 +1653,7 @@ const Chapter03 = () => {
           <Strong>Honey Badger</Strong>: Iron Will (<Em>pg. 59</Em>)
         </List.Item>
       </List>
-      <Heading level={3} id="druid-talents">
-        Druid Talents
-      </Heading>
+      <Heading level={3}>Druid Talents</Heading>
       <Talent name="Awaken">
         <Talent.Text>
           Once per scene, you may awaken a living natural feature—plants, animals, insects, fungi,
@@ -1862,22 +1829,16 @@ const Chapter03 = () => {
           perform weather rituals without ritual anchors.
         </Talent.Text>
       </Talent>
-      <Heading level={2} pretitle="Path of the" id="fighter">
-        Fighter
-      </Heading>
-      <Text>
-        <Strong allCaps>Also</Strong>:{" "}
-        <Strong>
-          <Em>Blademaster, Duelist, Sergeant</Em>
-        </Strong>
-      </Text>
-      <Text>
-        <Em>
-          You become one with your weapon, and through it, you find your real purpose in this life.
-        </Em>
-      </Text>
-      <CoreTalent name="Weapon Mastery" growth="Every 3 levels, your mastery die increases by +1d.">
+      <Path id="fighter" name="Fight" also={["Blademaster", "Duelist", "Sergeant"]}>
         <Text>
+          <Em>
+            You become one with your weapon, and through it, you find your real purpose in this
+            life.
+          </Em>
+        </Text>
+      </Path>
+      <CoreTalent name="Weapon Mastery" growth="Every 3 levels, your mastery die increases by +1d.">
+        <Text margin="small">
           Choose a fighting style that you have mastered:{" "}
           <Em>
             brawling—dual-wielding—one-handed weapons—ranged weapons—thrown weapons—two-handed
@@ -1983,9 +1944,7 @@ const Chapter03 = () => {
         the scene. Use your wises creatively, and remember, combat is freeform, so stretch your
         imagination.
       </Text>
-      <Heading level={3} id="fighter-talents">
-        Fighter Talents
-      </Heading>
+      <Heading level={3}>Fighter Talents</Heading>
       <Talent name="Arcane Training" prohibited="Wizard">
         <Talent.Text>
           You have spellcasting as the Spellcraft talent (<Em>pg. 76</Em>). You roll Wits and can
@@ -2063,305 +2022,303 @@ const Chapter03 = () => {
           defenses.
         </List.Item>
       </List>
-      <Heading level={2} pretitle="Path of the" id="monk">
-        Monk
-      </Heading>
-      <Text>ALSO: Martial Artist, Mystic, Wanderer</Text>
-      <Text>
-        Your body is a vessel through which you channel your discipline into grace, precision, and
-        the never-ending journey towards perfection.
-      </Text>
-      <blockquote>
-        <Text>DISCIPLINE (CORE TALENT)</Text>
+      <Path id="monk" name="Monk" also={["Martial Artist", "Mystic", "Wanderer"]}>
         <Text>
-          Your body itself is a weapon, and anything in your hands is merely an extension of it. You
-          never suffer thorns due to weapon matchups. Once per session, you can interrupt with a:
-          philosophical point—quick reaction—stunning strike. Each scene, you have 4 flow. You can
-          spend it to:
+          <Em>
+            Your body is a vessel through which you channel your discipline into grace, precision,
+            and the never-ending journey towards perfection.
+          </Em>
         </Text>
-        <List variant="ordered">
+      </Path>
+      <CoreTalent
+        name="Discipline"
+        growth="Every 3 levels, increase flow by 1 per scene and interrupts by 1 per session."
+      >
+        <Text margin="small">
+          Your body itself is a weapon, and anything in your hands is merely an extension of it. You
+          never suffer thorns due to weapon matchups. Once per session, you can{" "}
+          <StrongEm>interrupt</StrongEm> with a:{" "}
+          <Em>philosophical point—quick reaction—stunning strike</Em>. Each scene, you have{" "}
+          <Strong>4 flow</Strong>. You can spend it to:
+        </Text>
+        <List variant="ordered" margin="small">
           <List.Item>
-            Ignore difficulty thorns from: being outnumbered—a single powerful opponent.
+            Ignore difficulty thorns from: <Em>being outnumbered—a single powerful opponent</Em>.
           </List.Item>
           <List.Item>
-            Attempt a fluid maneuver. Before rolling, declare you want to also: disarm them—
-            redirect momentum—reposition you, them, or both. On a perfect or messy, it happens.
+            Attempt a <Strong>fluid maneuver</Strong>. Before rolling, declare you want to also:
+            <Em>disarm them—redirect momentum—reposition you, them, or both</Em>. On a perfect or
+            messy, it happens.
           </List.Item>
           <List.Item>
-            Pull off a potent feat of mystical grace, like running across water or falling
-            harmlessly from a great height. For 1 more flow, extend this to those you're touching.
+            Pull off a <StrongEm>potent feat of mystical grace</StrongEm>, like{" "}
+            <Em>running across water</Em>
+            or <Em>falling harmlessly from a great height</Em>. <Em>For 1 more flow</Em>, extend
+            this to those you're touching.
           </List.Item>
         </List>
-        <Line />
+      </CoreTalent>
+      <SectionHeading description="Optional">Martial Arts Style</SectionHeading>
+      <Panel
+        title="Is based on the ____ concept of..."
+        description="Choose 1 or 2"
+        border
+        titleNormalCaps
+      >
+        <Table margin="small" textSize="small" padding="tight" variant="simple" fullWidth italic>
+          <Table.Head>
+            <Table.Row>
+              <Table.HeaderCell>Primal</Table.HeaderCell>
+              <Table.HeaderCell>Elemental</Table.HeaderCell>
+              <Table.HeaderCell>Powerful</Table.HeaderCell>
+              <Table.HeaderCell>Idealistic</Table.HeaderCell>
+              <Table.HeaderCell>Philosophical</Table.HeaderCell>
+              <Table.HeaderCell>Stylistic</Table.HeaderCell>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>tiger</Table.Cell>
+              <Table.Cell>fire</Table.Cell>
+              <Table.Cell>thunderstorm</Table.Cell>
+              <Table.Cell>harmony</Table.Cell>
+              <Table.Cell>foundation</Table.Cell>
+              <Table.Cell>ferocity</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>crane</Table.Cell>
+              <Table.Cell>water</Table.Cell>
+              <Table.Cell>avalanche</Table.Cell>
+              <Table.Cell>destruction</Table.Cell>
+              <Table.Cell>flourishing</Table.Cell>
+              <Table.Cell>deception</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>snake</Table.Cell>
+              <Table.Cell>air</Table.Cell>
+              <Table.Cell>tsunami</Table.Cell>
+              <Table.Cell>tranquility</Table.Cell>
+              <Table.Cell>refinement</Table.Cell>
+              <Table.Cell>grace</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>wolf</Table.Cell>
+              <Table.Cell>earth</Table.Cell>
+              <Table.Cell>whirlwind</Table.Cell>
+              <Table.Cell>justice</Table.Cell>
+              <Table.Cell>adaptation</Table.Cell>
+              <Table.Cell>brutality</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>mantis</Table.Cell>
+              <Table.Cell>lightning</Table.Cell>
+              <Table.Cell>earthquake</Table.Cell>
+              <Table.Cell>chaos</Table.Cell>
+              <Table.Cell>endurance</Table.Cell>
+              <Table.Cell>precision</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>raven</Table.Cell>
+              <Table.Cell>heart</Table.Cell>
+              <Table.Cell>volcano</Table.Cell>
+              <Table.Cell>freedom</Table.Cell>
+              <Table.Cell>transformation</Table.Cell>
+              <Table.Cell>patience</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Panel>
+      <Panel
+        title="It features stances and moves like..."
+        description="Choose 3"
+        border
+        titleNormalCaps
+      >
+        <Table margin="small" textSize="small" padding="tight" variant="simple" fullWidth italic>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>open palm</Table.Cell>
+              <Table.Cell>elbow strike</Table.Cell>
+              <Table.Cell>circular step</Table.Cell>
+              <Table.Cell>high kick</Table.Cell>
+              <Table.Cell>crane stance</Table.Cell>
+              <Table.Cell>mantis grab</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>spinning kick</Table.Cell>
+              <Table.Cell>aerial leaps</Table.Cell>
+              <Table.Cell>knee strike</Table.Cell>
+              <Table.Cell>tiger claw</Table.Cell>
+              <Table.Cell>side kick</Table.Cell>
+              <Table.Cell>close punch</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>low stance</Table.Cell>
+              <Table.Cell>breath control</Table.Cell>
+              <Table.Cell>joint lock</Table.Cell>
+              <Table.Cell>heavy strike</Table.Cell>
+              <Table.Cell>swift parry</Table.Cell>
+              <Table.Cell>leaping elbow</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>finger jabs</Table.Cell>
+              <Table.Cell>redirecting grab</Table.Cell>
+              <Table.Cell>pressure point</Table.Cell>
+              <Table.Cell>dual strikes</Table.Cell>
+              <Table.Cell>rooted stance</Table.Cell>
+              <Table.Cell>snap kick</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>iron forearm</Table.Cell>
+              <Table.Cell>chop strike</Table.Cell>
+              <Table.Cell>whipping attack</Table.Cell>
+              <Table.Cell>jumps &amp; rolls</Table.Cell>
+              <Table.Cell>soft redirect</Table.Cell>
+              <Table.Cell>wide sweep</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>flowing step</Table.Cell>
+              <Table.Cell>iron grip</Table.Cell>
+              <Table.Cell>steady gaze</Table.Cell>
+              <Table.Cell>palm heel</Table.Cell>
+              <Table.Cell>backfist strike</Table.Cell>
+              <Table.Cell>crescent kick</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Panel>
+      <Panel
+        title="It makes use of ____ weapons like..."
+        description="Choose 2"
+        border
+        titleNormalCaps
+      >
+        <Table margin="small" textSize="small" padding="tight" variant="simple" fullWidth italic>
+          <Table.Head>
+            <Table.Row>
+              <Table.HeaderCell>Blunt</Table.HeaderCell>
+              <Table.HeaderCell>Flexible</Table.HeaderCell>
+              <Table.HeaderCell>Edged</Table.HeaderCell>
+              <Table.HeaderCell>Reach</Table.HeaderCell>
+              <Table.HeaderCell>Thrown</Table.HeaderCell>
+              <Table.HeaderCell>Specialized</Table.HeaderCell>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>bo staff</Table.Cell>
+              <Table.Cell>chain whip</Table.Cell>
+              <Table.Cell>sai</Table.Cell>
+              <Table.Cell>monk spade</Table.Cell>
+              <Table.Cell>shuriken</Table.Cell>
+              <Table.Cell>tiger claws</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>three-part staff</Table.Cell>
+              <Table.Cell>rope dart</Table.Cell>
+              <Table.Cell>kama</Table.Cell>
+              <Table.Cell>spear</Table.Cell>
+              <Table.Cell>throwing spikes</Table.Cell>
+              <Table.Cell>spiked boots</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>half-staff</Table.Cell>
+              <Table.Cell>sickle &amp; chain</Table.Cell>
+              <Table.Cell>butterfly sword</Table.Cell>
+              <Table.Cell>naginata</Table.Cell>
+              <Table.Cell>chakram</Table.Cell>
+              <Table.Cell>war fan</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>nunchaku</Table.Cell>
+              <Table.Cell>weight &amp; chain</Table.Cell>
+              <Table.Cell>hook sword</Table.Cell>
+              <Table.Cell>longhandle blade</Table.Cell>
+              <Table.Cell>boomerang</Table.Cell>
+              <Table.Cell>iron knuckles</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>short sticks</Table.Cell>
+              <Table.Cell>whip blade</Table.Cell>
+              <Table.Cell>straight sword</Table.Cell>
+              <Table.Cell>trident</Table.Cell>
+              <Table.Cell>darts</Table.Cell>
+              <Table.Cell>crescent knives</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>batons</Table.Cell>
+              <Table.Cell>scarf</Table.Cell>
+              <Table.Cell>curved sword</Table.Cell>
+              <Table.Cell>scythe</Table.Cell>
+              <Table.Cell>throwing axes</Table.Cell>
+              <Table.Cell>backfist rings</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Panel>
+      <Heading level={3}>Monk Talents</Heading>
+      <Talent name="Flow State">
+        <Talent.Text>
+          After an action or defense roll, you can always keep the spotlight to prevent the GM from
+          spending suspense. This continues as long as you keep taking action and don't roll a grim.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Healing Hands">
+        <Talent.Text>
+          You can heal an ally that is bloodied. This automatically works, but you must make a
+          Presence defense roll against being bloodied—you take their pain onto yourself and must
+          fend it off.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Lightning Reflexes">
+        <Talent.Text>
+          You can always act first, unless completely surprised. You also ignore difficulty thorns
+          on Agility defense rolls.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Mind Over Matter">
+        <Talent.Text>
+          When you take a physical mark, you can instead choose to take a mental mark. When you
+          clear any mark by rolling it, <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Primordial Forces">
+        <Talent.Text>
+          Choose an element: <Em>Air—Earth—Fire—Water</Em>. You can cast cantrips with that element,
+          useful as <Em>set dressing</Em> and <Em>cantrip utility</Em>. On a critical using your
+          element, charge it (mark its box). Spend it to pull off a{" "}
+          <StrongEm>potent feat of force or movement</StrongEm>
+          empowered by the element.
+        </Talent.Text>
+        <Talent.Text>
+          <Em>
+            Special: You can take this again, gaining all elements. On a critical, charge two
+            elements.
+          </Em>
+        </Talent.Text>
+      </Talent>
+      <Talent name="Tether">
+        <Talent.Text>
+          Once per session, you can touch someone to link your spirits. You can sense their feelings
+          and always know where they are. You can <Strong>push yourself</Strong> to:{" "}
+          <Em>assist them—speak into their mind—take mental damage for them—teleport to them</Em>.
+          If they get dropped, so do you. You must touch again or rest for the link to end. When it
+          does, change (<Em>or create</Em>) your bond with them.
+        </Talent.Text>
+      </Talent>
+      <Talent name="There is No Try">
+        <Talent.Text>
+          When putting your life or something you hold equally dear on the line,{" "}
+          <StrongEm>5s count as 6s, but 4s count as 1s</StrongEm>. This generally occurs with dire
+          stakes or after being bloodied in battle.
+        </Talent.Text>
+      </Talent>
+      <Path id="paladin" name="Paladin" also={["Crusader", "Champion", "Justiciar"]}>
         <Text>
-          GROWTH: Every 3 levels, increase flow by 1 per scene and interrupts by 1 per session.
+          You have sworn an oath and your unwavering dedication gives you powerful conviction, which
+          you can wield to better this world.
         </Text>
-      </blockquote>
-      <Text>MARTIAL ARTS STYLE [OPTIONAL]</Text>
-      <Text>Is based on the concept of… [choose 1 or 2]</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1 (Primal)</Table.HeaderCell>
-            <Table.HeaderCell>2 (Elemental)</Table.HeaderCell>
-            <Table.HeaderCell>3 (Powerful)</Table.HeaderCell>
-            <Table.HeaderCell>4 (Idealistic)</Table.HeaderCell>
-            <Table.HeaderCell>5 (Philosophical)</Table.HeaderCell>
-            <Table.HeaderCell>6 (Stylistic)</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>tiger</Table.Cell>
-            <Table.Cell>fire</Table.Cell>
-            <Table.Cell>thunderstorm</Table.Cell>
-            <Table.Cell>harmony</Table.Cell>
-            <Table.Cell>foundation</Table.Cell>
-            <Table.Cell>ferocity</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>crane</Table.Cell>
-            <Table.Cell>water</Table.Cell>
-            <Table.Cell>avalanche</Table.Cell>
-            <Table.Cell>destruction</Table.Cell>
-            <Table.Cell>flourishing</Table.Cell>
-            <Table.Cell>deception</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>snake</Table.Cell>
-            <Table.Cell>air</Table.Cell>
-            <Table.Cell>tsunami</Table.Cell>
-            <Table.Cell>tranquility</Table.Cell>
-            <Table.Cell>refinement</Table.Cell>
-            <Table.Cell>grace</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>wolf</Table.Cell>
-            <Table.Cell>earth</Table.Cell>
-            <Table.Cell>whirlwind</Table.Cell>
-            <Table.Cell>justice</Table.Cell>
-            <Table.Cell>adaptation</Table.Cell>
-            <Table.Cell>brutality</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>mantis</Table.Cell>
-            <Table.Cell>lightning</Table.Cell>
-            <Table.Cell>earthquake</Table.Cell>
-            <Table.Cell>chaos</Table.Cell>
-            <Table.Cell>endurance</Table.Cell>
-            <Table.Cell>precision</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>raven</Table.Cell>
-            <Table.Cell>heart</Table.Cell>
-            <Table.Cell>volcano</Table.Cell>
-            <Table.Cell>freedom</Table.Cell>
-            <Table.Cell>transformation</Table.Cell>
-            <Table.Cell>patience</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>It features stances and moves like… [choose 3]</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>open palm</Table.Cell>
-            <Table.Cell>elbow strike</Table.Cell>
-            <Table.Cell>circular step</Table.Cell>
-            <Table.Cell>high kick</Table.Cell>
-            <Table.Cell>crane stance</Table.Cell>
-            <Table.Cell>mantis grab</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>spinning kick</Table.Cell>
-            <Table.Cell>aerial leaps</Table.Cell>
-            <Table.Cell>knee strike</Table.Cell>
-            <Table.Cell>tiger claw</Table.Cell>
-            <Table.Cell>side kick</Table.Cell>
-            <Table.Cell>close punch</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>low stance</Table.Cell>
-            <Table.Cell>breath control</Table.Cell>
-            <Table.Cell>joint lock</Table.Cell>
-            <Table.Cell>heavy strike</Table.Cell>
-            <Table.Cell>swift parry</Table.Cell>
-            <Table.Cell>leaping elbow</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>finger jabs</Table.Cell>
-            <Table.Cell>redirecting grab</Table.Cell>
-            <Table.Cell>pressure point</Table.Cell>
-            <Table.Cell>dual strikes</Table.Cell>
-            <Table.Cell>rooted stance</Table.Cell>
-            <Table.Cell>snap kick</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>iron forearm</Table.Cell>
-            <Table.Cell>chop strike</Table.Cell>
-            <Table.Cell>whipping attack</Table.Cell>
-            <Table.Cell>jumps &amp; rolls</Table.Cell>
-            <Table.Cell>soft redirect</Table.Cell>
-            <Table.Cell>wide sweep</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>flowing step</Table.Cell>
-            <Table.Cell>iron grip</Table.Cell>
-            <Table.Cell>steady gaze</Table.Cell>
-            <Table.Cell>palm heel</Table.Cell>
-            <Table.Cell>backfist strike</Table.Cell>
-            <Table.Cell>crescent kick</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>It often or occasionally makes use of weapons like… [choose 2]</Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1 (Blunt)</Table.HeaderCell>
-            <Table.HeaderCell>2 (Flexible)</Table.HeaderCell>
-            <Table.HeaderCell>3 (Edged)</Table.HeaderCell>
-            <Table.HeaderCell>4 (Reach)</Table.HeaderCell>
-            <Table.HeaderCell>5 (Thrown)</Table.HeaderCell>
-            <Table.HeaderCell>6 (Specialized)</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>bo staff</Table.Cell>
-            <Table.Cell>chain whip</Table.Cell>
-            <Table.Cell>sai</Table.Cell>
-            <Table.Cell>monk spade</Table.Cell>
-            <Table.Cell>shuriken</Table.Cell>
-            <Table.Cell>tiger claws</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>three-part staff</Table.Cell>
-            <Table.Cell>rope dart</Table.Cell>
-            <Table.Cell>kama</Table.Cell>
-            <Table.Cell>spear</Table.Cell>
-            <Table.Cell>throwing spikes</Table.Cell>
-            <Table.Cell>spiked boots</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>half-staff</Table.Cell>
-            <Table.Cell>sickle &amp; chain</Table.Cell>
-            <Table.Cell>butterfly sword</Table.Cell>
-            <Table.Cell>naginata</Table.Cell>
-            <Table.Cell>chakram</Table.Cell>
-            <Table.Cell>war fan</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>nunchaku</Table.Cell>
-            <Table.Cell>weight &amp; chain</Table.Cell>
-            <Table.Cell>hook sword</Table.Cell>
-            <Table.Cell>longhandle blade</Table.Cell>
-            <Table.Cell>boomerang</Table.Cell>
-            <Table.Cell>iron knuckles</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>short sticks</Table.Cell>
-            <Table.Cell>whip blade</Table.Cell>
-            <Table.Cell>straight sword</Table.Cell>
-            <Table.Cell>trident</Table.Cell>
-            <Table.Cell>darts</Table.Cell>
-            <Table.Cell>crescent knives</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>batons</Table.Cell>
-            <Table.Cell>scarf</Table.Cell>
-            <Table.Cell>curved sword</Table.Cell>
-            <Table.Cell>scythe</Table.Cell>
-            <Table.Cell>throwing axes</Table.Cell>
-            <Table.Cell>backfist rings</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Heading level={3} id="monk-talents">
-        Monk Talents
-      </Heading>
-      <Text>FLOW STATE</Text>
-      <Text>
-        After an action or defense roll, you can always keep the spotlight to prevent the GM from
-        spending suspense. This continues as long as you keep taking action and don't roll a grim.
-      </Text>
-      <Text>HEALING HANDS</Text>
-      <Text>
-        You can heal an ally that is bloodied. This automatically works, but you must make a
-        Presence defense roll against being bloodied—you take their pain onto yourself and must fend
-        it off.
-      </Text>
-      <Text>LIGHTNING REFLEXES</Text>
-      <Text>
-        You can always act first, unless completely surprised. You also ignore difficulty thorns on
-        Agility defense rolls.
-      </Text>
-      <Text>MIND OVER MATTER</Text>
-      <Text>
-        When you take a physical mark, you can instead choose to take a mental mark. When you clear
-        any mark by rolling it, take spark.
-      </Text>
-      <Text>PRIMORDIAL FORCES</Text>
-      <Text>
-        Choose an element: Air—Earth—Fire—Water. You can cast cantrips with that element, useful as
-        set dressing and cantrip utility. On a critical using your element, charge it (mark its
-        box). Spend it to pull off a potent feat of force or movement empowered by the element.
-      </Text>
-      <Text>
-        Special: You can take this again, gaining all elements. On a critical, charge two elements.
-      </Text>
-      <Text>TETHER</Text>
-      <Text>
-        Once per session, you can touch someone to link your spirits. You can sense their feelings
-        and always know where they are. You can push yourself to: assist them—speak into their
-        mind—take mental damage for them—teleport to them. If they get dropped, so do you. You must
-        touch again or rest for the link to end. When it does, change (or create) your bond with
-        them.
-      </Text>
-      <Text>THERE IS NO TRY</Text>
-      <Text>
-        When putting your life or something you hold equally dear on the line, 5s count as 6s, but
-        4s count as 1s. This generally occurs with dire stakes or after being bloodied in battle.
-      </Text>
-      <Heading level={2} pretitle="Path of the" id="paladin">
-        Paladin
-      </Heading>
-      <Text>ALSO: Crusader, Champion, Justiciar</Text>
-      <Text>
-        You have sworn an oath and your unwavering dedication gives you powerful conviction, which
-        you can wield to better this world.
-      </Text>
+      </Path>
       <blockquote>
         <Text>OATHSWORN (CORE TALENT)</Text>
         <Text>
@@ -2425,9 +2382,7 @@ const Chapter03 = () => {
           only once.
         </Text>
       </blockquote>
-      <Heading level={3} id="paladin-talents">
-        Paladin Talents
-      </Heading>
+      <Heading level={3}>Paladin Talents</Heading>
       <Text>AEGIS</Text>
       <Text>
         You take +1d when defending with a shield and can use it to make a defense roll in a nearby
@@ -2510,14 +2465,12 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={2} pretitle="Path of the" id="ranger">
-        Ranger
-      </Heading>
-      <Text>ALSO: Beastmaster, Pathfinder, Trapper</Text>
-      <Text>
-        You stalk relentlessly, moving unseen through the wilderness, tracking your prey with deadly
-        precision, and striking them at their weakest point.
-      </Text>
+      <Path id="ranger" name="Ranger" also={["Beastmaster", "Pathfinder", "Trapper"]}>
+        <Text>
+          You stalk relentlessly, moving unseen through the wilderness, tracking your prey with
+          deadly precision, and striking them at their weakest point.
+        </Text>
+      </Path>
       <blockquote>
         <Text>HUNTER'S MARK (CORE TALENT)</Text>
         <Text>
@@ -2612,9 +2565,7 @@ const Chapter03 = () => {
           Predictable Instincts: Easily baited or lured, reacts predictably to threats, overcommits.
         </List.Item>
       </List>
-      <Heading level={3} id="ranger-talents">
-        Ranger Talents
-      </Heading>
+      <Heading level={3}>Ranger Talents</Heading>
       <Text>ANIMAL COMPANION</Text>
       <Text>
         You're accompanied by a fiercely loyal animal. Each PC adds a reciprocal bond with it.
@@ -2683,14 +2634,12 @@ const Chapter03 = () => {
           removes marks.
         </List.Item>
       </List>
-      <Heading level={2} pretitle="Path of the" id="rogue">
-        Rogue
-      </Heading>
-      <Text>ALSO: Assassin, Cutpurse, Infiltrator</Text>
-      <Text>
-        You live and operate in the margins, striking unseen and disappearing before anyone knows
-        you were there.
-      </Text>
+      <Path id="rogue" name="Rogue" also={["Assassin", "Cutpurse", "Infiltrator"]}>
+        <Text>
+          You live and operate in the margins, striking unseen and disappearing before anyone knows
+          you were there.
+        </Text>
+      </Path>
       <blockquote>
         <Text>EXPERTISE (CORE TALENT)</Text>
         <Text>Choose a skillset below as your expertise:</Text>
@@ -2806,9 +2755,7 @@ const Chapter03 = () => {
         REACTION: I did what I had to do—I was set up—It was a misunderstanding—I'd do it again in a
         heartbeat—I completely forgot I did that—I've made peace with it—Never again. Or write one!
       </Text>
-      <Heading level={3} id="rogue-talents">
-        Rogue Talents
-      </Heading>
+      <Heading level={3}>Rogue Talents</Heading>
       <Text>ACCORDING TO PLAN</Text>
       <Text>
         You gain 1 story per session and can spend story to flashback to utilizing subterfuge in a
@@ -2881,14 +2828,12 @@ const Chapter03 = () => {
         <List.Item>escape route</List.Item>
         <List.Item>safe this way</List.Item>
       </List>
-      <Heading level={2} pretitle="Path of the" id="sorcerer">
-        Sorcerer
-      </Heading>
-      <Text>ALSO: Channeler, Elementalist, Stormcaller</Text>
-      <Text>
-        You are a conduit for ancient and unpredictable forces, shaping spells out of the raw magic
-        that flows through you.
-      </Text>
+      <Path id="sorcerer" name="Sorcerer" also={["Channeler", "Elementalist", "Stormcaller"]}>
+        <Text>
+          You are a conduit for ancient and unpredictable forces, shaping spells out of the raw
+          magic that flows through you.
+        </Text>
+      </Path>
       <blockquote>
         <Text>SORCERY (CORE TALENT)</Text>
         <Text>
@@ -3063,9 +3008,7 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={3} id="sorcerer-talents">
-        Sorcerer Talents
-      </Heading>
+      <Heading level={3}>Sorcerer Talents</Heading>
       <Text>ELDRITCH GROWTH</Text>
       <Text>
         The maelstrom of magic has twisted your body. You gain a permanent physical feature like
@@ -3106,14 +3049,12 @@ const Chapter03 = () => {
         When you or a nearby ally gets bloodied, rattled, or dropped, you take +1d and potency on
         your next spell if you immediately lash out.
       </Text>
-      <Heading level={2} pretitle="Path of the" id="warlock">
-        Warlock
-      </Heading>
-      <Text>ALSO: Blessed One, Cursed One, Occultist</Text>
-      <Text>
-        You have made a pact with a greater being—power in exchange for service, a pact that may
-        prove to be a double-edged sword.
-      </Text>
+      <Path id="warlock" name="Warlock" also={["Blessed One", "Cursed One", "Occultist"]}>
+        <Text>
+          You have made a pact with a greater being—power in exchange for service, a pact that may
+          prove to be a double-edged sword.
+        </Text>
+      </Path>
       <blockquote>
         <Text>PACT (CORE TALENT)</Text>
         <Text>
@@ -3290,9 +3231,7 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={3} id="warlock-talents">
-        Warlock Talents
-      </Heading>
+      <Heading level={3}>Warlock Talents</Heading>
       <Text>ELDRITCH WEAPONRY</Text>
       <Text>
         On a perfect when using cantrip utility as a weapon, you can push yourself to also inflict a
@@ -3337,14 +3276,12 @@ const Chapter03 = () => {
         eyesight with no obstruction requires no roll, otherwise make a story roll. You can bring
         others, taking +1t per person.
       </Text>
-      <Heading level={2} pretitle="Path of the" id="wizard">
-        Wizard
-      </Heading>
-      <Text>ALSO: Diviner, Summoner, Witch</Text>
-      <Text>
-        You wield arcane power through precise knowledge, casting spells from an ever-expanding
-        repertoire, your studies endless.
-      </Text>
+      <Path id="wizard" name="Wizard" also={["Diviner", "Summoner", "Witch"]}>
+        <Text>
+          You wield arcane power through precise knowledge, casting spells from an ever-expanding
+          repertoire, your studies endless.
+        </Text>
+      </Path>
       <blockquote>
         <Text>SPELLCRAFT (CORE TALENT)</Text>
         <Text>
@@ -3588,9 +3525,7 @@ const Chapter03 = () => {
         <List.Item>NECROMANCY: Manipulates life, death, and the undead.</List.Item>
         <List.Item>TRANSMUTATION: Transforms matter and alters physical properties.</List.Item>
       </List>
-      <Heading level={3} id="wizard-talents">
-        Wizard Talents
-      </Heading>
+      <Heading level={3}>Wizard Talents</Heading>
       <Text>ALCHEMIST</Text>
       <Text>
         Each session, you have a 4d Potions resource pool. You can have a minor potion and roll the

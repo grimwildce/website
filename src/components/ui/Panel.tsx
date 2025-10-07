@@ -1,4 +1,3 @@
-import Descriptor from "@/components/Descriptor";
 import { hasChildElementOfType } from "@/utils/childElements";
 import { type DepthValue } from "@/utils/depth";
 import { getFlexSize, type FlexSize } from "@/utils/flexSize";
@@ -19,6 +18,7 @@ type PanelProps = {
   border?: boolean;
   centerTitle?: boolean;
   rowBorders?: boolean;
+  titleNormalCaps?: boolean;
   children: ReactNode;
 };
 
@@ -26,12 +26,13 @@ const Panel = ({
   title,
   description,
   textSize,
-  margin = "large",
+  margin,
   variant = "normal",
   border,
   centerTitle,
   rowBorders,
   flex,
+  titleNormalCaps,
   children
 }: PanelProps) => {
   const hasTitle = typeof title !== "undefined";
@@ -66,7 +67,14 @@ const Panel = ({
     <div className={containerCss}>
       {hasTitle && (
         <div className={titleCss}>
-          <Descriptor text={title} description={description} />
+          <div className="flex justify-between items-baseline w-full flex-wrap">
+            <div className={classNames("text-base font-bold", { uppercase: !titleNormalCaps })}>
+              {title}
+            </div>
+            <div className="text-sm font-medium ml-2">
+              <em>{description}</em>
+            </div>
+          </div>
         </div>
       )}
       <div className={contentCss}>{children}</div>

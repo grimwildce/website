@@ -3,7 +3,6 @@ import Battleground from "@/components/Battleground";
 import CampaignPool from "@/components/CampaignPool";
 import Challenge from "@/components/Challenge";
 import ChallengeSuspense from "@/components/ChallengeSuspense";
-import Descriptor from "@/components/Descriptor";
 import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
 import Grid from "@/components/ui/Grid";
@@ -92,7 +91,7 @@ const Chapter02 = () => {
         </Table>
       </Panel>
       <Panel border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong allCaps>Perfect</Strong>. It's the ideal situation.
           </List.Item>
@@ -104,119 +103,120 @@ const Chapter02 = () => {
           </List.Item>
         </List>
       </Panel>
-      <Table textSize="small" variant="crucible" fullWidth>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell colSpan={6}>
-              <Descriptor
-                text="GM Crucible"
-                description="Roll 2, smash them together, and interpret."
-              />
-            </Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>tough</Table.Cell>
-            <Table.Cell>quiet</Table.Cell>
-            <Table.Cell>precarious</Table.Cell>
-            <Table.Cell>wild</Table.Cell>
-            <Table.Cell>mysterious</Table.Cell>
-            <Table.Cell>rustic</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>muffled</Table.Cell>
-            <Table.Cell>aged</Table.Cell>
-            <Table.Cell>romantic</Table.Cell>
-            <Table.Cell>menacing</Table.Cell>
-            <Table.Cell>puzzling</Table.Cell>
-            <Table.Cell>eerie</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>broken</Table.Cell>
-            <Table.Cell>dwindling</Table.Cell>
-            <Table.Cell>distant</Table.Cell>
-            <Table.Cell>perilous</Table.Cell>
-            <Table.Cell>bleak</Table.Cell>
-            <Table.Cell>tense</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>forgotten</Table.Cell>
-            <Table.Cell>abundant</Table.Cell>
-            <Table.Cell>hidden</Table.Cell>
-            <Table.Cell>withered</Table.Cell>
-            <Table.Cell>chaotic</Table.Cell>
-            <Table.Cell>looming</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>festive</Table.Cell>
-            <Table.Cell>lost</Table.Cell>
-            <Table.Cell>immense</Table.Cell>
-            <Table.Cell>serene</Table.Cell>
-            <Table.Cell>vibrant</Table.Cell>
-            <Table.Cell>flickering</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>rugged</Table.Cell>
-            <Table.Cell>splintered</Table.Cell>
-            <Table.Cell>sacred</Table.Cell>
-            <Table.Cell>relentless</Table.Cell>
-            <Table.Cell>tangled</Table.Cell>
-            <Table.Cell>twisted</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>journey</Table.Cell>
-            <Table.Cell>juncture</Table.Cell>
-            <Table.Cell>rift</Table.Cell>
-            <Table.Cell>scheme</Table.Cell>
-            <Table.Cell>nexus</Table.Cell>
-            <Table.Cell>team</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>tremor</Table.Cell>
-            <Table.Cell>debris</Table.Cell>
-            <Table.Cell>symbol</Table.Cell>
-            <Table.Cell>scar</Table.Cell>
-            <Table.Cell>archive</Table.Cell>
-            <Table.Cell>chasm</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>sanctuary</Table.Cell>
-            <Table.Cell>betrayal</Table.Cell>
-            <Table.Cell>trail</Table.Cell>
-            <Table.Cell>wasteland</Table.Cell>
-            <Table.Cell>help</Table.Cell>
-            <Table.Cell>mystery</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>peak</Table.Cell>
-            <Table.Cell>threshold</Table.Cell>
-            <Table.Cell>boundary</Table.Cell>
-            <Table.Cell>beacon</Table.Cell>
-            <Table.Cell>secret</Table.Cell>
-            <Table.Cell>wall</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>territory</Table.Cell>
-            <Table.Cell>rumor</Table.Cell>
-            <Table.Cell>standoff</Table.Cell>
-            <Table.Cell>strife</Table.Cell>
-            <Table.Cell>maze</Table.Cell>
-            <Table.Cell>pact</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>dilemma</Table.Cell>
-            <Table.Cell>tradition</Table.Cell>
-            <Table.Cell>jackpot</Table.Cell>
-            <Table.Cell>omen</Table.Cell>
-            <Table.Cell>deception</Table.Cell>
-            <Table.Cell>illusion</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
+
+      <Panel title="GM Crucible" description="Roll 2, smash them together, and interpret.">
+        <Panel.Row>
+          <Table textSize="small" padding="tight" margin="none" fullWidth>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>tough</Table.Cell>
+                <Table.Cell>quiet</Table.Cell>
+                <Table.Cell>precarious</Table.Cell>
+                <Table.Cell>wild</Table.Cell>
+                <Table.Cell>mysterious</Table.Cell>
+                <Table.Cell>rustic</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>muffled</Table.Cell>
+                <Table.Cell>aged</Table.Cell>
+                <Table.Cell>romantic</Table.Cell>
+                <Table.Cell>menacing</Table.Cell>
+                <Table.Cell>puzzling</Table.Cell>
+                <Table.Cell>eerie</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>broken</Table.Cell>
+                <Table.Cell>dwindling</Table.Cell>
+                <Table.Cell>distant</Table.Cell>
+                <Table.Cell>perilous</Table.Cell>
+                <Table.Cell>bleak</Table.Cell>
+                <Table.Cell>tense</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>forgotten</Table.Cell>
+                <Table.Cell>abundant</Table.Cell>
+                <Table.Cell>hidden</Table.Cell>
+                <Table.Cell>withered</Table.Cell>
+                <Table.Cell>chaotic</Table.Cell>
+                <Table.Cell>looming</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>festive</Table.Cell>
+                <Table.Cell>lost</Table.Cell>
+                <Table.Cell>immense</Table.Cell>
+                <Table.Cell>serene</Table.Cell>
+                <Table.Cell>vibrant</Table.Cell>
+                <Table.Cell>flickering</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>rugged</Table.Cell>
+                <Table.Cell>splintered</Table.Cell>
+                <Table.Cell>sacred</Table.Cell>
+                <Table.Cell>relentless</Table.Cell>
+                <Table.Cell>tangled</Table.Cell>
+                <Table.Cell>twisted</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+        <Panel.Row>
+          <Table textSize="small" padding="tight" margin="none" fullWidth>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>journey</Table.Cell>
+                <Table.Cell>juncture</Table.Cell>
+                <Table.Cell>rift</Table.Cell>
+                <Table.Cell>scheme</Table.Cell>
+                <Table.Cell>nexus</Table.Cell>
+                <Table.Cell>team</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>tremor</Table.Cell>
+                <Table.Cell>debris</Table.Cell>
+                <Table.Cell>symbol</Table.Cell>
+                <Table.Cell>scar</Table.Cell>
+                <Table.Cell>archive</Table.Cell>
+                <Table.Cell>chasm</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>sanctuary</Table.Cell>
+                <Table.Cell>betrayal</Table.Cell>
+                <Table.Cell>trail</Table.Cell>
+                <Table.Cell>wasteland</Table.Cell>
+                <Table.Cell>help</Table.Cell>
+                <Table.Cell>mystery</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>peak</Table.Cell>
+                <Table.Cell>threshold</Table.Cell>
+                <Table.Cell>boundary</Table.Cell>
+                <Table.Cell>beacon</Table.Cell>
+                <Table.Cell>secret</Table.Cell>
+                <Table.Cell>wall</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>territory</Table.Cell>
+                <Table.Cell>rumor</Table.Cell>
+                <Table.Cell>standoff</Table.Cell>
+                <Table.Cell>strife</Table.Cell>
+                <Table.Cell>maze</Table.Cell>
+                <Table.Cell>pact</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>dilemma</Table.Cell>
+                <Table.Cell>tradition</Table.Cell>
+                <Table.Cell>jackpot</Table.Cell>
+                <Table.Cell>omen</Table.Cell>
+                <Table.Cell>deception</Table.Cell>
+                <Table.Cell>illusion</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+      </Panel>
       <Grid margin="large">
         <Panel margin="none">
-          <Text>
+          <Text margin="small">
             <StrongEm>What's inside the temple?</StrongEm>
             <br />
             Roll: <Em>aged + beacon</Em>
@@ -225,7 +225,7 @@ const Chapter02 = () => {
           </Text>
         </Panel>
         <Panel margin="none">
-          <Text>
+          <Text margin="small">
             <StrongEm>Why is the village so quiet?</StrongEm>
             <br />
             Roll: tense + scheme
@@ -234,7 +234,7 @@ const Chapter02 = () => {
           </Text>
         </Panel>
         <Panel margin="none">
-          <Text>
+          <Text margin="small">
             <StrongEm>What caused the havoc?</StrongEm>
             <br />
             Roll: <Em>flickering + rift</Em>
@@ -341,7 +341,7 @@ const Chapter02 = () => {
         and take suspense instead!
       </Text>
       <Panel title="Story Moves" description="Use these moves anytime." border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong smallCaps>Foreshadow</Strong>: Hint at trouble, sometimes with a timer pool.
             Prompts a later impact move.
@@ -401,26 +401,26 @@ const Chapter02 = () => {
         .****
       </Text>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Foreshadow</Strong> to signal upcoming threats and give the players a
           chance to react. This is a great way to introduce adversity when you don't have or want to
           spend suspense. If they fail to deal with it or ignore the danger, it prompts an impact
           move and the pace of the story picks up.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Question</Strong> players to help suss out what kind of story they're
           interested in, share the creative load, and keep the story fresh for yourself. Try to keep
           this focused on their character's perspective, but feel free to dip into the meta channel
           here and talk directly as players about what you all want to see play out in game.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Spotlight</Strong> PCs to help direct the action, ensure no one is left
           out, and put focus where it's needed. This prompts players towards action. Mix in
           cinematic language like “<Em>We cut to…</Em>” or “<Em>The camera pans over to show…</Em>”
           as you use the “camera”, your group's shared imagination space. Cut back and forth between
           PCs and scenes to build tension and avoid focusing on a single PC for too long.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Set the Scene</Strong> when you're unsure about the specifics of the
           current fiction or want to dive straight into the action. Skip detailed planning and
           cautious leadups that often drag gameplay down. Instead,{" "}
@@ -429,14 +429,14 @@ const Chapter02 = () => {
           can even trigger an impact move, kicking things off with a bang and raising tension right
           away.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Wrap It Up</Strong> when a scene has served its purpose, grown stale, or
           feels like a foregone conclusion. Don't waste game time on these. Closing these scenes out
           decisively keeps the narrative tight and focuses on what's next.
         </Text>
       </Panel>
       <Panel title="Suspense Moves" description="Use these moves with cinematic timing." border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong smallCaps>Bridge</Strong>: Resolve a problem the PCs face or use exposition to
             connect some dots. <br />
@@ -491,27 +491,27 @@ const Chapter02 = () => {
         <StrongEm>timely</StrongEm> use makes good, cinematic sense.
       </Text>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Bridge</Strong> a scene when players are stuck, backed into a corner, or
           a scene feels dull. It provides a quick out and moves the story forward. Normally, it
           would feel like an unearned freebie, the suspense you gain makes it a{" "}
           <StrongEm>fair trade</StrongEm>. Never use it when players are engaged—save it for when
           it's needed.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Build Up</Strong> to focus in tight on your PCs, and to create moments
           that set the stage for major events. These vignettes, whether a quiet campfire scene or
           tense moment before a battle, give players a chance to add depth and feeling to their
           characters that might get overlooked, and the “<StrongEm>free</StrongEm>” spark they gain
           lets them know that what's ahead is going to be a real challenge.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Cutaway</Strong> to clue players in on the bigger picture, like a TV
           show scene. Show villains plotting, armies marching, or even positive events. It's more
           fun when players know what's happening and they can steer their PCs' actions toward that
           drama, even if their characters don't explicitly know about it.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Entangle</Strong> a player by proposing a juicy tangle for their PC.
           Push <StrongEm>dilemmas</StrongEm> and <StrongEm>drama</StrongEm> towards their traits,
           desires, bonds, and story arcs. The players pick them because they want the choices that
@@ -519,7 +519,7 @@ const Chapter02 = () => {
           suspense if they accept, so it's up to you to make the tangle irresistible. Don't push
           hard—this mechanic is built to respect player agency. Don't punish for saying no.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Recap</Strong> at the start of each session to get everyone on the same
           page. Hearing the last session's events builds tension for what's to come. The suspense
           you gain can immediately push the action, or hang over their heads. If a player wants to
@@ -528,7 +528,7 @@ const Chapter02 = () => {
         </Text>
       </Panel>
       <Panel title="Impact Moves" description="Use these moves when prompted." border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong smallCaps>Complicate Things</Strong>: Escalate a situation, introduce a new
             problem, or pressure a bond. <br />{" "}
@@ -586,13 +586,13 @@ const Chapter02 = () => {
         move.
       </Text>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Complicate Things</Strong> to add twists and elevate drama. Use it when
           things feel too stable or you want things to be even more chaotic than they already are.
           It's also great for adding a thorn to a roll by introducing sudden environmental
           obstacles, a great outlet for extra suspense that doesn't introduce new drama.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Counter</Strong> to make the world tenaciously formidable, showing that
           it won't just roll over. You can stop anything a PC does, including successful action
           rolls, talents they “always” have permission to use and extra vigilance. If they use a
@@ -602,19 +602,19 @@ const Chapter02 = () => {
           victories and advantages are snatched away, so use it in interesting ways and make sure
           the spotlight works its way back to them after you take advantage of the moment.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Force A Choice</Strong> to present stark, binary decisions that they
           can't their way out of. This move offers no easy way out. When you use it, make sure to
           follow through without softening the impact. This adds a real cinematic edge, reflecting
           the truly difficult decisions protagonists must face.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Hit 'Em Hard</Strong> when you need to inflict direct consequences.
           Whether it's damage, betrayal, or loss, this move underscores the seriousness of the
           situation. It's a heavy reminder that the world pushes back against their actions. When
           you use it, you should be hitting them just as hard as they're trying to hit the world.
         </Text>
-        <Text>
+        <Text margin="small">
           <Strong smallCaps>Lock It In</Strong> to definitively close off an opportunity and close
           out a scene that's threatening to drag on. Players can be tenacious and keep trying to
           find some way to not be defeated. This puts a definitive end to a situation. It makes
@@ -783,7 +783,7 @@ const Chapter02 = () => {
         fiction <Muted>(protect the body)</Muted> for dynamic interactions.
       </Text>
       <Panel title="Negotiating Peace in a Civil War" variant="blank" border>
-        <Grid>
+        <Grid margin="small">
           <Challenge
             title="Duchess Lysandra"
             poolSize={8}
@@ -824,7 +824,7 @@ const Chapter02 = () => {
             ]}
           />
         </Grid>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               Following the death of the Ember Queen, the realm descended into chaos sparking a long
@@ -836,7 +836,7 @@ const Chapter02 = () => {
         </Text>
       </Panel>
       <Panel title="Conspiracy Within the Order" variant="blank" border>
-        <Grid>
+        <Grid margin="small">
           <Challenge
             title="False Prophets"
             poolSize={4}
@@ -870,7 +870,7 @@ const Chapter02 = () => {
             references={[{ type: "blocked_by", target: "False Prophets" }]}
           />
         </Grid>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               The cleric's obsession with the odd occurrences within his order has consumed
@@ -881,7 +881,7 @@ const Chapter02 = () => {
         </Text>
       </Panel>
       <Panel title="The Great Red Dragon" variant="blank" border>
-        <Grid>
+        <Grid margin="small">
           <Stack spacing="medium" margin="none">
             <Challenge
               title="Claws"
@@ -932,7 +932,7 @@ const Chapter02 = () => {
             />
           </Stack>
         </Grid>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               The Great Red Dragon descends, lured into the PCs' trap by the goats as bait. They
@@ -1114,7 +1114,7 @@ const Chapter02 = () => {
             <Text margin="none">
               <Strong allCaps>Mook</Strong>
             </Text>
-            <List margin={{ bottom: "none" }}>
+            <List margin={{ top: "small", bottom: "none" }}>
               <List.Item>Mostly just set dressing.</List.Item>
               <List.Item>One action roll can take out several.</List.Item>
               <List.Item>Large groups can be a task pool.</List.Item>
@@ -1124,7 +1124,7 @@ const Chapter02 = () => {
             <Text margin="none">
               <Strong allCaps>Tough</Strong>
             </Text>
-            <List margin={{ bottom: "none" }}>
+            <List margin={{ top: "small", bottom: "none" }}>
               <List.Item>A typical, dangerous enemy.</List.Item>
               <List.Item>One action roll can take out one of them.</List.Item>
               <List.Item>Small groups can be a task pool.</List.Item>
@@ -1134,7 +1134,7 @@ const Chapter02 = () => {
             <Text margin="none">
               <Strong allCaps>Elite</Strong>
             </Text>
-            <List margin={{ bottom: "none" }}>
+            <List margin={{ top: "small", bottom: "none" }}>
               <List.Item>Strong scene presence.</List.Item>
               <List.Item>A 4d/6d challenge.</List.Item>
               <List.Item>Often leads a group of lesser enemies.</List.Item>
@@ -1144,7 +1144,7 @@ const Chapter02 = () => {
             <Text margin="none">
               <Strong allCaps>Boss</Strong>
             </Text>
-            <List margin={{ bottom: "none" }}>
+            <List margin={{ top: "small", bottom: "none" }}>
               <List.Item>Commands the scene.</List.Item>
               <List.Item>A 6d/8d challenge or linked challenge.</List.Item>
               <List.Item>Extremely powerful.</List.Item>
@@ -1152,7 +1152,7 @@ const Chapter02 = () => {
           </Panel.Row>
         </Panel>
         <Panel title="Roles" centerTitle>
-          <Table variant="blank" fullWidth>
+          <Table variant="blank" margin="small" fullWidth>
             <Table.Body>
               <Table.Row>
                 <Table.HeaderCell align="center" allCaps>
@@ -1417,7 +1417,7 @@ const Chapter02 = () => {
       </Grid>
       <Line />
       <Panel title="Pemtown Powderkeg" variant="blank" border>
-        <Grid>
+        <Grid margin="small">
           <CampaignPool
             name="Baron Prog of Pemtown"
             traits={[{ name: "Tax collectors", description: "corrupt" }, "Paying off Shaz"]}
@@ -1504,7 +1504,7 @@ const Chapter02 = () => {
             margin="none"
           />
         </Grid>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               The air in Pemtown hums with tension. Baron Prog's coffers run dry, his troops grow
@@ -1628,12 +1628,12 @@ const Chapter02 = () => {
         down.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Horrifying enemies need horrifying consequences. If you hit hard, especially when the dice
           tell you to, players will understand—the world is dangerous. That's why what they're doing
           is heroic.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Still, it's good to check in. You can't give a longterm condition like losing a limb to a
           player without their say so. Had they wanted to avoid that, you could have dropped them
           instead and risked death or found something equally fitting.
@@ -1659,17 +1659,17 @@ const Chapter02 = () => {
         terrible position, if they can have spark. You give the thumbs up!
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           As GM, you have to be really on point and consistent with thorns. There are no hard rules,
           but it's easy to forget how tough enemy numbers can be. Even a great fighter will struggle
           against ten all coming at them.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           When considering whether to add a thorn, err on the side of adding it! It makes rolls more
           interesting with higher stakes, but also makes players not just try the first thing that
           comes to mind.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Finally, splitting up consequences like this is a good way to keep scenes moving without
           hammering a PC as things get started. Give them a fighting chance to make for a cool
           scene. A perfect probably would have had them facing 2 bandits.
@@ -1696,18 +1696,18 @@ const Chapter02 = () => {
         quarrel earlier, spark from the <Move>Buildup</Move> move, and the GM takes suspense.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Setting up challenges on the fly is one of the most important parts of being a GM. With
           time, it becomes second nature and lets you set up dynamic scenarios quickly.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Don't forget about Buildup. This is perfect timing for it. They just got spark from
           quarreling, but a huge horde is incoming, and they're probably going to need more spark
           for narrating a great scene. Unfortunately, the rogue here got stuck with losing out on a
           spark—but it all happened so quickly that as the GM, you should give them a pass and let
           them have three (Entangle, quarrel, Buildup) just this once.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Giving PCs opportunities to get spark like that as well incentivizes them using it. In
           these cases, usually one or two PCs will have spark still on their sheet and miss out on
           getting that second one as theirs is full.
@@ -1731,17 +1731,17 @@ const Chapter02 = () => {
         <Strong>4d→0d</Strong>! Nevermind, it's engulfed in flames!
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           This is a great example of secondary effect, and also how pools can quickly change the
           dynamics of a scene.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Had they chosen greater effect, you would have dropped 1d from the pool before rolling it.
           If they had went with setup, they could have rolled an assist without risk with whoever
           came at the gnolls next. Imagine a berserker flying off the wall, greataxe in hand,
           cutting through the exploding fireball at some surprised gnolls!
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Mastering setting up and rolling pools is another key GM skill. Here, it's rolled right as
           it's set because it makes sense.
         </Text>
@@ -1762,12 +1762,12 @@ const Chapter02 = () => {
         rolling a <Strong>disaster</Strong>. You decide it's death by volcano!
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           And here's where it all comes together, the mix of setting up challenges, rolling pools,
           reacting within the fiction to how those pools progress, and hitting with appropriate
           impact moves while giving out thorns.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Throughout all of this, there's of course a lot more narration, but this is the ideal flow
           of a challenge. Each roll is giving great prompts for narration and it progresses smoothly
           towards its horrible ending.
@@ -1792,18 +1792,18 @@ const Chapter02 = () => {
         overboard into shark-infested waters. Everyone grabs their dice.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Fail states provide an important check against neverending rolls to whittle down pools.
           Setting up a proper one, here the Storm Blowing In and even later a second one with Taking
           on Water, means there's urgency and care in what they do. They'll work hard together to
           make sure those pools don't get rolled.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           This kind of pressure creates teamwork and teamwork is what an adventuring party should be
           all about. If you find your players struggling against challenges, make sure to point out
           mechanics like assists that they might be missing out on.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           And don't be afraid of Locking It In if they don't do it. The story will just move on in a
           different direction!
         </Text>
@@ -1819,7 +1819,7 @@ const Chapter02 = () => {
       </Text>
       <Text>You put out some tokens representing all of this on the battlemap.</Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           When you're using Set the Scene, be ready to hit them a bit hard if a grim comes up. Here
           we have a scene-altering change just because things didn't go well. Only make the roll if
           you're ready to follow through with it. That goes for a perfect, too. If they get the
@@ -1843,12 +1843,12 @@ const Chapter02 = () => {
         they clear the Brawn mark because it was rolled.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Clearing marks after other marks are applied makes sure you don't end up in weird
           situations where you take a mark, roll it, clear it, take another, roll it, clear it, and
           so on. It's better to change the fiction up and have it move to a different stat.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           This all looks a bit clunkier written out than it feels in play, as the character sheet
           helps a lot with this flow visually.
         </Text>
@@ -1867,13 +1867,13 @@ const Chapter02 = () => {
         roll. However, the rogue is definitely dropped, out of the scene in some way.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           If you know a situation could cut straight to a dropped on a grim without being bloodied
           first, you need to let them know that it's dire stakes. Players buying into a roll that
           could leave their PC dead makes them way more okay with it if it happens, or even laughing
           it off when it does.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           However, if you drop them out of nowhere and they roll a grim on the story roll, it's
           likely to fall pretty flat.
         </Text>
@@ -1885,7 +1885,7 @@ const Chapter02 = () => {
         deckhands off into the sea.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Remind your players a few times when you first start playing that they can assist on
           action rolls that prompt impact moves. They only get to roll 1d and open themselves up to
           the risk, but it's a chance! They can also spend spark on the roll.
@@ -1912,12 +1912,12 @@ const Chapter02 = () => {
         back at the PCs.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           The limtations on Flaming Claw are important to make sure magic doesn't start
           overshadowing normal actions. Magic can have a lot of versatility, so make adjustments in
           play to keep things feeling balanced.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Suspense is a great fallback on a messy when you want to wrap up a beat and move on.
           Sometimes a perfect or a grim both make sense, but the middle zone doesn't— let the PCs
           have their easy victory for now, then hit them out of nowhere with suspense later.
@@ -1938,7 +1938,7 @@ const Chapter02 = () => {
         sequence of him dispatching the bandits quietly, one by one.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           A single good roll can take out a couple of mooks or one tough. With a good enough pool
           roll, it can even take out one elite.
         </Text>
@@ -1958,7 +1958,7 @@ const Chapter02 = () => {
         <Move>Hit 'Em Hard</Move>.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           When in doubt about what an enemy would do, look to their role and go from there.
         </Text>
       </Panel>
@@ -1970,11 +1970,11 @@ const Chapter02 = () => {
         rogue takes spark, you take suspense. Now it's a fight.
       </Text>
       <Panel>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Story rolls have consequences, too. If something in the fiction leads to one, the story
           roll can prompt impact moves.
         </Text>
-        <Text size="small" muted>
+        <Text size="small" margin="small" muted>
           Cinema like this is why we play the game. Imagine all this through the camera lens, your
           shared imagination space. When the mechanics flow like this, the system sings.
         </Text>

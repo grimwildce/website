@@ -527,7 +527,7 @@ const Chapter01 = () => {
         your intentions.
       </Text>
       <Panel border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong allCaps>Perfect</Strong>. You do it, and avoid trouble.
           </List.Item>
@@ -564,7 +564,7 @@ const Chapter01 = () => {
         and picks a stat to test.
       </Text>
       <Panel border>
-        <List>
+        <List margin="small">
           <List.Item>
             <Strong allCaps>Perfect</Strong>. You avoid the trouble.
           </List.Item>
@@ -1432,7 +1432,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text muted>
+        <Text margin="small" muted>
           You cast <Strong>Flaming Claw</Strong> as a spell at the goblins, aiming for a huge claw
           to grab one, ignite it, and hurl it into the rest. This fits the touchstones, but your
           intent—harming multiple goblins at once—might work as a spell on a bunch of mooks, but
@@ -1466,7 +1466,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text muted>
+        <Text margin="small" muted>
           You want to grab a treasure chest and haul it across the chasm and try to cast your
           flaming claw spell to do it. Discussing it with the GM, you both decide that the claw has
           a physical form, but since it's on fire, it'll scorch anything it touches. The GM says
@@ -1825,7 +1825,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               An enormous fire is raging across the countryside and your party seeks to stop it with
@@ -1841,7 +1841,7 @@ const Chapter01 = () => {
         </Text>
       </Panel>
       <Panel>
-        <Text>
+        <Text margin="small">
           <Muted size="medium">
             <Em>
               A restless spirit is driving the village to madness, and you must banish it with the{" "}
@@ -1987,13 +1987,13 @@ const Chapter01 = () => {
         <StrongEm>everyone takes spark regardless of the roll</StrongEm>.
       </Text>
       <Panel>
-        <Text align="center">
+        <Text align="center" margin="small">
           <Strong allCaps>Example Treasures</Strong>
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Strong smallCaps>Minor Treasures</Strong>
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Em>
             <Strong>Noble signet ring</Strong>, found in the ruins of an ancient castle
           </Em>
@@ -2009,10 +2009,10 @@ const Chapter01 = () => {
           </Em>
           .
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Strong smallCaps>Major Treasures</Strong>
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Em>
             <Strong>Beautiful coastal estate</Strong>, a gift from the prince
           </Em>
@@ -2028,10 +2028,10 @@ const Chapter01 = () => {
           </Em>
           .
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Strong smallCaps>Mythic Treasures</Strong>
         </Text>
-        <Text align="center" size="small">
+        <Text align="center" size="small" margin="small">
           <Em>
             <Strong>Phoenix Feather Cloak</Strong>, pulled out of a volcanic lair
           </Em>
@@ -2149,7 +2149,7 @@ const Chapter01 = () => {
         someone willing to craft it for you for the right price.
       </Text>
       <Panel title="List of Arcana">
-        <Text>
+        <Text margin="small">
           In <Strong>Chapter 7: Extras</Strong>, you can find 12 pages of minor, major, and mythic
           arcana, as well as a thorough random potion generator!
         </Text>

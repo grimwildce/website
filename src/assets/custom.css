@@ -55,35 +55,6 @@ table.solid > tbody > tr {
   @apply bg-panel-1;
 }
 
-table.crucible {
-  @apply border-b-2 border-solid;
-}
-
-table.crucible > thead > tr {
-  @apply bg-solid;
-}
-
-table.crucible > thead > tr > th {
-  @apply text-solid-color;
-}
-
-table.crucible > thead > tr:first-child > th:first-child {
-  @apply rounded-tl-sm;
-}
-
-table.crucible > thead > tr:first-child > th:last-child {
-  @apply rounded-tr-sm;
-}
-
-table.crucible > tbody > tr:nth-child(12n + 1),
-table.crucible > tbody > tr:nth-child(12n + 2),
-table.crucible > tbody > tr:nth-child(12n + 3),
-table.crucible > tbody > tr:nth-child(12n + 4),
-table.crucible > tbody > tr:nth-child(12n + 5),
-table.crucible > tbody > tr:nth-child(12n + 6) {
-  @apply bg-panel-1;
-}
-
 table.simple > thead > tr:last-child > th {
   @apply border-b border-base;
 }

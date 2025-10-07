@@ -7,21 +7,21 @@ const defaultMarginValue = "medium";
 const marginSizeCss: Record<MarginSide, Record<MarginValue, string>> = {
   both: {
     none: "",
-    small: "my-2",
-    medium: "my-4",
-    large: "my-8"
+    small: "my-4",
+    medium: "my-8",
+    large: "my-12"
   },
   top: {
     none: "",
-    small: "mt-2",
-    medium: "mt-4",
-    large: "mt-8"
+    small: "mt-4",
+    medium: "mt-8",
+    large: "mt-12"
   },
   bottom: {
     none: "",
-    small: "mb-2",
-    medium: "mb-4",
-    large: "mb-8"
+    small: "mb-4",
+    medium: "mb-8",
+    large: "mb-12"
   }
 };
 
