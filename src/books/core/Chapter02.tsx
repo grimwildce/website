@@ -15,6 +15,7 @@ import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
 import Stack from "@/components/ui/Stack";
 import Strong from "@/components/ui/Strong";
+import StrongEm from "@/components/ui/StrongEm";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 import { faBurst, faExclamation, faQuestion } from "@fortawesome/free-solid-svg-icons";
@@ -78,19 +79,13 @@ const Chapter02 = () => {
           <Table.Body>
             <Table.Row>
               <Table.Cell>
-                <Em>
-                  <Strong>1d Bad Odds</Strong>
-                </Em>
+                <StrongEm>1d Bad Odds</StrongEm>
               </Table.Cell>
               <Table.Cell>
-                <Em>
-                  <Strong>2d Even Odds</Strong>
-                </Em>
+                <StrongEm>2d Even Odds</StrongEm>
               </Table.Cell>
               <Table.Cell>
-                <Em>
-                  <Strong>3d Good Odds</Strong>
-                </Em>
+                <StrongEm>3d Good Odds</StrongEm>
               </Table.Cell>
             </Table.Row>
           </Table.Body>
@@ -222,9 +217,7 @@ const Chapter02 = () => {
       <Grid margin="large">
         <Panel margin="none">
           <Text>
-            <Em>
-              <Strong>What's inside the temple?</Strong>
-            </Em>
+            <StrongEm>What's inside the temple?</StrongEm>
             <br />
             Roll: <Em>aged + beacon</Em>
             <br />
@@ -233,9 +226,7 @@ const Chapter02 = () => {
         </Panel>
         <Panel margin="none">
           <Text>
-            <Em>
-              <Strong>Why is the village so quiet?</Strong>
-            </Em>
+            <StrongEm>Why is the village so quiet?</StrongEm>
             <br />
             Roll: tense + scheme
             <br />
@@ -244,9 +235,7 @@ const Chapter02 = () => {
         </Panel>
         <Panel margin="none">
           <Text>
-            <Em>
-              <Strong>What caused the havoc?</Strong>
-            </Em>
+            <StrongEm>What caused the havoc?</StrongEm>
             <br />
             Roll: <Em>flickering + rift</Em>
             <br />
@@ -266,36 +255,23 @@ const Chapter02 = () => {
       </Heading>
       <Text>
         <Strong allCaps>GM Moves</Strong>. A framework for good GMing practices and{" "}
-        <Em>
-          <Strong>the rules that you (the GM) play by</Strong>
-        </Em>
-        . While they can be called out specifically, they typically sit in the background left
-        unsaid, aligning naturally with what you do as GM.
+        <StrongEm>the rules that you (the GM) play by</StrongEm>. While they can be called out
+        specifically, they typically sit in the background left unsaid, aligning naturally with what
+        you do as GM.
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Story moves</Strong>
-          </Em>{" "}
-          set up scenes and pace the game. They hint at problems and give players a chance to react
-          to what's happening. <Em>Make these moves as you like at any time</Em>.
+          <StrongEm>Story moves</StrongEm> set up scenes and pace the game. They hint at problems
+          and give players a chance to react to what's happening.{" "}
+          <Em>Make these moves as you like at any time</Em>.
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Suspense moves</Strong>
-          </Em>{" "}
-          help the players out in some way or escalate tension.{" "}
-          <Em>
-            <Strong>Take suspense when used</Strong>
-          </Em>
-          . <Em>Make these moves with good timing</Em>.
+          <StrongEm>Suspense moves</StrongEm> help the players out in some way or escalate tension.{" "}
+          <StrongEm>Take suspense when used</StrongEm>. <Em>Make these moves with good timing</Em>.
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Impact moves</Strong>
-          </Em>{" "}
-          deal significant consequences, crank up the tension, and make the world feel powerful.{" "}
-          <Em>Make these moves when prompted</Em>.
+          <StrongEm>Impact moves</StrongEm> deal significant consequences, crank up the tension, and
+          make the world feel powerful. <Em>Make these moves when prompted</Em>.
         </List.Item>
       </List>
       <Text>
@@ -314,15 +290,12 @@ const Chapter02 = () => {
         this when no immediate move feels compelling or when you want to shift focus to other
         scenes.
       </Text>
-      <SectionHeading>Hit With Impact</SectionHeading>
+      <SectionHeading variant="solid">Hit With Impact</SectionHeading>
       <Text>
         <Strong allCaps>Consequences</Strong>. What happens when things go wrong—from failed rolls,
-        timers, or impact moves. They should feel{" "}
-        <Em>
-          <Strong>hard but fair</Strong>
-        </Em>
-        , reflecting the stakes and severity of the situation. Every roll carries risk; otherwise,
-        assume success and move on.
+        timers, or impact moves. They should feel <StrongEm>hard but fair</StrongEm>, reflecting the
+        stakes and severity of the situation. Every roll carries risk; otherwise, assume success and
+        move on.
       </Text>
       <Text>
         Damage is a solid baseline: in a fight, injuries leave you bloodied by default. Other
@@ -331,9 +304,7 @@ const Chapter02 = () => {
         its teeth.
       </Text>
       <Text>
-        <Em>
-          <Strong>You can split consequences, breaking big consequences into smaller ones</Strong>
-        </Em>
+        <StrongEm>You can split consequences, breaking big consequences into smaller ones</StrongEm>
         . Multiple effects can be just as effective and make more sense in the situation. You might
         break up bloodied into a few marks, or rattled becoming vex and rolling a pool instead.
         Splits make the story move in multiple directions.
@@ -353,11 +324,9 @@ const Chapter02 = () => {
       <Text>
         <Strong allCaps>Using Pools</Strong>. Building pressure with danger or timer pools. Start or
         pressure or timer pool as another outlet for consequences, often{" "}
-        <Em>
-          <Strong>offscreen</Strong>
-        </Em>
-        . These create looming threats and situations the PCs want to avoid or mitigate. They build
-        pressure and offer a strong alternative to skipping the move and banking suspense.
+        <StrongEm>offscreen</StrongEm>. These create looming threats and situations the PCs want to
+        avoid or mitigate. They build pressure and offer a strong alternative to skipping the move
+        and banking suspense.
       </Text>
       <Text>
         <Strong allCaps>Stakes</Strong>. Framing danger when it's not the default. Most rolls assume
@@ -425,16 +394,10 @@ const Chapter02 = () => {
         get things moving when they stall out. Player actions drive the story, and story moves nudge
         them forward. That doesn't mean the world is passive—you can describe anything happening
         that makes sense. However, from a story and gameplay perspective, it's more satisfying when
-        the players have{" "}
-        <Em>
-          <Strong>fair warning</Strong>
-        </Em>{" "}
-        about trouble. They know actions have consequences and suspense you've earned can come back
-        to bite them. This feels fair, so outside of these you give them the initiative. It shows
-        things aren't arbitrary—
-        <Em>
-          <Strong>the GM is also playing the game, just by different rules</Strong>
-        </Em>
+        the players have <StrongEm>fair warning</StrongEm> about trouble. They know actions have
+        consequences and suspense you've earned can come back to bite them. This feels fair, so
+        outside of these you give them the initiative. It shows things aren't arbitrary—
+        <StrongEm>the GM is also playing the game, just by different rules</StrongEm>
         .****
       </Text>
       <Panel>
@@ -461,12 +424,10 @@ const Chapter02 = () => {
           <Strong smallCaps>Set the Scene</Strong> when you're unsure about the specifics of the
           current fiction or want to dive straight into the action. Skip detailed planning and
           cautious leadups that often drag gameplay down. Instead,{" "}
-          <Em>
-            <Strong>jump straight into the action</Strong>
-          </Em>
-          , an in medias res shot of things already in motion! The roll sets the opening mood and
-          stakes for the scene. On a grim, it can even trigger an impact move, kicking things off
-          with a bang and raising tension right away.
+          <StrongEm>jump straight into the action</StrongEm>, an in medias res shot of things
+          already in motion! The roll sets the opening mood and stakes for the scene. On a grim, it
+          can even trigger an impact move, kicking things off with a bang and raising tension right
+          away.
         </Text>
         <Text>
           <Strong smallCaps>Wrap It Up</Strong> when a scene has served its purpose, grown stale, or
@@ -522,40 +483,27 @@ const Chapter02 = () => {
       <Text>
         <Strong allCaps>Suspense Moves</Strong>. Create familiar moments inspired by TV shows,
         incentivizing you mechanically to take the time to structure the story cinematically.{" "}
-        <Em>
-          <Strong>You earn suspense</Strong>
-        </Em>
-        , so they reward you for handling some of the tedium of GMing and remind players to stay
-        engaged. Suspense keeps the world active when things stall. When your supply of suspense
-        runs dry, you can use these to jumpstart the action again. However, use them carefully—
-        <Em>
-          <Strong>overuse</Strong>
-        </Em>{" "}
-        can get frustrating for players, so pick your spots. But{" "}
-        <Em>
-          <Strong>timely</Strong>
-        </Em>{" "}
-        use makes good, cinematic sense.
+        <StrongEm>You earn suspense</StrongEm>, so they reward you for handling some of the tedium
+        of GMing and remind players to stay engaged. Suspense keeps the world active when things
+        stall. When your supply of suspense runs dry, you can use these to jumpstart the action
+        again. However, use them carefully—
+        <StrongEm>overuse</StrongEm> can get frustrating for players, so pick your spots. But{" "}
+        <StrongEm>timely</StrongEm> use makes good, cinematic sense.
       </Text>
       <Panel>
         <Text>
           <Strong smallCaps>Bridge</Strong> a scene when players are stuck, backed into a corner, or
           a scene feels dull. It provides a quick out and moves the story forward. Normally, it
           would feel like an unearned freebie, the suspense you gain makes it a{" "}
-          <Em>
-            <Strong>fair trade</Strong>
-          </Em>
-          . Never use it when players are engaged—save it for when it's needed.
+          <StrongEm>fair trade</StrongEm>. Never use it when players are engaged—save it for when
+          it's needed.
         </Text>
         <Text>
           <Strong smallCaps>Build Up</Strong> to focus in tight on your PCs, and to create moments
           that set the stage for major events. These vignettes, whether a quiet campfire scene or
           tense moment before a battle, give players a chance to add depth and feeling to their
-          characters that might get overlooked, and the “
-          <Em>
-            <Strong>free</Strong>
-          </Em>
-          ” spark they gain lets them know that what's ahead is going to be a real challenge.
+          characters that might get overlooked, and the “<StrongEm>free</StrongEm>” spark they gain
+          lets them know that what's ahead is going to be a real challenge.
         </Text>
         <Text>
           <Strong smallCaps>Cutaway</Strong> to clue players in on the bigger picture, like a TV
@@ -565,19 +513,11 @@ const Chapter02 = () => {
         </Text>
         <Text>
           <Strong smallCaps>Entangle</Strong> a player by proposing a juicy tangle for their PC.
-          Push{" "}
-          <Em>
-            <Strong>dilemmas</Strong>
-          </Em>{" "}
-          and{" "}
-          <Em>
-            <Strong>drama</Strong>
-          </Em>{" "}
-          towards their traits, desires, bonds, and story arcs. The players pick them because they
-          want the choices that come with! When you have a great idea, propose a tangle for a PC.
-          Remember you only gain suspense if they accept, so it's up to you to make the tangle
-          irresistible. Don't push hard—this mechanic is built to respect player agency. Don't
-          punish for saying no.
+          Push <StrongEm>dilemmas</StrongEm> and <StrongEm>drama</StrongEm> towards their traits,
+          desires, bonds, and story arcs. The players pick them because they want the choices that
+          come with! When you have a great idea, propose a tangle for a PC. Remember you only gain
+          suspense if they accept, so it's up to you to make the tangle irresistible. Don't push
+          hard—this mechanic is built to respect player agency. Don't punish for saying no.
         </Text>
         <Text>
           <Strong smallCaps>Recap</Strong> at the start of each session to get everyone on the same
@@ -686,33 +626,13 @@ const Chapter02 = () => {
         Challenges
       </Heading>
       <Text>
-        <Strong allCaps>Challenges</Strong>. A framework to represent{" "}
-        <Em>
-          <Strong>tasks</Strong>
-        </Em>
-        ,{" "}
-        <Em>
-          <Strong>obstacles</Strong>
-        </Em>
-        ,{" "}
-        <Em>
-          <Strong>enemies</Strong>
-        </Em>
-        , and{" "}
-        <Em>
-          <Strong>scenarios</Strong>
-        </Em>{" "}
-        that have greater tenacity and complexity than a single action can accomplish.{" "}
-        <Strong>Challenges</Strong> allow you to track progress towards them, but also proactively
-        oppose the PCs. Each has{" "}
-        <Em>
-          <Strong>2 bonus suspense</Strong>
-        </Em>{" "}
-        to be spent on moves relating to it, and a{" "}
-        <Em>
-          <Strong>task pool</Strong>
-        </Em>{" "}
-        to represent its tenacity or complexity. They can also have:
+        <Strong allCaps>Challenges</Strong>. A framework to represent <StrongEm>tasks</StrongEm>,{" "}
+        <StrongEm>obstacles</StrongEm>, <StrongEm>enemies</StrongEm>, and{" "}
+        <StrongEm>scenarios</StrongEm> that have greater tenacity and complexity than a single
+        action can accomplish. <Strong>Challenges</Strong> allow you to track progress towards them,
+        but also proactively oppose the PCs. Each has <StrongEm>2 bonus suspense</StrongEm> to be
+        spent on moves relating to it, and a <StrongEm>task pool</StrongEm> to represent its
+        tenacity or complexity. They can also have:
       </Text>
       <List>
         <List.Item>
@@ -789,44 +709,33 @@ const Chapter02 = () => {
           margin="small"
         />
       </Grid>
-      <SectionHeading>Building Challenges</SectionHeading>
+      <SectionHeading variant="solid">Building Challenges</SectionHeading>
       <List variant="ordered">
         <List.Item>
-          <Strong>
-            <Em>Assign a task pool</Em>
-          </Strong>{" "}
-          (4d, 6d, 8d) for its tenacity.
+          <StrongEm>Assign a task pool</StrongEm> (4d, 6d, 8d) for its tenacity.
         </List.Item>
         <List.Item>
-          <Strong>
-            <Em>Add traits</Em>
-          </Strong>{" "}
-          (1 or 2) that shape the situation. Skip the obvious <Muted>(storm is windy)</Muted> and
-          highlight what matters <Muted>(strong winds are blinding)</Muted>. Keep them brief and
-          evocative.
+          <StrongEm>Add traits</StrongEm> (1 or 2) that shape the situation. Skip the obvious{" "}
+          <Muted>(storm is windy)</Muted> and highlight what matters{" "}
+          <Muted>(strong winds are blinding)</Muted>. Keep them brief and evocative.
         </List.Item>
         <List.Item>
-          <Strong>
-            <Em>List short, punchy moves</Em>
-          </Strong>{" "}
-          (2 or 3) with flexible interpretations. These are examples, not limits. You can spend
-          bonus suspense on other moves, or trigger these when an impact move is prompted by
-          something else.
+          <StrongEm>List short, punchy moves</StrongEm> (2 or 3) with flexible interpretations.
+          These are examples, not limits. You can spend bonus suspense on other moves, or trigger
+          these when an impact move is prompted by something else.
         </List.Item>
         <List.Item>
-          <Strong>
-            <Em>Define a fail state</Em>
-          </Strong>
-          , a specific trigger that pre vents that challenge from being accomplished. Avoid obvious
-          outcomes <Muted>(dying in a fight)</Muted> and focus on what creates tension{" "}
-          <Muted>(breaking a code of honor)</Muted>. Players should know the fail state unless
-          mystery is part of the fun—and even then, make it clear one is in play.
+          <StrongEm>Define a fail state</StrongEm>, a specific trigger that pre vents that challenge
+          from being accomplished. Avoid obvious outcomes <Muted>(dying in a fight)</Muted> and
+          focus on what creates tension <Muted>(breaking a code of honor)</Muted>. Players should
+          know the fail state unless mystery is part of the fun—and even then, make it clear one is
+          in play.
         </List.Item>
       </List>
       <Text>
         <Strong>Note</Strong>: <Em>Not all of these parts are needed for a challenge.</Em>
       </Text>
-      <SectionHeading>Using Challenges</SectionHeading>
+      <SectionHeading variant="solid">Using Challenges</SectionHeading>
       <Text>
         Challenges are for moments of narrative importance. They make whatever you assign them to a
         proactive element in the story. Use them to spotlight what's happening—not because it's
@@ -866,7 +775,7 @@ const Chapter02 = () => {
           </Muted>
         </List.Item>
       </List>
-      <SectionHeading>Linked Challenges</SectionHeading>
+      <SectionHeading variant="solid">Linked Challenges</SectionHeading>
       <Text>
         <Strong>Linked challenges</Strong> are greater, more complex interactions, like epicly
         powerful enemies or unbelievably tense social situations. Each part of the whole has its own
@@ -1042,9 +951,7 @@ const Chapter02 = () => {
         cautious gameplay to keep the focus on the action.
       </Text>
       <Text>
-        <Strong>
-          <Em>PCs are always considered to be as vigilant as their vantage allows</Em>
-        </Strong>{" "}
+        <StrongEm>PCs are always considered to be as vigilant as their vantage allows</StrongEm>{" "}
         when dealing with hidden dangers like <Em>traps</Em>, lies, or <Em>secret doors</Em>.
         However, this doesn't mean they are always aware of hidden threats. Instead, the GM uses a
         <Em>gut feeling</Em> to decide how much the PC perceives based on their vantage and the type
@@ -1067,55 +974,39 @@ const Chapter02 = () => {
         can always mix it up, though, and give the commoner a <Strong>hint</Strong>, knowing just
         the right random tidbit.
       </Text>
-      <SectionHeading icon={faQuestion} description="Tests a player's skill.">
+      <SectionHeading variant="solid" icon={faQuestion} description="Tests a player's skill.">
         Hint
       </SectionHeading>
       <Text>
         <Move>Foreshadow</Move> with a subtle clue about a hidden element.{" "}
-        <Strong>
-          <Em>The player</Em>
-        </Strong>{" "}
-        gets a single chance to interpret the situation. They're limited to just one to highlight
-        the natural response of the PC and to keep things flowing.{" "}
-        <Strong>
-          <Em>Player intuition guides the story forward</Em>
-        </Strong>
-        . A correct response leads to a reveal or possibly bypasses the situation entirely.{" "}
+        <StrongEm>The player</StrongEm> gets a single chance to interpret the situation. They're
+        limited to just one to highlight the natural response of the PC and to keep things flowing.{" "}
+        <StrongEm>Player intuition guides the story forward</StrongEm>. A correct response leads to
+        a reveal or possibly bypasses the situation entirely.{" "}
         <Muted>That funny feeling of being watched. A blood trail down a hallway.</Muted>
       </Text>
-      <SectionHeading icon={faExclamation} description="Tests a character's skill.">
+      <SectionHeading variant="solid" icon={faExclamation} description="Tests a character's skill.">
         Reveal
       </SectionHeading>
       <Text>
         <Move>Foreshadow</Move> with an obvious unveiling of an immediately imminent threat.{" "}
-        <Strong>
-          <Em>The PC</Em>
-        </Strong>{" "}
-        that becomes aware has one chance to react before the danger strikes.{" "}
-        <Strong>
-          <Em>Character competence guides the story forward</Em>
-        </Strong>
-        .{" "}
+        <StrongEm>The PC</StrongEm> that becomes aware has one chance to react before the danger
+        strikes. <StrongEm>Character competence guides the story forward</StrongEm>.{" "}
         <Muted>
           Spotting the assassin in hiding. A whirling of gears betraying the swinging scythe trap
           about to spring.
         </Muted>
       </Text>
-      <SectionHeading icon={faBurst} description="Tests a character's defenses.">
+      <SectionHeading variant="solid" icon={faBurst} description="Tests a character's defenses.">
         Strike
       </SectionHeading>
       <Text>
-        Make an impact move as the danger immediately strikes them.{" "}
-        <Strong>
-          <Em>The GM</Em>
-        </Strong>{" "}
+        Make an impact move as the danger immediately strikes them. <StrongEm>The GM</StrongEm>{" "}
         assumes the PCs were not vigilant enough.{" "}
-        <Strong>
-          <Em>The dangerous world guides the story forward</Em>
-        </Strong>
-        . <Muted>The servant slips poison into your glass. A trapdoor opens beneath you.</Muted>
+        <StrongEm>The dangerous world guides the story forward</StrongEm>.{" "}
+        <Muted>The servant slips poison into your glass. A trapdoor opens beneath you.</Muted>
       </Text>
-      <Heading level={4}>Vigilance Examples</Heading>
+      <SectionHeading>Vigilance Examples</SectionHeading>
       <Text>Below are some ways that a danger can manifest as hints, reveals, or strikes.</Text>
       <Table variant="striped" textSize="small">
         <Table.Head>
@@ -1129,9 +1020,7 @@ const Chapter02 = () => {
         <Table.Body>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Poisoned dart trap</Em>
-              </Strong>
+              <StrongEm>Poisoned dart trap</StrongEm>
             </Table.Cell>
             <Table.Cell>Floor creaks unnaturally</Table.Cell>
             <Table.Cell>Dartgun in wall spotted</Table.Cell>
@@ -1139,9 +1028,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Flammable gas trap</Em>
-              </Strong>
+              <StrongEm>Flammable gas trap</StrongEm>
             </Table.Cell>
             <Table.Cell>Faint smell lingers</Table.Cell>
             <Table.Cell>Bit of gas ignites</Table.Cell>
@@ -1149,9 +1036,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Political intrigue</Em>
-              </Strong>
+              <StrongEm>Political intrigue</StrongEm>
             </Table.Cell>
             <Table.Cell>Inconsistencies in letter</Table.Cell>
             <Table.Cell>Wax seal is clearly fake</Table.Cell>
@@ -1159,9 +1044,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Hidden malice</Em>
-              </Strong>
+              <StrongEm>Hidden malice</StrongEm>
             </Table.Cell>
             <Table.Cell>Suspicious glances</Table.Cell>
             <Table.Cell>Threatens a PC</Table.Cell>
@@ -1169,9 +1052,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Fractured resolve</Em>
-              </Strong>
+              <StrongEm>Fractured resolve</StrongEm>
             </Table.Cell>
             <Table.Cell>Hesitates when speaking</Table.Cell>
             <Table.Cell>Express doubts or fears</Table.Cell>
@@ -1185,9 +1066,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Shattered trust</Em>
-              </Strong>
+              <StrongEm>Shattered trust</StrongEm>
             </Table.Cell>
             <Table.Cell>Avoids eye contact</Table.Cell>
             <Table.Cell>Lets intentions slip</Table.Cell>
@@ -1195,9 +1074,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Crumbling ceiling</Em>
-              </Strong>
+              <StrongEm>Crumbling ceiling</StrongEm>
             </Table.Cell>
             <Table.Cell>Dust falls lightly</Table.Cell>
             <Table.Cell>Cracks spread visibly</Table.Cell>
@@ -1205,9 +1082,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Swarming insects</Em>
-              </Strong>
+              <StrongEm>Swarming insects</StrongEm>
             </Table.Cell>
             <Table.Cell>Animals running away</Table.Cell>
             <Table.Cell>Cloud of insects in the sky</Table.Cell>
@@ -1215,9 +1090,7 @@ const Chapter02 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong>
-                <Em>Cursed relic</Em>
-              </Strong>
+              <StrongEm>Cursed relic</StrongEm>
             </Table.Cell>
             <Table.Cell>Air grows unnaturally cold</Table.Cell>
             <Table.Cell>It speaks your name</Table.Cell>
@@ -1229,18 +1102,11 @@ const Chapter02 = () => {
         Combat Kit
       </Heading>
       <Text>
-        GM tools to create dynamic{" "}
-        <Strong>
-          <Em>antagonists</Em>
-        </Strong>{" "}
-        and{" "}
-        <Strong>
-          <Em>combat scenarios</Em>
-        </Strong>{" "}
-        quickly. <Strong>Tier</Strong> is an opponent's threat level. <Strong>Role</Strong> is a
-        keyword used to guide its behavior in battle to vary its tactics.{" "}
-        <Strong>Battlegrounds</Strong> make the environment a proactive or obstacle-ridden part of
-        the scene. Mix these for dynamic combats.
+        GM tools to create dynamic <StrongEm>antagonists</StrongEm> and{" "}
+        <StrongEm>combat scenarios</StrongEm> quickly. <Strong>Tier</Strong> is an opponent's threat
+        level. <Strong>Role</Strong> is a keyword used to guide its behavior in battle to vary its
+        tactics. <Strong>Battlegrounds</Strong> make the environment a proactive or obstacle-ridden
+        part of the scene. Mix these for dynamic combats.
       </Text>
       <Stack direction="row" wrap>
         <Panel title="Tiers" flex={1}>
@@ -1358,19 +1224,13 @@ const Chapter02 = () => {
       </Text>
       <List>
         <List.Item>
-          <Strong>
-            <Em>Features</Em>
-          </Strong>
-          : Elements likely to impact, usually compli cating, the ongoing action.{" "}
-          <Em>They have a strong effect on vantage and difficulty</Em>.<br />
+          <StrongEm>Features</StrongEm>: Elements likely to impact, usually compli cating, the
+          ongoing action. <Em>They have a strong effect on vantage and difficulty</Em>.<br />
           <Muted>Heavy winds, cluttered warehouse, angry onlookers.</Muted>
         </List.Item>
         <List.Item>
-          <Strong>
-            <Em>Threats</Em>
-          </Strong>
-          : Hazards that present extra dangers. They either get 2 suspense{" "}
-          <ChallengeSuspense size="small" /> or repeat on a timer.{" "}
+          <StrongEm>Threats</StrongEm>: Hazards that present extra dangers. They either get 2
+          suspense <ChallengeSuspense size="small" /> or repeat on a timer.{" "}
           <Em>They have a strong proactive presence in the scene</Em>.<br />
           <Muted>4d heavy waves, 6d guard patrols, 8d artillery.</Muted>
           <br />
@@ -1428,30 +1288,21 @@ const Chapter02 = () => {
         specific rules that differentiate combat from any other scene.
       </Text>
       <Text>
-        <Strong>
-          <Em>There's no turn order</Em>
-        </Strong>
-        . The GM describes the impending danger in the current situation and asks how the PCs
-        respond, or the PCs take action on their own. The spotlight is often on the PCs, and the
-        world's actions flow from what they do. You make enemies more proactive by{" "}
-        <Move>Foreshadowing</Move> events and following up after, or spending suspense to make
-        impact moves. This results in a cinematic ebb and flow to combat.
+        <StrongEm>There's no turn order</StrongEm>. The GM describes the impending danger in the
+        current situation and asks how the PCs respond, or the PCs take action on their own. The
+        spotlight is often on the PCs, and the world's actions flow from what they do. You make
+        enemies more proactive by <Move>Foreshadowing</Move> events and following up after, or
+        spending suspense to make impact moves. This results in a cinematic ebb and flow to combat.
       </Text>
       <Text>
-        <Strong>
-          <Em>Battles occur in the theater of the mind</Em>
-        </Strong>
-        , using the group's shared imagination to keep track of each participant's fictional
-        positioning to map fiction to rules. However, using{" "}
-        <Strong>
-          <Em>battlemaps</Em>
-        </Strong>{" "}
-        or sketching maps with minis or markers to track locations during a fight works well, too.
-        This helps organize the chaotic situation, makes sure everyone gets time to shine, and keeps
-        everyone's imagination aligned. Don't get caught up in detailed tracking—update the map with
-        big changes.
+        <StrongEm>Battles occur in the theater of the mind</StrongEm>, using the group's shared
+        imagination to keep track of each participant's fictional positioning to map fiction to
+        rules. However, using <StrongEm>battlemaps</StrongEm> or sketching maps with minis or
+        markers to track locations during a fight works well, too. This helps organize the chaotic
+        situation, makes sure everyone gets time to shine, and keeps everyone's imagination aligned.
+        Don't get caught up in detailed tracking—update the map with big changes.
       </Text>
-      <SectionHeading>Combat Rulings</SectionHeading>
+      <SectionHeading variant="solid">Combat Rulings</SectionHeading>
       <Text>
         You map the fiction to the rules just like any scene, making rulings to fill in gaps.
         However, in combat you'll often see the same scenarios come up, so for the sake of
@@ -1668,11 +1519,9 @@ const Chapter02 = () => {
         GM with Moxie
       </Heading>
       <Text>
-        <Strong>
-          <Em>Map fiction to rules</Em>
-        </Strong>
-        . Encourage players to focus on the fiction and let you handle the rules. The more
-        narratively important something is, the more mechanical weight you should give it.
+        <StrongEm>Map fiction to rules</StrongEm>. Encourage players to focus on the fiction and let
+        you handle the rules. The more narratively important something is, the more mechanical
+        weight you should give it.
       </Text>
       <Text>
         <Muted size="medium">
@@ -1693,52 +1542,37 @@ const Chapter02 = () => {
       </Text>
       <Text muted>“What does that look like?” or “Give us a quick scene.”</Text>
       <Text>
-        <Strong>
-          <Em>Make rulings to fill gaps</Em>
-        </Strong>
-        . The rules are a flexible framework and designed not to cover every detail. When things
-        fall through the cracks, try to interpret the rules' intent and make a ruling that fits the
-        moment. If it's a judgment call, tell the players. If you're unsure of a rule, make a quick
-        call now and check later. When in doubt, everything can collapse down to a single story
-        roll—ask the players what they want to happen, then roll to see if that's how it goes down.
+        <StrongEm>Make rulings to fill gaps</StrongEm>. The rules are a flexible framework and
+        designed not to cover every detail. When things fall through the cracks, try to interpret
+        the rules' intent and make a ruling that fits the moment. If it's a judgment call, tell the
+        players. If you're unsure of a rule, make a quick call now and check later. When in doubt,
+        everything can collapse down to a single story roll—ask the players what they want to
+        happen, then roll to see if that's how it goes down.
       </Text>
       <Text>
-        <Strong>
-          <Em>Pace the game cinematically</Em>
-        </Strong>
-        . Keep the game flowing like a well-paced movie. Don't let scenes drag, wrap it up to move
-        on to something more interesting. If players don't seem keen on an upcoming situation,
-        suggest a montage. Skip long planning phases by cutting to the action with a Set the SCene
-        move. Reward players buying into these techniques by giving them good odds.
+        <StrongEm>Pace the game cinematically</StrongEm>. Keep the game flowing like a well-paced
+        movie. Don't let scenes drag, wrap it up to move on to something more interesting. If
+        players don't seem keen on an upcoming situation, suggest a montage. Skip long planning
+        phases by cutting to the action with a Set the SCene move. Reward players buying into these
+        techniques by giving them good odds.
       </Text>
       <Text>
-        <Strong>
-          <Em>Follow the players' lead</Em>
-        </Strong>
-        . Keep tabs on story arcs and present <Em>drama</Em>, <Em>dilemmas</Em>, and{" "}
-        <Em>opportunities</Em> related to them. Follow where the characters want to go. Present
-        interesting situations related to it. When players hesitate or hit an impasse, spur them
-        into action with danger timers, quarrels, <Move>Entangles</Move>, or <Move>Bridge</Move> and
-        move on.
+        <StrongEm>Follow the players' lead</StrongEm>. Keep tabs on story arcs and present{" "}
+        <Em>drama</Em>, <Em>dilemmas</Em>, and <Em>opportunities</Em> related to them. Follow where
+        the characters want to go. Present interesting situations related to it. When players
+        hesitate or hit an impasse, spur them into action with danger timers, quarrels,{" "}
+        <Move>Entangles</Move>, or <Move>Bridge</Move> and move on.
       </Text>
       <Text>
-        <Strong>
-          <Em>Use the moves, or don't</Em>
-        </Strong>
-        . The GM moves can be explicit rules, merely guidelines, or somewhere in between. Some GMs
-        will call them out by name, while others never bring them up at all. Either way, as long as
-        your GMing aligns with their intent, you're doing it right.
+        <StrongEm>Use the moves, or don't</StrongEm>. The GM moves can be explicit rules, merely
+        guidelines, or somewhere in between. Some GMs will call them out by name, while others never
+        bring them up at all. Either way, as long as your GMing aligns with their intent, you're
+        doing it right.
       </Text>
       <Text>
-        <Strong>
-          <Em>Make moves with impact</Em>
-        </Strong>
-        . Don't pull your punches—impact moves are called that for a reason. They shove the story
-        forward. Players have a lot of tools at their disposal, so{" "}
-        <Strong>
-          <Em>give the world teeth</Em>
-        </Strong>
-        . It makes victory even sweeter.
+        <StrongEm>Make moves with impact</StrongEm>. Don't pull your punches—impact moves are called
+        that for a reason. They shove the story forward. Players have a lot of tools at their
+        disposal, so <StrongEm>give the world teeth</StrongEm>. It makes victory even sweeter.
       </Text>
       <Text>
         A single impact move is flexible. You can split it up into a few lesser effects{" "}
@@ -1751,12 +1585,9 @@ const Chapter02 = () => {
         elsewhere or take suspense and hit later with better dramatic timing.
       </Text>
       <Text>
-        <Strong>
-          <Em>Prompt player narration</Em>
-        </Strong>
-        . After a roll, make sure the players narrate how things play out—even, or especially, on a
-        grim. Describing failure is a great way to express their character. Collaborate, but keep
-        them narrating their actions.
+        <StrongEm>Prompt player narration</StrongEm>. After a roll, make sure the players narrate
+        how things play out—even, or especially, on a grim. Describing failure is a great way to
+        express their character. Collaborate, but keep them narrating their actions.
       </Text>
       <Text>
         Encourage them to play off of each other as well, especially with assists and montages. Ask
@@ -1765,18 +1596,11 @@ const Chapter02 = () => {
       </Text>
       <Text>
         Most importantly, after the rules come into play, get right back to narration. Make sure
-        that the flow remains{" "}
-        <Strong>
-          <Em>Fiction→Rules→Fiction</Em>
-        </Strong>
-        .
+        that the flow remains <StrongEm>Fiction→Rules→Fiction</StrongEm>.
       </Text>
       <Text>
-        <Strong>
-          <Em>Be endlessly curious</Em>
-        </Strong>
-        . Ask provocative questions about the PCs and their motivations to give players a chance to
-        expand on their characters.
+        <StrongEm>Be endlessly curious</StrongEm>. Ask provocative questions about the PCs and their
+        motivations to give players a chance to expand on their characters.
       </Text>
       <List>
         <List.Item>
@@ -1857,12 +1681,9 @@ const Chapter02 = () => {
         come to unlife. You (the GM) tell them there are skeletons and zombies everywhere. They have
         a choice— they could run, and it would be an <Strong>8d | Escape</Strong> challenge, but the
         town would be gone for sure. Or you can stay and fight, just wave after wave of undead. You
-        then <Move>Entangle</Move> the rogue's{" "}
-        <Strong>
-          <Em>definitely not honorable</Em>
-        </Strong>{" "}
-        trait. The rest seem deadset on staying, but the rogue wavers. They quarrel, and finally the
-        other three win out—they stay, and fight like the heroes most of them are.
+        then <Move>Entangle</Move> the rogue's <StrongEm>definitely not honorable</StrongEm> trait.
+        The rest seem deadset on staying, but the rogue wavers. They quarrel, and finally the other
+        three win out—they stay, and fight like the heroes most of them are.
       </Text>
       <Text>
         You think on what waves of zombies might look like. Each undead is weak individually, but
@@ -1902,13 +1723,10 @@ const Chapter02 = () => {
         Breached pool (<Strong>3d→5d</Strong>).
       </Text>
       <Text>
-        The wizard steps up and launches a{" "}
-        <Strong>
-          <Em>Frenzied Embers</Em>
-        </Strong>{" "}
-        potent spell at the gnolls—a <Strong>critical</Strong>! You roll the marauders' pool,
-        getting 3, 5, 4, 3, 6, 2, 1, 6 :: <Strong>8d→4d</Strong>. For the critical, the wizard takes
-        a <Em>secondary effect</Em>—they want that battering ram to catch fire. You think it'll
+        The wizard steps up and launches a <StrongEm>Frenzied Embers</StrongEm> potent spell at the
+        gnolls—a <Strong>critical</Strong>! You roll the marauders' pool, getting 3, 5, 4, 3, 6, 2,
+        1, 6 :: <Strong>8d→4d</Strong>. For the critical, the wizard takes a{" "}
+        <Em>secondary effect</Em>—they want that battering ram to catch fire. You think it'll
         probably take a while to burn, so you start a 4d Ram Burning pool and roll it: 2 3 3 1 ::
         <Strong>4d→0d</Strong>! Nevermind, it's engulfed in flames!
       </Text>
@@ -2082,23 +1900,16 @@ const Chapter02 = () => {
       </Text>
       <Text>
         <Strong allCaps>Wizard</Strong>: “Can I try to save the cleric just before he goes over? Or
-        like right as he goes over? I want to cast{" "}
-        <Strong>
-          <Em>Flaming Claw</Em>
-        </Strong>{" "}
-        to grab him.”
+        like right as he goes over? I want to cast <StrongEm>Flaming Claw</StrongEm> to grab him.”
       </Text>
       <Text>
         You let her know she can't undo something that happened, but there's enough gray area to try
-        this. You remind her that{" "}
-        <Strong>
-          <Em>Flaming Claw</Em>
-        </Strong>{" "}
-        scorches whatever it touches, so the cleric's Agility will get marked no matter what here.
-        She makes the roll and gets a messy. The cleric is scorched a bit, but safe as the claw
-        drags him back up the side of the boat. Not wanting to further complicate this beat, you
-        decide to take suspense instead of making an impact move, a nice soft reset on the action.
-        You point the <Move>Spotlight</Move> back at the PCs.
+        this. You remind her that <StrongEm>Flaming Claw</StrongEm> scorches whatever it touches, so
+        the cleric's Agility will get marked no matter what here. She makes the roll and gets a
+        messy. The cleric is scorched a bit, but safe as the claw drags him back up the side of the
+        boat. Not wanting to further complicate this beat, you decide to take suspense instead of
+        making an impact move, a nice soft reset on the action. You point the <Move>Spotlight</Move>{" "}
+        back at the PCs.
       </Text>
       <Panel>
         <Text size="small" muted>
@@ -2135,14 +1946,8 @@ const Chapter02 = () => {
       <Text>
         The player knows there's also a Bandit Leader here, but the rogue character doesn't—he
         introduces a tangle. They recently changed their trait from{" "}
-        <Strong>
-          <Em>definitely not honorable</Em>
-        </Strong>{" "}
-        to{" "}
-        <Strong>
-          <Em>definitely not quiet</Em>
-        </Strong>
-        , so he wants to say his character doesn't know about the bandit and walks out loudly
+        <StrongEm>definitely not honorable</StrongEm> to <StrongEm>definitely not quiet</StrongEm>,
+        so he wants to say his character doesn't know about the bandit and walks out loudly
         bragging. That makes sense and seems in-character, so you okay it and he takes spark.
       </Text>
       <Text>

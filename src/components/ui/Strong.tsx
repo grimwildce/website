@@ -3,7 +3,7 @@ import { type MutuallyExclusiveBooleanProps } from "@/utils/customTypes";
 import classNames from "classnames";
 import { type ReactNode } from "react";
 
-type StrongProps = {
+export type StrongProps = {
   children: ReactNode;
 } & MutuallyExclusiveBooleanProps<"allCaps" | "smallCaps">;
 

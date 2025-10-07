@@ -9,6 +9,7 @@ import Move from "@/components/ui/Move";
 import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
 import Strong from "@/components/ui/Strong";
+import StrongEm from "@/components/ui/StrongEm";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 
@@ -66,62 +67,47 @@ const Chapter01 = () => {
         What is Grimwild?
       </Heading>
       <Text>
-        <Em>
-          <Strong>Grimwild is a game of cinematic fantasy adventure</Strong>
-        </Em>
-        . You go on quests, delve into dungeons, and explore the wilderness. It's set in a world of
-        your choosing, or one you create together—the key being it's a world in need of adventurers.{" "}
-        <Em>Grimwild</Em> isn't a setting. That's up to you. This game gives you the rules,
-        monsters, and adventurers to play a campaign in that setting that feels like a fun, ensemble
-        cast TV series, each session a new episode.
+        <StrongEm>Grimwild is a game of cinematic fantasy adventure</StrongEm>. You go on quests,
+        delve into dungeons, and explore the wilderness. It's set in a world of your choosing, or
+        one you create together—the key being it's a world in need of adventurers. <Em>Grimwild</Em>{" "}
+        isn't a setting. That's up to you. This game gives you the rules, monsters, and adventurers
+        to play a campaign in that setting that feels like a fun, ensemble cast TV series, each
+        session a new episode.
       </Text>
       <Text>
-        <Em>
-          <Strong>Gameplay flows smoothly</Strong>
-        </Em>
-        . The rules resolve actions quickly, favoring the dramatic over the realistic. They provide
-        a strong framework to pace the game, manage tension, and create great scenes. They give
-        significant creative freedom to add set dressing and even larger details into scenes to play
-        off of, keeping the story moving forward and prioritizing common sense over detailed
-        tracking.
+        <StrongEm>Gameplay flows smoothly</StrongEm>. The rules resolve actions quickly, favoring
+        the dramatic over the realistic. They provide a strong framework to pace the game, manage
+        tension, and create great scenes. They give significant creative freedom to add set dressing
+        and even larger details into scenes to play off of, keeping the story moving forward and
+        prioritizing common sense over detailed tracking.
       </Text>
       <Text>
-        <Em>
-          <Strong>The story is character-driven</Strong>
-        </Em>
-        . As players, you work together to decide your adventuring party's identity, then make
-        characters that fit well within it. You set your group arcs, then choose your own character
-        arcs, broad themes that give you experience when you bring them into play and help steer the
-        story.
+        <StrongEm>The story is character-driven</StrongEm>. As players, you work together to decide
+        your adventuring party's identity, then make characters that fit well within it. You set
+        your group arcs, then choose your own character arcs, broad themes that give you experience
+        when you bring them into play and help steer the story.
       </Text>
       <Text>
-        <Em>
-          <Strong>Characters are revealed through play</Strong>
-        </Em>
-        . You start with a clear concept that fits well within your party, but you don't necessarily
-        need all of the details upfront—focus on what sounds fun to bring into play. You can always
-        use the tools the game gives you to add details about your past and connect the dots as they
-        come up, leaving plenty of space to grow together into a cohesive, colorful party.
+        <StrongEm>Characters are revealed through play</StrongEm>. You start with a clear concept
+        that fits well within your party, but you don't necessarily need all of the details
+        upfront—focus on what sounds fun to bring into play. You can always use the tools the game
+        gives you to add details about your past and connect the dots as they come up, leaving
+        plenty of space to grow together into a cohesive, colorful party.
       </Text>
       <Text>
-        <Em>
-          <Strong>Things get dramatic</Strong>
-        </Em>
-        . You're rewarded for playing into your traits in ways that complicate the situation, giving
-        good reason to think in-character and sometimes picking the less than optimal path.
-        Inevitably, sparks fly, leading to in-fighting between protagonists, just like any great
-        story with characters driven by their own motivations. This is all cleanly resolved with
-        quarrels—a simple roll to move things forward, encouraging and providing a release valve for
-        this friction!
+        <StrongEm>Things get dramatic</StrongEm>. You're rewarded for playing into your traits in
+        ways that complicate the situation, giving good reason to think in-character and sometimes
+        picking the less than optimal path. Inevitably, sparks fly, leading to in-fighting between
+        protagonists, just like any great story with characters driven by their own motivations.
+        This is all cleanly resolved with quarrels—a simple roll to move things forward, encouraging
+        and providing a release valve for this friction!
       </Text>
       <Text>
-        <Em>
-          <Strong>The story is a maelstrom of dice rolls and fun ideas</Strong>
-        </Em>
-        . From all this pushing and pulling on the narrative, storylines and side plots emerge. In
-        spite of the tension, the choices you make about your party's arcs and the characters
-        growing together over time give compelling reason to stay together and focused. It's a TV
-        show that you're the main characters of, messy and fun and full of surprises.
+        <StrongEm>The story is a maelstrom of dice rolls and fun ideas</StrongEm>. From all this
+        pushing and pulling on the narrative, storylines and side plots emerge. In spite of the
+        tension, the choices you make about your party's arcs and the characters growing together
+        over time give compelling reason to stay together and focused. It's a TV show that you're
+        the main characters of, messy and fun and full of surprises.
       </Text>
       <Heading level={2} id="getting-started">
         Getting Started
@@ -131,37 +117,24 @@ const Chapter01 = () => {
         with. The basics aren't covered here, but there are plenty of resources online and you can
         always join our Discord community to ask questions. Visit us at{" "}
         <ExternalLink href="#">
-          <Em>
-            <Strong>odditypress.com</Strong>
-          </Em>
+          <StrongEm>odditypress.com</StrongEm>
         </ExternalLink>{" "}
         to join.
       </Text>
       <Text>
-        <Em>
-          <Strong>Thematically</Strong>
-        </Em>
-        , <Em>Grimwild</Em> draws heavily on the heroic fantasy of <Em>Dungeons &amp; Dragons</Em>{" "}
-        and wears this influence on its sleeve. It's especially rooted in modern <Em>D&amp;D</Em>,
-        from 3rd edition onwards. Inspiration was also taken from <Em>Dungeon World</Em> and its
-        many descendants, like <Em>Unlimited Dungeons</Em>, <Em>Chasing Adventure</Em>,{" "}
-        <Em>Homebrew World</Em>, and <Em>Stonetop</Em>.
+        <StrongEm>Thematically</StrongEm>, <Em>Grimwild</Em> draws heavily on the heroic fantasy of{" "}
+        <Em>Dungeons &amp; Dragons</Em> and wears this influence on its sleeve. It's especially
+        rooted in modern <Em>D&amp;D</Em>, from 3rd edition onwards. Inspiration was also taken from{" "}
+        <Em>Dungeon World</Em> and its many descendants, like <Em>Unlimited Dungeons</Em>,{" "}
+        <Em>Chasing Adventure</Em>, <Em>Homebrew World</Em>, and <Em>Stonetop</Em>.
       </Text>
       <Text>
-        <Em>
-          <Strong>Mechanically</Strong>
-        </Em>
-        , the{" "}
-        <Em>
-          <Strong>Moxie</Strong>
-        </Em>{" "}
-        system that <Em>Grimwild</Em> is built on draws from a variety of character-driven games,
-        with the biggest influences being <Em>Burning Wheel</Em>, <Em>Cortex Prime</Em>,{" "}
+        <StrongEm>Mechanically</StrongEm>, the <StrongEm>Moxie</StrongEm> system that{" "}
+        <Em>Grimwild</Em> is built on draws from a variety of character-driven games, with the
+        biggest influences being <Em>Burning Wheel</Em>, <Em>Cortex Prime</Em>,{" "}
         <Em>Blades in the Dark</Em>, and <Em>Fate</Em>.
       </Text>
-      <Text>
-        <Strong allCaps>To Play, You Need:</Strong>
-      </Text>
+      <SectionHeading>To Play, You Need:</SectionHeading>
       <List>
         <List.Item>
           <Strong>Players</Strong> : You need one person as the gamemaster (GM) and some players,{" "}
@@ -181,32 +154,18 @@ const Chapter01 = () => {
           make more sense.
         </List.Item>
         <List.Item>
-          <Strong>Dice</Strong> : Each player needs 4-6 d6s, notated as{" "}
-          <Em>
-            <Strong>d</Strong>
-          </Em>{" "}
-          (<Em>e.g., 2d, 4d</Em>), and 2-4 d8s, called{" "}
-          <Em>
-            <Strong>thorns</Strong>
-          </Em>{" "}
-          and notated as{" "}
-          <Em>
-            <Strong>t</Strong>
-          </Em>{" "}
-          (<Em>e.g., 1t, 3t</Em>). The GM needs 8 d6s.
+          <Strong>Dice</Strong> : Each player needs 4-6 d6s, notated as <StrongEm>d</StrongEm> (
+          <Em>e.g., 2d, 4d</Em>), and 2-4 d8s, called <StrongEm>thorns</StrongEm> and notated as{" "}
+          <StrongEm>t</StrongEm> (<Em>e.g., 1t, 3t</Em>). The GM needs 8 d6s.
         </List.Item>
         <List.Item>
           <Strong>Sheets</Strong> : Character, GM, and reference sheets are available at{" "}
           <ExternalLink href="#">
-            <Em>
-              <Strong>odditypress.com</Strong>
-            </Em>
+            <StrongEm>odditypress.com</StrongEm>
           </ExternalLink>{" "}
           or{" "}
           <ExternalLink href="https://drivethrurpg.com">
-            <Em>
-              <Strong>drivethrurpg.com</Strong>
-            </Em>
+            <StrongEm>drivethrurpg.com</StrongEm>
           </ExternalLink>
           . Links to supported VTTs and online tools are on the website. A smaller version of the
           blank character sheet can be found in the back.
@@ -215,25 +174,18 @@ const Chapter01 = () => {
           <Strong>Safety</Strong> : To help everyone feel comfortable with the themes within your
           campaigns, use the{" "}
           <ExternalLink href="https://drive.google.com/drive/folders/114jRmhzBpdqkAlhmveis0nmW73qkAZCj">
-            <Em>
-              <Strong>TTRPG Safety Toolkit</Strong>
-            </Em>
+            <StrongEm>TTRPG Safety Toolkit</StrongEm>
           </ExternalLink>
           .
         </List.Item>
       </List>
-      <Text>
-        <Strong allCaps>Conventions in This Book:</Strong>
-      </Text>
+      <SectionHeading>Conventions in This Book:</SectionHeading>
       <List>
         <List.Item>
           <Strong>System Terms</Strong> : These are <Strong>bolded</Strong> when first introduced or
           when clarity is needed. Otherwise, they're not specifically styled. Emphasis is shown with{" "}
-          <Em>italics</Em>, sometimes{" "}
-          <Em>
-            <Strong>boldly</Strong>
-          </Em>
-          . When unsure, reference the index in the back.
+          <Em>italics</Em>, sometimes <StrongEm>boldly</StrongEm>. When unsure, reference the index
+          in the back.
         </List.Item>
         <List.Item>
           <Strong>Pools</Strong> : In <Em>Grimwild</Em>, “pool” always refers to diminishing pools
@@ -261,34 +213,20 @@ const Chapter01 = () => {
         Gameplay Overview
       </Heading>
       <Text>
-        <Em>Grimwild</Em> is built with the{" "}
-        <Em>
-          <Strong>Moxie</Strong>
-        </Em>{" "}
-        cinematic toolkit, a tabletop RPG ruleset that focuses on cinematic action and
-        character-driven gameplay. Below is how the key parts tie together and an intro to the
-        game's terms. The rules are explained throughout chapters 1 and 2, followed by{" "}
-        <Em>
-          <Strong>examples of play</Strong>
-        </Em>
-        . The game uses a lot of its own terminology, so here's a{" "}
-        <Em>
-          <Strong>basic rundown of the key parts</Strong>
-        </Em>{" "}
-        which you'll encounter throughout the rules. Don't worry about understanding all of this
-        right now!
+        <Em>Grimwild</Em> is built with the <StrongEm>Moxie</StrongEm> cinematic toolkit, a tabletop
+        RPG ruleset that focuses on cinematic action and character-driven gameplay. Below is how the
+        key parts tie together and an intro to the game's terms. The rules are explained throughout
+        chapters 1 and 2, followed by <StrongEm>examples of play</StrongEm>. The game uses a lot of
+        its own terminology, so here's a <StrongEm>basic rundown of the key parts</StrongEm> which
+        you'll encounter throughout the rules. Don't worry about understanding all of this right
+        now!
       </Text>
+      <SectionHeading>Setting up the Game</SectionHeading>
       <Text>
-        <Strong allCaps>Setting up the Game</Strong>
-      </Text>
-      <Text>
-        <Em>
-          <Strong>As a group</Strong>
-        </Em>
-        , form an <Strong>adventuring party</Strong> by choosing a few key words that clearly say{" "}
-        <Em>what your party is</Em> and <Em>what it's not</Em>. Your PCs have already adventured
-        together, each fitting into the party concept in some way. This cuts right to the story in
-        progress, ready to jump into your next adventure.
+        <StrongEm>As a group</StrongEm>, form an <Strong>adventuring party</Strong> by choosing a
+        few key words that clearly say <Em>what your party is</Em> and <Em>what it's not</Em>. Your
+        PCs have already adventured together, each fitting into the party concept in some way. This
+        cuts right to the story in progress, ready to jump into your next adventure.
       </Text>
       <Text>
         Make characters by choosing two <Strong>backgrounds</Strong> that reflect your past, like
@@ -298,23 +236,18 @@ const Chapter01 = () => {
         with the other PCs. Establish group and character <Strong>story arcs</Strong>, which you
         play towards to drive the story.
       </Text>
+      <SectionHeading>Playing the Game</SectionHeading>
       <Text>
-        <Strong allCaps>Playing the Game</Strong>
-      </Text>
-      <Text>
-        <Em>
-          <Strong>As a player</Strong>
-        </Em>
-        , describe what your character thinks, feels, and does. When you try something risky, you
-        make an <Strong>action roll</Strong>. When the GM puts you in direct danger, you make a{" "}
-        <Strong>defense roll</Strong>. You can also make a <Strong>montage roll</Strong> to skip
-        past parts you don't want to play out in detail. Rolls are made with a handful of d6s equal
-        to a stat, keeping the highest to set the <Strong>outcome</Strong>: <Strong>perfect</Strong>
-        , <Strong>messy</Strong>, or <Strong>grim</Strong>. Rolling two 6s is a{" "}
-        <Strong>critical</Strong> and you choose a bonus. Difficulty and damage add one or more d8s
-        called <Strong>thorns</Strong> to your roll, which might <Strong>cut</Strong> the outcome
-        down a level. If a grim gets cut, it's a <Strong>disaster</Strong> and things get really bad
-        for you!
+        <StrongEm>As a player</StrongEm>, describe what your character thinks, feels, and does. When
+        you try something risky, you make an <Strong>action roll</Strong>. When the GM puts you in
+        direct danger, you make a <Strong>defense roll</Strong>. You can also make a{" "}
+        <Strong>montage roll</Strong> to skip past parts you don't want to play out in detail. Rolls
+        are made with a handful of d6s equal to a stat, keeping the highest to set the{" "}
+        <Strong>outcome</Strong>: <Strong>perfect</Strong>, <Strong>messy</Strong>, or{" "}
+        <Strong>grim</Strong>. Rolling two 6s is a <Strong>critical</Strong> and you choose a bonus.
+        Difficulty and damage add one or more d8s called <Strong>thorns</Strong> to your roll, which
+        might <Strong>cut</Strong> the outcome down a level. If a grim gets cut, it's a{" "}
+        <Strong>disaster</Strong> and things get really bad for you!
       </Text>
       <Text>
         Use your creative freedom to add <Strong>set dressing</Strong> to scenes to play off of, and
@@ -327,17 +260,12 @@ const Chapter01 = () => {
         After each session, you earn <Strong>experience</Strong> (XP) towards increasing in{" "}
         <Strong>level</Strong>, which grants new <Strong>talents</Strong>.
       </Text>
+      <SectionHeading>Running the Game</SectionHeading>
       <Text>
-        <Strong allCaps>Running the Game</Strong>
-      </Text>
-      <Text>
-        <Em>
-          <Strong>As the GM</Strong>
-        </Em>
-        , present dilemmas and drama, then let the players come up with solutions. Keep the
-        spotlight moving to give everyone screen time and prompt the players to describe their
-        actions. Map the fiction to rules, and make rulings to fill in gaps. Open the door wide for
-        collaboration and enjoy the story.
+        <StrongEm>As the GM</StrongEm>, present dilemmas and drama, then let the players come up
+        with solutions. Keep the spotlight moving to give everyone screen time and prompt the
+        players to describe their actions. Map the fiction to rules, and make rulings to fill in
+        gaps. Open the door wide for collaboration and enjoy the story.
       </Text>
       <Text>
         Use <Strong>GM moves</Strong> as tools and guiding principles to act as the world and pace
@@ -359,73 +287,56 @@ const Chapter01 = () => {
       <Text>
         <Em>Grimwild</Em> is built with the <Em>Moxie</Em> ruleset and designed for{" "}
         <Strong>cinematic gameplay</Strong>. The heart of that is{" "}
-        <Em>
-          <Strong>narrative collaboration</Strong>
-        </Em>
-        . It's all about creating a <Em>shared imagination space</Em>,{" "}
-        <Em>managing the spotlight</Em>, and <Em>diving into narration</Em>. The rules will get you
-        halfway there—they're all pointing towards keeping the pace flowing quickly and the action
-        dramatic. The other half is in your hands, the players at the table, and the attitude you
-        all approach the game with.
+        <StrongEm>narrative collaboration</StrongEm>. It's all about creating a{" "}
+        <Em>shared imagination space</Em>, <Em>managing the spotlight</Em>, and{" "}
+        <Em>diving into narration</Em>. The rules will get you halfway there—they're all pointing
+        towards keeping the pace flowing quickly and the action dramatic. The other half is in your
+        hands, the players at the table, and the attitude you all approach the game with.
       </Text>
-      <SectionHeading>Play Cinematically</SectionHeading>
+      <SectionHeading variant="solid">Play Cinematically</SectionHeading>
       <Text>
-        <Em>
-          <Strong>Trust in the collaborative process</Strong>
-        </Em>
-        . Everyone at the table adds details into the story. You have to work together and play off
-        of each other or the game, and the story you're telling, will fall flat.
+        <StrongEm>Trust in the collaborative process</StrongEm>. Everyone at the table adds details
+        into the story. You have to work together and play off of each other or the game, and the
+        story you're telling, will fall flat.
       </Text>
       <Text>
-        <Em>
-          <Strong>Use the camera, your shared imagination</Strong>
-        </Em>
-        . Each player has two perspectives, from your character and as the audience watching this TV
-        show. Use the camera and vivid description to paint a cool scene in everyone's mind.
+        <StrongEm>Use the camera, your shared imagination</StrongEm>. Each player has two
+        perspectives, from your character and as the audience watching this TV show. Use the camera
+        and vivid description to paint a cool scene in everyone's mind.
       </Text>
       <Text>
-        <Em>
-          <Strong>Tell us what it looks like, before and after your rolls</Strong>
-        </Em>
-        . Give details about what you do, don't just leave it at broad statements. Zoom in and out.
-        Use the camera to show things outside of your own character as well—pan around, cut to other
-        scenes, and describe NPCs. Invoke cinematic vibes and create great scenes.
+        <StrongEm>Tell us what it looks like, before and after your rolls</StrongEm>. Give details
+        about what you do, don't just leave it at broad statements. Zoom in and out. Use the camera
+        to show things outside of your own character as well—pan around, cut to other scenes, and
+        describe NPCs. Invoke cinematic vibes and create great scenes.
       </Text>
-      <SectionHeading>Play in Good Faith</SectionHeading>
+      <SectionHeading variant="solid">Play in Good Faith</SectionHeading>
       <Text>
-        <Em>
-          <Strong>Don't be a weasel</Strong>
-        </Em>
-        . Do what your character would do, then let the GM map it back to the rules. Don't overdo it
-        trying to work your way into better rolls. The fun is letting the story flow naturally. When
-        you ask the rules what happens next, follow where it points with enthusiasm.
+        <StrongEm>Don't be a weasel</StrongEm>. Do what your character would do, then let the GM map
+        it back to the rules. Don't overdo it trying to work your way into better rolls. The fun is
+        letting the story flow naturally. When you ask the rules what happens next, follow where it
+        points with enthusiasm.
       </Text>
       <Text>
-        <Em>
-          <Strong>Separate player and character knowledge</Strong>
-        </Em>
-        . It's more fun when everyone knows what's going on in the game. Don't keep secrets from
-        each other, keep them from characters. As a player, be aware of what your character knows
-        and doesn't know and play towards both.
+        <StrongEm>Separate player and character knowledge</StrongEm>. It's more fun when everyone
+        knows what's going on in the game. Don't keep secrets from each other, keep them from
+        characters. As a player, be aware of what your character knows and doesn't know and play
+        towards both.
       </Text>
       <Text>
-        <Em>
-          <Strong>Use the meta-channel sparingly</Strong>
-        </Em>
-        . This is conversation about the game between players. It's unavoidable, but minimize it to
-        keep that shared imagination in sync at the table. For anything longer than a quick
-        question, call for a pause to talk things through, a clean break point to resume from later.
+        <StrongEm>Use the meta-channel sparingly</StrongEm>. This is conversation about the game
+        between players. It's unavoidable, but minimize it to keep that shared imagination in sync
+        at the table. For anything longer than a quick question, call for a pause to talk things
+        through, a clean break point to resume from later.
       </Text>
       <Text>
-        <Em>
-          <Strong>Know the rules</Strong>
-        </Em>
-        . Everyone can get a copy of the game PDF (<Em>it's free!</Em>). The rules say a lot about
-        the types of stories to be told with the game, and the less time you spend talking about the
-        rules, the more time you have for roleplaying. Making a cheat sheet on rules you often
-        forget can be a big help, or even just skimming the book pre-game.
+        <StrongEm>Know the rules</StrongEm>. Everyone can get a copy of the game PDF (
+        <Em>it's free!</Em>). The rules say a lot about the types of stories to be told with the
+        game, and the less time you spend talking about the rules, the more time you have for
+        roleplaying. Making a cheat sheet on rules you often forget can be a big help, or even just
+        skimming the book pre-game.
       </Text>
-      <SectionHeading>Play to Tell a Story</SectionHeading>
+      <SectionHeading variant="solid">Play to Tell a Story</SectionHeading>
       <Text>
         Think of the game as a series of improv prompts, posed by yourselves and the rules. When you
         respond to them, consider the following:
@@ -445,29 +356,21 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Text>
-        <Em>
-          <Strong>Don't talk yourself out of fun</Strong>
-        </Em>
-        . The first idea that jumps into your head is often the one you should go with. Don't
-        overthink or rationalize yourself out of it. Like any great TV show character, go where the
-        fun lies. Great stories involve excitement, danger, and hard choices.
+        <StrongEm>Don't talk yourself out of fun</StrongEm>. The first idea that jumps into your
+        head is often the one you should go with. Don't overthink or rationalize yourself out of it.
+        Like any great TV show character, go where the fun lies. Great stories involve excitement,
+        danger, and hard choices.
       </Text>
       <Text>
-        <Em>
-          <Strong>Open doors and step through them</Strong>
-        </Em>
-        . The best scenes involve characters playing off of each other, so make chances for others
-        to get involved. When someone invites you into a scene, step through that door—even if it
-        means a bit of mental gymnastics to justify your character's actions. And as long as you
-        step through the door at times, remember that it can be just as interesting to close the
-        door instead.
+        <StrongEm>Open doors and step through them</StrongEm>. The best scenes involve characters
+        playing off of each other, so make chances for others to get involved. When someone invites
+        you into a scene, step through that door—even if it means a bit of mental gymnastics to
+        justify your character's actions. And as long as you step through the door at times,
+        remember that it can be just as interesting to close the door instead.
       </Text>
       <Text>
-        <Em>
-          <Strong>Work the spotlight</Strong>
-        </Em>
-        . There's no turn order of any kind, but there is screen time. Strive to make sure everyone
-        gets their fair share, including yourself.
+        <StrongEm>Work the spotlight</StrongEm>. There's no turn order of any kind, but there is
+        screen time. Strive to make sure everyone gets their fair share, including yourself.
       </Text>
       <List>
         <List.Item>
@@ -489,53 +392,39 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Text>
-        <Em>
-          <Strong>Don't play to win, play to tell stories</Strong>
-        </Em>
-        . Work towards the same goal—to tell a great story where everyone's character has a chance
-        to grow. Failure isn't losing, it's just another opportunity to have a great scene. Of
-        course, your character wants to succeed! However, your goal as a player is keeping the story
-        interesting. Play into the bad luck just as you do the good to help ensure you craft
-        compelling stories.
+        <StrongEm>Don't play to win, play to tell stories</StrongEm>. Work towards the same goal—to
+        tell a great story where everyone's character has a chance to grow. Failure isn't losing,
+        it's just another opportunity to have a great scene. Of course, your character wants to
+        succeed! However, your goal as a player is keeping the story interesting. Play into the bad
+        luck just as you do the good to help ensure you craft compelling stories.
       </Text>
-      <SectionHeading>Play Characters That Grow</SectionHeading>
+      <SectionHeading variant="solid">Play Characters That Grow</SectionHeading>
       <Text>
-        <Em>
-          <Strong>Leave lots of blank space</Strong>
-        </Em>
-        . Your PC starts with a past and connections to the world, but it's best as latticework.
-        Learn who they are through play. Leave space for the other PCs and story to fit in.
+        <StrongEm>Leave lots of blank space</StrongEm>. Your PC starts with a past and connections
+        to the world, but it's best as latticework. Learn who they are through play. Leave space for
+        the other PCs and story to fit in.
       </Text>
       <Text>
-        <Em>
-          <Strong>Don't be afraid to change</Strong>
-        </Em>
-        . PCs often go through hell. Any dramatic story has adversity. Let what happens change who
-        they are. Announce what your PC's thinking, especially big shifts. If nobody else at the
-        table knows, it's not really happening in that shared imagination.
+        <StrongEm>Don't be afraid to change</StrongEm>. PCs often go through hell. Any dramatic
+        story has adversity. Let what happens change who they are. Announce what your PC's thinking,
+        especially big shifts. If nobody else at the table knows, it's not really happening in that
+        shared imagination.
       </Text>
       <Text>
-        <Em>
-          <Strong>Don't be afraid to stay the same</Strong>
-        </Em>
-        . Some aspects of your character might be immutable. That's also part of what makes a great
-        character. There can be those things they will stick to, even to the bitter end. Just make
-        sure it's worth it, and fun. Don't die on small hills—die on entertaining ones.
+        <StrongEm>Don't be afraid to stay the same</StrongEm>. Some aspects of your character might
+        be immutable. That's also part of what makes a great character. There can be those things
+        they will stick to, even to the bitter end. Just make sure it's worth it, and fun. Don't die
+        on small hills—die on entertaining ones.
       </Text>
       <Text>
-        <Em>
-          <Strong>Make time for smaller moments</Strong>
-        </Em>
-        . Quiet time, a conversation about nothing, introspection, reflection—these make for great
-        scenes to flesh out your characters and the world. Don't just rush from action scene to
-        action scene.
+        <StrongEm>Make time for smaller moments</StrongEm>. Quiet time, a conversation about
+        nothing, introspection, reflection—these make for great scenes to flesh out your characters
+        and the world. Don't just rush from action scene to action scene.
       </Text>
       <Text>
-        <Em>
-          <Strong>Most importantly, do stuff</Strong>
-        </Em>
-        ! Find reasons to get into the spotlight, push story arcs forward, and make fun scenes. When
-        there's no opportunity, add some details to the story to create one!
+        <StrongEm>Most importantly, do stuff</StrongEm>! Find reasons to get into the spotlight,
+        push story arcs forward, and make fun scenes. When there's no opportunity, add some details
+        to the story to create one!
       </Text>
       <Heading level={2} id="core-rules">
         Core Rules
@@ -549,11 +438,8 @@ const Chapter01 = () => {
       <List>
         <List.Item>
           A <Strong allCaps>Critical</Strong> happens when you roll two or more 6s.{" "}
-          <Em>
-            <Strong>Ignore any cuts</Strong>
-          </Em>{" "}
-          and choose a <Strong>critical bonus</Strong>: <Em>greater effect</Em>—
-          <Em>secondary effect</Em>—<Em>setup a follow-up</Em>.
+          <StrongEm>Ignore any cuts</StrongEm> and choose a <Strong>critical bonus</Strong>:{" "}
+          <Em>greater effect—secondary effect—setup a follow-up</Em>.
         </List.Item>
         <List.Item>
           A <Strong allCaps>Disaster</Strong> happens when a grim is cut by a thorn. Whatever the
@@ -562,14 +448,8 @@ const Chapter01 = () => {
       </List>
       <Text>
         <Strong allCaps>Spark</Strong>. <Em>Pure protagonist energy</Em>.{" "}
-        <Em>
-          <Strong>Take spark</Strong>
-        </Em>{" "}
-        (max 2) when you add a tangle, roll a disaster, resolve a story arc, or quarrel.{" "}
-        <Em>
-          <Strong>Spend it to take +1d on a roll</Strong>
-        </Em>
-        .
+        <StrongEm>Take spark</StrongEm> (max 2) when you add a tangle, roll a disaster, resolve a
+        story arc, or quarrel. <StrongEm>Spend it to take +1d on a roll</StrongEm>.
       </Text>
       <Text>
         <Strong allCaps>Thorns</Strong>. One or two d8s (t) added to your roll by the GM to reflect
@@ -585,24 +465,15 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Intrinsic</Strong>
-          </Em>
-          : Scale, opposing skill, numbers...{" "}
+          <StrongEm>Intrinsic</StrongEm>: Scale, opposing skill, numbers...{" "}
           <Muted>Huge chasm, expert detective, group of thugs.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Externals</Strong>
-          </Em>
-          : Environment, training, tools...{" "}
+          <StrongEm>Externals</StrongEm>: Environment, training, tools...{" "}
           <Muted>Heavy rain, not a doctor, shovel's broken.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Intangibles</Strong>
-          </Em>
-          : Strong feelings, bad info, mojo...{" "}
+          <StrongEm>Intangibles</StrongEm>: Strong feelings, bad info, mojo...{" "}
           <Muted>You love him, the map is wrong, you're cursed.</Muted>
         </List.Item>
       </List>
@@ -621,18 +492,13 @@ const Chapter01 = () => {
       </Heading>
       <Text>
         <Strong allCaps>Assist</Strong>. Help another PC on a roll. State{" "}
-        <Strong>how &amp; why</Strong>, then{" "}
-        <Em>
-          <Strong>roll 1d and share the risk</Strong>
-        </Em>
-        . Include your roll result with theirs for the final outcome—then each narrate your
+        <Strong>how &amp; why</Strong>, then <StrongEm>roll 1d and share the risk</StrongEm>.
+        Include your roll result with theirs for the final outcome—then each narrate your
         contribution, using your own result and bonds as a guide.
       </Text>
       <Text>
-        <Em>
-          <Strong>You can assist when another PC's action prompts an impact move</Strong>
-        </Em>
-        . You make a 1d defense roll for them.
+        <StrongEm>You can assist when another PC's action prompts an impact move</StrongEm>. You
+        make a 1d defense roll for them.
       </Text>
       <Text>
         When you <Strong>share the risk</Strong>, you open yourself up to consequences, which can
@@ -650,11 +516,7 @@ const Chapter01 = () => {
       </Text>
       <Text>
         <Strong allCaps>Outside Assistance</Strong>. When an assist or setup comes from the world,
-        like an NPC or the environment, the{" "}
-        <Em>
-          <Strong>GM rolls 1d</Strong>
-        </Em>{" "}
-        to represent it.
+        like an NPC or the environment, the <StrongEm>GM rolls 1d</StrongEm> to represent it.
       </Text>
       <Heading level={3} id="dice-rolls">
         Dice Rolls
@@ -688,26 +550,18 @@ const Chapter01 = () => {
       </Text>
       <Text>
         <Strong allCaps>Montage Roll</Strong>. Roll to condense a sequence you don't want to play
-        out in detail, but still want to leave up to the dice.{" "}
-        <Em>
-          <Strong>Roll 2d</Strong>
-        </Em>
-        , resolving it all as a single action roll, then narrate a few beats. Keep things moving or
+        out in detail, but still want to leave up to the dice. <StrongEm>Roll 2d</StrongEm>,
+        resolving it all as a single action roll, then narrate a few beats. Keep things moving or
         zoom in on a grim.
       </Text>
       <Text>
-        If multiple PCs join,{" "}
-        <Em>
-          <Strong>each rolls 2d and shares the risk</Strong>
-        </Em>
-        . Collaborate on the results. 6s on separate rolls don't count towards criticals.
+        If multiple PCs join, <StrongEm>each rolls 2d and shares the risk</StrongEm>. Collaborate on
+        the results. 6s on separate rolls don't count towards criticals.
       </Text>
       <Text>
         <Strong allCaps>Defense Roll</Strong>. Roll to avoid incoming trouble,{" "}
-        <Em>
-          <Strong>but only when not caused by your own action</Strong>
-        </Em>
-        . The GM calls for the roll and picks a stat to test.
+        <StrongEm>but only when not caused by your own action</StrongEm>. The GM calls for the roll
+        and picks a stat to test.
       </Text>
       <Panel border>
         <List>
@@ -732,11 +586,9 @@ const Chapter01 = () => {
         being in a worse position <Muted>(knocked off the cliff→your sword is knocked off)</Muted>.
       </Text>
       <Text>
-        <Em>
-          <Strong>Defense is cinematic—a reaction, out of your hands</Strong>
-        </Em>
-        . The GM picks the stat to fit the danger, your PC's likely reaction, vulnerabilities, and
-        what feels right for the moment. This keeps it varied—you can't always use a strong stat.
+        <StrongEm>Defense is cinematic—a reaction, out of your hands</StrongEm>. The GM picks the
+        stat to fit the danger, your PC's likely reaction, vulnerabilities, and what feels right for
+        the moment. This keeps it varied—you can't always use a strong stat.
       </Text>
       <Text>
         <Muted size="medium">
@@ -811,19 +663,8 @@ const Chapter01 = () => {
         <Strong allCaps>Vantage</Strong>. Your character's frame of reference, the sum of your
         backstory, talents, and the current fiction—everything on your sheet and what's affecting
         you in the story. When a question arises about what you can do, have, or know, check it
-        against your vantage: does it feel like a{" "}
-        <Em>
-          <Strong>given</Strong>
-        </Em>
-        , a{" "}
-        <Em>
-          <Strong>stretch</Strong>
-        </Em>
-        , or a{" "}
-        <Em>
-          <Strong>reach</Strong>
-        </Em>
-        ?
+        against your vantage: does it feel like a <StrongEm>given</StrongEm>, a{" "}
+        <StrongEm>stretch</StrongEm>, or a <StrongEm>reach</StrongEm>?
       </Text>
       <Text>
         <Muted size="medium">
@@ -973,11 +814,7 @@ const Chapter01 = () => {
         <Muted>(your tense doubts is their playful rivalry)</Muted>. You can change a bond anytime,
         such as in response to something they've done or something new you've learned about them.
         When it changes, give a short vignette (<Em>better if together!</Em>
-        ).{" "}
-        <Em>
-          <Strong>The other PC takes spark</Strong>
-        </Em>
-        .
+        ). <StrongEm>The other PC takes spark</StrongEm>.
       </Text>
       <Heading level={3} id="creative-freedom">
         Creative Freedom
@@ -997,61 +834,43 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Unwise decisions</Strong>
-          </Em>{" "}
-          your PC would likely make.
+          <StrongEm>Unwise decisions</StrongEm> your PC would likely make.
           <br />
           <Muted>You toss aside your sword to keep things fair.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Personal motivations</Strong>
-          </Em>{" "}
-          over group goals.
+          <StrongEm>Personal motivations</StrongEm> over group goals.
           <br />
           <Muted>You poison the general's wine, getting your revenge.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Complications</Strong>
-          </Em>{" "}
-          from beliefs or backstory.
+          <StrongEm>Complications</StrongEm> from beliefs or backstory.
           <br />
           <Muted>You forgot to tell everyone you dated the baron.</Muted>
         </List.Item>
       </List>
       <Text>
         <Strong allCaps>Story</Strong>. <Em>Pure cinematic momentum</Em>. Each session, you have{" "}
-        <Strong>2 story</Strong>. Spend it to add{" "}
-        <Em>
-          <Strong>story details</Strong>
-        </Em>{" "}
-        that go beyond set dressing, creating new opportunities or shifting the scene in your favor.
-        Added details must fit your vantage, <Em>at least as a stretch</Em>, or tie to a story arc.
-        Example details:
+        <Strong>2 story</Strong>. Spend it to add <StrongEm>story details</StrongEm> that go beyond
+        set dressing, creating new opportunities or shifting the scene in your favor. Added details
+        must fit your vantage, <Em>at least as a stretch</Em>, or tie to a story arc. Example
+        details:
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Character</Strong>
-          </Em>
+          <StrongEm>Character</StrongEm>
           : Gear, contacts, backstory...
           <br />
           <Muted>The wizard was your mentor. You have just the thing!</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Scene</Strong>
-          </Em>
+          <StrongEm>Scene</StrongEm>
           : NPC actions, objects, atmospherics...
           <br />
           <Muted>The guard falls asleep. There's a secret door.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Setting</Strong>
-          </Em>
+          <StrongEm>Setting</StrongEm>
           : History, geography, factions...
           <br />
           <Muted>There's a town over those hills. The king falls ill.</Muted>
@@ -1079,11 +898,9 @@ const Chapter01 = () => {
         the examples or write your own. Keep it short.
       </Text>
       <Text>
-        <Em>
-          <Strong>Take spark by resolving an arc</Strong>
-        </Em>{" "}
-        with a meaningful moment, <Em>however big or small it is</Em>. This could mean achieving
-        your goal, adjusting it for the next step, or moving on from it entirely.
+        <StrongEm>Take spark by resolving an arc</StrongEm> with a meaningful moment,{" "}
+        <Em>however big or small it is</Em>. This could mean achieving your goal, adjusting it for
+        the next step, or moving on from it entirely.
       </Text>
       <Text>
         <Muted size="medium">
@@ -1178,21 +995,11 @@ const Chapter01 = () => {
         story details tied to your arcs to bring them into play!
       </Text>
       <Text>
-        Story arcs signal to the GM that you want{" "}
-        <Em>
-          <Strong>drama</Strong>
-        </Em>
-        ,{" "}
-        <Em>
-          <Strong>dilemmas</Strong>
-        </Em>
-        , and{" "}
-        <Em>
-          <Strong>opportunities</Strong>
-        </Em>{" "}
-        to arise around them. Aim to resolve arcs within 3-5 sessions to keep things fresh. For
-        struggles (<Em>flirt with betrayal</Em>), get group permission—limiting them to a few
-        sessions and involving everyone makes it more fun.
+        Story arcs signal to the GM that you want <StrongEm>drama</StrongEm>,{" "}
+        <StrongEm>dilemmas</StrongEm>, and <StrongEm>opportunities</StrongEm> to arise around them.
+        Aim to resolve arcs within 3-5 sessions to keep things fresh. For struggles (
+        <Em>flirt with betrayal</Em>), get group permission—limiting them to a few sessions and
+        involving everyone makes it more fun.
       </Text>
       <Heading level={3} id="damage-recovery">
         Damage &amp; Recovery
@@ -1200,10 +1007,7 @@ const Chapter01 = () => {
       <Text>
         <Strong allCaps>Marks</Strong>. Light damage, a temporary hindrance to a stat{" "}
         <Muted>(winded, confused)</Muted>.{" "}
-        <Em>
-          <Strong>Take +1t on the next roll with that stat, then clear the mark</Strong>
-        </Em>
-        .
+        <StrongEm>Take +1t on the next roll with that stat, then clear the mark</StrongEm>.
       </Text>
       <Text>
         If a stat is already marked, you take <Strong>harm</Strong> (<Em>below</Em>) instead. As
@@ -1216,9 +1020,7 @@ const Chapter01 = () => {
       </Text>
       <Text>
         <Strong allCaps>Harm</Strong>. Heavy damage to your mind or body, a lingering hindrance.{" "}
-        <Em>
-          <Strong>This is the default damage from an impact move</Strong>
-        </Em>
+        <StrongEm>This is the default damage from an impact move</StrongEm>
         —though it can be split into a couple of marks or other consequences.
       </Text>
       <List>
@@ -1232,21 +1034,13 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Text>
-        <Em>
-          <Strong>Bloodied and rattled inflict +1t each on all rolls</Strong>
-        </Em>
-        . Taking a type of harm for the second time leaves you <Strong>dropped</Strong>—you're out
-        of the scene. Make a story roll (<Em>usually 2d</Em>)—on a perfect, you're merely out until
-        the scene ends. On a messy, things get{" "}
-        <Em>
-          <Strong>even worse</Strong>
-        </Em>
-        , like also taking on a condition <Muted>(4d dying, broken leg, trauma)</Muted>. On a grim,
-        things get{" "}
-        <Em>
-          <Strong>far worse</Strong>
-        </Em>
-        , like dying or taking on a permanent condition <Muted>(insanity, morality shift)</Muted>.
+        <StrongEm>Bloodied and rattled inflict +1t each on all rolls</StrongEm>. Taking a type of
+        harm for the second time leaves you <Strong>dropped</Strong>—you're out of the scene. Make a
+        story roll (<Em>usually 2d</Em>)—on a perfect, you're merely out until the scene ends. On a
+        messy, things get <StrongEm>even worse</StrongEm>, like also taking on a condition{" "}
+        <Muted>(4d dying, broken leg, trauma)</Muted>. On a grim, things get{" "}
+        <StrongEm>far worse</StrongEm>, like dying or taking on a permanent condition{" "}
+        <Muted>(insanity, morality shift)</Muted>.
       </Text>
       <Text>
         Damage should match the tone of the scene—<Strong>tame stakes</Strong> might inflict a mark,
@@ -1290,35 +1084,21 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Urgent</Strong>
-          </Em>
-          : <Em>4d bleeding out, 6d losing your mind.</Em>
+          <StrongEm>Urgent</StrongEm>: <Em>4d bleeding out, 6d losing your mind.</Em>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Short-term</Strong>
-          </Em>
-          : <Em>Twisted ankle, drunk.</Em>
+          <StrongEm>Short-term</StrongEm>: <Em>Twisted ankle, drunk.</Em>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Long-term</Strong>
-          </Em>
-          : <Em>Broken arm, a deep hatred.</Em>
+          <StrongEm>Long-term</StrongEm>: <Em>Broken arm, a deep hatred.</Em>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Permanent</Strong>
-          </Em>
-          : <Em>Gouged out eye, insanity.</Em>
+          <StrongEm>Permanent</StrongEm>: <Em>Gouged out eye, insanity.</Em>
         </List.Item>
       </List>
       <Text>
-        <Em>
-          <Strong>Take +1t when a condition specifically hinders a roll</Strong>
-        </Em>
-        . Conditions can also reduce your vantage, which can prohibit a rolls{" "}
+        <StrongEm>Take +1t when a condition specifically hinders a roll</StrongEm>. Conditions can
+        also reduce your vantage, which can prohibit a rolls{" "}
         <Muted>(can't jump with a broken leg)</Muted>.
       </Text>
       <Text>
@@ -1326,42 +1106,28 @@ const Chapter01 = () => {
         them depletes. They may also require treatment or another specific method to clear them.
       </Text>
       <Text>
-        <Em>
-          <Strong>You have the final say on long-term and permanent conditions</Strong>
-        </Em>
-        . When you take one, work with the GM to find a good fit for your PC and the situation.
+        <StrongEm>You have the final say on long-term and permanent conditions</StrongEm>. When you
+        take one, work with the GM to find a good fit for your PC and the situation.
       </Text>
       <Text>
-        <Strong allCaps>Treatment</Strong>. Harm can be cleared with{" "}
-        <Em>
-          <Strong>treatment</Strong>
-        </Em>
-        , which requires time, tools, and training. Treatment always carries risk, requiring an
-        action roll. On a messy, they recover but other problems arise{" "}
+        <Strong allCaps>Treatment</Strong>. Harm can be cleared with <StrongEm>treatment</StrongEm>,
+        which requires time, tools, and training. Treatment always carries risk, requiring an action
+        roll. On a messy, they recover but other problems arise{" "}
         <Muted>(left with a mark, takes longer than expected)</Muted>. On a grim, you aggravate the
         situation <Muted>(long-term condition, death)</Muted>.
       </Text>
       <Text>
-        <Em>
-          <Strong>Marks can't benefit from treatment</Strong>
-        </Em>
-        . They are light enough already that only time heals them, cleared with rest, rolling, or
-        specific talents.
+        <StrongEm>Marks can't benefit from treatment</StrongEm>. They are light enough already that
+        only time heals them, cleared with rest, rolling, or specific talents.
       </Text>
       <Text>
-        <Em>
-          <Strong>Conditions can be treated when it makes sense</Strong>
-        </Em>
-        , which might require working towards a task pool or fulfilling specific requirements before
-        it clears.
+        <StrongEm>Conditions can be treated when it makes sense</StrongEm>, which might require
+        working towards a task pool or fulfilling specific requirements before it clears.
       </Text>
       <Text>
         <Strong allCaps>Rest</Strong>. A stretch of time between significant action{" "}
         <Muted>(a night's camp, a week's travel)</Muted>. Paced for drama, not realism.{" "}
-        <Em>
-          <Strong>Clear all marks and harm</Strong>
-        </Em>
-        .
+        <StrongEm>Clear all marks and harm</StrongEm>.
       </Text>
       <Text>
         <Strong allCaps>Downtime</Strong>. Extended breaks <Muted>(a month, a season)</Muted>. Fully
@@ -1379,25 +1145,19 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Group action</Strong>
-          </Em>
+          <StrongEm>Group action</StrongEm>
           : Something a team of people could accomplish with an action.
           <br />
           <Muted>Lifting a boulder, a volley of arrows, inciting mutiny.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Stretching Limits</Strong>
-          </Em>
+          <StrongEm>Stretching Limits</StrongEm>
           : Something just beyond normal human limitations.
           <br />
           <Muted>Leap a massive gap, endure fire, tell ridiculous lies.</Muted>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Mystical</Strong>
-          </Em>
+          <StrongEm>Mystical</StrongEm>
           : Feats that don't fit in with the above, but have similar narrative impact.
           <br />
           <Muted>Befriend a wild tiger, use echoes to create a rockslide.</Muted>
@@ -1459,57 +1219,37 @@ const Chapter01 = () => {
       <Text>
         <Strong allCaps>Quarrels</Strong>. Conflicts between PCs—arguments, competitions, or even
         violence. Quickly resolve impasses in the story—don't waste time debating! First,{" "}
-        <Em>
-          <Strong>make sure all players agree to the quarrel</Strong>
-        </Em>
-        . Clearly state the stakes for winning and losing, erring on the side of dramatic
+        <StrongEm>make sure all players agree to the quarrel</StrongEm>. Clearly state the stakes
+        for winning and losing, erring on the side of dramatic
         <Muted>(bruises, not bloodied; hurt feelings, not vex)</Muted>. Each{" "}
-        <Em>
-          <Strong>player rolls 2d and the highest wins</Strong>
-        </Em>{" "}
-        <Muted>(5 beats 4)</Muted>. Others can assist, or they can join at 2d with their own agenda.
-        On a tie, compromise or keep quarreling.
+        <StrongEm>player rolls 2d and the highest wins</StrongEm> <Muted>(5 beats 4)</Muted>. Others
+        can assist, or they can join at 2d with their own agenda. On a tie, compromise or keep
+        quarreling.
       </Text>
       <Text>
         The winner narrates how they won. Then, the loser narrates how they handle losing. The
         results of the quarrel are <Strong>final</Strong>—it's okay for the PC that lost to be
         bitter, but the story moves in the winner's direction.{" "}
-        <Em>
-          <Strong>Both sides take spark</Strong>
-        </Em>
-        .
+        <StrongEm>Both sides take spark</StrongEm>.
       </Text>
       <Line color="muted" />
       <Text>
         <Strong allCaps>Push Yourself</Strong>. Expend extra effort to activate certain talents that
-        it. After using the talent,{" "}
-        <Em>
-          <Strong>mark a related stat</Strong>
-        </Em>{" "}
-        (<Em>your choice</Em>). Talents that require you to push yourself can be activated without a
-        mark once per session.
+        it. After using the talent, <StrongEm>mark a related stat</StrongEm> (<Em>your choice</Em>).
+        Talents that require you to push yourself can be activated without a mark once per session.
       </Text>
       <Line color="muted" />
       <Text>
-        <Strong allCaps>Always</Strong>. If you have the ability to{" "}
-        <Em>
-          <Strong>always</Strong>
-        </Em>{" "}
-        succeed or receive a benefit, it holds true{" "}
-        <Em>
-          <Strong>unless</Strong>
-        </Em>{" "}
-        the GM makes a <Move>Counter</Move> move, a strong NPC trait is in play, or other
-        extenuating circumstances arise. <Em>In short, “always” means 95% of the time</Em>.
+        <Strong allCaps>Always</Strong>. If you have the ability to <StrongEm>always</StrongEm>{" "}
+        succeed or receive a benefit, it holds true <StrongEm>unless</StrongEm> the GM makes a{" "}
+        <Move>Counter</Move> move, a strong NPC trait is in play, or other extenuating circumstances
+        arise. <Em>In short, “always” means 95% of the time</Em>.
       </Text>
       <Line color="muted" />
       <Text>
         <Strong allCaps>Pre-Session Recap</Strong>. Before each session (after the first), recall
         the previous session and share your PC's best moment.{" "}
-        <Em>
-          <Strong>Each player takes spark</Strong>
-        </Em>
-        .
+        <StrongEm>Each player takes spark</StrongEm>.
       </Text>
       <Text>
         When all are finished, the <Move>GM Recaps</Move> (<Em>taking suspense</Em>) tying all of
@@ -1517,22 +1257,14 @@ const Chapter01 = () => {
       </Text>
       <Line color="muted" />
       <Text>
-        <Strong allCaps>Post-Session XP</Strong>. After each session,{" "}
-        <Em>
-          <Strong>take 1 XP</Strong>
-        </Em>{" "}
+        <Strong allCaps>Post-Session XP</Strong>. After each session, <StrongEm>take 1 XP</StrongEm>{" "}
         and fill in its box. You start at level 1 and advance when you fill boxes equal to the next
         level <Muted>Lvl. 4→5 = 5 more boxes</Muted>. This lets you choose a{" "}
-        <Em>
-          <Strong>new talent</Strong>
-        </Em>
-        .
+        <StrongEm>new talent</StrongEm>.
       </Text>
       <Text>
-        <Em>
-          <Strong>The GM can award 1 bonus XP for a standout session</Strong>
-        </Em>{" "}
-        (<Em>about 1 in 4</Em>). For a slower pace, slash each XP box before filling it.
+        <StrongEm>The GM can award 1 bonus XP for a standout session</StrongEm> (
+        <Em>about 1 in 4</Em>). For a slower pace, slash each XP box before filling it.
       </Text>
       <Line color="muted" />
       <Text>
@@ -1557,18 +1289,12 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          The{" "}
-          <Em>
-            <Strong>final result</Strong>
-          </Em>
-          , not the method, to what can be achieved by a non-magic action roll.
+          The <StrongEm>final result</StrongEm>, not the method, to what can be achieved by a
+          non-magic action roll.
         </List.Item>
         <List.Item>
-          The{" "}
-          <Em>
-            <Strong>narrative impact</Strong>
-          </Em>
-          , not the result, to the impact of a normal action roll.
+          The <StrongEm>narrative impact</StrongEm>, not the result, to the impact of a normal
+          action roll.
         </List.Item>
       </List>
       <Text>
@@ -1590,27 +1316,15 @@ const Chapter01 = () => {
       <List>
         <List.Item>
           <Strong>Cantrips</Strong> are similar to something that doesn't require a roll. They
-          should feel{" "}
-          <Em>
-            <Strong>flavorful</Strong>
-          </Em>
-          .
+          should feel <StrongEm>flavorful</StrongEm>.
         </List.Item>
         <List.Item>
           <Strong>Spells</Strong> are similar to an action roll, impactful but not dominating a
-          scene. They should feel{" "}
-          <Em>
-            <Strong>useful</Strong>
-          </Em>
-          .
+          scene. They should feel <StrongEm>useful</StrongEm>.
         </List.Item>
         <List.Item>
           <Strong>Potent spells</Strong> are similar to a group effort, effort over time, or a
-          single effort with potency. They should feel{" "}
-          <Em>
-            <Strong>powerful</Strong>
-          </Em>
-          .
+          single effort with potency. They should feel <StrongEm>powerful</StrongEm>.
         </List.Item>
       </List>
       <Text>
@@ -1623,7 +1337,7 @@ const Chapter01 = () => {
           </Em>
         </Muted>
       </Text>
-      <SectionHeading>Cantrips</SectionHeading>
+      <SectionHeading variant="solid">Cantrips</SectionHeading>
       <Text>
         <Strong>Cantrips</Strong> are set dressing, minor effects that don't require rolls. Success
         is automatic.
@@ -1633,14 +1347,12 @@ const Chapter01 = () => {
         flower and it starts to bloom.
       </Text>
       <Text>
-        <Em>
-          <Strong>Cantrip utility</Strong>
-        </Em>{" "}
-        lets you flavor other action rolls with cantrips, or even use them to replace gear when
-        using relevant touchstones. This reasonably expands vantage. You roll the stat you'd
-        normally roll for the now-possible action, like Brawn or Agility to swing a conjured sword.
+        <StrongEm>Cantrip utility</StrongEm> lets you flavor other action rolls with cantrips, or
+        even use them to replace gear when using relevant touchstones. This reasonably expands
+        vantage. You roll the stat you'd normally roll for the now-possible action, like Brawn or
+        Agility to swing a conjured sword.
       </Text>
-      <SectionHeading>Spells</SectionHeading>
+      <SectionHeading variant="solid">Spells</SectionHeading>
       <Text>
         <Strong>Spells</Strong> have effects equal to an action roll, results one person with the
         right training and tools can achieve. They're the baseline magnitude of magic.
@@ -1665,15 +1377,13 @@ const Chapter01 = () => {
           </Muted>
         </List.Item>
       </List>
-      <SectionHeading>Potent Spells</SectionHeading>
+      <SectionHeading variant="solid">Potent Spells</SectionHeading>
       <Text>
         <Strong>Potent spells</Strong> accomplish more than a normal spell—
-        <Em>
-          <Strong>they give potency and broaden vantage</Strong>
-        </Em>
-        . A potent spell can achieve effects equal to an entire group working together, as with
-        normal potency. You can attempt jaw-dropping effects (+3t/difficulty). A normally +1t or +2t
-        task has <Em>greater effect</Em> (critical bonus), and a +0t roll is automatic.
+        <StrongEm>they give potency and broaden vantage</StrongEm>. A potent spell can achieve
+        effects equal to an entire group working together, as with normal potency. You can attempt
+        jaw-dropping effects (+3t/difficulty). A normally +1t or +2t task has{" "}
+        <Em>greater effect</Em> (critical bonus), and a +0t roll is automatic.
       </Text>
       <List>
         <List.Item>
@@ -1731,11 +1441,9 @@ const Chapter01 = () => {
         </Text>
       </Panel>
       <Text>
-        <Em>
-          <Strong>The GM can veto spells that don't align with your touchstones</Strong>
-        </Em>
-        . They can also instead allow it, but inflict a thorn or collateral effects when it's
-        pushing your touchstones, but not completely implausible.
+        <StrongEm>The GM can veto spells that don't align with your touchstones</StrongEm>. They can
+        also instead allow it, but inflict a thorn or collateral effects when it's pushing your
+        touchstones, but not completely implausible.
       </Text>
       <List>
         <List.Item>
@@ -1766,7 +1474,7 @@ const Chapter01 = () => {
           get across the chasm with an action.
         </Text>
       </Panel>
-      <Heading level={4}>Examples</Heading>
+      <SectionHeading>Examples</SectionHeading>
       <Text>
         Below are some touchstones and how their effectiveness increases with the magnitude of
         magic.
@@ -1794,9 +1502,7 @@ const Chapter01 = () => {
         <Table.Body>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Shimmering Vision</Strong>
-              </Em>
+              <StrongEm>Shimmering Vision</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Flash of light</Em>
@@ -1813,9 +1519,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Jovial Wings</Strong>
-              </Em>
+              <StrongEm>Jovial Wings</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Glide downstairs</Em>
@@ -1832,9 +1536,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Shadow sorcery</Strong>
-              </Em>
+              <StrongEm>Shadow sorcery</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Snuff a light</Em>
@@ -1851,9 +1553,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Healing domain</Strong>
-              </Em>
+              <StrongEm>Healing domain</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Heal a headache</Em>
@@ -1870,9 +1570,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Warding domain</Strong>
-              </Em>
+              <StrongEm>Warding domain</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Block the rain</Em>
@@ -1889,9 +1587,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Fiend patron</Strong>
-              </Em>
+              <StrongEm>Fiend patron</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Summon hellflies</Em>
@@ -1908,9 +1604,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Em>
-                <Strong>Air primordial</Strong>
-              </Em>
+              <StrongEm>Air primordial</StrongEm>
             </Table.Cell>
             <Table.Cell>
               <Em>Scatter leaves</Em>
@@ -1931,11 +1625,8 @@ const Chapter01 = () => {
         <Strong smallCaps>Touchstone Limitations</Strong>: When you take a magic talent, have a
         discussion with the GM about what your magic can and can't do. Clearly defining it in this
         way makes the magic more fun to play with—{" "}
-        <Em>
-          <Strong>creativity thrives within limitations</Strong>
-        </Em>
-        . If a PC's magic feels too broad during the campaign, consider discussing new limitations
-        to keep it balanced and engaging.
+        <StrongEm>creativity thrives within limitations</StrongEm>. If a PC's magic feels too broad
+        during the campaign, consider discussing new limitations to keep it balanced and engaging.
       </Text>
       <Text>
         <Muted size="medium">
@@ -1946,15 +1637,12 @@ const Chapter01 = () => {
           </Em>
         </Muted>
       </Text>
-      <SectionHeading>Spellcasting Rulings</SectionHeading>
+      <SectionHeading variant="solid">Spellcasting Rulings</SectionHeading>
       <Text>
         Magic's a freeform system, built on flexibility and creative rulings from the GM, with the
         understanding that its freedom is meant to preserve the feeling of magic. While this system
         can be exploited in unfun ways aimed at “winning,” it relies on you buying into your magic
-        touchstones and the magnitudes of magic.{" "}
-        <Em>
-          <Strong>Don't be a weasel</Strong>
-        </Em>
+        touchstones and the magnitudes of magic. <StrongEm>Don't be a weasel</StrongEm>
         —play in good faith and have fun with the freedom it gives you. With that in mind, here are
         some common rulings for various situations involving magic:
       </Text>
@@ -2002,15 +1690,12 @@ const Chapter01 = () => {
       <Text>
         <Strong>Buffs &amp; Debuffs</Strong>: Spells that help or hinder are considered on a
         case-by-case basis, with the player and GM working together. As a starting point, a buff can
-        apply the effects of a{" "}
-        <Em>
-          <Strong>critical</Strong>
-        </Em>
-        : <Em>greater effect</Em>—<Em>secondary effect</Em>—<Em>setup</Em>. Debuffs can do the same
-        for anyone working against the foe. They can also add vantage{" "}
-        <Muted>the ability to fly, invisibility</Muted>. Potent buffs might last longer, affect
-        multiple targets, make +0t rolls automatically successful, or allow for a potent feat. Get
-        creative with applying the mechanics and capture the feeling the spell is going for.
+        apply the effects of a <StrongEm>critical</StrongEm>:{" "}
+        <Em>greater effect—secondary effect—setup</Em>. Debuffs can do the same for anyone working
+        against the foe. They can also add vantage <Muted>the ability to fly, invisibility</Muted>.
+        Potent buffs might last longer, affect multiple targets, make +0t rolls automatically
+        successful, or allow for a potent feat. Get creative with applying the mechanics and capture
+        the feeling the spell is going for.
       </Text>
       <Text>
         <Strong>Magic Duration</Strong>: As a rule of thumb, a spell lasts just a moment, maybe two,
@@ -2053,11 +1738,7 @@ const Chapter01 = () => {
       <Text>
         <Strong>Anchors</Strong> for a ritual are chosen by the GM and players together. They should
         feel connected to the ritual's touchstones and intent, and match the intended impact of the
-        ritual.{" "}
-        <Em>
-          <Strong>Two or three anchors</Strong>
-        </Em>
-        , like those below, are best.
+        ritual. <StrongEm>Two or three anchors</StrongEm>, like those below, are best.
       </Text>
       <Table align="center" variant="solid" fullWidth>
         <Table.Head>
@@ -2184,20 +1865,10 @@ const Chapter01 = () => {
       </Text>
       <Text>
         You deal in treasures—
-        <Em>
-          <Strong>minor</Strong>
-        </Em>
-        ,{" "}
-        <Em>
-          <Strong>major</Strong>
-        </Em>
-        , and{" "}
-        <Em>
-          <Strong>mythic</Strong>
-        </Em>
-        , anything from a stash of gold to a rare artifact or magical item. While the treasure's
-        label gives some indication of its value and the table below shows what you might get for it
-        in trade, a treasure is only truly as valuable as what someone will give you for it.
+        <StrongEm>minor</StrongEm>, <StrongEm>major</StrongEm>, and <StrongEm>mythic</StrongEm>,
+        anything from a stash of gold to a rare artifact or magical item. While the treasure's label
+        gives some indication of its value and the table below shows what you might get for it in
+        trade, a treasure is only truly as valuable as what someone will give you for it.
       </Text>
       <Text>
         Treasures are shared by the party, unless chosen otherwise. With each adventure, it's
@@ -2224,9 +1895,7 @@ const Chapter01 = () => {
         <Table.Body>
           <Table.Row>
             <Table.Cell align="center">
-              <Em>
-                <Strong>Minor</Strong>
-              </Em>
+              <StrongEm>Minor</StrongEm>
             </Table.Cell>
             <Table.Cell>
               Gift, <Em>noble</Em>
@@ -2252,9 +1921,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell align="center">
-              <Em>
-                <Strong>Major</Strong>
-              </Em>
+              <StrongEm>Major</StrongEm>
             </Table.Cell>
             <Table.Cell>
               Gift, <Em>royal</Em>
@@ -2280,9 +1947,7 @@ const Chapter01 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell align="center">
-              <Em>
-                <Strong>Mythic</Strong>
-              </Em>
+              <StrongEm>Mythic</StrongEm>
             </Table.Cell>
             <Table.Cell>
               Gift, <Em>imperial</Em>
@@ -2319,10 +1984,7 @@ const Chapter01 = () => {
         <Strong smallCaps>Carousing</Strong>: Any time you're in a settlement, you can carouse by
         selling off a minor treasure, with each PC spending their leisure time as they like. Make a
         montage roll and narrate—or suffer—the results. After the scenes finish up,{" "}
-        <Em>
-          <Strong>everyone takes spark regardless of the roll</Strong>
-        </Em>
-        .
+        <StrongEm>everyone takes spark regardless of the roll</StrongEm>.
       </Text>
       <Panel>
         <Text align="center">
@@ -2391,26 +2053,12 @@ const Chapter01 = () => {
       </Heading>
       <Text>
         <Strong>Arcana</Strong> are rare artifacts of power, magic imbued in them through ritual or
-        other esoteric forces. They grant{" "}
-        <Em>
-          <Strong>vantage</Strong>
-        </Em>
-        , letting you do what's otherwise impossible, or greatly enhance specific tasks by granting
-        outside assistance, at a cost. Some create strange, unique effects tied to their creator's
-        intent. As always, it's the GM's role to map fiction to rules for each arcana. Arcana have
-        the same tiers as treasure:{" "}
-        <Em>
-          <Strong>minor</Strong>
-        </Em>
-        ,{" "}
-        <Em>
-          <Strong>major</Strong>
-        </Em>
-        , and{" "}
-        <Em>
-          <Strong>mythic</Strong>
-        </Em>
-        .
+        other esoteric forces. They grant <StrongEm>vantage</StrongEm>, letting you do what's
+        otherwise impossible, or greatly enhance specific tasks by granting outside assistance, at a
+        cost. Some create strange, unique effects tied to their creator's intent. As always, it's
+        the GM's role to map fiction to rules for each arcana. Arcana have the same tiers as
+        treasure: <StrongEm>minor</StrongEm>, <StrongEm>major</StrongEm>, and{" "}
+        <StrongEm>mythic</StrongEm>.
       </Text>
       <Text>
         <Strong>An arcana's name and description serve as its touchstones</Strong>, while its tier
@@ -2419,22 +2067,13 @@ const Chapter01 = () => {
       </Text>
       <List>
         <List.Item>
-          <Em>
-            <Strong>Minor arcana</Strong>
-          </Em>{" "}
-          <Em>have cantrip to spell-level effects.</Em>
+          <StrongEm>Minor arcana</StrongEm> <Em>have cantrip to spell-level effects.</Em>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Major arcana</Strong>
-          </Em>{" "}
-          <Em>have spell to potent spell-level effects.</Em>
+          <StrongEm>Major arcana</StrongEm> <Em>have spell to potent spell-level effects.</Em>
         </List.Item>
         <List.Item>
-          <Em>
-            <Strong>Mythic arcana</Strong>
-          </Em>{" "}
-          <Em>have ritual-level effects.</Em>
+          <StrongEm>Mythic arcana</StrongEm> <Em>have ritual-level effects.</Em>
         </List.Item>
       </List>
       <Heading level={3} id="designing-arcana">
@@ -2448,10 +2087,10 @@ const Chapter01 = () => {
         Arcana are what they are—they're truths within the fiction. They can do what their
         description says. A shortcut to creating one works like this, though. Start with an
         evocative name and a single touchstone word, then apply one or two Sorcery techniques (
-        <Em>pg. 72</Em>): <Em>attack</Em>—<Em>creation</Em>—<Em>defense</Em>— <Em>enhancement</Em>—
-        <Em>hindrance</Em>—<Em>influence</Em>—<Em>transformation</Em>—<Em>traversal</Em>. From that,
-        you can build out the description. Or begin with the description and work backwards towards
-        defining the touchstones.
+        <Em>pg. 72</Em>): <Em>attack—creation—defense</Em>—{" "}
+        <Em>enhancement—hindrance—influence—transformation—traversal</Em>. From that, you can build
+        out the description. Or begin with the description and work backwards towards defining the
+        touchstones.
       </Text>
       <List>
         <List.Item>
@@ -2477,7 +2116,7 @@ const Chapter01 = () => {
           be recharged by satisfying a specific anchor, like a ritual.
         </List.Item>
       </List>
-      <SectionHeading>Arcana Rulings</SectionHeading>
+      <SectionHeading variant="solid">Arcana Rulings</SectionHeading>
       <Text>
         Arcana are as flexible as spellcasting—if not more so—and demand just as much creativity and
         GM rulings when used. Here are some examples:
@@ -2743,16 +2382,10 @@ const Chapter01 = () => {
       </Panel>
       <Line />
       <Text>
-        You look to your desire for{" "}
-        <Em>
-          <Strong>belonging</Strong>
-        </Em>{" "}
-        and, feeling found at last, replace it with a new one—
-        <Em>
-          <Strong>honor</Strong>
-        </Em>
-        . You introduce a tangle, deciding to stay on the bridge. “Go,” you tell your friends,
-        turning to hold off the horde on the bridge while they escape.
+        You look to your desire for <StrongEm>belonging</StrongEm> and, feeling found at last,
+        replace it with a new one—
+        <StrongEm>honor</StrongEm>. You introduce a tangle, deciding to stay on the bridge. “Go,”
+        you tell your friends, turning to hold off the horde on the bridge while they escape.
       </Text>
       <Panel textSize="small">
         <Text margin="small">
@@ -2798,16 +2431,10 @@ const Chapter01 = () => {
       <Text>
         You start the game with the character arcs Enjoy Life and Keep a Secret, which makes sense
         since you're the runaway heir to the Orchard Kingdom. Your job is to find ways to express
-        these arcs through play, especially growth arcs like{" "}
-        <Em>
-          <Strong>Enjoying Life</Strong>
-        </Em>
-        . The GM's job is to challenge them and offer opportunity, especially a crisis arc like{" "}
-        <Em>
-          <Strong>Keeping a Secret</Strong>
-        </Em>
-        . It's clear that you don't want to live a life of responsibility, but that life will come
-        calling whether you like it or not.
+        these arcs through play, especially growth arcs like <StrongEm>Enjoying Life</StrongEm>. The
+        GM's job is to challenge them and offer opportunity, especially a crisis arc like{" "}
+        <StrongEm>Keeping a Secret</StrongEm>. It's clear that you don't want to live a life of
+        responsibility, but that life will come calling whether you like it or not.
       </Text>
       <Panel textSize="small">
         <Text margin="small">
@@ -2860,23 +2487,11 @@ const Chapter01 = () => {
         rattled but choose to spend spark to take vex instead!
       </Text>
       <Text>
-        Now you have a choice. You could{" "}
-        <Em>
-          <Strong>fight</Strong>
-        </Em>{" "}
-        and attack the archmage in a rage, someone your party sees as an ally. You could{" "}
-        <Em>
-          <Strong>flight</Strong>
-        </Em>{" "}
-        away from the group, back outside the tower. You could{" "}
-        <Em>
-          <Strong>freeze</Strong>
-        </Em>
-        , dropping the potion you intended to give the archmage. You could{" "}
-        <Em>
-          <Strong>freakout</Strong>
-        </Em>
-        , lashing out at your allies' shocked, judgmental stares.
+        Now you have a choice. You could <StrongEm>fight</StrongEm> and attack the archmage in a
+        rage, someone your party sees as an ally. You could <StrongEm>flight</StrongEm> away from
+        the group, back outside the tower. You could <StrongEm>freeze</StrongEm>, dropping the
+        potion you intended to give the archmage. You could <StrongEm>freakout</StrongEm>, lashing
+        out at your allies' shocked, judgmental stares.
       </Text>
       <Panel textSize="small">
         <Text margin="small">
@@ -2892,24 +2507,11 @@ const Chapter01 = () => {
       <Line />
       <Text>
         The dragon roars! The party all roll Presence defense, getting <Strong>grims</Strong>.
-        Everyone takes vex, terrified! You choose{" "}
-        <Em>
-          <Strong>flight</Strong>
-        </Em>{" "}
-        and scurry away to hide. The fighter decides to{" "}
-        <Em>
-          <Strong>freakout</Strong>
-        </Em>
-        , and runs to hide behind the wizard. The wizard{" "}
-        <Em>
-          <Strong>freezes</Strong>
-        </Em>
-        , dropping her spellbook, which the fighter kicks away. The cleric grabs his battlehammer
-        and chooses to{" "}
-        <Em>
-          <Strong>fight</Strong>
-        </Em>
-        , charging towards certain doom.
+        Everyone takes vex, terrified! You choose <StrongEm>flight</StrongEm> and scurry away to
+        hide. The fighter decides to <StrongEm>freakout</StrongEm>, and runs to hide behind the
+        wizard. The wizard <StrongEm>freezes</StrongEm>, dropping her spellbook, which the fighter
+        kicks away. The cleric grabs his battlehammer and chooses to <StrongEm>fight</StrongEm>,
+        charging towards certain doom.
       </Text>
       <Panel textSize="small">
         <Text margin="small">
