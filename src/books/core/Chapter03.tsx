@@ -1,6 +1,7 @@
 import Page, { type PageNavigationItem } from "@/components/app/Page";
 import CoreTalent from "@/components/CoreTalent";
 import PathCard from "@/components/PathCard";
+import SectionHeading from "@/components/SectionHeading";
 import StepList from "@/components/StepList";
 import Talent from "@/components/Talent";
 import Em from "@/components/ui/Em";
@@ -13,6 +14,7 @@ import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
 import Stack from "@/components/ui/Stack";
 import Strong from "@/components/ui/Strong";
+import StrongEm from "@/components/ui/StrongEm";
 import Table from "@/components/ui/Table";
 import Tag from "@/components/ui/Tag";
 import Text from "@/components/ui/Text";
@@ -121,11 +123,8 @@ const Chapter03 = () => {
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Set Group Arc</Strong>: <Em>The players</Em> choose a{" "}
-          <Strong>
-            <Em>group arc</Em>
-          </Strong>
-          , a goal or theme they're interested in playing out as a group. You'll figure out what it
-          means in play. (<Em>pg. 15</Em>)
+          <StrongEm>group arc</StrongEm>, a goal or theme they're interested in playing out as a
+          group. You'll figure out what it means in play. (<Em>pg. 15</Em>)
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Make Characters</Strong>: Follow the character creation flow and make
@@ -133,17 +132,12 @@ const Chapter03 = () => {
           <Em>pg. 49</Em>)
         </StepList.Item>
       </StepList>
-      <Text>
-        <Strong allCaps>Adventuring Party</Strong>
-      </Text>
+      <SectionHeading>Adventuring Party</SectionHeading>
       <Text>
         Your group of adventurers already know each other and have adventured together, at least for
         some time. Answer the prompts below together to get a sense of your party's concept to
-        ensure that you{" "}
-        <Strong>
-          <Em>build characters that fit well</Em>
-        </Strong>{" "}
-        within that type of party.
+        ensure that you <StrongEm>build characters that fit well</StrongEm> within that type of
+        party.
       </Text>
       <Panel border>
         <Text margin="small">
@@ -185,9 +179,11 @@ const Chapter03 = () => {
         <Strong>Paths</Strong> are collections of talents grouped by common adventuring themes. Each
         has a <Strong>core talent</Strong> and <Strong>core growth</Strong>—your core talent gets
         stronger as you gain levels.{" "}
-        <Em>Remember, paths cannot be used to establish story details</Em>—
-        <Em>backgrounds and talents can</Em>. Talents are meant to be re-skinned to fit your
-        concept! Each path is covered in detail later in this chapter.
+        <Em>
+          Remember, paths cannot be used to establish story details—backgrounds and talents can
+        </Em>
+        . Talents are meant to be re-skinned to fit your concept! Each path is covered in detail
+        later in this chapter.
       </Text>
       <Grid gap="large" margin="large">
         <PathCard
@@ -269,28 +265,15 @@ const Chapter03 = () => {
       <Text>
         Follow the steps below to create your character. This order is often the simplest, but you
         should begin where your imagination takes you. Character sheets for each path and a blank
-        sheet are available at{" "}
-        <Strong>
-          <Em>DrivethruRPG</Em>
-        </Strong>{" "}
-        or{" "}
-        <Strong>
-          <Em>odditypress.com</Em>
-        </Strong>{" "}
-        and you can check the website for digital character sheets and other online play tools.
+        sheet are available at <StrongEm>DrivethruRPG</StrongEm> or{" "}
+        <StrongEm>odditypress.com</StrongEm> and you can check the website for digital character
+        sheets and other online play tools.
       </Text>
       <StepList margin="large">
         <StepList.Item>
-          <Strong smallCaps>Backgrounds</Strong>: Choose{" "}
-          <Strong>
-            <Em>two backgrounds</Em>
-          </Strong>
-          , each with{" "}
-          <Strong>
-            <Em>three wises</Em>
-          </Strong>
-          , that detail your heritage or professions, covering your tools of the trade and story
-          details. (<Em>pg. 14</Em>)
+          <Strong smallCaps>Backgrounds</Strong>: Choose <StrongEm>two backgrounds</StrongEm>, each
+          with <StrongEm>three wises</StrongEm>, that detail your heritage or professions, covering
+          your tools of the trade and story details. (<Em>pg. 14</Em>)
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Traits</Strong>: Choose <Strong>2</Strong> you very much are and{" "}
@@ -312,47 +295,29 @@ const Chapter03 = () => {
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Features</Strong>: Write down{" "}
-          <Strong>
-            <Em>three distinctive features</Em>
-          </Strong>
-          , words or short phrases that others soon notice about you, like <Em>strong hands</Em>,{" "}
-          <Em>kind eyes</Em>, or a <Em>gravelly voice</Em>.
+          <StrongEm>three distinctive features</StrongEm>, words or short phrases that others soon
+          notice about you, like <Em>strong hands</Em>, <Em>kind eyes</Em>, or a{" "}
+          <Em>gravelly voice</Em>.
         </StepList.Item>
         <StepList.Item>
-          <Strong smallCaps>Path</Strong>: Choose a{" "}
-          <Strong>
-            <Em>path</Em>
-          </Strong>
-          , gain its{" "}
-          <Strong>
-            <Em>core talent</Em>
-          </Strong>
-          , and pick either another talent from your path's list or a non-core talent from another
-          path. (<Em>pg. 54 ~ 76</Em>)
+          <Strong smallCaps>Path</Strong>: Choose a <StrongEm>path</StrongEm>, gain its{" "}
+          <StrongEm>core talent</StrongEm>, and pick either another talent from your path's list or
+          a non-core talent from another path. (<Em>pg. 54 ~ 76</Em>)
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Stats</Strong>: Begin with <Strong>1</Strong> in each stat, then assign
-          <Strong>
-            <Em>4 more points</Em>
-          </Strong>{" "}
-          amongst them as you like, to a max of 3 in any single stat. (<Em>pg. 14</Em>)
+          <StrongEm>4 more points</StrongEm> amongst them as you like, to a max of 3 in any single
+          stat. (<Em>pg. 14</Em>)
         </StepList.Item>
         <StepList.Item>
-          <Strong smallCaps>Arcs</Strong>: Choose{" "}
-          <Strong>
-            <Em>one or two character arcs</Em>
-          </Strong>{" "}
-          to explore. Don't get too detailed—these will get fleshed out during play and can be
-          changed anytime. (<Em>pg. 15</Em>)
+          <Strong smallCaps>Arcs</Strong>: Choose <StrongEm>one or two character arcs</StrongEm> to
+          explore. Don't get too detailed—these will get fleshed out during play and can be changed
+          anytime. (<Em>pg. 15</Em>)
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Bonds</Strong>: Describe your characters in detail. As you listen,
-          choose{" "}
-          <Strong>
-            <Em>one bond</Em>
-          </Strong>{" "}
-          you have towards each PC, matching together an intensity and a nature of the bond. (
-          <Em>pg. 14</Em>)
+          choose <StrongEm>one bond</StrongEm> you have towards each PC, matching together an
+          intensity and a nature of the bond. (<Em>pg. 14</Em>)
         </StepList.Item>
         <StepList.Item>
           <Strong smallCaps>Review</Strong>: Revisit the campaign theme, setting, party identity,
@@ -362,10 +327,8 @@ const Chapter03 = () => {
           <Text margin={{ top: "none" }}>
             <Strong smallCaps>Montage</Strong>: Finish off with a montage of the last adventure you
             went on together. The GM gives a basic overview of the scenario, then you roll a{" "}
-            <Strong>
-              <Em>group montage</Em>
-            </Strong>{" "}
-            (2d each) to see how the whole adventure went. (<Em>pg. 13</Em>)
+            <StrongEm>group montage</StrongEm> (2d each) to see how the whole adventure went. (
+            <Em>pg. 13</Em>)
           </Text>
           <Text margin={{ bottom: "none" }}>
             Collaborate to narrate your outcomes, working in bonds and other details. (
@@ -380,37 +343,20 @@ const Chapter03 = () => {
         <Strong>Backgrounds</Strong> are the pillars of your backstory, revealing key aspects of who
         you are. They determine what counts as set dressing—tools of the trade and the story details
         you can add. Start with a simple word or phrase, leaving room for growth as your backstory
-        is revealed during play.{" "}
-        <Strong>
-          <Em>They're just dots to connect later</Em>
-        </Strong>
-        .
+        is revealed during play. <StrongEm>They're just dots to connect later</StrongEm>.
       </Text>
       <Text>
-        Backgrounds include your{" "}
-        <Strong>
-          <Em>heritage</Em>
-        </Strong>{" "}
-        (<Em>next page</Em>),{" "}
-        <Strong>
-          <Em>social class</Em>
-        </Strong>
-        , or{" "}
-        <Strong>
-          <Em>profession</Em>
-        </Strong>
-        . Each background comes with three <Strong>wises</Strong>—evocative phrases that highlight
-        areas of knowledge, experience, or awareness from that background. They're especially useful
-        for declaring story details, providing prompts and ideas to bring into play.
+        Backgrounds include your <StrongEm>heritage</StrongEm> (<Em>next page</Em>),{" "}
+        <StrongEm>social class</StrongEm>, or <StrongEm>profession</StrongEm>. Each background comes
+        with three <Strong>wises</Strong>—evocative phrases that highlight areas of knowledge,
+        experience, or awareness from that background. They're especially useful for declaring story
+        details, providing prompts and ideas to bring into play.
       </Text>
       <Text>
-        <Strong>
-          <Em>You have two backgrounds</Em>
-        </Strong>
-        . You can choose from the list (<Em>below</Em>), use the Heritage crucible (
-        <Em>next page</Em>), or use either of those as guidelines to create your own. Backgrounds
-        and their wises should fit the campaign world and be approved by the GM. A heritage
-        background isn't required if you prefer it as just set dressing.
+        <StrongEm>You have two backgrounds</StrongEm>. You can choose from the list (<Em>below</Em>
+        ), use the Heritage crucible (<Em>next page</Em>), or use either of those as guidelines to
+        create your own. Backgrounds and their wises should fit the campaign world and be approved
+        by the GM. A heritage background isn't required if you prefer it as just set dressing.
       </Text>
       <Text>
         <Strong>
@@ -443,19 +389,8 @@ const Chapter03 = () => {
         <Table.Body>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Charlatan</Strong>, wise in{" "}
-              <Strong>
-                <Em>social graces</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>spotting marks</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>timely misdirects</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Charlatan</Strong>, wise in <StrongEm>social graces</StrongEm>,{" "}
+              <StrongEm>spotting marks</StrongEm>, and <StrongEm>timely misdirects</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>spy, swindler</Muted>
@@ -463,19 +398,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Clergy</Strong>, wise in{" "}
-              <Strong>
-                <Em>allegories</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>signs of sin</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>faiths of the world</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Clergy</Strong>, wise in <StrongEm>allegories</StrongEm>,{" "}
+              <StrongEm>signs of sin</StrongEm>, and <StrongEm>faiths of the world</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>cultist, priest</Muted>
@@ -483,19 +407,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Commoner</Strong>, wise in{" "}
-              <Strong>
-                <Em>local customs</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>practical wisdom</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>superstitions</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Commoner</Strong>, wise in <StrongEm>local customs</StrongEm>,{" "}
+              <StrongEm>practical wisdom</StrongEm>, and <StrongEm>superstitions</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>farmer, villager</Muted>
@@ -503,19 +416,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Crafter</Strong>, wise in{" "}
-              <Strong>
-                <Em>crafting quality</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>trade contacts</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>wear and tear</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Crafter</Strong>, wise in <StrongEm>crafting quality</StrongEm>,{" "}
+              <StrongEm>trade contacts</StrongEm>, and <StrongEm>wear and tear</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>artisan, smith</Muted>
@@ -523,19 +425,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Drifter</Strong>, wise in{" "}
-              <Strong>
-                <Em>chance meetings</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>faraway tales</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>lay of the land</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Drifter</Strong>, wise in <StrongEm>chance meetings</StrongEm>,{" "}
+              <StrongEm>faraway tales</StrongEm>, and <StrongEm>lay of the land</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>explorer, vagabond</Muted>
@@ -543,15 +434,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Entertainer</Strong>, wise in{" "}
-              <Strong>
-                <Em>legends and tales</Em>
-              </Strong>
-              , crowd behaviors, and{" "}
-              <Strong>
-                <Em>stage presence</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Entertainer</Strong>, wise in <StrongEm>legends and tales</StrongEm>
+              , crowd behaviors, and <StrongEm>stage presence</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>storyteller, minstrel</Muted>
@@ -560,18 +444,8 @@ const Chapter03 = () => {
           <Table.Row>
             <Table.Cell>
               <Strong smallCaps>Eccentric</Strong>, wise in random facts
-              <Strong>
-                <Em>hard truths</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>random facts</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>strange snacks</Em>
-              </Strong>
-              .
+              <StrongEm>hard truths</StrongEm>, <StrongEm>random facts</StrongEm>, and{" "}
+              <StrongEm>strange snacks</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>hermit, recluse</Muted>
@@ -580,18 +454,8 @@ const Chapter03 = () => {
           <Table.Row>
             <Table.Cell>
               <Strong smallCaps>Healer</Strong>, wise in signs of ailment
-              <Strong>
-                <Em>comfort foods</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>signs of ailment</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>herbal properties</Em>
-              </Strong>
-              .
+              <StrongEm>comfort foods</StrongEm>, <StrongEm>signs of ailment</StrongEm>, and{" "}
+              <StrongEm>herbal properties</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>chirurgeon, herbalist</Muted>
@@ -599,19 +463,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Hunter</Strong>, wise in{" "}
-              <Strong>
-                <Em>survival</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>tracks</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>wildlife behavior</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Hunter</Strong>, wise in <StrongEm>survival</StrongEm>,{" "}
+              <StrongEm>tracks</StrongEm>, and <StrongEm>wildlife behavior</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>pathfinder, trapper</Muted>
@@ -619,19 +472,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Mariner</Strong>, wise in{" "}
-              <Strong>
-                <Em>nautical lore</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>seafaring</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>weather patterns</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Mariner</Strong>, wise in <StrongEm>nautical lore</StrongEm>,{" "}
+              <StrongEm>seafaring</StrongEm>, and <StrongEm>weather patterns</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>pirate, sailor</Muted>
@@ -639,19 +481,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Mystic</Strong>, wise in{" "}
-              <Strong>
-                <Em>ancient prophecies</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>leylines</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>symbology</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Mystic</Strong>, wise in <StrongEm>ancient prophecies</StrongEm>,{" "}
+              <StrongEm>leylines</StrongEm>, and <StrongEm>symbology</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>occultist, seer</Muted>
@@ -659,15 +490,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Noble</Strong>, wise in{" "}
-              <Strong>
-                <Em>diplomacy</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>influential contacts</Em>
-              </Strong>
-              , and luxuries.
+              <Strong smallCaps>Noble</Strong>, wise in <StrongEm>diplomacy</StrongEm>,{" "}
+              <StrongEm>influential contacts</StrongEm>, and luxuries.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>aristocrat, diplomat</Muted>
@@ -675,19 +499,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Ragamuffin</Strong>, wise in{" "}
-              <Strong>
-                <Em>hidden paths</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>rumors</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>street smarts</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Ragamuffin</Strong>, wise in <StrongEm>hidden paths</StrongEm>,{" "}
+              <StrongEm>rumors</StrongEm>, and <StrongEm>street smarts</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>cutpurse, urchin</Muted>
@@ -695,19 +508,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Sage</Strong>, wise in{" "}
-              <Strong>
-                <Em>ancient histories</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>peoples of the world</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>philosophy</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Sage</Strong>, wise in <StrongEm>ancient histories</StrongEm>,{" "}
+              <StrongEm>peoples of the world</StrongEm>, and <StrongEm>philosophy</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>lorekeeper, scholar</Muted>
@@ -715,19 +517,9 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Scoundrel</Strong>, wise{" "}
-              <Strong>
-                <Em>in escape routes</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>signs of weakness</Em>
-              </Strong>
-              , and
-              <Strong>
-                <Em>shady connections</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Scoundrel</Strong>, wise <StrongEm>in escape routes</StrongEm>,{" "}
+              <StrongEm>signs of weakness</StrongEm>, and
+              <StrongEm>shady connections</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>brigand, thief</Muted>
@@ -735,19 +527,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Trader</Strong>, wise in{" "}
-              <Strong>
-                <Em>cultural tastes</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>people's desires</Em>
-              </Strong>
-              , and{" "}
-              <Strong>
-                <Em>rare goods</Em>
-              </Strong>
-              .
+              <Strong smallCaps>Trader</Strong>, wise in <StrongEm>cultural tastes</StrongEm>,{" "}
+              <StrongEm>people's desires</StrongEm>, and <StrongEm>rare goods</StrongEm>.
             </Table.Cell>
             <Table.Cell>
               <Muted allCaps>merchant, peddler</Muted>
@@ -755,15 +536,8 @@ const Chapter03 = () => {
           </Table.Row>
           <Table.Row>
             <Table.Cell>
-              <Strong smallCaps>Warrior</Strong>, wise in{" "}
-              <Strong>
-                <Em>battle plans</Em>
-              </Strong>
-              ,{" "}
-              <Strong>
-                <Em>military contacts</Em>
-              </Strong>
-              , and{" "}
+              <Strong smallCaps>Warrior</Strong>, wise in <StrongEm>battle plans</StrongEm>,{" "}
+              <StrongEm>military contacts</StrongEm>, and{" "}
               <Strong>
                 ``
                 <Em>war stories</Em>
@@ -776,9 +550,7 @@ const Chapter03 = () => {
           </Table.Row>
         </Table.Body>
       </Table>
-      <Heading level={4} id="heritage">
-        Heritage
-      </Heading>
+      <SectionHeading>Heritage</SectionHeading>
       <Text>
         <Strong>Heritage</Strong> reflects your culture, ancestry, and homeland. Use the Heritage
         Crucible below for inspiration: roll three words, pick two, and combine them. You can
@@ -789,9 +561,9 @@ const Chapter03 = () => {
         <Em>previous page</Em>) can serve as inspiration. These wises reflect traits commonly shared
         by most people from your heritage. This continues throughout the game as you figure out more
         about your people through play. In short,{" "}
-        <Strong>
-          <Em>you know what the Orcs of the Verdant Boglands are like because you are one!</Em>
-        </Strong>
+        <StrongEm>
+          you know what the Orcs of the Verdant Boglands are like because you are one!
+        </StrongEm>
       </Text>
       <Text>
         <Strong smallCaps>Heritage Talent</Strong>: Some heritages have innate capabilities beyond
@@ -1053,11 +825,9 @@ const Chapter03 = () => {
         </List.Item>
         <List.Item>
           <Strong>Push Yourself</Strong>: Some talents require you to push yourself to activate.
-          <Strong>
-            <Em>These talents can be activated once per session for free</Em>
-          </Strong>
-          . After the first use, you must push yourself as normal to activate it again, marking a
-          relevant stat. Choose your moments wisely.
+          <StrongEm>These talents can be activated once per session for free</StrongEm>. After the
+          first use, you must push yourself as normal to activate it again, marking a relevant stat.
+          Choose your moments wisely.
         </List.Item>
         <List.Item>
           <Strong>“When Given Time”</Strong>: This phrase included in several talents means you need
@@ -1103,10 +873,7 @@ const Chapter03 = () => {
         Bard
       </Heading>
       <Text>
-        <Strong allCaps>Also</Strong>:{" "}
-        <Strong>
-          <Em>Minstrel, Orator, Warlord</Em>
-        </Strong>
+        <Strong allCaps>Also</Strong>: <StrongEm>Minstrel, Orator, Warlord</StrongEm>
       </Text>
       <Text>
         <Em>
@@ -1121,33 +888,20 @@ const Chapter03 = () => {
       >
         <Text>
           Each session, you can sing <Strong>3 bardsongs</Strong>, rolling Presence. Sing one to
-          pull off a{" "}
-          <Strong>
-            <Em>potent feat of emotional influence</Em>
-          </Strong>
-          , like <Em>eliciting a vex response in an NPC</Em>, <Em>buffing a group of allies</Em>, or{" "}
+          pull off a <StrongEm>potent feat of emotional influence</StrongEm>, like{" "}
+          <Em>eliciting a vex response in an NPC</Em>, <Em>buffing a group of allies</Em>, or{" "}
           <Em>inflicting hindrances on enemies</Em>. You can also sing one to{" "}
-          <Strong>
-            <Em>interrupt</Em>
-          </Strong>{" "}
-          an impact move. A bardsong's effect flows from its composition. Choose a{" "}
-          <Strong>
-            <Em>style</Em>
-          </Strong>
-          ,{" "}
+          <StrongEm>interrupt</StrongEm> an impact move. A bardsong's effect flows from its
+          composition. Choose a <StrongEm>style</StrongEm>,{" "}
           <Strong>
             <em>tune</em>
           </Strong>
-          , and{" "}
-          <Strong>
-            <Em>impact</Em>
-          </Strong>{" "}
-          (<Em>below</Em>) that matches the effect.
+          , and <StrongEm>impact</StrongEm> (<Em>below</Em>) that matches the effect.
         </Text>
         <Text>
           Each session, you can also sing <Strong>3 melodies</Strong>, spur of the moment tunes
-          without specific composition. Spend them to: assist <Em>without risk</Em>—
-          <Em>calm or intensify a vex response</Em>—<Em>clear a mark</Em>. These don't require a
+          without specific composition. Spend them to: assist{" "}
+          <Em>without risk—calm or intensify a vex response—clear a mark</Em>. These don't require a
           roll. You cannot affect yourself.
         </Text>
       </CoreTalent>
@@ -1372,11 +1126,8 @@ const Chapter03 = () => {
       </Talent>
       <Talent name="Forked Tongue">
         <Talent.Text>
-          When given time, you can tell{" "}
-          <Strong>
-            <Em>potent lies</Em>
-          </Strong>{" "}
-          like <Em>telling the king you're their bastard</Em> or{" "}
+          When given time, you can tell <StrongEm>potent lies</StrongEm> like{" "}
+          <Em>telling the king you're their bastard</Em> or{" "}
           <Em>a prophecy foretelling the fall of the capital</Em>. You can{" "}
           <Strong>push yourself</Strong> to do it on the spot.
         </Talent.Text>
@@ -1384,19 +1135,15 @@ const Chapter03 = () => {
       <Talent name="Friendly Face">
         <Talent.Text>
           In any new town or district of a city you go to, you can always:{" "}
-          <Em>get recognized by a fan</Em>—<Em>know someone useful</Em>—
-          <Em>quickly make a friend</Em>. They'll gladly do you a reasonable favor.{" "}
-          <Strong>Take spark</Strong> if you promise to pay them back.
+          <Em>get recognized by a fan—know someone useful—quickly make a friend</Em>. They'll gladly
+          do you a reasonable favor. <Strong>Take spark</Strong> if you promise to pay them back.
         </Talent.Text>
       </Talent>
       <Talent name="Influence">
         <Talent.Text>
-          Twice per session, you can{" "}
-          <Strong>
-            <Em>invoke an ally's bond with you</Em>
-          </Strong>{" "}
-          to increase their die roll result by 1 <Muted>(3→4)</Muted>. You don't have to be in the
-          same scene—they might recall a memory.
+          Twice per session, you can <StrongEm>invoke an ally's bond with you</StrongEm> to increase
+          their die roll result by 1 <Muted>(3→4)</Muted>. You don't have to be in the same
+          scene—they might recall a memory.
         </Talent.Text>
       </Talent>
       <Talent name="Jack of All Trades">
@@ -1407,9 +1154,8 @@ const Chapter03 = () => {
       <Talent name="Wordplay">
         <Talent.Text>
           On a perfect defense roll when the situation allows for verbal quips, you make them:
-          <Em>embarrass themself</Em>—<Em>let a secret slip</Em>—
-          <Em>focus on or lose track of you</Em>. Once per session, you can goad the GM into
-          spending suspense on conversation.
+          <Em>embarrass themself—let a secret slip—focus on or lose track of you</Em>. Once per
+          session, you can goad the GM into spending suspense on conversation.
         </Talent.Text>
       </Talent>
       <Panel>
@@ -1472,10 +1218,7 @@ const Chapter03 = () => {
         Berserker
       </Heading>
       <Text>
-        <Strong allCaps>Also</Strong>:{" "}
-        <Strong>
-          <Em>Juggernaut, Reaver, Warbringer</Em>
-        </Strong>
+        <Strong allCaps>Also</Strong>: <StrongEm>Juggernaut, Reaver, Warbringer</StrongEm>
       </Text>
       <Text>
         <Em>
@@ -1497,13 +1240,9 @@ const Chapter03 = () => {
             Take +1d for each mark you have and ignore all thorns from harm and marks.
           </List.Item>
           <List.Item>
-            Inflict{" "}
-            <Strong>
-              <Em>collateral damage</Em>
-            </Strong>{" "}
-            on each action roll, regardless of the outcome. You must choose one:{" "}
-            <Em>send something flying</Em>—<Em>smash mooks</Em>—<Em>throw insults</Em>—
-            <Em>wreck something</Em>.
+            Inflict <StrongEm>collateral damage</StrongEm> on each action roll, regardless of the
+            outcome. You must choose one:{" "}
+            <Em>send something flying—smash mooks—throw insults—wreck something</Em>.
           </List.Item>
           <List.Item>
             Always get a final action when dropped. On a critical, ignore getting dropped.
@@ -1568,12 +1307,10 @@ const Chapter03 = () => {
       <Talent name="Fearsome">
         <Talent.Text>
           Your presence instills fear in others. The GM judges an NPC's response, or you can spend
-          story to set it: <Em>hostile</Em>—<Em>nervous</Em>—<Em>respectful</Em>—<Em>scared</Em>.
-          You can <Strong>push yourself</Strong> to pull off a{" "}
-          <Strong>
-            <Em>potent feat of intimidation</Em>
-          </Strong>
-          , like <Em>staring down a dragon</Em> or <Em>demanding to see the king</Em>.
+          story to set it: <Em>hostile—nervous—respectful—scared</Em>. You can{" "}
+          <Strong>push yourself</Strong> to pull off a{" "}
+          <StrongEm>potent feat of intimidation</StrongEm>, like <Em>staring down a dragon</Em> or{" "}
+          <Em>demanding to see the king</Em>.
         </Talent.Text>
       </Talent>
       <Talent name="Flesh Wounds">
@@ -1587,34 +1324,28 @@ const Chapter03 = () => {
       <Talent name="Into the Fray">
         <Talent.Text>
           When you're the first into an intense situation,{" "}
-          <Strong>
-            <Em>5s count as 6s, but 4s count as 1s</Em>
-          </Strong>{" "}
-          on your first roll. You also <Strong>setup</Strong> the first person following you
-          regardless of your roll outcome.
+          <StrongEm>5s count as 6s, but 4s count as 1s</StrongEm> on your first roll. You also{" "}
+          <Strong>setup</Strong> the first person following you regardless of your roll outcome.
         </Talent.Text>
       </Talent>
       <Talent name="Joyful Warrior">
         <Talent.Text>
           On a critical or when bloodied in battle, you <Strong>take spark</Strong> and can:{" "}
-          <Em>clear one mark from each ally</Em>—
-          <Em>bring a dropped (not dead) ally back into the scene</Em>.
+          <Em>clear one mark from each ally—bring a dropped (not dead) ally back into the scene</Em>
+          .
         </Talent.Text>
       </Talent>
       <Talent name="Mighty">
         <Talent.Text>
-          When given time, you can pull off{" "}
-          <Strong>
-            <Em>potent feats of raw strength</Em>
-          </Strong>
-          , like <Em>uprooting a tree</Em> or <Em>breaking through a castle gate</Em>. You can{" "}
+          When given time, you can pull off <StrongEm>potent feats of raw strength</StrongEm>, like{" "}
+          <Em>uprooting a tree</Em> or <Em>breaking through a castle gate</Em>. You can{" "}
           <Strong>push yourself</Strong> to do it on the spot.
         </Talent.Text>
       </Talent>
       <Talent name="Overkill">
         <Talent.Text>
           On a critical when bringing violence, threats, or destruction to bear, you can:{" "}
-          <Em>cause an extra secondary effect</Em>—<Em>roll a task pool twice</Em>.
+          <Em>cause an extra secondary effect—roll a task pool twice</Em>.
         </Talent.Text>
       </Talent>
       <Talent name="Warsongs" prohibited="Bard">
@@ -1627,10 +1358,7 @@ const Chapter03 = () => {
         Cleric
       </Heading>
       <Text>
-        <Strong allCaps>Also</Strong>:{" "}
-        <Strong>
-          <Em>Priest, Zealot, Chosen One</Em>
-        </Strong>
+        <Strong allCaps>Also</Strong>: <StrongEm>Priest, Zealot, Chosen One</StrongEm>
       </Text>
       <Text>
         <Em>
@@ -1650,15 +1378,10 @@ const Chapter03 = () => {
           Create your god (<Em>below</Em>). You have <Strong>1 major domain</Strong>, a 6d power
           pool, and <Strong>2 minor domains</Strong>, each a 4d power pool. These pools replenish
           each session. You can drop 1d and roll the domain to cast a{" "}
-          <Strong>
-            <Em>potent spell</Em>
-          </Strong>
-          .
+          <StrongEm>potent spell</StrongEm>.
         </Text>
       </CoreTalent>
-      <Text>
-        <Strong allCaps>Create Your God</Strong>
-      </Text>
+      <SectionHeading>Create Your God</SectionHeading>
       <Text>
         Create your god by naming them and giving them a thematic epithet (
         <Em>e.g., Zerenda, Goddess of Storms</Em>). You are expected to follow its tenets, though
@@ -1789,7 +1512,7 @@ const Chapter03 = () => {
           Each session, you have a <Strong>3d Iron Will</Strong> resource pool. When you get rattled
           or take vex, roll the pool. If dice remain, ignore the damage. If the situation allows for
           it, you can also lash out at the cause or a bystander and:{" "}
-          <Em>instill dread in their heart</Em>—<Em>sow doubt in their mind</Em>.
+          <Em>instill dread in their heart—sow doubt in their mind</Em>.
         </Talent.Text>
       </Talent>
       <Talent name="Rings False">
@@ -1801,10 +1524,8 @@ const Chapter03 = () => {
       <Talent name="Sermons">
         <Talent.Text>
           When given time, you can pull off{" "}
-          <Strong>
-            <Em>potent feats of persuasion in the name of your beliefs</Em>
-          </Strong>
-          , like <Em>commanding a crowd to bring the duke for judgment</Em> or{" "}
+          <StrongEm>potent feats of persuasion in the name of your beliefs</StrongEm>, like{" "}
+          <Em>commanding a crowd to bring the duke for judgment</Em> or{" "}
           <Em>showing the goblins the glory of your god</Em>. You can also{" "}
           <Strong>push yourself</Strong> to do it on the spot. One time only, you can make this a
           ritual-level effect.
@@ -1813,11 +1534,8 @@ const Chapter03 = () => {
       <Talent name="Shepherd">
         <Talent.Text>
           When you assist an ally on a defense roll that would leave them rattled or with vex, you
-          can{" "}
-          <Strong>
-            <Em>invoke your bond</Em>
-          </Strong>{" "}
-          to take +1d on the roll. On a perfect, you both <Strong>take spark</Strong>.
+          can <StrongEm>invoke your bond</StrongEm> to take +1d on the roll. On a perfect, you both{" "}
+          <Strong>take spark</Strong>.
         </Talent.Text>
       </Talent>
       <Panel>
@@ -1831,15 +1549,19 @@ const Chapter03 = () => {
       <Heading level={2} pretitle="Path of the" id="druid">
         Druid
       </Heading>
-      <Text>ALSO: Shapeshifter, Grovekeeper, Wildling</Text>
       <Text>
-        You embrace and embody the untamed power of the natural world, transforming into beasts and
-        channeling the spirit of the wild.
+        <Strong allCaps>Also</Strong>: <StrongEm>Shapeshifter, Grovekeeper, Wildling</StrongEm>
       </Text>
-      <blockquote>
-        <Text>WILD SHAPE (CORE TALENT)</Text>
+      <Text>
+        <Em>
+          You embrace and embody the untamed power of the natural world, transforming into beasts
+          and channeling the spirit of the wild.
+        </Em>
+      </Text>
+      <CoreTalent name="Wild Shape" growth="Every 2 levels, increase your Wild Shape pool by 1d.">
         <Text>
-          You can shift into the form of any beast you're familiar with. You have a 4d Wild Shape
+          You can shift into the form of any beast you're familiar with. You have a{" "}
+          <StrongEm>4d Wild Shape</StrongEm>
           resource pool, rolled when you shift—at 0d, you fail to turn into that form. The pool
           replenishes after each scene.
         </Text>
@@ -1849,394 +1571,405 @@ const Chapter03 = () => {
           talent related to your own physical form.
         </Text>
         <Text>
-          Some forms are more difficult to shift into. For each wild talent (max 2) a form has, drop
-          1d from the pool before rolling it. These are things like aquatic, smaller than a cat,
-          bigger than a bear, venomous, and flight. It can also be a specific talent from a path, or
-          anything that would require a heritage talent. The GM judges the gray zone.
+          Some forms are more difficult to shift into. For each <StrongEm>wild talent</StrongEm>{" "}
+          (max 2) a form has, drop 1d from the pool before rolling it. These are things like
+          <Em>aquatic</Em>, <Em>smaller than a cat</Em>, <Em>bigger than a bear</Em>,{" "}
+          <Em>venomous</Em>, and <Em>flight</Em>. It can also be a specific talent from a path, or
+          anything that would require a heritage talent. The GM judges the{" "}
+          <StrongEm>gray zone</StrongEm>.
         </Text>
-        <Line />
-        <Text>GROWTH: Every 2 levels, increase your Wild Shape pool by 1d.</Text>
-      </blockquote>
-      <Text>DRUIDIC TELLS [OPTIONAL]</Text>
+      </CoreTalent>
+      <SectionHeading description="Optional">Druidic Tells</SectionHeading>
       <Text>
         Druids often exhibit tells—sometimes several—that reflect their deep connection with nature,
         such as animalistic traits or plant-like appearances. Even in a fantasy world, someone so
         attuned to nature is bound to attract attention, offering potential new vantage, outside
-        assistance, or even opportunities for tangles. Below are some ideas for features:
+        assistance, or even opportunities for tangles. Below are some ideas for{" "}
+        <StrongEm>features</StrongEm>:
       </Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>thorns</Table.Cell>
-            <Table.Cell>blossoming</Table.Cell>
-            <Table.Cell>feathered</Table.Cell>
-            <Table.Cell>bristled</Table.Cell>
-            <Table.Cell>roots</Table.Cell>
-            <Table.Cell>fluffy</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>moss</Table.Cell>
-            <Table.Cell>bark</Table.Cell>
-            <Table.Cell>earthen</Table.Cell>
-            <Table.Cell>hoofed</Table.Cell>
-            <Table.Cell>vibrant</Table.Cell>
-            <Table.Cell>silken</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>vines</Table.Cell>
-            <Table.Cell>glowing</Table.Cell>
-            <Table.Cell>translucent</Table.Cell>
-            <Table.Cell>tangled</Table.Cell>
-            <Table.Cell>crystalline</Table.Cell>
-            <Table.Cell>smoky</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>tusked</Table.Cell>
-            <Table.Cell>velvet</Table.Cell>
-            <Table.Cell>murky</Table.Cell>
-            <Table.Cell>speckled</Table.Cell>
-            <Table.Cell>verdant</Table.Cell>
-            <Table.Cell>willowy</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>shimmering</Table.Cell>
-            <Table.Cell>antlered</Table.Cell>
-            <Table.Cell>ashen</Table.Cell>
-            <Table.Cell>spiny</Table.Cell>
-            <Table.Cell>gnarled</Table.Cell>
-            <Table.Cell>fragrant</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>scaly</Table.Cell>
-            <Table.Cell>longtoothed</Table.Cell>
-            <Table.Cell>dewy</Table.Cell>
-            <Table.Cell>breezy</Table.Cell>
-            <Table.Cell>misty</Table.Cell>
-            <Table.Cell>petals</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>WILD TALENTS [EXAMPLES]</Text>
+      <Panel border>
+        <Table padding="tight" textSize="small" margin="none" fullWidth italic>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>thorns</Table.Cell>
+              <Table.Cell>blossoming</Table.Cell>
+              <Table.Cell>feathered</Table.Cell>
+              <Table.Cell>bristled</Table.Cell>
+              <Table.Cell>roots</Table.Cell>
+              <Table.Cell>fluffy</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>moss</Table.Cell>
+              <Table.Cell>bark</Table.Cell>
+              <Table.Cell>earthen</Table.Cell>
+              <Table.Cell>hoofed</Table.Cell>
+              <Table.Cell>vibrant</Table.Cell>
+              <Table.Cell>silken</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>vines</Table.Cell>
+              <Table.Cell>glowing</Table.Cell>
+              <Table.Cell>translucent</Table.Cell>
+              <Table.Cell>tangled</Table.Cell>
+              <Table.Cell>crystalline</Table.Cell>
+              <Table.Cell>smoky</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>tusked</Table.Cell>
+              <Table.Cell>velvet</Table.Cell>
+              <Table.Cell>murky</Table.Cell>
+              <Table.Cell>speckled</Table.Cell>
+              <Table.Cell>verdant</Table.Cell>
+              <Table.Cell>willowy</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>shimmering</Table.Cell>
+              <Table.Cell>antlered</Table.Cell>
+              <Table.Cell>ashen</Table.Cell>
+              <Table.Cell>spiny</Table.Cell>
+              <Table.Cell>gnarled</Table.Cell>
+              <Table.Cell>fragrant</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>scaly</Table.Cell>
+              <Table.Cell>longtoothed</Table.Cell>
+              <Table.Cell>dewy</Table.Cell>
+              <Table.Cell>breezy</Table.Cell>
+              <Table.Cell>misty</Table.Cell>
+              <Table.Cell>petals</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Panel>
+      <SectionHeading description="Examples">Wild Talents</SectionHeading>
       <Text>
         Below are some examples of beasts that have wild talents. Already existing talents are
         listed with a page number reference. Others are made for that beast.
       </Text>
-      <List variant="ordered">
-        <List.Item>Chimpanzee: Relentless (pg. 69)</List.Item>
-        <List.Item>Wolf: Keen Senses (pg. 69)</List.Item>
-        <List.Item>Rhino: Bulwark (pg. 63)</List.Item>
-        <List.Item>Octopus: Shape &amp; color mimicking</List.Item>
-        <List.Item>Cheetah: Incredibly fast sprinting.</List.Item>
-        <List.Item>Bear: Mighty (pg. 57)</List.Item>
-        <List.Item>Eagle: Flight</List.Item>
-        <List.Item>Snake: Poisoner (pg. 71)</List.Item>
-        <List.Item>Lion: Fearsome (pg. 57)</List.Item>
-        <List.Item>Dolphin: Fast swimmer</List.Item>
-        <List.Item>Crocodile: Swamp camouflage</List.Item>
-        <List.Item>Honey Badger: Iron Will (pg. 59)</List.Item>
+      <List columns={2} variant="unordered">
+        <List.Item>
+          <Strong>Chimpanzee</Strong>: Relentless (<Em>pg. 69</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Wolf</Strong>: Keen Senses (<Em>pg. 69</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Rhino</Strong>: Bulwark (<Em>pg. 63</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Octopus</Strong>: Shape &amp; color mimicking
+        </List.Item>
+        <List.Item>
+          <Strong>Cheetah</Strong>: Incredibly fast sprinting.
+        </List.Item>
+        <List.Item>
+          <Strong>Bear</Strong>: Mighty (<Em>pg. 57</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Eagle</Strong>: Flight
+        </List.Item>
+        <List.Item>
+          <Strong>Snake</Strong>: Poisoner (<Em>pg. 71</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Lion</Strong>: Fearsome (<Em>pg. 57</Em>)
+        </List.Item>
+        <List.Item>
+          <Strong>Dolphin</Strong>: Fast swimmer
+        </List.Item>
+        <List.Item>
+          <Strong>Crocodile</Strong>: Swamp camouflage
+        </List.Item>
+        <List.Item>
+          <Strong>Honey Badger</Strong>: Iron Will (<Em>pg. 59</Em>)
+        </List.Item>
       </List>
       <Heading level={3} id="druid-talents">
         Druid Talents
       </Heading>
-      <Text>AWAKEN</Text>
-      <Text>
-        Once per scene, you may awaken a living natural feature—plants, animals, insects, fungi, or
-        the like—within or nearby the scene. It gains awareness and purpose, forming a 3d power pool
-        you can direct, guided by its nature. One time only, you can make this a ritual-level
-        effect.
-      </Text>
-      <Text>HERBALISM</Text>
-      <Text>
-        Before each session, use the Herbalism Crucible to make two herb names (snakeberry,
-        blastbane). You have 1 minor potion of one and 1 major potion of the other. The name is the
-        touchstone. They lose effect after the session. One time only, you can have 1 mythic potion
-        (choose after rolling).
-      </Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>choke</Table.Cell>
-            <Table.Cell>star</Table.Cell>
-            <Table.Cell>sun</Table.Cell>
-            <Table.Cell>dream</Table.Cell>
-            <Table.Cell>mist</Table.Cell>
-            <Table.Cell>zap</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>sticky</Table.Cell>
-            <Table.Cell>stone</Table.Cell>
-            <Table.Cell>moon</Table.Cell>
-            <Table.Cell>feather</Table.Cell>
-            <Table.Cell>soot</Table.Cell>
-            <Table.Cell>blast</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>wool</Table.Cell>
-            <Table.Cell>dust</Table.Cell>
-            <Table.Cell>devil</Table.Cell>
-            <Table.Cell>wild</Table.Cell>
-            <Table.Cell>freeze</Table.Cell>
-            <Table.Cell>blood</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>smoke</Table.Cell>
-            <Table.Cell>snake</Table.Cell>
-            <Table.Cell>honey</Table.Cell>
-            <Table.Cell>mirror</Table.Cell>
-            <Table.Cell>sting</Table.Cell>
-            <Table.Cell>ink</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>shriek</Table.Cell>
-            <Table.Cell>mimic</Table.Cell>
-            <Table.Cell>goat</Table.Cell>
-            <Table.Cell>worm</Table.Cell>
-            <Table.Cell>steel</Table.Cell>
-            <Table.Cell>skunk</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>giggle</Table.Cell>
-            <Table.Cell>needle</Table.Cell>
-            <Table.Cell>night</Table.Cell>
-            <Table.Cell>swell</Table.Cell>
-            <Table.Cell>faerie</Table.Cell>
-            <Table.Cell>dragon</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>cap</Table.Cell>
-            <Table.Cell>lily</Table.Cell>
-            <Table.Cell>thistle</Table.Cell>
-            <Table.Cell>pod</Table.Cell>
-            <Table.Cell>stem</Table.Cell>
-            <Table.Cell>petal</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>wort</Table.Cell>
-            <Table.Cell>reed</Table.Cell>
-            <Table.Cell>bell</Table.Cell>
-            <Table.Cell>bud</Table.Cell>
-            <Table.Cell>shoot</Table.Cell>
-            <Table.Cell>bean</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>rose</Table.Cell>
-            <Table.Cell>flower</Table.Cell>
-            <Table.Cell>leaf</Table.Cell>
-            <Table.Cell>tongue</Table.Cell>
-            <Table.Cell>bark</Table.Cell>
-            <Table.Cell>tuber</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>bush</Table.Cell>
-            <Table.Cell>root</Table.Cell>
-            <Table.Cell>wood</Table.Cell>
-            <Table.Cell>berry</Table.Cell>
-            <Table.Cell>funnel</Table.Cell>
-            <Table.Cell>vine</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>shroom</Table.Cell>
-            <Table.Cell>spine</Table.Cell>
-            <Table.Cell>grass</Table.Cell>
-            <Table.Cell>lace</Table.Cell>
-            <Table.Cell>moss</Table.Cell>
-            <Table.Cell>seed</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>sprout</Table.Cell>
-            <Table.Cell>shade</Table.Cell>
-            <Table.Cell>thorn</Table.Cell>
-            <Table.Cell>bane</Table.Cell>
-            <Table.Cell>branch</Table.Cell>
-            <Table.Cell>weed</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>
-        Note: The Herbalism Crucible was created by June Bloom and used with permission. Thanks!
-      </Text>
-      <Text>KINDRED SPIRITS</Text>
-      <Text>
-        You can speak with animals and spirits of the wild, their personalities shaped by their
-        instincts. You are known to them—when you meet, roll their bond with you (pg. 14) or spend
-        story to establish it. When you call, those nearby will answer.
-      </Text>
-      <Text>PRIMORDIAL BONDS</Text>
-      <Text>
-        You have a bond with each of the primordial elements, Air, Earth, Fire, and Water. Roll the
-        bonds (pg. 14), then change one to deep. You have spellcasting, rolling Presence to call on
-        an element, which serves as the touchstone. You can call on each element once per session,
-        or twice if your bond is deep. You can mark two usages of a single element to cast a potent
-        spell. You can combine usages of two elements to take +1d and use both as a touchstone.
-        Bonds change, for better or worse—pursue great deeds and rituals to deepen them.
-      </Text>
-      <Text>TRUE SHAPE</Text>
-      <Text>
-        Choose 1 beast form. If it has no wild talents, you can shift into it without rolling wild
-        shape, even at 0d. If it has wild talents, you drop 1d less than normal when you shift.
-      </Text>
-      <Text>VERDANT WHISPERS</Text>
-      <Text>
-        You can commune with plants, their personalities as odd and unique as their forms. Roll Wits
-        to decipher their messages, as they remember all but speak in ways truly hard to understand.
-        You always get a hint or reveal on vigilance in places teeming with plant life.
-      </Text>
-      <Text>WINDCALLER</Text>
-      <Text>
-        Your voice carries on the winds over great distances. You can push yourself to summon or
-        dismiss, but not control: dense fog—diving temperatures—heavy rain—snowfall—strong winds—
-        thunder. You can perform weather rituals without ritual anchors.
-      </Text>
+      <Talent name="Awaken">
+        <Talent.Text>
+          Once per scene, you may awaken a living natural feature—plants, animals, insects, fungi,
+          or the like—within or nearby the scene. It gains awareness and purpose, forming a{" "}
+          <StrongEm>3d power pool</StrongEm> you can direct, guided by its nature. One time only,
+          you can make this a ritual-level effect.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Herbalism">
+        <Talent.Text>
+          Before each session, use the Herbalism Crucible to make two herb names (snakeberry,
+          blastbane). You have{" "}
+          <StrongEm>1 minor potion of one and 1 major potion of the other</StrongEm>. The name is
+          the touchstone. They lose effect after the session. One time only, you can have 1 mythic
+          potion (<Em>choose after rolling</Em>).
+        </Talent.Text>
+
+        <Panel margin={{ bottom: "none" }} border>
+          <Panel.Row>
+            <Table padding="tight" textSize="small" margin="none" fullWidth italic>
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell>choke</Table.Cell>
+                  <Table.Cell>star</Table.Cell>
+                  <Table.Cell>sun</Table.Cell>
+                  <Table.Cell>dream</Table.Cell>
+                  <Table.Cell>mist</Table.Cell>
+                  <Table.Cell>zap</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>sticky</Table.Cell>
+                  <Table.Cell>stone</Table.Cell>
+                  <Table.Cell>moon</Table.Cell>
+                  <Table.Cell>feather</Table.Cell>
+                  <Table.Cell>soot</Table.Cell>
+                  <Table.Cell>blast</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>wool</Table.Cell>
+                  <Table.Cell>dust</Table.Cell>
+                  <Table.Cell>devil</Table.Cell>
+                  <Table.Cell>wild</Table.Cell>
+                  <Table.Cell>freeze</Table.Cell>
+                  <Table.Cell>blood</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>smoke</Table.Cell>
+                  <Table.Cell>snake</Table.Cell>
+                  <Table.Cell>honey</Table.Cell>
+                  <Table.Cell>mirror</Table.Cell>
+                  <Table.Cell>sting</Table.Cell>
+                  <Table.Cell>ink</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>shriek</Table.Cell>
+                  <Table.Cell>mimic</Table.Cell>
+                  <Table.Cell>goat</Table.Cell>
+                  <Table.Cell>worm</Table.Cell>
+                  <Table.Cell>steel</Table.Cell>
+                  <Table.Cell>skunk</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>giggle</Table.Cell>
+                  <Table.Cell>needle</Table.Cell>
+                  <Table.Cell>night</Table.Cell>
+                  <Table.Cell>swell</Table.Cell>
+                  <Table.Cell>faerie</Table.Cell>
+                  <Table.Cell>dragon</Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
+          </Panel.Row>
+          <Panel.Row>
+            <Table padding="tight" textSize="small" margin="none" fullWidth italic>
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell>cap</Table.Cell>
+                  <Table.Cell>lily</Table.Cell>
+                  <Table.Cell>thistle</Table.Cell>
+                  <Table.Cell>pod</Table.Cell>
+                  <Table.Cell>stem</Table.Cell>
+                  <Table.Cell>petal</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>wort</Table.Cell>
+                  <Table.Cell>reed</Table.Cell>
+                  <Table.Cell>bell</Table.Cell>
+                  <Table.Cell>bud</Table.Cell>
+                  <Table.Cell>shoot</Table.Cell>
+                  <Table.Cell>bean</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>rose</Table.Cell>
+                  <Table.Cell>flower</Table.Cell>
+                  <Table.Cell>leaf</Table.Cell>
+                  <Table.Cell>tongue</Table.Cell>
+                  <Table.Cell>bark</Table.Cell>
+                  <Table.Cell>tuber</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>bush</Table.Cell>
+                  <Table.Cell>root</Table.Cell>
+                  <Table.Cell>wood</Table.Cell>
+                  <Table.Cell>berry</Table.Cell>
+                  <Table.Cell>funnel</Table.Cell>
+                  <Table.Cell>vine</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>shroom</Table.Cell>
+                  <Table.Cell>spine</Table.Cell>
+                  <Table.Cell>grass</Table.Cell>
+                  <Table.Cell>lace</Table.Cell>
+                  <Table.Cell>moss</Table.Cell>
+                  <Table.Cell>seed</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>sprout</Table.Cell>
+                  <Table.Cell>shade</Table.Cell>
+                  <Table.Cell>thorn</Table.Cell>
+                  <Table.Cell>bane</Table.Cell>
+                  <Table.Cell>branch</Table.Cell>
+                  <Table.Cell>weed</Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
+          </Panel.Row>
+        </Panel>
+        <Text align="right" size="x-small" margin={{ top: "none" }} muted>
+          <Strong>Note</Strong>: The Herbalism Crucible was created by <Strong>June Bloom</Strong>{" "}
+          and used with permission. Thanks!
+        </Text>
+      </Talent>
+      <Talent name="Kindred Spirits">
+        <Talent.Text>
+          You can speak with animals and spirits of the wild, their personalities shaped by their
+          instincts. <StrongEm>You are known to them</StrongEm>
+          —when you meet, roll their bond with you (<Em>pg. 14</Em>) or spend story to establish it.
+          When you call, those nearby will answer.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Primordial Bonds">
+        <Talent.Text>
+          You have a bond with each of the primordial elements, <StrongEm>Air</StrongEm>,{" "}
+          <StrongEm>Earth</StrongEm>, <StrongEm>Fire</StrongEm>, and <StrongEm>Water</StrongEm>.
+          Roll the bonds (<Em>pg. 14</Em>), then change one to <StrongEm>deep</StrongEm>. You have
+          spellcasting, rolling Presence to call on an element, which serves as the touchstone. You
+          can call on each element once per session, or twice if your bond is{" "}
+          <StrongEm>deep</StrongEm>. You can mark two usages of a single element to cast a potent
+          spell. You can combine usages of two elements to take +1d and use both as a touchstone.
+          Bonds change, <Em>for better or worse</Em>—pursue great deeds and rituals to{" "}
+          <StrongEm>deepen</StrongEm> them.
+        </Talent.Text>
+      </Talent>
+      <Talent name="True Shape">
+        <Talent.Text>
+          Choose 1 beast form. If it has no wild talents, you can shift into it without rolling wild
+          shape, even at 0d. If it has wild talents, you drop 1d less than normal when you shift.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Verdant Whispers">
+        <Talent.Text>
+          You can commune with plants, their personalities as odd and unique as their forms.{" "}
+          <StrongEm>Roll Wits to decipher their messages</StrongEm>, as they remember all but speak
+          in ways truly hard to understand. You always get a <Strong>hint</Strong> or{" "}
+          <Strong>reveal</Strong> on vigilance in places teeming with plant life.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Windcaller">
+        <Talent.Text>
+          Your voice carries on the winds over great distances. You can{" "}
+          <Strong>push yourself</Strong> to summon or dismiss, but not control:{" "}
+          <Em>dense fog—diving temperatures—heavy rain—snowfall—strong winds—thunder</Em>. You can
+          perform weather rituals without ritual anchors.
+        </Talent.Text>
+      </Talent>
       <Heading level={2} pretitle="Path of the" id="fighter">
         Fighter
       </Heading>
-      <Text>ALSO: Blademaster, Duelist, Sergeant</Text>
       <Text>
-        You become one with your weapon, and through it, you find your real purpose in this life.
+        <Strong allCaps>Also</Strong>:{" "}
+        <Strong>
+          <Em>Blademaster, Duelist, Sergeant</Em>
+        </Strong>
       </Text>
-      <blockquote>
-        <Text>WEAPON MASTERY (CORE TALENT)</Text>
+      <Text>
+        <Em>
+          You become one with your weapon, and through it, you find your real purpose in this life.
+        </Em>
+      </Text>
+      <CoreTalent name="Weapon Mastery" growth="Every 3 levels, your mastery die increases by +1d.">
         <Text>
-          Choose a fighting style that you have mastered: brawling—dual-wielding—one-handed
-          weapons—ranged weapons—thrown weapons—two-handed weapons. You have a mastery die, a
-          special d6. When you fight in your style, take +1d (the mastery die) on the roll. If the
-          mastery die is a 6, it counts as a critical. If it's already a critical, take spark.
+          Choose a fighting style that you have mastered:{" "}
+          <Em>
+            brawling—dual-wielding—one-handed weapons—ranged weapons—thrown weapons—two-handed
+            weapons
+          </Em>
+          . You have a <Strong>mastery die</Strong>, a special d6. When you fight in your style,
+          take +1d (<Em>the mastery die</Em>) on the roll. If the mastery die is a 6, it counts as a
+          critical. If it's already a critical, <Strong>take spark</Strong>.
         </Text>
-        <Line />
-        <Text>GROWTH: Every 3 levels, your mastery die increases by +1d.</Text>
-      </blockquote>
-      <Text>WEAPON ORIGIN [OPTIONAL]</Text>
+      </CoreTalent>
+      <SectionHeading description="Optional">Weapon Origin</SectionHeading>
       <Text>
         For many fighters, their weapon is an important part of their past. Give your weapon some
         character and it will become a character itself in the story. Roll d66 twice on the table
         below to give your weapon, or each of your weapons, its own small story. You can also
         choose, or make up your own.
       </Text>
-      <Table>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>d66</Table.HeaderCell>
-            <Table.HeaderCell>1</Table.HeaderCell>
-            <Table.HeaderCell>2</Table.HeaderCell>
-            <Table.HeaderCell>3</Table.HeaderCell>
-            <Table.HeaderCell>4</Table.HeaderCell>
-            <Table.HeaderCell>5</Table.HeaderCell>
-            <Table.HeaderCell>6</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>etched with words of loss</Table.Cell>
-            <Table.Cell>with an odd word etched into it</Table.Cell>
-            <Table.Cell>marked by secret society</Table.Cell>
-            <Table.Cell>found in your first dungeon</Table.Cell>
-            <Table.Cell>carved with lover's initials</Table.Cell>
-            <Table.Cell>stolen from your first job</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>gift from a childhood mentor</Table.Cell>
-            <Table.Cell>stitched with parent's pattern</Table.Cell>
-            <Table.Cell>marked for each village visited</Table.Cell>
-            <Table.Cell>marred with blade nicks</Table.Cell>
-            <Table.Cell>stained with coal from a mine</Table.Cell>
-            <Table.Cell>embedded with an arrow</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>telling why you can't return</Table.Cell>
-            <Table.Cell>covered in burn marks</Table.Cell>
-            <Table.Cell>with hidden compartment</Table.Cell>
-            <Table.Cell>made from rare material</Table.Cell>
-            <Table.Cell>with a faded family crest</Table.Cell>
-            <Table.Cell>peace offering gift</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>given by your father</Table.Cell>
-            <Table.Cell>torn by an animal attack</Table.Cell>
-            <Table.Cell>notched each time it saved you</Table.Cell>
-            <Table.Cell>with a scratched out insignia</Table.Cell>
-            <Table.Cell>taken as spoils of war</Table.Cell>
-            <Table.Cell>belonged to a gambler</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>stolen from a family member</Table.Cell>
-            <Table.Cell>stamped with employer's logo</Table.Cell>
-            <Table.Cell>worn from long usage</Table.Cell>
-            <Table.Cell>picked up during a storm</Table.Cell>
-            <Table.Cell>with a best friend's initials</Table.Cell>
-            <Table.Cell>patched many times</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>6</Table.Cell>
-            <Table.Cell>taken off a dead body</Table.Cell>
-            <Table.Cell>etched with a battle prayer</Table.Cell>
-            <Table.Cell>inscribed with book quote</Table.Cell>
-            <Table.Cell>marked from a lucky escape</Table.Cell>
-            <Table.Cell>scratched from fierce battle</Table.Cell>
-            <Table.Cell>with directions to a special place</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>WEAPON KNOWLEDGE [ADVICE]</Text>
+      <Panel border>
+        <Panel.Row>
+          <Table textSize="small" padding="tight" margin="none" fullWidth italic>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>etched with words of loss</Table.Cell>
+                <Table.Cell>with an odd word etched into it</Table.Cell>
+                <Table.Cell>marked by secret society</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>gift from a childhood mentor</Table.Cell>
+                <Table.Cell>stitched with parent's pattern</Table.Cell>
+                <Table.Cell>marked for each village visited</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>telling why you can't return</Table.Cell>
+                <Table.Cell>covered in burn marks</Table.Cell>
+                <Table.Cell>with hidden compartment</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>given by your father</Table.Cell>
+                <Table.Cell>torn by an animal attack</Table.Cell>
+                <Table.Cell>notched each time it saved you</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>stolen from a family member</Table.Cell>
+                <Table.Cell>stamped with employer's logo</Table.Cell>
+                <Table.Cell>worn from long usage</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>taken off a dead body</Table.Cell>
+                <Table.Cell>etched with a battle prayer</Table.Cell>
+                <Table.Cell>inscribed with book quote</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+        <Panel.Row>
+          <Table textSize="small" padding="tight" margin="none" fullWidth italic>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>found in your first dungeon</Table.Cell>
+                <Table.Cell>carved with lover's initials</Table.Cell>
+                <Table.Cell>stolen from your first job</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>marred with blade nicks</Table.Cell>
+                <Table.Cell>stained with coal from a mine</Table.Cell>
+                <Table.Cell>embedded with an arrow</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>made from rare material</Table.Cell>
+                <Table.Cell>with a faded family crest</Table.Cell>
+                <Table.Cell>peace offering gift</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>with a scratched out insignia</Table.Cell>
+                <Table.Cell>taken as spoils of war</Table.Cell>
+                <Table.Cell>belonged to a gambler</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>picked up during a storm</Table.Cell>
+                <Table.Cell>with a best friend's initials</Table.Cell>
+                <Table.Cell>patched many times</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>marked from a lucky escape</Table.Cell>
+                <Table.Cell>scratched from fierce battle</Table.Cell>
+                <Table.Cell>with directions to a special place</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Panel.Row>
+      </Panel>
+      <SectionHeading description="Advice">Weapon Knowledge</SectionHeading>
       <Text>
         As a fighter, bring your mastery of battle into play. You've likely trained in various
         weapons and understand their matchups. Weapons don't have specific rules differentiating
@@ -2245,49 +1978,63 @@ const Chapter03 = () => {
         retreating from a likely loss.
       </Text>
       <Text>
-        You don't need to be a weapon expert—lean into the cinematic. Basic details (spears in a
-        narrow hall, flails wrapping around shields) can add a lot to the scene. Use your wises
-        creatively, and remember, combat is freeform, so stretch your imagination.
+        You don't need to be a weapon expert—lean into the cinematic. Basic details{" "}
+        <Muted>(spears in a narrow hall, flails wrapping around shields)</Muted> can add a lot to
+        the scene. Use your wises creatively, and remember, combat is freeform, so stretch your
+        imagination.
       </Text>
       <Heading level={3} id="fighter-talents">
         Fighter Talents
       </Heading>
-      <Text>ARCANE TRAINING [PROHIBITED: WIZARD]</Text>
-      <Text>
-        You have spellcasting as the Spellcraft talent (pg. 76). You roll Wits and can cast 3 spells
-        and 1 potent spell per session. You know 3 spell theorems, created with the Spell Crucible,
-        and can learn new spells from scrolls.
-      </Text>
-      <Text>BULWARK</Text>
-      <Text>
-        Each session, you have a 3d Bulwark resource pool from armor or other defenses. When you get
-        bloodied or dropped from physical damage, roll the pool. If dice remain, ignore the damage.
-      </Text>
-      <Text>CONTROL</Text>
-      <Text>
-        You can push yourself to declare a zone that enemies cannot cross without dealing with you.
-        If they attempt to move past you, you can interrupt them. On a perfect, take spark.
-      </Text>
-      <Text>GOT YOUR BACK</Text>
-      <Text>
-        You can push yourself to assist an ally after they roll a grim. The ally can also roll 1d.
-        On a perfect, you both take spark.
-      </Text>
-      <Text>MEASURED TONES</Text>
-      <Text>
-        When you speak in measured tones, people always stop and listen—you can declare tame stakes
-        if desired. Unless completely surprised, you can push yourself to interrupt an impact move
-        initiating aggression. If you change their mind, take spark.
-      </Text>
-      <Text>SWIFT RECOVERY</Text>
-      <Text>On a perfect roll with an unmarked stat, clear a mark on another stat.</Text>
-      <Text>TACTICIAN</Text>
-      <Text>
-        During an intense action sequence, you can push yourself to tag 3 scene elements right away
-        and 1 later in the sequence. When an ally interacts with a tagged element, you assist
-        without risk on the roll. If no roll is needed, they take spark.
-      </Text>
-      <Text>COMBAT MANEUVERS [ADVICE]</Text>
+      <Talent name="Arcane Training" prohibited="Wizard">
+        <Talent.Text>
+          You have spellcasting as the Spellcraft talent (<Em>pg. 76</Em>). You roll Wits and can
+          cast 3 spells and 1 potent spell per session. You know 3 spell theorems, created with the
+          Spell Crucible, and can learn new spells from scrolls.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Bulwark">
+        <Talent.Text>
+          Each session, you have a <StrongEm>3d Bulwark</StrongEm> resource pool from armor or other
+          defenses. When you get bloodied or dropped from physical damage, roll the pool. If dice
+          remain, ignore the damage.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Control">
+        <Talent.Text>
+          You can <Strong>push yourself</Strong> to declare a zone that enemies cannot cross without
+          dealing with you. If they attempt to move past you, you can <StrongEm>interrupt</StrongEm>{" "}
+          them. On a perfect, take spark.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Got Your Back">
+        <Talent.Text>
+          You can <Strong>push yourself</Strong> to assist an ally after they roll a grim. The ally
+          can also roll 1d. On a perfect, you both <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Measured Tones">
+        <Talent.Text>
+          When you speak in measured tones, people always stop and listen—you can declare{" "}
+          <StrongEm>tame stakes</StrongEm> if desired. Unless completely surprised, you can{" "}
+          <Strong>push yourself</Strong> to <StrongEm>interrupt</StrongEm> an impact move initiating
+          aggression. If you change their mind, take spark.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Swift Recovery">
+        <Talent.Text>
+          On a perfect roll with an unmarked stat, clear a mark on another stat.
+        </Talent.Text>
+      </Talent>
+      <Talent name="Tactician">
+        <Talent.Text>
+          During an intense action sequence, you can <Strong>push yourself</Strong> to tag 3 scene
+          elements right away and 1 later in the sequence. When an ally interacts with a tagged
+          element, you assist without risk on the roll. If no roll is needed, they{" "}
+          <Strong>take spark</Strong>.
+        </Talent.Text>
+      </Talent>
+      <SectionHeading description="Advice">Combat Maneuvers</SectionHeading>
       <Text>
         Action rolls let you flavor combat however you like—don't just swing a sword or jab a spear.
         Lean into the dramatic flowing nature of combat. On a critical, use setups and secondary
@@ -2295,16 +2042,25 @@ const Chapter03 = () => {
         battle to end it faster! Of course, anyone can try these, but as a fighter, you should
         master them.
       </Text>
-      <List variant="ordered">
-        <List.Item>Disarm: Take their weapon to leave them vulnerable.</List.Item>
-        <List.Item>Knockdown: Put them on the ground to gain the upper hand.</List.Item>
+      <List variant="unordered">
         <List.Item>
-          Pin Down: Trap them in a position to keep them from acting or escaping.
+          <Strong>Disarm</Strong>: Take their weapon to leave them vulnerable.
         </List.Item>
-        <List.Item>Pull: Drag them into danger or out of position.</List.Item>
-        <List.Item>Push: Shove them away to protect allies or disrupt their own lines.</List.Item>
         <List.Item>
-          Sunder: Break their gear to limit their options or get around their defenses.
+          <Strong>Knockdown</Strong>: Put them on the ground to gain the upper hand.
+        </List.Item>
+        <List.Item>
+          <Strong>Pin Down</Strong>: Trap them in a position to keep them from acting or escaping.
+        </List.Item>
+        <List.Item>
+          <Strong>Pull</Strong>: Drag them into danger or out of position.
+        </List.Item>
+        <List.Item>
+          <Strong>Push</Strong>: Shove them away to protect allies or disrupt their own lines.
+        </List.Item>
+        <List.Item>
+          <Strong>Sunder</Strong>: Break their gear to limit their options or get around their
+          defenses.
         </List.Item>
       </List>
       <Heading level={2} pretitle="Path of the" id="monk">

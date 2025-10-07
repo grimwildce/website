@@ -69,16 +69,20 @@ const Item = ({ item, onClick }: ItemProps) => {
 
   return (
     <li className="flex flex-col">
-      <Link to={item.anchor} className="block text-base-color hover:font-bold" onClick={onClick}>
+      <Link
+        to={item.anchor}
+        className="block text-base-color hover:font-bold p-2"
+        onClick={onClick}
+      >
         {item.name}
       </Link>
       {hasChildren && (
-        <ul role="list" className="ml-4 flex flex-1 flex-col gap-y-1">
+        <ul role="list" className="flex flex-1 flex-col gap-y-1">
           {item.children!.map((child) => (
             <li key={`${child.name}-${child.anchor}`}>
               <Link
                 to={child.anchor}
-                className="block text-muted-color hover:font-bold"
+                className="block text-muted-color hover:font-bold py-2 pl-7 pr-2"
                 onClick={onClick}
               >
                 {child.name}
