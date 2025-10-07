@@ -3,7 +3,7 @@ import { getMarginSize, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
 import { type ReactNode } from "react";
 
-type TableVariant = "blank" | "striped" | "columns" | "solid" | "crucible" | "simple";
+type TableVariant = "blank" | "striped" | "columns" | "solid" | "simple";
 type TableProps = {
   children: ReactNode;
   fullWidth?: boolean;

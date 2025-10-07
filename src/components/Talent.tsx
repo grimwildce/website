@@ -15,20 +15,16 @@ type TalentProps = {
   spacing?: SpacingSize;
 };
 
-const defaultMargin: MarginSize = { top: "medium", bottom: "large" };
-
 const Talent = ({ name, prohibited, children, margin, spacing = "medium" }: TalentProps) => {
-  const containerCss = classNames(getMarginSize(margin, defaultMargin));
-  const titleCss = classNames(
-    getMarginSize({ top: "none", bottom: "small" }),
-    getTextSize("large")
-  );
-  const contentCss = classNames(getSpacingSize(spacing));
-
   return (
-    <div className={containerCss}>
-      <div className="flex justify-between">
-        <div className={titleCss}>
+    <div className={classNames(getMarginSize(margin))}>
+      <div
+        className={classNames(
+          "flex justify-between",
+          getMarginSize({ top: "none", bottom: "small" })
+        )}
+      >
+        <div className={classNames(getTextSize("large"))}>
           <Strong smallCaps>{name}</Strong>
         </div>
         {prohibited && (
@@ -37,7 +33,7 @@ const Talent = ({ name, prohibited, children, margin, spacing = "medium" }: Tale
           </div>
         )}
       </div>
-      <div className={contentCss}>{children}</div>
+      <div className={classNames(getSpacingSize(spacing))}>{children}</div>
     </div>
   );
 };

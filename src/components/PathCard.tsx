@@ -18,7 +18,9 @@ const PathCard = ({ name, description, icon, margin }: PathCardProps) => {
         <div className="absolute h-8 -top-4 left-1/2 -translate-x-1/2 bg-panel-3 border border-muted shadow w-9/12 rounded-md flex items-center justify-center font-bold">
           <div className="font-bold uppercase">{name}</div>
         </div>
-        <div className="flex items-center justify-center my-2">{icon}</div>
+        <div className={classNames("flex items-center justify-center", getMarginSize("small"))}>
+          {icon}
+        </div>
         <div className="uppercase text-center text-sm">{description}</div>
       </div>
     </div>
