@@ -1,4 +1,3 @@
-import Stack from "@/components/ui/Stack";
 import classNames from "classnames";
 import type { ElementType, ReactNode } from "react";
 
@@ -39,9 +38,7 @@ const Heading = ({
   const hasPretitle = pretitle && pretitle.length > 0;
   const Component: ElementType = `h${level}` as HeadingTag;
 
-  const pretitleCss = classNames("font-bold font-text uppercase", pretitleSizeCss[level], {
-    "mt-12": !noMargin && hasPretitle
-  });
+  const pretitleCss = classNames("font-bold font-text uppercase", pretitleSizeCss[level]);
   const headingCss = classNames(
     "font-heading font-bold text-heading-color uppercase",
     headingSizeCss[level],
@@ -60,10 +57,10 @@ const Heading = ({
   );
 
   const headingContent = hasPretitle ? (
-    <Stack spacing="none">
+    <div className={classNames("flex flex-col", { "mt-12": !noMargin })}>
       <div className={pretitleCss}>{pretitle}</div>
       {heading}
-    </Stack>
+    </div>
   ) : (
     heading
   );
