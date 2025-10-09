@@ -106,7 +106,7 @@ const Chapter02 = () => {
 
       <Panel title="GM Crucible" description="Roll 2, smash them together, and interpret.">
         <Panel.Row>
-          <Table textSize="small" padding="tight" fullWidth>
+          <Table textSize="small" cellPadding="tight" fullWidth>
             <Table.Body>
               <Table.Row>
                 <Table.Cell>tough</Table.Cell>
@@ -160,7 +160,7 @@ const Chapter02 = () => {
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table textSize="small" padding="tight" fullWidth>
+          <Table textSize="small" cellPadding="tight" fullWidth>
             <Table.Body>
               <Table.Row>
                 <Table.Cell>journey</Table.Cell>

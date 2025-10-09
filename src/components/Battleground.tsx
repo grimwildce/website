@@ -73,7 +73,7 @@ const Battleground = ({ title, features, threats, enemies }: BattlegroundProps) 
       <div className="bg-panel-1 rounded-b">
         {(hasFeatures || hasThreats) && (
           <div className="p-2">
-            <Table padding="tight" variant="blank">
+            <Table cellPadding="tight" variant="blank">
               <Table.Body>
                 {hasFeatures && (
                   <Table.Row>

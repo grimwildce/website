@@ -561,7 +561,7 @@ const Chapter03 = () => {
         rowBorders
       >
         <Panel.Row>
-          <Table padding="tight" textSize="small" fullWidth>
+          <Table cellPadding="tight" textSize="small" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -622,7 +622,7 @@ const Chapter03 = () => {
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table padding="tight" textSize="small" fullWidth>
+          <Table cellPadding="tight" textSize="small" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -683,7 +683,7 @@ const Chapter03 = () => {
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table padding="tight" textSize="small" fullWidth>
+          <Table cellPadding="tight" textSize="small" fullWidth>
             <Table.Head>
               <Table.Row>
                 <Table.HeaderCell colSpan={6} align="center" allCaps>
@@ -1525,7 +1525,7 @@ const Chapter03 = () => {
         <StrongEm>features</StrongEm>:
       </Text>
       <Panel border>
-        <Table padding="tight" textSize="small" fullWidth italic>
+        <Table cellPadding="tight" textSize="small" fullWidth italic>
           <Table.Body>
             <Table.Row>
               <Table.Cell>thorns</Table.Cell>
@@ -1639,120 +1639,122 @@ const Chapter03 = () => {
           potion (<Em>choose after rolling</Em>).
         </Text>
 
-        <Panel border>
-          <Panel.Row>
-            <Table padding="tight" textSize="small" fullWidth italic>
-              <Table.Body>
-                <Table.Row>
-                  <Table.Cell>choke</Table.Cell>
-                  <Table.Cell>star</Table.Cell>
-                  <Table.Cell>sun</Table.Cell>
-                  <Table.Cell>dream</Table.Cell>
-                  <Table.Cell>mist</Table.Cell>
-                  <Table.Cell>zap</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>sticky</Table.Cell>
-                  <Table.Cell>stone</Table.Cell>
-                  <Table.Cell>moon</Table.Cell>
-                  <Table.Cell>feather</Table.Cell>
-                  <Table.Cell>soot</Table.Cell>
-                  <Table.Cell>blast</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>wool</Table.Cell>
-                  <Table.Cell>dust</Table.Cell>
-                  <Table.Cell>devil</Table.Cell>
-                  <Table.Cell>wild</Table.Cell>
-                  <Table.Cell>freeze</Table.Cell>
-                  <Table.Cell>blood</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>smoke</Table.Cell>
-                  <Table.Cell>snake</Table.Cell>
-                  <Table.Cell>honey</Table.Cell>
-                  <Table.Cell>mirror</Table.Cell>
-                  <Table.Cell>sting</Table.Cell>
-                  <Table.Cell>ink</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>shriek</Table.Cell>
-                  <Table.Cell>mimic</Table.Cell>
-                  <Table.Cell>goat</Table.Cell>
-                  <Table.Cell>worm</Table.Cell>
-                  <Table.Cell>steel</Table.Cell>
-                  <Table.Cell>skunk</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>giggle</Table.Cell>
-                  <Table.Cell>needle</Table.Cell>
-                  <Table.Cell>night</Table.Cell>
-                  <Table.Cell>swell</Table.Cell>
-                  <Table.Cell>faerie</Table.Cell>
-                  <Table.Cell>dragon</Table.Cell>
-                </Table.Row>
-              </Table.Body>
-            </Table>
-          </Panel.Row>
-          <Panel.Row>
-            <Table padding="tight" textSize="small" fullWidth italic>
-              <Table.Body>
-                <Table.Row>
-                  <Table.Cell>cap</Table.Cell>
-                  <Table.Cell>lily</Table.Cell>
-                  <Table.Cell>thistle</Table.Cell>
-                  <Table.Cell>pod</Table.Cell>
-                  <Table.Cell>stem</Table.Cell>
-                  <Table.Cell>petal</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>wort</Table.Cell>
-                  <Table.Cell>reed</Table.Cell>
-                  <Table.Cell>bell</Table.Cell>
-                  <Table.Cell>bud</Table.Cell>
-                  <Table.Cell>shoot</Table.Cell>
-                  <Table.Cell>bean</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>rose</Table.Cell>
-                  <Table.Cell>flower</Table.Cell>
-                  <Table.Cell>leaf</Table.Cell>
-                  <Table.Cell>tongue</Table.Cell>
-                  <Table.Cell>bark</Table.Cell>
-                  <Table.Cell>tuber</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>bush</Table.Cell>
-                  <Table.Cell>root</Table.Cell>
-                  <Table.Cell>wood</Table.Cell>
-                  <Table.Cell>berry</Table.Cell>
-                  <Table.Cell>funnel</Table.Cell>
-                  <Table.Cell>vine</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>shroom</Table.Cell>
-                  <Table.Cell>spine</Table.Cell>
-                  <Table.Cell>grass</Table.Cell>
-                  <Table.Cell>lace</Table.Cell>
-                  <Table.Cell>moss</Table.Cell>
-                  <Table.Cell>seed</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>sprout</Table.Cell>
-                  <Table.Cell>shade</Table.Cell>
-                  <Table.Cell>thorn</Table.Cell>
-                  <Table.Cell>bane</Table.Cell>
-                  <Table.Cell>branch</Table.Cell>
-                  <Table.Cell>weed</Table.Cell>
-                </Table.Row>
-              </Table.Body>
-            </Table>
-          </Panel.Row>
-        </Panel>
-        <Text align="right" size="x-small" muted>
-          <Strong>Note</Strong>: The Herbalism Crucible was created by <Strong>June Bloom</Strong>{" "}
-          and used with permission. Thanks!
-        </Text>
+        <Stack spacing="xs">
+          <Panel border>
+            <Panel.Row>
+              <Table cellPadding="tight" textSize="small" fullWidth italic>
+                <Table.Body>
+                  <Table.Row>
+                    <Table.Cell>choke</Table.Cell>
+                    <Table.Cell>star</Table.Cell>
+                    <Table.Cell>sun</Table.Cell>
+                    <Table.Cell>dream</Table.Cell>
+                    <Table.Cell>mist</Table.Cell>
+                    <Table.Cell>zap</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>sticky</Table.Cell>
+                    <Table.Cell>stone</Table.Cell>
+                    <Table.Cell>moon</Table.Cell>
+                    <Table.Cell>feather</Table.Cell>
+                    <Table.Cell>soot</Table.Cell>
+                    <Table.Cell>blast</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>wool</Table.Cell>
+                    <Table.Cell>dust</Table.Cell>
+                    <Table.Cell>devil</Table.Cell>
+                    <Table.Cell>wild</Table.Cell>
+                    <Table.Cell>freeze</Table.Cell>
+                    <Table.Cell>blood</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>smoke</Table.Cell>
+                    <Table.Cell>snake</Table.Cell>
+                    <Table.Cell>honey</Table.Cell>
+                    <Table.Cell>mirror</Table.Cell>
+                    <Table.Cell>sting</Table.Cell>
+                    <Table.Cell>ink</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>shriek</Table.Cell>
+                    <Table.Cell>mimic</Table.Cell>
+                    <Table.Cell>goat</Table.Cell>
+                    <Table.Cell>worm</Table.Cell>
+                    <Table.Cell>steel</Table.Cell>
+                    <Table.Cell>skunk</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>giggle</Table.Cell>
+                    <Table.Cell>needle</Table.Cell>
+                    <Table.Cell>night</Table.Cell>
+                    <Table.Cell>swell</Table.Cell>
+                    <Table.Cell>faerie</Table.Cell>
+                    <Table.Cell>dragon</Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </Panel.Row>
+            <Panel.Row>
+              <Table cellPadding="tight" textSize="small" fullWidth italic>
+                <Table.Body>
+                  <Table.Row>
+                    <Table.Cell>cap</Table.Cell>
+                    <Table.Cell>lily</Table.Cell>
+                    <Table.Cell>thistle</Table.Cell>
+                    <Table.Cell>pod</Table.Cell>
+                    <Table.Cell>stem</Table.Cell>
+                    <Table.Cell>petal</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>wort</Table.Cell>
+                    <Table.Cell>reed</Table.Cell>
+                    <Table.Cell>bell</Table.Cell>
+                    <Table.Cell>bud</Table.Cell>
+                    <Table.Cell>shoot</Table.Cell>
+                    <Table.Cell>bean</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>rose</Table.Cell>
+                    <Table.Cell>flower</Table.Cell>
+                    <Table.Cell>leaf</Table.Cell>
+                    <Table.Cell>tongue</Table.Cell>
+                    <Table.Cell>bark</Table.Cell>
+                    <Table.Cell>tuber</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>bush</Table.Cell>
+                    <Table.Cell>root</Table.Cell>
+                    <Table.Cell>wood</Table.Cell>
+                    <Table.Cell>berry</Table.Cell>
+                    <Table.Cell>funnel</Table.Cell>
+                    <Table.Cell>vine</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>shroom</Table.Cell>
+                    <Table.Cell>spine</Table.Cell>
+                    <Table.Cell>grass</Table.Cell>
+                    <Table.Cell>lace</Table.Cell>
+                    <Table.Cell>moss</Table.Cell>
+                    <Table.Cell>seed</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>sprout</Table.Cell>
+                    <Table.Cell>shade</Table.Cell>
+                    <Table.Cell>thorn</Table.Cell>
+                    <Table.Cell>bane</Table.Cell>
+                    <Table.Cell>branch</Table.Cell>
+                    <Table.Cell>weed</Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </Panel.Row>
+          </Panel>
+          <Text align="right" size="x-small" muted>
+            <Strong>Note</Strong>: The Herbalism Crucible was created by <Strong>June Bloom</Strong>{" "}
+            and used with permission. Thanks!
+          </Text>
+        </Stack>
       </Talent>
       <Talent name="Kindred Spirits">
         <Text>
@@ -1826,7 +1828,7 @@ const Chapter03 = () => {
       </Text>
       <Panel border>
         <Panel.Row>
-          <Table textSize="small" padding="tight" fullWidth italic>
+          <Table textSize="small" cellPadding="tight" fullWidth italic>
             <Table.Body>
               <Table.Row>
                 <Table.Cell>etched with words of loss</Table.Cell>
@@ -1862,7 +1864,7 @@ const Chapter03 = () => {
           </Table>
         </Panel.Row>
         <Panel.Row>
-          <Table textSize="small" padding="tight" fullWidth italic>
+          <Table textSize="small" cellPadding="tight" fullWidth italic>
             <Table.Body>
               <Table.Row>
                 <Table.Cell>found in your first dungeon</Table.Cell>
@@ -2031,7 +2033,7 @@ const Chapter03 = () => {
         border
         titleNormalCaps
       >
-        <Table textSize="small" padding="tight" variant="simple" fullWidth italic>
+        <Table textSize="small" cellPadding="tight" variant="simple" fullWidth italic>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell>Primal</Table.HeaderCell>
@@ -2100,7 +2102,7 @@ const Chapter03 = () => {
         border
         titleNormalCaps
       >
-        <Table textSize="small" padding="tight" variant="simple" fullWidth italic>
+        <Table textSize="small" cellPadding="tight" variant="simple" fullWidth italic>
           <Table.Body>
             <Table.Row>
               <Table.Cell>open palm</Table.Cell>
@@ -2159,7 +2161,7 @@ const Chapter03 = () => {
         border
         titleNormalCaps
       >
-        <Table textSize="small" padding="tight" variant="simple" fullWidth italic>
+        <Table textSize="small" cellPadding="tight" variant="simple" fullWidth italic>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell>Blunt</Table.HeaderCell>
