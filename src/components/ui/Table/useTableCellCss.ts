@@ -7,11 +7,11 @@ import classNames from "classnames";
 import { useContext } from "react";
 
 export const useTableCellCss = (overrides: TableContextProps, defaultCss?: string) => {
-  const { padding, align, textSize, verticalAlign, allCaps, italic } = useContext(TableContext);
+  const { cellPadding, align, textSize, verticalAlign, allCaps, italic } = useContext(TableContext);
 
   return classNames(
     defaultCss,
-    getCellPaddingSize(overrides.padding ?? padding),
+    getCellPaddingSize(overrides.cellPadding ?? cellPadding),
     getTextAlign(overrides.align ?? align),
     getTextSize(overrides.textSize ?? textSize),
     getVerticalAlign(overrides.verticalAlign ?? verticalAlign),

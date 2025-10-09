@@ -5,7 +5,6 @@ import SmallCaps from "@/components/ui/SmallCaps";
 import Table from "@/components/ui/Table";
 import Text from "@/components/ui/Text";
 import CrossedSwords from "@/svgs/rpg_awesome/CrossedSwords";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
 
 type BattlegroundThreat = {
@@ -27,7 +26,6 @@ type BattlegroundProps = {
   features?: string[];
   threats?: BattlegroundThreat[];
   enemies?: BattleGroundEnemy[];
-  margin?: MarginSize;
 };
 
 const Threat = ({ threat }: { threat: BattlegroundThreat }) => {
@@ -48,7 +46,7 @@ const Enemy = ({ enemy }: { enemy: BattleGroundEnemy }) => {
     .join(" ");
 
   return (
-    <Text size="small" margin="none">
+    <Text size="small">
       {prefix} {enemy.name}{" "}
       <Muted>
         ({enemy.tier} {enemy.role})
@@ -57,12 +55,12 @@ const Enemy = ({ enemy }: { enemy: BattleGroundEnemy }) => {
   );
 };
 
-const Battleground = ({ title, features, threats, enemies, margin }: BattlegroundProps) => {
+const Battleground = ({ title, features, threats, enemies }: BattlegroundProps) => {
   const hasFeatures = features && features.length > 0;
   const hasThreats = threats && threats.length > 0;
   const hasEnemys = enemies && enemies.length > 0;
 
-  const containerCss = classNames("text-sm", getMarginSize(margin));
+  const containerCss = classNames("text-sm");
 
   return (
     <div className={containerCss}>
@@ -75,7 +73,7 @@ const Battleground = ({ title, features, threats, enemies, margin }: Battlegroun
       <div className="bg-panel-1 rounded-b">
         {(hasFeatures || hasThreats) && (
           <div className="p-2">
-            <Table padding="tight" variant="blank" margin="none">
+            <Table cellPadding="tight" variant="blank">
               <Table.Body>
                 {hasFeatures && (
                   <Table.Row>
@@ -105,7 +103,7 @@ const Battleground = ({ title, features, threats, enemies, margin }: Battlegroun
         )}
         {(hasFeatures || hasThreats) && hasEnemys && (
           <div className="px-4">
-            <Line color="muted" margin="none" />
+            <Line color="muted" />
           </div>
         )}
         {hasEnemys && (

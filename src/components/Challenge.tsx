@@ -4,7 +4,6 @@ import Line from "@/components/ui/Line";
 import SmallCaps from "@/components/ui/SmallCaps";
 import Strong from "@/components/ui/Strong";
 import { getDepth, type DepthValue } from "@/utils/depth";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getTextSize, type TextSize } from "@/utils/textSize";
 import classNames from "classnames";
 import { type ReactNode } from "react";
@@ -14,7 +13,6 @@ type ChallengeProps = {
   title: string;
   poolSize: 4 | 6 | 8;
   textSize?: TextSize;
-  margin?: MarginSize;
   width?: WidthSize;
   traits?: string[];
   moves?: string[];
@@ -27,7 +25,6 @@ const Challenge = ({
   title,
   poolSize,
   textSize,
-  margin,
   width = "full",
   traits = [],
   moves = [],
@@ -39,7 +36,7 @@ const Challenge = ({
   const hasMoves = moves.length > 0;
   const hasPanels = references.length > 0;
 
-  const containerCss = classNames("text-sm", getTextSize(textSize), getMarginSize(margin), {
+  const containerCss = classNames("text-sm", getTextSize(textSize), {
     "w-full": width === "full",
     "w-xs": width === "large",
     "w-64": width === "medium",
@@ -73,7 +70,7 @@ const Challenge = ({
             ))}
           </ul>
         )}
-        {hasTraits && (hasMoves || failState) && <Line color="muted" margin="none" />}
+        {hasTraits && (hasMoves || failState) && <Line color="muted" />}
         {hasMoves && (
           <ul className="space-y-1">
             {moves.map((move, index) => (
@@ -83,7 +80,7 @@ const Challenge = ({
             ))}
           </ul>
         )}
-        {hasMoves && failState && <Line color="muted" margin="none" />}
+        {hasMoves && failState && <Line color="muted" />}
         {failState && (
           <ul className="space-y-1">
             <ChallengeItem variant="fail">

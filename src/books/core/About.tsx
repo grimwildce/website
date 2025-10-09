@@ -13,15 +13,13 @@ const About = () => {
   return (
     <Page>
       <BookTitle subtitle="Community Edition">Grimwild</BookTitle>
-      <Stack margin="large" spacing="small">
-        <Text margin="none" align="center">
-          Based on Grimwild First Edition, Version 1.4
-        </Text>
-        <Text margin="none" align="center">
+      <Stack spacing="xs">
+        <Text align="center">Based on Grimwild First Edition, Version 1.4</Text>
+        <Text align="center">
           <strong>DESIGNED BY J.D. Maxwell</strong>
         </Text>
       </Stack>
-      <Text margin="large" align="center">
+      <Text align="center">
         <Em>
           Grimwild Community Edition is a fan-supported edition of Grimwild, created with the
           support and contributions of its community and designed to grow with it. Grimwild
@@ -30,22 +28,22 @@ const About = () => {
           entirely new games! You can use the logos below to indicate compatibility.
         </Em>
       </Text>
-      <Stack margin="large" center>
+      <Stack center>
         <CraftedForGrimwild />
-        <Text margin="none" align="center">
+        <Text align="center">
           <em>odditypress.com/licensing</em>
         </Text>
       </Stack>
       <Stack center>
         <MadeWithMoxie />
-        <Text margin="none" align="center">
+        <Text align="center">
           <ExternalLink href="https://moxietoolkit.com">
             <Em>moxietoolkit.com</Em>
           </ExternalLink>
         </Text>
       </Stack>
       <Line />
-      <Text margin="large">
+      <Text>
         <Strong>
           <Em>Grimwild</Em> wouldn't be what it is without its community of contributors.{" "}
           <Em>Endless thanks to all who helped</Em>:
@@ -59,17 +57,17 @@ const About = () => {
         Vesper Silverflame, Victor Turner, Walter Weingard, Zach La Bounty, and zemrx.
       </Text>
       <Line />
-      <Stack margin="large" spacing="small">
-        <Text margin="none" align="center">
+      <Stack spacing="sm">
+        <Text align="center">
           <Em>Grimwild Community Edition is licensed under CC BY 4.0.</Em>
         </Text>
-        <Text margin="none" align="center">
+        <Text align="center">
           <Em>
             Grimwild Community Edition is based on Grimwild © 2024 by J.D. Maxwell and Oddity
             Press, licensed under CC BY 4.0.
           </Em>
         </Text>
-        <Text margin="none" align="center">
+        <Text align="center">
           <Em>
             Grimwild is based on Moxie © 2024 by J.D. Maxwell and Oddity Press, licensed under CC
             BY 4.0.

@@ -1,6 +1,5 @@
 import Container from "@/components/app/Container";
 import Heading from "@/components/ui/Heading";
-import { getMarginSize } from "@/utils/margin";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
@@ -23,14 +22,9 @@ const Title = ({ bookTitle, title, pretitle, hasNavigation, onOpenNav }: TitlePr
 
   return (
     <div className="sticky bg-panel-2 shadow py-2 w-full top-16 left-0 z-30 lg:top-0">
-      <Container>
+      <Container spacing="xs">
         {hasBookTitle && (
-          <div
-            className={classNames(
-              "flex items-center justify-between",
-              getMarginSize(hasTitle ? { top: "none", bottom: "small" } : "none")
-            )}
-          >
+          <div className="flex items-center justify-between">
             <div className={classNames("font-heading font-bold text-2xl italic", {})}>
               {bookTitle}
             </div>
@@ -48,7 +42,7 @@ const Title = ({ bookTitle, title, pretitle, hasNavigation, onOpenNav }: TitlePr
         )}
         {hasTitle && (
           <div className="flex items-center justify-between">
-            <Heading level={1} pretitle={pretitle} margin="none" noBorder>
+            <Heading level={1} pretitle={pretitle} noBorder noMargin>
               {title}
             </Heading>
             {hasNavigation && (

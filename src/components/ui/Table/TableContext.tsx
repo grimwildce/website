@@ -7,7 +7,7 @@ import { createContext } from "react";
 
 export type TableContextProps = {
   align?: TextAlign;
-  padding?: CellPaddingSize;
+  cellPadding?: CellPaddingSize;
   textSize?: TextSize;
   verticalAlign?: VerticalAlign;
   italic?: boolean;

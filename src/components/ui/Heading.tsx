@@ -1,5 +1,3 @@
-import Stack from "@/components/ui/Stack";
-import { getMarginSize, resolveMargin, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
 import type { ElementType, ReactNode } from "react";
 
@@ -11,8 +9,8 @@ type HeadingProps = {
   id?: string;
   pretitle?: string;
   center?: boolean;
-  margin?: MarginSize;
   noBorder?: boolean;
+  noMargin?: boolean;
 };
 
 const pretitleSizeCss: Record<HeadingLevel, string> = {
@@ -27,20 +25,28 @@ const headingSizeCss: Record<HeadingLevel, string> = {
   3: "text-2xl"
 };
 
-const defaultMargin: MarginSize = { top: "large", bottom: "medium" };
-
-const Heading = ({ level = 1, children, id, pretitle, center, margin, noBorder }: HeadingProps) => {
+const Heading = ({
+  level = 1,
+  id,
+  children,
+  pretitle,
+  center,
+  noBorder,
+  noMargin
+}: HeadingProps) => {
+  const hasId = id && id.length > 0;
   const hasPretitle = pretitle && pretitle.length > 0;
   const Component: ElementType = `h${level}` as HeadingTag;
 
   const pretitleCss = classNames("font-bold font-text uppercase", pretitleSizeCss[level]);
   const headingCss = classNames(
-    "font-heading font-bold text-heading-color uppercase scroll-mt-52 lg:scroll-mt-36",
+    "font-heading font-bold text-heading-color uppercase",
     headingSizeCss[level],
-    !hasPretitle && getMarginSize(margin, defaultMargin),
     {
       "text-center": center,
-      "border-b border-solid": !noBorder
+      "border-b border-solid": !noBorder,
+      "scroll-mt-52 lg:scroll-mt-36": hasId,
+      "mt-12": !noMargin && !hasPretitle
     }
   );
 
@@ -51,10 +57,10 @@ const Heading = ({ level = 1, children, id, pretitle, center, margin, noBorder }
   );
 
   const headingContent = hasPretitle ? (
-    <Stack spacing="none" margin={resolveMargin(margin, defaultMargin)}>
+    <div className={classNames("flex flex-col", { "mt-12": !noMargin })}>
       <div className={pretitleCss}>{pretitle}</div>
       {heading}
-    </Stack>
+    </div>
   ) : (
     heading
   );
