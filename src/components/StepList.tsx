@@ -1,6 +1,4 @@
 import Strong from "@/components/ui/Strong";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
-import classNames from "classnames";
 import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from "react";
 
 type StepListItemProps = {
@@ -23,13 +21,10 @@ const StepListItem = ({ number, children }: StepListItemProps) => {
 StepListItem.displayName = "StepListItem";
 
 type StepListProps = {
-  margin?: MarginSize;
   children: ReactNode;
 };
 
-const StepList = ({ margin, children }: StepListProps) => {
-  const listCss = classNames("px-6 space-y-4", getMarginSize(margin));
-
+const StepList = ({ children }: StepListProps) => {
   const items = Children.toArray(children).map((child, idx) =>
     isValidElement(child) && (child.type as { displayName?: string }).displayName === "StepListItem"
       ? cloneElement(child as ReactElement<StepListItemProps>, {
@@ -38,7 +33,7 @@ const StepList = ({ margin, children }: StepListProps) => {
         })
       : child
   );
-  return <ol className={listCss}>{items}</ol>;
+  return <ol className="px-6 space-y-4">{items}</ol>;
 };
 
 StepList.Item = StepListItem;

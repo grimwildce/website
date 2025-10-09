@@ -1,17 +1,19 @@
 import Container from "@/components/app/Container";
 import Navigation, { type PageNavigationItem } from "@/components/app/Page/Navigation";
 import Title from "@/components/app/Page/Title";
+import type { SpacingSize } from "@/utils/spacing";
 import { useState, type ReactNode } from "react";
 
 type PageProps = {
-  navigation?: PageNavigationItem[];
   bookTitle?: string;
   title?: string;
   pretitle?: string;
+  spacing?: SpacingSize;
+  navigation?: PageNavigationItem[];
   children?: ReactNode;
 };
 
-const Page = ({ bookTitle, title, pretitle, navigation, children }: PageProps) => {
+const Page = ({ bookTitle, title, pretitle, spacing = "md", navigation, children }: PageProps) => {
   const [navOpen, setNavOpen] = useState(false);
   const hasNavigation = navigation && navigation.length > 0;
 
@@ -24,7 +26,7 @@ const Page = ({ bookTitle, title, pretitle, navigation, children }: PageProps) =
         hasNavigation={hasNavigation}
         onOpenNav={() => setNavOpen(true)}
       />
-      <Container>{children}</Container>
+      <Container spacing={spacing}>{children}</Container>
       {hasNavigation && (
         <Navigation navigation={navigation} open={navOpen} onClose={() => setNavOpen(false)} />
       )}

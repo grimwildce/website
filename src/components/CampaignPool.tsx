@@ -3,7 +3,6 @@ import Line from "@/components/ui/Line";
 import Muted from "@/components/ui/Muted";
 import SmallCaps from "@/components/ui/SmallCaps";
 import Text from "@/components/ui/Text";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import classNames from "classnames";
 
 type CampaignPoolTrait =
@@ -20,20 +19,19 @@ type CampaignPoolProps = {
   name: string;
   traits?: CampaignPoolTrait[];
   pools?: CampaignPoolPool[];
-  margin?: MarginSize;
   references?: ReferenceItem[];
 };
 
 const CampaignPoolTrait = ({ trait }: { trait: CampaignPoolTrait }) => {
   if (typeof trait === "string") {
     return (
-      <Text size="small" margin="none">
+      <Text size="small">
         <em>{trait}</em>
       </Text>
     );
   } else {
     return (
-      <Text size="small" margin="none">
+      <Text size="small">
         <em>
           {trait.name}
           {trait.description && (
@@ -48,12 +46,12 @@ const CampaignPoolTrait = ({ trait }: { trait: CampaignPoolTrait }) => {
   }
 };
 
-const CampaignPool = ({ name, traits, pools, references, margin }: CampaignPoolProps) => {
+const CampaignPool = ({ name, traits, pools, references }: CampaignPoolProps) => {
   const hasTraits = traits && traits.length > 0;
   const hasPools = pools && pools.length > 0;
   const hasReferences = references && references.length > 0;
 
-  const containerCss = classNames("text-sm", getMarginSize(margin));
+  const containerCss = classNames("text-sm");
 
   return (
     <div className={containerCss}>
@@ -74,11 +72,11 @@ const CampaignPool = ({ name, traits, pools, references, margin }: CampaignPoolP
             ))}
           </div>
         )}
-        {hasTraits && hasPools && <Line color="muted" margin="small" />}
+        {hasTraits && hasPools && <Line color="muted" />}
         {hasPools && (
           <div>
             {pools.map((pool) => (
-              <Text key={pool.name} margin="none" size="small">
+              <Text key={pool.name} size="small">
                 <strong>
                   <em>
                     {pool.size}d {pool.name}

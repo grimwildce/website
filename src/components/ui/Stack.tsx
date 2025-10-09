@@ -1,36 +1,12 @@
 import { getFlexShrink, type FlexShrink } from "@/utils/flexShrink";
 import { getFlexSize, type FlexSize } from "@/utils/flexSize";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getMinWidth, type MinWidth } from "@/utils/minWidth";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
 import classNames from "classnames";
 import type { ReactNode } from "react";
 
-type StackItemProps = {
-  flex?: FlexSize;
-  flexShrink?: FlexShrink;
-  minWidth?: MinWidth;
-  children: ReactNode;
-};
-
-const StackItem = ({ flex, flexShrink, minWidth, children }: StackItemProps) => {
-  const itemCss = classNames(getFlexSize(flex), getFlexShrink(flexShrink), getMinWidth(minWidth));
-  return <div className={itemCss}>{children}</div>;
-};
-
-type StackProps = {
-  direction?: "col" | "row";
-  children: ReactNode;
-  margin?: MarginSize;
-  spacing?: SpacingSize;
-  center?: boolean;
-  spaceBetween?: boolean;
-  wrap?: boolean;
-} & StackItemProps;
-
 const Stack = ({
-  margin,
-  spacing = "medium",
+  spacing,
   children,
   direction = "col",
   center,
@@ -42,7 +18,6 @@ const Stack = ({
 }: StackProps) => {
   const className = classNames(
     "flex",
-    getMarginSize(margin),
     getSpacingSize(spacing, direction),
     getFlexSize(flex),
     getFlexShrink(flexShrink),
@@ -60,6 +35,27 @@ const Stack = ({
 
   return <div className={className}>{children}</div>;
 };
+
+type StackItemProps = {
+  flex?: FlexSize;
+  flexShrink?: FlexShrink;
+  minWidth?: MinWidth;
+  children: ReactNode;
+};
+
+const StackItem = ({ flex, flexShrink, minWidth, children }: StackItemProps) => {
+  const itemCss = classNames(getFlexSize(flex), getFlexShrink(flexShrink), getMinWidth(minWidth));
+  return <div className={itemCss}>{children}</div>;
+};
+
+type StackProps = {
+  direction?: "col" | "row";
+  children: ReactNode;
+  spacing?: SpacingSize;
+  center?: boolean;
+  spaceBetween?: boolean;
+  wrap?: boolean;
+} & StackItemProps;
 
 Stack.Item = StackItem;
 export default Stack;

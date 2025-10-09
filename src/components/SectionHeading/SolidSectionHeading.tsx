@@ -1,5 +1,4 @@
 import Heading from "@/components/SectionHeading/Heading";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { type IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
@@ -8,17 +7,15 @@ import type { ReactNode } from "react";
 export type SolidSectionHeadingProps = {
   icon?: IconDefinition;
   description?: string;
-  margin?: MarginSize;
   children: ReactNode;
 };
 
-const SolidSectionHeading = ({ icon, description, margin, children }: SolidSectionHeadingProps) => {
+const SolidSectionHeading = ({ icon, description, children }: SolidSectionHeadingProps) => {
   const hasIcon = typeof icon !== "undefined";
   const hasDescription = typeof description !== "undefined";
 
   const wrapperCss = classNames(
     "flex items-baseline py-0.5 justify-between rounded-sm bg-panel-1",
-    getMarginSize(margin),
     {
       "border-l-8": !hasIcon
     }

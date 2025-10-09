@@ -1,7 +1,5 @@
 import Strong from "@/components/ui/Strong";
 import Tag from "@/components/ui/Tag";
-import Text, { type TextProps } from "@/components/ui/Text";
-import { getMarginSize, type MarginSize } from "@/utils/margin";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
 import { getTextSize } from "@/utils/textSize";
 import classNames from "classnames";
@@ -11,19 +9,13 @@ type TalentProps = {
   name: string;
   prohibited?: string;
   children: ReactNode;
-  margin?: MarginSize;
   spacing?: SpacingSize;
 };
 
-const Talent = ({ name, prohibited, children, margin, spacing = "medium" }: TalentProps) => {
+const Talent = ({ name, prohibited, children, spacing = "md" }: TalentProps) => {
   return (
-    <div className={classNames(getMarginSize(margin))}>
-      <div
-        className={classNames(
-          "flex justify-between",
-          getMarginSize({ top: "none", bottom: "small" })
-        )}
-      >
+    <div>
+      <div className="flex justify-between">
         <div className={classNames(getTextSize("large"))}>
           <Strong smallCaps>{name}</Strong>
         </div>
@@ -38,15 +30,4 @@ const Talent = ({ name, prohibited, children, margin, spacing = "medium" }: Tale
   );
 };
 
-type TalentTextProps = Omit<TextProps, "margin">;
-
-const TalentText = ({ children, ...props }: TalentTextProps) => {
-  return (
-    <Text margin="none" {...props}>
-      {children}
-    </Text>
-  );
-};
-
-Talent.Text = TalentText;
 export default Talent;

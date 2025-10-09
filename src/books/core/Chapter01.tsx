@@ -527,7 +527,7 @@ const Chapter01 = () => {
         your intentions.
       </Text>
       <Panel border>
-        <List margin="small">
+        <List>
           <List.Item>
             <Strong allCaps>Perfect</Strong>. You do it, and avoid trouble.
           </List.Item>
@@ -564,7 +564,7 @@ const Chapter01 = () => {
         and picks a stat to test.
       </Text>
       <Panel border>
-        <List margin="small">
+        <List>
           <List.Item>
             <Strong allCaps>Perfect</Strong>. You avoid the trouble.
           </List.Item>
@@ -780,7 +780,7 @@ const Chapter01 = () => {
         ) and a nature (<Em>right</Em>) below, or write your own. Interpret them as makes sense.
       </Text>
       <Panel border>
-        <Table align="center" margin="small" variant="columns" fullWidth allCaps>
+        <Table align="center" variant="columns" fullWidth allCaps>
           <Table.Body>
             <Table.Row>
               <Table.Cell>Deep</Table.Cell>
@@ -911,7 +911,7 @@ const Chapter01 = () => {
         </Muted>
       </Text>
       <Panel border>
-        <Table align="center" margin="small" variant="columns" fullWidth>
+        <Table align="center" variant="columns" fullWidth>
           <Table.Head>
             <Table.Row>
               <Table.HeaderCell smallCaps>Ambitions</Table.HeaderCell>
@@ -1053,7 +1053,7 @@ const Chapter01 = () => {
       </Text>
       <Text>Choose one:</Text>
       <Panel border>
-        <Table margin="small" variant="columns" fullWidth>
+        <Table variant="columns" fullWidth>
           <Table.Body>
             <Table.Row>
               <Table.HeaderCell align="center">
@@ -1432,7 +1432,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text margin="small" muted>
+        <Text muted>
           You cast <Strong>Flaming Claw</Strong> as a spell at the goblins, aiming for a huge claw
           to grab one, ignite it, and hurl it into the rest. This fits the touchstones, but your
           intent—harming multiple goblins at once—might work as a spell on a bunch of mooks, but
@@ -1466,7 +1466,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text margin="small" muted>
+        <Text muted>
           You want to grab a treasure chest and haul it across the chasm and try to cast your
           flaming claw spell to do it. Discussing it with the GM, you both decide that the claw has
           a physical form, but since it's on fire, it'll scorch anything it touches. The GM says
@@ -1825,7 +1825,7 @@ const Chapter01 = () => {
         </List.Item>
       </List>
       <Panel>
-        <Text margin="small">
+        <Text>
           <Muted size="medium">
             <Em>
               An enormous fire is raging across the countryside and your party seeks to stop it with
@@ -1841,7 +1841,7 @@ const Chapter01 = () => {
         </Text>
       </Panel>
       <Panel>
-        <Text margin="small">
+        <Text>
           <Muted size="medium">
             <Em>
               A restless spirit is driving the village to madness, and you must banish it with the{" "}
@@ -1987,13 +1987,13 @@ const Chapter01 = () => {
         <StrongEm>everyone takes spark regardless of the roll</StrongEm>.
       </Text>
       <Panel>
-        <Text align="center" margin="small">
+        <Text align="center">
           <Strong allCaps>Example Treasures</Strong>
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Strong smallCaps>Minor Treasures</Strong>
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Em>
             <Strong>Noble signet ring</Strong>, found in the ruins of an ancient castle
           </Em>
@@ -2009,10 +2009,10 @@ const Chapter01 = () => {
           </Em>
           .
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Strong smallCaps>Major Treasures</Strong>
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Em>
             <Strong>Beautiful coastal estate</Strong>, a gift from the prince
           </Em>
@@ -2028,10 +2028,10 @@ const Chapter01 = () => {
           </Em>
           .
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Strong smallCaps>Mythic Treasures</Strong>
         </Text>
-        <Text align="center" size="small" margin="small">
+        <Text align="center" size="small">
           <Em>
             <Strong>Phoenix Feather Cloak</Strong>, pulled out of a volcanic lair
           </Em>
@@ -2149,7 +2149,7 @@ const Chapter01 = () => {
         someone willing to craft it for you for the right price.
       </Text>
       <Panel title="List of Arcana">
-        <Text margin="small">
+        <Text>
           In <Strong>Chapter 7: Extras</Strong>, you can find 12 pages of minor, major, and mythic
           arcana, as well as a thorough random potion generator!
         </Text>
@@ -2168,10 +2168,10 @@ const Chapter01 = () => {
         a <Em>4d Hooligans</Em> timer.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           This is why the how &amp; why is important. Without it, the GM can't get the stat right.
         </Text>
-        <List spacing="none" margin="small">
+        <List spacing="xs">
           <List.Item>On a grim here, X would have happened.</List.Item>
           <List.Item>On a messy, Y would have happened.</List.Item>
           <List.Item>On a perfect, you could have...</List.Item>
@@ -2192,8 +2192,8 @@ const Chapter01 = () => {
         Mountains.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">For the critical, you could have chosen something else.</Text>
-        <List spacing="none" margin="small">
+        <Text>For the critical, you could have chosen something else.</Text>
+        <List spacing="none">
           <List.Item>
             Greater effect would have gotten you the horses for a nominal price.
           </List.Item>
@@ -2218,11 +2218,11 @@ const Chapter01 = () => {
         scary as hell climb. Once again, you get to narrating your near-demise.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           It's possible to roll again for the same thing, as long as the situation's changed. If
           nothing has changed, it shouldn't need a roll in the first place.
         </Text>
-        <Text margin="small">
+        <Text>
           One very important point is that messy is successful, it's just not pretty. Here the GM
           faces a bit of a dilemma—you're being shot at with arrows. If you took bloodied, you could
           have died. But you did make it to the top of the cliff. They went with rattled due to how
@@ -2240,13 +2240,13 @@ const Chapter01 = () => {
         runs over, kicks the door, bloodies the rogue, and slams it shut, locking it.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Without spending that story, the rogue wouldn't have even been able to pick the lock. Had
           the guard been watching, the difficulty (+3t) would have also prevented them from trying.
           These are the kinds of factors players and GMs must consider when judging rolls, and how
           thorns can affect the outcomes.
         </Text>
-        <Text margin="small">
+        <Text>
           At the end, the GM's second impact move comes from the disaster. In this case, the GM
           could have even dropped the rogue.
         </Text>
@@ -2264,16 +2264,16 @@ const Chapter01 = () => {
         rogue, letting you finish your work.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           When you roll assists, all of the results are combined towards one outcome, but each
           person rolls their own dice.
         </Text>
-        <Text margin="small">
+        <Text>
           In this case, the healer is most important so they're leading the roll. If nobody had
           medical knowledge, the leader might have been the fighter—holding down the rogue now
           becomes vitally important.
         </Text>
-        <Text margin="small">Post roll, be sure to narrate together!</Text>
+        <Text>Post roll, be sure to narrate together!</Text>
       </Panel>
       <Line />
       <Text>
@@ -2299,21 +2299,21 @@ const Chapter01 = () => {
         elsewhere and got a perfect on their montage.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           After a long adventuring session is the perfect timing for a montage. Everyone has grown a
           bit tired of that location and want to move on to bigger things.
         </Text>
-        <Text margin="small">
+        <Text>
           Had the overall result here been a grim, it may have been a good idea to zoom in on a
           tough scene as they get caught fleeing the dungeon. The GM could have inflicted those
           marks, dropped your character even, then started the scene off.
         </Text>
-        <Text margin="small">
+        <Text>
           This is a good look at how damage escalates. If Brawn wasn't marked, you could have gotten
           away with just a mark even if you were already bloodied. Unfortunately, the adventure had
           taken a toll and just that last small hit was the straw that broke the camel's back.
         </Text>
-        <Text margin="small">
+        <Text>
           A 2d roll on dropped is a good default. That last hit was from a mark, so unlikely to have
           killed you. Even 3d would have been okay.
         </Text>
@@ -2331,12 +2331,12 @@ const Chapter01 = () => {
         out on the ground, the knife now between you. What do you do?
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           The GM has a lot of flexibility in choosing the defense they want to test—and testing the
           stats is the best way of thinking about what's happening. The player has no choice in the
           stat, besides a soft veto on things that are very out of character.
         </Text>
-        <Text margin="small">
+        <Text>
           The GM could have made this Brawn if the assassin had tried to garrote them, or Wits if
           they didn't want to assume the assassin went unspotted. Presence is pretty hard to make
           sense of in this scenario, though.
@@ -2353,7 +2353,7 @@ const Chapter01 = () => {
         again and get 2 1 2, <Strong>3d→0d</Strong>. The pool depletes and you're out of incense!
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           This is a really straightforward example of how pools work. If you were working against a
           task pool or trying to affect a timer with an action roll and it dropped nothing, remember
           that you instead get a secondary effect instead.
@@ -2370,11 +2370,11 @@ const Chapter01 = () => {
         chieftain being on the edge of losing it. The cleric decides to keep their mouth shut.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Pools can be very swingy, which is by design. Here we see things almost instantly move
           towards an incredibly tense situation. This is very cinematic.
         </Text>
-        <Text margin="small">
+        <Text>
           You might also end up with a much longer leash than you imagined if the pool doesn't drop
           much at all. Either way, it's clear that they had best tread lightly. Even when not
           rolled, pools have a great passive effect on scenes like this.
@@ -2388,7 +2388,7 @@ const Chapter01 = () => {
         you tell your friends, turning to hold off the horde on the bridge while they escape.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           While traits and desires don't give spark directly, they do give you vantage to add
           tangles. When they change, you should also let your group see it play out.
         </Text>
@@ -2405,11 +2405,11 @@ const Chapter01 = () => {
         other.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Here we see the player introducing story details via a tangle instead of using story,
           which is completely fine.
         </Text>
-        <Text margin="small">
+        <Text>
           On a perfect, you might also consider another tangle—to wait until Mortica sees her to
           engage honorably. Mortica, however, would definitely blindside you with an impact move on
           that grim.
@@ -2422,7 +2422,7 @@ const Chapter01 = () => {
         troll in to fight it. The GM decides the cave troll can't maneuver well and +2t becomes +1t.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           A cave troll is massively dangerous, +2t, but if it can't maneuver well, it's only kind of
           dangerous. Story can definitely be used to gain mechanical advantage like this.
         </Text>
@@ -2437,12 +2437,12 @@ const Chapter01 = () => {
         responsibility, but that life will come calling whether you like it or not.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           The game will hum along just fine without story arcs. They're a player tool that expands
           vantage and lets you push the story towards what you want to be doing. They tell the GM,
           and other players, that you are interested in these themes.
         </Text>
-        <Text margin="small">If they fit your play style well, lean into them.</Text>
+        <Text>If they fit your play style well, lean into them.</Text>
       </Panel>
       <Line />
       <Text>
@@ -2456,11 +2456,11 @@ const Chapter01 = () => {
         you bury the feelings and move on. You take spark for finishing the arc.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Here, you don't use a tangle, instead opting to spend story. Tangles are always bad, while
           story just makes things happen.
         </Text>
-        <Text margin="small">
+        <Text>
           Arcs aren't prescriptive. They don't have any ending in mind. Whether you accomplish it,
           end it through failing at it, or just give up on it, you take spark as your character
           finds something new to drive them.
@@ -2473,7 +2473,7 @@ const Chapter01 = () => {
         runs a very disciplined army. While not impossible to occur, it still feels off.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Hunting for mechanical advantage with story is okay, but it's best used to enable scenes
           you want to explore and bypass those you don't. Still, the Toadking says you have to deal
           with the guards here.
@@ -2494,12 +2494,12 @@ const Chapter01 = () => {
         out at your allies' shocked, judgmental stares.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Rattled can be quite debilitating and vex is an easy out if you have spark, but it does
           come with the consequences—you have to play true and follow through in a way that makes
           sense.
         </Text>
-        <Text margin="small">
+        <Text>
           Also, don't forget that you take +1t when you follow through due to the emotional turmoil!
           Not all vex responses require an action roll, though.
         </Text>
@@ -2514,7 +2514,7 @@ const Chapter01 = () => {
         charging towards certain doom.
       </Text>
       <Panel textSize="small">
-        <Text margin="small">
+        <Text>
           Vex gives a chance to really double down on who your character is or go in the exact
           opposite direction with something surprising. Either way, it's a big open door to
           roleplaying.

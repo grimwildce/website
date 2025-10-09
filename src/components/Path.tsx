@@ -16,11 +16,11 @@ const Path = ({ id, name, also, children }: PathProps) => {
 
   return (
     <>
-      <Heading level={2} pretitle="Path of the" id={id} margin={{ top: "large", bottom: "small" }}>
+      <Heading level={2} pretitle="Path of the" id={id}>
         {name}
       </Heading>
       {hasAlso && (
-        <Text margin={{ top: "small" }}>
+        <Text>
           <Strong allCaps>Also</Strong>:{" "}
           {also.map((item, index) => (
             <>
