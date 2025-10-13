@@ -7,7 +7,8 @@ import List from "@/components/ui/List";
 import Move from "@/components/ui/Move";
 import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
-import Section from "@/components/ui/Section/Section";
+import Section from "@/components/ui/Section";
+
 import Strong from "@/components/ui/Strong";
 import StrongEm from "@/components/ui/StrongEm";
 import Table from "@/components/ui/Table";
