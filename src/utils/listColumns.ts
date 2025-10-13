@@ -1,8 +1,9 @@
-export type ListColumnsValue = 2 | 3;
+export type ListColumnsValue = 2 | 3 | 4;
 
 const columnsCss: Record<ListColumnsValue, string> = {
   2: "sm:columns-2",
-  3: "sm:columns-2 md:columns-3"
+  3: "sm:columns-2 md:columns-3",
+  4: "sm:columns-2 md:columns-3 lg:columns-4"
 };
 
 export const getListColumns = (columns?: ListColumnsValue) => {

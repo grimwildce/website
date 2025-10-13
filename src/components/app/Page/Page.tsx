@@ -27,6 +27,7 @@ const Page = ({ bookTitle, title, pretitle, spacing = "md", navigation, children
         onOpenNav={() => setNavOpen(true)}
       />
       <Container spacing={spacing}>{children}</Container>
+      <div className="mb-10" />
       {hasNavigation && (
         <Navigation navigation={navigation} open={navOpen} onClose={() => setNavOpen(false)} />
       )}

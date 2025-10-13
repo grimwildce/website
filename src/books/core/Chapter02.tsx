@@ -3,7 +3,6 @@ import Battleground from "@/components/Battleground";
 import CampaignPool from "@/components/CampaignPool";
 import Challenge from "@/components/Challenge";
 import ChallengeSuspense from "@/components/ChallengeSuspense";
-import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
 import Grid from "@/components/ui/Grid";
 import Heading from "@/components/ui/Heading";
@@ -12,6 +11,7 @@ import List from "@/components/ui/List";
 import Move from "@/components/ui/Move";
 import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
+import Section from "@/components/ui/Section/Section";
 import Stack from "@/components/ui/Stack";
 import Strong from "@/components/ui/Strong";
 import StrongEm from "@/components/ui/StrongEm";
@@ -290,56 +290,59 @@ const Chapter02 = () => {
         this when no immediate move feels compelling or when you want to shift focus to other
         scenes.
       </Text>
-      <SectionHeading variant="solid">Hit With Impact</SectionHeading>
-      <Text>
-        <Strong allCaps>Consequences</Strong>. What happens when things go wrong—from failed rolls,
-        timers, or impact moves. They should feel <StrongEm>hard but fair</StrongEm>, reflecting the
-        stakes and severity of the situation. Every roll carries risk; otherwise, assume success and
-        move on.
-      </Text>
-      <Text>
-        Damage is a solid baseline: in a fight, injuries leave you bloodied by default. Other
-        consequences, even narrative ones, should sting just as much. There's no strict formula—
-        <Em>it's a gut feeling</Em>. Let the fiction guide you, and make sure to give the fiction
-        its teeth.
-      </Text>
-      <Text>
-        <StrongEm>You can split consequences, breaking big consequences into smaller ones</StrongEm>
-        . Multiple effects can be just as effective and make more sense in the situation. You might
-        break up bloodied into a few marks, or rattled becoming vex and rolling a pool instead.
-        Splits make the story move in multiple directions.
-      </Text>
-      <Text>
-        You can also spread consequences, hitting multiple PCs, nearby NPCs, or even a PC who didn't
-        prompt the move. Consequences can be identical, vary in severity, or differ entirely. If a
-        PC other than the one prompting it is hit, they get a defense roll. Spreads make the impact
-        feel broader and pulling more people into a dynamic scene.
-      </Text>
-      <Text>
-        <Strong allCaps>Thinking Offscreen</Strong>. Fallout that happens beyond the immediate
-        action. Not all consequences need to occur in the spotlight. Hitting elsewhere builds
-        tension, hastens incoming trouble, or creates missed opportunities. These unseen events make
-        the world feel alive, adding depth beyond the present moment.
-      </Text>
-      <Text>
-        <Strong allCaps>Using Pools</Strong>. Building pressure with danger or timer pools. Start or
-        pressure or timer pool as another outlet for consequences, often{" "}
-        <StrongEm>offscreen</StrongEm>. These create looming threats and situations the PCs want to
-        avoid or mitigate. They build pressure and offer a strong alternative to skipping the move
-        and banking suspense.
-      </Text>
-      <Text>
-        <Strong allCaps>Stakes</Strong>. Framing danger when it's not the default. Most rolls assume
-        meaningful consequences. Declaring <Strong>dire stakes</Strong> before a roll or situation
-        signals severe stakes—death or worse looms <Muted>(an assassin strikes)</Muted>.{" "}
-        <Strong>Tame stakes</Strong> shifts outcomes into lighter territory, rolling for things
-        you'd normally skip, with softer consequences <Muted>(a cat's stuck in a tree)</Muted>. It's
-        a tool for tone, moving between intense and light play.
-      </Text>
-      <Text>
-        <Strong allCaps>Taking Suspense</Strong>. When nothing comes to mind, skip the impact move
-        and take suspense instead!
-      </Text>
+      <Section title="Hit With Impact" titleVariant="solid">
+        <Text>
+          <Strong allCaps>Consequences</Strong>. What happens when things go wrong—from failed
+          rolls, timers, or impact moves. They should feel <StrongEm>hard but fair</StrongEm>,
+          reflecting the stakes and severity of the situation. Every roll carries risk; otherwise,
+          assume success and move on.
+        </Text>
+        <Text>
+          Damage is a solid baseline: in a fight, injuries leave you bloodied by default. Other
+          consequences, even narrative ones, should sting just as much. There's no strict formula—
+          <Em>it's a gut feeling</Em>. Let the fiction guide you, and make sure to give the fiction
+          its teeth.
+        </Text>
+        <Text>
+          <StrongEm>
+            You can split consequences, breaking big consequences into smaller ones
+          </StrongEm>
+          . Multiple effects can be just as effective and make more sense in the situation. You
+          might break up bloodied into a few marks, or rattled becoming vex and rolling a pool
+          instead. Splits make the story move in multiple directions.
+        </Text>
+        <Text>
+          You can also spread consequences, hitting multiple PCs, nearby NPCs, or even a PC who
+          didn't prompt the move. Consequences can be identical, vary in severity, or differ
+          entirely. If a PC other than the one prompting it is hit, they get a defense roll. Spreads
+          make the impact feel broader and pulling more people into a dynamic scene.
+        </Text>
+        <Text>
+          <Strong allCaps>Thinking Offscreen</Strong>. Fallout that happens beyond the immediate
+          action. Not all consequences need to occur in the spotlight. Hitting elsewhere builds
+          tension, hastens incoming trouble, or creates missed opportunities. These unseen events
+          make the world feel alive, adding depth beyond the present moment.
+        </Text>
+        <Text>
+          <Strong allCaps>Using Pools</Strong>. Building pressure with danger or timer pools. Start
+          or pressure or timer pool as another outlet for consequences, often{" "}
+          <StrongEm>offscreen</StrongEm>. These create looming threats and situations the PCs want
+          to avoid or mitigate. They build pressure and offer a strong alternative to skipping the
+          move and banking suspense.
+        </Text>
+        <Text>
+          <Strong allCaps>Stakes</Strong>. Framing danger when it's not the default. Most rolls
+          assume meaningful consequences. Declaring <Strong>dire stakes</Strong> before a roll or
+          situation signals severe stakes—death or worse looms <Muted>(an assassin strikes)</Muted>.{" "}
+          <Strong>Tame stakes</Strong> shifts outcomes into lighter territory, rolling for things
+          you'd normally skip, with softer consequences <Muted>(a cat's stuck in a tree)</Muted>.
+          It's a tool for tone, moving between intense and light play.
+        </Text>
+        <Text>
+          <Strong allCaps>Taking Suspense</Strong>. When nothing comes to mind, skip the impact move
+          and take suspense instead!
+        </Text>
+      </Section>
       <Panel title="Story Moves" description="Use these moves anytime." border>
         <List>
           <List.Item>
@@ -705,228 +708,231 @@ const Chapter02 = () => {
           textSize="small"
         />
       </Grid>
-      <SectionHeading variant="solid">Building Challenges</SectionHeading>
-      <List variant="ordered">
-        <List.Item>
-          <StrongEm>Assign a task pool</StrongEm> (4d, 6d, 8d) for its tenacity.
-        </List.Item>
-        <List.Item>
-          <StrongEm>Add traits</StrongEm> (1 or 2) that shape the situation. Skip the obvious{" "}
-          <Muted>(storm is windy)</Muted> and highlight what matters{" "}
-          <Muted>(strong winds are blinding)</Muted>. Keep them brief and evocative.
-        </List.Item>
-        <List.Item>
-          <StrongEm>List short, punchy moves</StrongEm> (2 or 3) with flexible interpretations.
-          These are examples, not limits. You can spend bonus suspense on other moves, or trigger
-          these when an impact move is prompted by something else.
-        </List.Item>
-        <List.Item>
-          <StrongEm>Define a fail state</StrongEm>, a specific trigger that pre vents that challenge
-          from being accomplished. Avoid obvious outcomes <Muted>(dying in a fight)</Muted> and
-          focus on what creates tension <Muted>(breaking a code of honor)</Muted>. Players should
-          know the fail state unless mystery is part of the fun—and even then, make it clear one is
-          in play.
-        </List.Item>
-      </List>
-      <Text>
-        <Strong>Note</Strong>: <Em>Not all of these parts are needed for a challenge.</Em>
-      </Text>
-      <SectionHeading variant="solid">Using Challenges</SectionHeading>
-      <Text>
-        Challenges are for moments of narrative importance. They make whatever you assign them to a
-        proactive element in the story. Use them to spotlight what's happening—not because it's
-        harder, but because it deserves proper screen time and presence. Introduce challenges at
-        times like:
-      </Text>
-      <List>
-        <List.Item>
-          An impact move is prompted.
-          <br />
-          <Muted>
-            The sleeping dragon wakes up. They fail to reach the pass before winter. The dying
-            goblin blows the horn.
-          </Muted>
-        </List.Item>
-        <List.Item>
-          You <Move>Foreshadow</Move> to give fair warning.
-          <br />
-          <Muted>
-            Drumming from the deep. Wind blows out the torches. There are signs of battle.
-          </Muted>
-        </List.Item>
-        <List.Item>
-          You <Move>Complicate Things</Move> without warning.
-          <br />
-          <Muted>
-            Arrows whizz by, an ambush! The statues spring to life. A huge storm hits the ship.
-          </Muted>
-        </List.Item>
-        <List.Item>
-          The PCs head straight towards trouble on their own.
-          <br />{" "}
-          <Muted size="medium">
-            <Em>
-              Sneak into a well-guarded keep. Call out the drake. Pass through a haunted forest.
-            </Em>
-          </Muted>
-        </List.Item>
-      </List>
-      <SectionHeading variant="solid">Linked Challenges</SectionHeading>
-      <Text>
-        <Strong>Linked challenges</Strong> are greater, more complex interactions, like epicly
-        powerful enemies or unbelievably tense social situations. Each part of the whole has its own
-        proactive presence in the scene. Give them traits that prompt impact moves, triggered by the
-        fiction <Muted>(protect the body)</Muted> for dynamic interactions.
-      </Text>
-      <Panel title="Negotiating Peace in a Civil War" variant="blank" border>
-        <Grid>
-          <Challenge
-            title="Duchess Lysandra"
-            poolSize={8}
-            traits={["Lineal Heir"]}
-            moves={["Show Strength"]}
-            failState="4d Leaves the Table"
-            textSize="small"
-            references={[
-              { type: "linked_to", target: "Baran Reynard" },
-              { type: "linked_to", target: "Count Lucian" }
-            ]}
-          />
-          <Challenge
-            title="Baran Reynard"
-            poolSize={4}
-            traits={["War weary"]}
-            moves={["Challenge Honor"]}
-            failState="4d Leaves the Table"
-            textSize="small"
-            references={[
-              { type: "linked_to", target: "Duchess Lysandra" },
-              { type: "linked_to", target: "Count Lucian" }
-            ]}
-          />
-          <Challenge
-            title="Count Lucian"
-            poolSize={6}
-            traits={["Diplomatic"]}
-            moves={["Reveal Secrets"]}
-            failState="4d Leaves the Table"
-            textSize="small"
-            references={[
-              { type: "linked_to", target: "Duchess Lysandra" },
-              { type: "linked_to", target: "Baran Reynard" }
-            ]}
-          />
-        </Grid>
+      <Section title="Building Challenges" titleVariant="solid">
+        <List variant="ordered">
+          <List.Item>
+            <StrongEm>Assign a task pool</StrongEm> (4d, 6d, 8d) for its tenacity.
+          </List.Item>
+          <List.Item>
+            <StrongEm>Add traits</StrongEm> (1 or 2) that shape the situation. Skip the obvious{" "}
+            <Muted>(storm is windy)</Muted> and highlight what matters{" "}
+            <Muted>(strong winds are blinding)</Muted>. Keep them brief and evocative.
+          </List.Item>
+          <List.Item>
+            <StrongEm>List short, punchy moves</StrongEm> (2 or 3) with flexible interpretations.
+            These are examples, not limits. You can spend bonus suspense on other moves, or trigger
+            these when an impact move is prompted by something else.
+          </List.Item>
+          <List.Item>
+            <StrongEm>Define a fail state</StrongEm>, a specific trigger that pre vents that
+            challenge from being accomplished. Avoid obvious outcomes{" "}
+            <Muted>(dying in a fight)</Muted> and focus on what creates tension{" "}
+            <Muted>(breaking a code of honor)</Muted>. Players should know the fail state unless
+            mystery is part of the fun—and even then, make it clear one is in play.
+          </List.Item>
+        </List>
         <Text>
-          <Muted size="medium">
-            <Em>
-              Following the death of the Ember Queen, the realm descended into chaos sparking a long
-              and bloody civil war. The PCs have managed to bring all three sides to the negotiating
-              table, but the road to peace is rocky. They need each to sign off on splitting the
-              realm.
-            </Em>
-          </Muted>
+          <Strong>Note</Strong>: <Em>Not all of these parts are needed for a challenge.</Em>
         </Text>
-      </Panel>
-      <Panel title="Conspiracy Within the Order" variant="blank" border>
-        <Grid>
-          <Challenge
-            title="False Prophets"
-            poolSize={4}
-            moves={["Dead End (for now)"]}
-            textSize="small"
-            references={[{ type: "linked_to", target: "Altered Scriptures" }]}
-          />
-          <Challenge
-            title="Altered Scriptures"
-            poolSize={8}
-            moves={["Dead End (for now)"]}
-            textSize="small"
-            references={[{ type: "linked_to", target: "False Prophets" }]}
-          />
-          <Challenge
-            title="Missing Relics"
-            poolSize={4}
-            moves={["Dead End (for now)", "Assassins Strike"]}
-            textSize="small"
-            references={[{ type: "linked_to", target: "Altered Scriptures" }]}
-          />
-          <Challenge
-            title="The High Priests"
-            poolSize={8}
-            failState="8d Ritual of Usurpation"
-            textSize="small"
-            references={[{ type: "blocked_by", target: "False Prophets" }]}
-          />
-        </Grid>
+      </Section>
+      <Section title="Using Challenges" titleVariant="solid">
         <Text>
-          <Muted size="medium">
-            <Em>
-              The cleric's obsession with the odd occurrences within his order has consumed
-              him—missing relics, false prophecies, and altered scriptures. He knows that something
-              is up and is determined to figure it out.
-            </Em>
-          </Muted>
+          Challenges are for moments of narrative importance. They make whatever you assign them to
+          a proactive element in the story. Use them to spotlight what's happening—not because it's
+          harder, but because it deserves proper screen time and presence. Introduce challenges at
+          times like:
         </Text>
-      </Panel>
-      <Panel title="The Great Red Dragon" variant="blank" border>
-        <Grid>
-          <Stack spacing="md">
+        <List>
+          <List.Item>
+            An impact move is prompted.
+            <br />
+            <Muted>
+              The sleeping dragon wakes up. They fail to reach the pass before winter. The dying
+              goblin blows the horn.
+            </Muted>
+          </List.Item>
+          <List.Item>
+            You <Move>Foreshadow</Move> to give fair warning.
+            <br />
+            <Muted>
+              Drumming from the deep. Wind blows out the torches. There are signs of battle.
+            </Muted>
+          </List.Item>
+          <List.Item>
+            You <Move>Complicate Things</Move> without warning.
+            <br />
+            <Muted>
+              Arrows whizz by, an ambush! The statues spring to life. A huge storm hits the ship.
+            </Muted>
+          </List.Item>
+          <List.Item>
+            The PCs head straight towards trouble on their own.
+            <br />{" "}
+            <Muted size="medium">
+              <Em>
+                Sneak into a well-guarded keep. Call out the drake. Pass through a haunted forest.
+              </Em>
+            </Muted>
+          </List.Item>
+        </List>
+      </Section>
+      <Section title="Linked Challenges" titleVariant="solid">
+        <Text>
+          <Strong>Linked challenges</Strong> are greater, more complex interactions, like epicly
+          powerful enemies or unbelievably tense social situations. Each part of the whole has its
+          own proactive presence in the scene. Give them traits that prompt impact moves, triggered
+          by the fiction <Muted>(protect the body)</Muted> for dynamic interactions.
+        </Text>
+        <Panel title="Negotiating Peace in a Civil War" variant="blank" border>
+          <Grid>
             <Challenge
-              title="Claws"
-              poolSize={6}
-              traits={["Protect the Body"]}
-              moves={["Snatch", "Scratch"]}
-              failState="8d Ritual of Usurpation"
+              title="Duchess Lysandra"
+              poolSize={8}
+              traits={["Lineal Heir"]}
+              moves={["Show Strength"]}
+              failState="4d Leaves the Table"
               textSize="small"
-              references={[{ type: "linked_to", target: "Body" }]}
+              references={[
+                { type: "linked_to", target: "Baran Reynard" },
+                { type: "linked_to", target: "Count Lucian" }
+              ]}
             />
             <Challenge
-              title="Wings"
-              poolSize={6}
-              moves={["Wind Buffet"]}
-              failState="8d Ritual of Usurpation"
-              textSize="small"
-              references={[{ type: "linked_to", target: "Body" }]}
-            />
-          </Stack>
-          <Challenge
-            title="Body"
-            poolSize={8}
-            traits={["Frightful presence", "Impenetrable scales"]}
-            moves={["Breathe Fire", "Chomp Down", "Roar"]}
-            failState="Fly Away"
-            textSize="small"
-          />
-          <Stack spacing="md">
-            <Challenge
-              title="Tail"
-              poolSize={6}
-              traits={["Protect the Body"]}
-              moves={["Tail Sweep", "Crush"]}
-              textSize="small"
-              references={[{ type: "linked_to", target: "Body" }]}
-            />
-            <Challenge
-              title="Kobold Minions"
+              title="Baran Reynard"
               poolSize={4}
-              moves={["Die for Master!"]}
+              traits={["War weary"]}
+              moves={["Challenge Honor"]}
+              failState="4d Leaves the Table"
               textSize="small"
-              references={[{ type: "linked_to", target: "Body" }]}
+              references={[
+                { type: "linked_to", target: "Duchess Lysandra" },
+                { type: "linked_to", target: "Count Lucian" }
+              ]}
             />
-          </Stack>
-        </Grid>
-        <Text>
-          <Muted size="medium">
-            <Em>
-              The Great Red Dragon descends, lured into the PCs' trap by the goats as bait. They
-              ready the barbed ballista, knowing they must prevent the beast from escaping into the
-              sky. The dragon's kobold minions scurry down from its back, swarming the clearing. The
-              battle commences.
-            </Em>
-          </Muted>
-        </Text>
-      </Panel>
+            <Challenge
+              title="Count Lucian"
+              poolSize={6}
+              traits={["Diplomatic"]}
+              moves={["Reveal Secrets"]}
+              failState="4d Leaves the Table"
+              textSize="small"
+              references={[
+                { type: "linked_to", target: "Duchess Lysandra" },
+                { type: "linked_to", target: "Baran Reynard" }
+              ]}
+            />
+          </Grid>
+          <Text>
+            <Muted size="medium">
+              <Em>
+                Following the death of the Ember Queen, the realm descended into chaos sparking a
+                long and bloody civil war. The PCs have managed to bring all three sides to the
+                negotiating table, but the road to peace is rocky. They need each to sign off on
+                splitting the realm.
+              </Em>
+            </Muted>
+          </Text>
+        </Panel>
+        <Panel title="Conspiracy Within the Order" variant="blank" border>
+          <Grid>
+            <Challenge
+              title="False Prophets"
+              poolSize={4}
+              moves={["Dead End (for now)"]}
+              textSize="small"
+              references={[{ type: "linked_to", target: "Altered Scriptures" }]}
+            />
+            <Challenge
+              title="Altered Scriptures"
+              poolSize={8}
+              moves={["Dead End (for now)"]}
+              textSize="small"
+              references={[{ type: "linked_to", target: "False Prophets" }]}
+            />
+            <Challenge
+              title="Missing Relics"
+              poolSize={4}
+              moves={["Dead End (for now)", "Assassins Strike"]}
+              textSize="small"
+              references={[{ type: "linked_to", target: "Altered Scriptures" }]}
+            />
+            <Challenge
+              title="The High Priests"
+              poolSize={8}
+              failState="8d Ritual of Usurpation"
+              textSize="small"
+              references={[{ type: "blocked_by", target: "False Prophets" }]}
+            />
+          </Grid>
+          <Text>
+            <Muted size="medium">
+              <Em>
+                The cleric's obsession with the odd occurrences within his order has consumed
+                him—missing relics, false prophecies, and altered scriptures. He knows that
+                something is up and is determined to figure it out.
+              </Em>
+            </Muted>
+          </Text>
+        </Panel>
+        <Panel title="The Great Red Dragon" variant="blank" border>
+          <Grid>
+            <Stack spacing="md">
+              <Challenge
+                title="Claws"
+                poolSize={6}
+                traits={["Protect the Body"]}
+                moves={["Snatch", "Scratch"]}
+                failState="8d Ritual of Usurpation"
+                textSize="small"
+                references={[{ type: "linked_to", target: "Body" }]}
+              />
+              <Challenge
+                title="Wings"
+                poolSize={6}
+                moves={["Wind Buffet"]}
+                failState="8d Ritual of Usurpation"
+                textSize="small"
+                references={[{ type: "linked_to", target: "Body" }]}
+              />
+            </Stack>
+            <Challenge
+              title="Body"
+              poolSize={8}
+              traits={["Frightful presence", "Impenetrable scales"]}
+              moves={["Breathe Fire", "Chomp Down", "Roar"]}
+              failState="Fly Away"
+              textSize="small"
+            />
+            <Stack spacing="md">
+              <Challenge
+                title="Tail"
+                poolSize={6}
+                traits={["Protect the Body"]}
+                moves={["Tail Sweep", "Crush"]}
+                textSize="small"
+                references={[{ type: "linked_to", target: "Body" }]}
+              />
+              <Challenge
+                title="Kobold Minions"
+                poolSize={4}
+                moves={["Die for Master!"]}
+                textSize="small"
+                references={[{ type: "linked_to", target: "Body" }]}
+              />
+            </Stack>
+          </Grid>
+          <Text>
+            <Muted size="medium">
+              <Em>
+                The Great Red Dragon descends, lured into the PCs' trap by the goats as bait. They
+                ready the barbed ballista, knowing they must prevent the beast from escaping into
+                the sky. The dragon's kobold minions scurry down from its back, swarming the
+                clearing. The battle commences.
+              </Em>
+            </Muted>
+          </Text>
+        </Panel>
+      </Section>
       <Heading level={3} id="vigilance">
         Vigilance
       </Heading>
@@ -958,130 +964,143 @@ const Chapter02 = () => {
         can always mix it up, though, and give the commoner a <Strong>hint</Strong>, knowing just
         the right random tidbit.
       </Text>
-      <SectionHeading variant="solid" icon={faQuestion} description="Tests a player's skill.">
-        Hint
-      </SectionHeading>
-      <Text>
-        <Move>Foreshadow</Move> with a subtle clue about a hidden element.{" "}
-        <StrongEm>The player</StrongEm> gets a single chance to interpret the situation. They're
-        limited to just one to highlight the natural response of the PC and to keep things flowing.{" "}
-        <StrongEm>Player intuition guides the story forward</StrongEm>. A correct response leads to
-        a reveal or possibly bypasses the situation entirely.{" "}
-        <Muted>That funny feeling of being watched. A blood trail down a hallway.</Muted>
-      </Text>
-      <SectionHeading variant="solid" icon={faExclamation} description="Tests a character's skill.">
-        Reveal
-      </SectionHeading>
-      <Text>
-        <Move>Foreshadow</Move> with an obvious unveiling of an immediately imminent threat.{" "}
-        <StrongEm>The PC</StrongEm> that becomes aware has one chance to react before the danger
-        strikes. <StrongEm>Character competence guides the story forward</StrongEm>.{" "}
-        <Muted>
-          Spotting the assassin in hiding. A whirling of gears betraying the swinging scythe trap
-          about to spring.
-        </Muted>
-      </Text>
-      <SectionHeading variant="solid" icon={faBurst} description="Tests a character's defenses.">
-        Strike
-      </SectionHeading>
-      <Text>
-        Make an impact move as the danger immediately strikes them. <StrongEm>The GM</StrongEm>{" "}
-        assumes the PCs were not vigilant enough.{" "}
-        <StrongEm>The dangerous world guides the story forward</StrongEm>.{" "}
-        <Muted>The servant slips poison into your glass. A trapdoor opens beneath you.</Muted>
-      </Text>
-      <SectionHeading>Vigilance Examples</SectionHeading>
-      <Text>Below are some ways that a danger can manifest as hints, reveals, or strikes.</Text>
-      <Table variant="striped" textSize="small">
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell allCaps>Danger</Table.HeaderCell>
-            <Table.HeaderCell allCaps>Hint</Table.HeaderCell>
-            <Table.HeaderCell allCaps>Reveal</Table.HeaderCell>
-            <Table.HeaderCell allCaps>Strike</Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Poisoned dart trap</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Floor creaks unnaturally</Table.Cell>
-            <Table.Cell>Dartgun in wall spotted</Table.Cell>
-            <Table.Cell>Darts fly from the walls</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Flammable gas trap</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Faint smell lingers</Table.Cell>
-            <Table.Cell>Bit of gas ignites</Table.Cell>
-            <Table.Cell>Area engulfed in flames</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Political intrigue</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Inconsistencies in letter</Table.Cell>
-            <Table.Cell>Wax seal is clearly fake</Table.Cell>
-            <Table.Cell>Forgery leads to crisis</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Hidden malice</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Suspicious glances</Table.Cell>
-            <Table.Cell>Threatens a PC</Table.Cell>
-            <Table.Cell>Calls the guards</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Fractured resolve</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Hesitates when speaking</Table.Cell>
-            <Table.Cell>Express doubts or fears</Table.Cell>
-            <Table.Cell>Act against plans</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>Concealing illusion</Table.Cell>
-            <Table.Cell>Shimmering distortion</Table.Cell>
-            <Table.Cell>Reveals true form</Table.Cell>
-            <Table.Cell>Causes a wrong move</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Shattered trust</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Avoids eye contact</Table.Cell>
-            <Table.Cell>Lets intentions slip</Table.Cell>
-            <Table.Cell>Betrays the party</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Crumbling ceiling</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Dust falls lightly</Table.Cell>
-            <Table.Cell>Cracks spread visibly</Table.Cell>
-            <Table.Cell>Debris crashes down</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Swarming insects</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Animals running away</Table.Cell>
-            <Table.Cell>Cloud of insects in the sky</Table.Cell>
-            <Table.Cell>Swarm descends viciously</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Cursed relic</StrongEm>
-            </Table.Cell>
-            <Table.Cell>Air grows unnaturally cold</Table.Cell>
-            <Table.Cell>It speaks your name</Table.Cell>
-            <Table.Cell>It curses the handler</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
+      <Section
+        title="Hint"
+        titleVariant="solid"
+        icon={faQuestion}
+        description="Tests a player's skill."
+      >
+        <Text>
+          <Move>Foreshadow</Move> with a subtle clue about a hidden element.{" "}
+          <StrongEm>The player</StrongEm> gets a single chance to interpret the situation. They're
+          limited to just one to highlight the natural response of the PC and to keep things
+          flowing. <StrongEm>Player intuition guides the story forward</StrongEm>. A correct
+          response leads to a reveal or possibly bypasses the situation entirely.{" "}
+          <Muted>That funny feeling of being watched. A blood trail down a hallway.</Muted>
+        </Text>
+      </Section>
+      <Section
+        title="Reveal"
+        titleVariant="solid"
+        icon={faExclamation}
+        description="Tests a character's skill."
+      >
+        <Text>
+          <Move>Foreshadow</Move> with an obvious unveiling of an immediately imminent threat.{" "}
+          <StrongEm>The PC</StrongEm> that becomes aware has one chance to react before the danger
+          strikes. <StrongEm>Character competence guides the story forward</StrongEm>.{" "}
+          <Muted>
+            Spotting the assassin in hiding. A whirling of gears betraying the swinging scythe trap
+            about to spring.
+          </Muted>
+        </Text>
+      </Section>
+      <Section
+        title="Strike"
+        titleVariant="solid"
+        icon={faBurst}
+        description="Tests a character's defenses."
+      >
+        <Text>
+          Make an impact move as the danger immediately strikes them. <StrongEm>The GM</StrongEm>{" "}
+          assumes the PCs were not vigilant enough.{" "}
+          <StrongEm>The dangerous world guides the story forward</StrongEm>.{" "}
+          <Muted>The servant slips poison into your glass. A trapdoor opens beneath you.</Muted>
+        </Text>
+      </Section>
+      <Section title="Vigilance Examples">
+        <Text>Below are some ways that a danger can manifest as hints, reveals, or strikes.</Text>
+        <Table variant="striped" textSize="small">
+          <Table.Head>
+            <Table.Row>
+              <Table.HeaderCell allCaps>Danger</Table.HeaderCell>
+              <Table.HeaderCell allCaps>Hint</Table.HeaderCell>
+              <Table.HeaderCell allCaps>Reveal</Table.HeaderCell>
+              <Table.HeaderCell allCaps>Strike</Table.HeaderCell>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Poisoned dart trap</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Floor creaks unnaturally</Table.Cell>
+              <Table.Cell>Dartgun in wall spotted</Table.Cell>
+              <Table.Cell>Darts fly from the walls</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Flammable gas trap</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Faint smell lingers</Table.Cell>
+              <Table.Cell>Bit of gas ignites</Table.Cell>
+              <Table.Cell>Area engulfed in flames</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Political intrigue</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Inconsistencies in letter</Table.Cell>
+              <Table.Cell>Wax seal is clearly fake</Table.Cell>
+              <Table.Cell>Forgery leads to crisis</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Hidden malice</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Suspicious glances</Table.Cell>
+              <Table.Cell>Threatens a PC</Table.Cell>
+              <Table.Cell>Calls the guards</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Fractured resolve</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Hesitates when speaking</Table.Cell>
+              <Table.Cell>Express doubts or fears</Table.Cell>
+              <Table.Cell>Act against plans</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Concealing illusion</Table.Cell>
+              <Table.Cell>Shimmering distortion</Table.Cell>
+              <Table.Cell>Reveals true form</Table.Cell>
+              <Table.Cell>Causes a wrong move</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Shattered trust</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Avoids eye contact</Table.Cell>
+              <Table.Cell>Lets intentions slip</Table.Cell>
+              <Table.Cell>Betrays the party</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Crumbling ceiling</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Dust falls lightly</Table.Cell>
+              <Table.Cell>Cracks spread visibly</Table.Cell>
+              <Table.Cell>Debris crashes down</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Swarming insects</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Animals running away</Table.Cell>
+              <Table.Cell>Cloud of insects in the sky</Table.Cell>
+              <Table.Cell>Swarm descends viciously</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Cursed relic</StrongEm>
+              </Table.Cell>
+              <Table.Cell>Air grows unnaturally cold</Table.Cell>
+              <Table.Cell>It speaks your name</Table.Cell>
+              <Table.Cell>It curses the handler</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Section>
       <Heading level={3} id="combat-kit">
         Combat Kit
       </Heading>
@@ -1286,53 +1305,55 @@ const Chapter02 = () => {
         situation, makes sure everyone gets time to shine, and keeps everyone's imagination aligned.
         Don't get caught up in detailed tracking—update the map with big changes.
       </Text>
-      <SectionHeading variant="solid">Combat Rulings</SectionHeading>
-      <Text>
-        You map the fiction to the rules just like any scene, making rulings to fill in gaps.
-        However, in combat you'll often see the same scenarios come up, so for the sake of
-        consistency, some common rulings:
-      </Text>
-      <Text>
-        <Strong>Movement</Strong>: Moving usually accompanies another action—the goal isn't just to
-        get somewhere, but to get there and do something. If an interesting obstacle blocks the way,
-        it needs an action roll.
-      </Text>
-      <Text>
-        <Strong>Weapons</Strong>: Compare the weapons in play and use common sense to resolve any
-        issues. Most weapons are evenly matched; the roll only shifts if there's a clear imbalance.
-      </Text>
-      <Text>
-        <Strong>Melee combat</Strong>: Most melee attacks use Brawn, while light, fast weapons rely
-        on Agility. Dirty tricks call for Wits, but rarely work more than once.
-      </Text>
-      <Text>
-        <Strong>Ranged combat</Strong>: Precision attacks roll Agility, while thrown weapons use
-        Brawn or Agility based on weight and range. Charging an enemy with ranged weapons is
-        reckless, adding +1t or requiring a separate action to close the gap.
-      </Text>
-      <Text>
-        <Strong>Ranged and Casters vs. Melee</Strong>: Spellcasting and precise ranged attacks
-        demand focus, which is tough with nearby threats. Inflict +1t to these rolls when under
-        immediate danger.
-      </Text>
-      <Text>
-        <Strong>Defense Rolls</Strong>: The GM selects the stat to test. Melee attacks are dodged
-        with Agility, blocked with Brawn (using armor or shields), anticipated with Wits, or keeping
-        your nerve with Presence.
-      </Text>
-      <Text>
-        <Strong>Armor</Strong>: Armor and shields are represented by talents like Bulwark (pg. 62).
-        Otherwise, they are vantage and set dressing for defense rolls.
-      </Text>
-      <Text>
-        <Strong>Vulnerabilities</Strong>: Exploiting a vulnerability can lower thorns, drop 1 before
-        rolling a pool, or even bypass the need for a roll. In some cases, finding a vulnerability
-        is required to attack at all.
-      </Text>
-      <Text>
-        <Strong>Enemy Magic</Strong>: Enemy magic doesn't follow the same rules as PC magic. It
-        manifests through GM moves and is constrained only by the fiction.
-      </Text>
+      <Section title="Combat Rulings" titleVariant="solid">
+        <Text>
+          You map the fiction to the rules just like any scene, making rulings to fill in gaps.
+          However, in combat you'll often see the same scenarios come up, so for the sake of
+          consistency, some common rulings:
+        </Text>
+        <Text>
+          <Strong>Movement</Strong>: Moving usually accompanies another action—the goal isn't just
+          to get somewhere, but to get there and do something. If an interesting obstacle blocks the
+          way, it needs an action roll.
+        </Text>
+        <Text>
+          <Strong>Weapons</Strong>: Compare the weapons in play and use common sense to resolve any
+          issues. Most weapons are evenly matched; the roll only shifts if there's a clear
+          imbalance.
+        </Text>
+        <Text>
+          <Strong>Melee combat</Strong>: Most melee attacks use Brawn, while light, fast weapons
+          rely on Agility. Dirty tricks call for Wits, but rarely work more than once.
+        </Text>
+        <Text>
+          <Strong>Ranged combat</Strong>: Precision attacks roll Agility, while thrown weapons use
+          Brawn or Agility based on weight and range. Charging an enemy with ranged weapons is
+          reckless, adding +1t or requiring a separate action to close the gap.
+        </Text>
+        <Text>
+          <Strong>Ranged and Casters vs. Melee</Strong>: Spellcasting and precise ranged attacks
+          demand focus, which is tough with nearby threats. Inflict +1t to these rolls when under
+          immediate danger.
+        </Text>
+        <Text>
+          <Strong>Defense Rolls</Strong>: The GM selects the stat to test. Melee attacks are dodged
+          with Agility, blocked with Brawn (using armor or shields), anticipated with Wits, or
+          keeping your nerve with Presence.
+        </Text>
+        <Text>
+          <Strong>Armor</Strong>: Armor and shields are represented by talents like Bulwark (pg.
+          62). Otherwise, they are vantage and set dressing for defense rolls.
+        </Text>
+        <Text>
+          <Strong>Vulnerabilities</Strong>: Exploiting a vulnerability can lower thorns, drop 1
+          before rolling a pool, or even bypass the need for a roll. In some cases, finding a
+          vulnerability is required to attack at all.
+        </Text>
+        <Text>
+          <Strong>Enemy Magic</Strong>: Enemy magic doesn't follow the same rules as PC magic. It
+          manifests through GM moves and is constrained only by the fiction.
+        </Text>
+      </Section>
       <Heading level={3} id="factions">
         Factions
       </Heading>

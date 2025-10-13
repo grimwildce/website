@@ -1,4 +1,4 @@
-import Heading from "@/components/SectionHeading/Heading";
+import Heading from "@/components/ui/Section/SectionHeading/Heading";
 import Tag from "@/components/ui/Tag";
 import type { ReactNode } from "react";
 

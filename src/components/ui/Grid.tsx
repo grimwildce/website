@@ -9,7 +9,7 @@ type GridProps = {
   children?: ReactNode;
 };
 
-const Grid = ({ children, columns = "medium", gap = "medium" }: GridProps) => {
+const Grid = ({ columns = "medium", gap = "medium", children }: GridProps) => {
   const gridCss = classNames("grid", {
     "grid-cols-1 sm:grid-cols-2": columns === "large",
     "grid-cols-1 sm:grid-cols-2 md:grid-cols-3": columns === "medium",

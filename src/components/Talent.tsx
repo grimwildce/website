@@ -14,7 +14,7 @@ type TalentProps = {
 
 const Talent = ({ name, prohibited, children, spacing = "md" }: TalentProps) => {
   return (
-    <div>
+    <div className={getSpacingSize("xs")}>
       <div className="flex justify-between">
         <div className={classNames(getTextSize("large"))}>
           <Strong smallCaps>{name}</Strong>

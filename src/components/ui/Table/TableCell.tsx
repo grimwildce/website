@@ -5,14 +5,15 @@ import { type ReactNode } from "react";
 
 type TableCellProps = {
   colSpan?: number;
+  rowSpan?: number;
   children?: ReactNode;
 } & TableContextProps;
 
-const TableCell = ({ colSpan, children, ...contextOverrides }: TableCellProps) => {
+const TableCell = ({ colSpan, rowSpan, children, ...contextOverrides }: TableCellProps) => {
   const cellCss = useTableCellCss(contextOverrides);
 
   return (
-    <td className={cellCss} colSpan={colSpan}>
+    <td className={cellCss} colSpan={colSpan} rowSpan={rowSpan}>
       <ContextAwareSmallCaps {...contextOverrides}>{children}</ContextAwareSmallCaps>
     </td>
   );

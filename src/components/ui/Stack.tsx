@@ -1,9 +1,27 @@
-import { getFlexShrink, type FlexShrink } from "@/utils/flexShrink";
-import { getFlexSize, type FlexSize } from "@/utils/flexSize";
-import { getMinWidth, type MinWidth } from "@/utils/minWidth";
+import { getAlignItems, type AlignItemsValue } from "@/utils/alignItems";
+import { getFlexAndGridOptions, type FlexAndGridOptions } from "@/utils/flexAndGrid";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
 import classNames from "classnames";
 import type { ReactNode } from "react";
+
+type StackItemProps = {
+  children: ReactNode;
+} & FlexAndGridOptions;
+
+const StackItem = ({ children, ...flexAndGridOptions }: StackItemProps) => {
+  const itemCss = getFlexAndGridOptions(flexAndGridOptions);
+  return <div className={itemCss}>{children}</div>;
+};
+
+type StackProps = {
+  alignItems?: AlignItemsValue;
+  direction?: "col" | "row";
+  children: ReactNode;
+  spacing?: SpacingSize;
+  center?: boolean;
+  spaceBetween?: boolean;
+  wrap?: boolean;
+} & FlexAndGridOptions;
 
 const Stack = ({
   spacing,
@@ -12,16 +30,14 @@ const Stack = ({
   center,
   spaceBetween,
   wrap,
-  flex,
-  flexShrink,
-  minWidth
+  alignItems,
+  ...flexAndGridOptions
 }: StackProps) => {
   const className = classNames(
     "flex",
     getSpacingSize(spacing, direction),
-    getFlexSize(flex),
-    getFlexShrink(flexShrink),
-    getMinWidth(minWidth),
+    getFlexAndGridOptions(flexAndGridOptions),
+    getAlignItems(alignItems),
     {
       "flex-col": direction === "col",
       "flex-row": direction === "row",
@@ -35,27 +51,6 @@ const Stack = ({
 
   return <div className={className}>{children}</div>;
 };
-
-type StackItemProps = {
-  flex?: FlexSize;
-  flexShrink?: FlexShrink;
-  minWidth?: MinWidth;
-  children: ReactNode;
-};
-
-const StackItem = ({ flex, flexShrink, minWidth, children }: StackItemProps) => {
-  const itemCss = classNames(getFlexSize(flex), getFlexShrink(flexShrink), getMinWidth(minWidth));
-  return <div className={itemCss}>{children}</div>;
-};
-
-type StackProps = {
-  direction?: "col" | "row";
-  children: ReactNode;
-  spacing?: SpacingSize;
-  center?: boolean;
-  spaceBetween?: boolean;
-  wrap?: boolean;
-} & StackItemProps;
 
 Stack.Item = StackItem;
 export default Stack;

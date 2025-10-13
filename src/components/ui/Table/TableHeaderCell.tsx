@@ -5,14 +5,20 @@ import { type ReactNode } from "react";
 
 type TableHeaderCellProps = {
   colSpan?: number;
+  rowSpan?: number;
   children?: ReactNode;
 } & TableContextProps;
 
-const TableHeaderCell = ({ colSpan, children, ...contextOverrides }: TableHeaderCellProps) => {
+const TableHeaderCell = ({
+  colSpan,
+  rowSpan,
+  children,
+  ...contextOverrides
+}: TableHeaderCellProps) => {
   const cellCss = useTableCellCss(contextOverrides, "font-bold");
 
   return (
-    <th className={cellCss} colSpan={colSpan}>
+    <th className={cellCss} colSpan={colSpan} rowSpan={rowSpan}>
       <ContextAwareSmallCaps {...contextOverrides}>{children}</ContextAwareSmallCaps>
     </th>
   );
