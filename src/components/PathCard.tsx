@@ -9,8 +9,8 @@ type PathCardProps = {
 
 const PathCard = ({ name, description, icon }: PathCardProps) => {
   return (
-    <div className="pt-4">
-      <div className="relative flex flex-col bg-panel-1 border border-muted shadow pt-6 px-2 pb-2 rounded-md">
+    <div className="pt-4 flex flex-col">
+      <div className="relative flex-1 flex flex-col bg-panel-1 border border-muted shadow pt-6 px-2 pb-2 rounded-md space-y-2">
         <div className="absolute h-8 -top-4 left-1/2 -translate-x-1/2 bg-panel-3 border border-muted shadow w-9/12 rounded-md flex items-center justify-center font-bold">
           <div className="font-bold uppercase">{name}</div>
         </div>

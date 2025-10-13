@@ -1,6 +1,7 @@
 import Line from "@/components/ui/Line";
 import Panel from "@/components/ui/Panel";
 import Strong from "@/components/ui/Strong";
+import { getSpacingSize } from "@/utils/spacing";
 import classNames from "classnames";
 import type { ReactNode } from "react";
 
@@ -17,7 +18,7 @@ const CoreTalent = ({ name, growth, children }: CoreTalentProps) => {
         <div className="font-heading text-xl uppercase font-bold">{name}</div>
         <div className="font-bold uppercase">Core Talent</div>
       </div>
-      <div>{children}</div>
+      <div className={getSpacingSize("sm")}>{children}</div>
       <Line />
       <div>
         <Strong smallCaps>Growth</Strong>: {growth}

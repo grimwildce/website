@@ -1,5 +1,4 @@
 import Page, { type PageNavigationItem } from "@/components/app/Page";
-import SectionHeading from "@/components/SectionHeading";
 import Em from "@/components/ui/Em";
 import ExternalLink from "@/components/ui/ExternalLink";
 import Heading from "@/components/ui/Heading";
@@ -8,6 +7,7 @@ import List from "@/components/ui/List";
 import Move from "@/components/ui/Move";
 import Muted from "@/components/ui/Muted";
 import Panel from "@/components/ui/Panel";
+import Section from "@/components/ui/Section/Section";
 import Strong from "@/components/ui/Strong";
 import StrongEm from "@/components/ui/StrongEm";
 import Table from "@/components/ui/Table";
@@ -134,81 +134,83 @@ const Chapter01 = () => {
         biggest influences being <Em>Burning Wheel</Em>, <Em>Cortex Prime</Em>,{" "}
         <Em>Blades in the Dark</Em>, and <Em>Fate</Em>.
       </Text>
-      <SectionHeading>To Play, You Need:</SectionHeading>
-      <List>
-        <List.Item>
-          <Strong>Players</Strong> : You need one person as the gamemaster (GM) and some players,{" "}
-          <Em>ideally three or four</Em>. Guidelines for solo and duet play are in{" "}
-          <Em>Ch. 7: Extras</Em>.
-        </List.Item>
-        <List.Item>
-          <Strong>Time</Strong> : Sessions work best at 3 hours. For longer sessions, consider using{" "}
-          <Strong>downtime</Strong> (pg. 16) to break them up and reset per-session rules.
-        </List.Item>
-        <List.Item>
-          <Strong>Rules</Strong> : All players should know the core rules, including GM rules.
-          They're short, free, and referenced on the sheets. It makes play go much more smoothly.
-        </List.Item>
-        <List.Item>
-          <Strong>Understanding</Strong> : Read the rules once, then re-read them again. They'll
-          make more sense.
-        </List.Item>
-        <List.Item>
-          <Strong>Dice</Strong> : Each player needs 4-6 d6s, notated as <StrongEm>d</StrongEm> (
-          <Em>e.g., 2d, 4d</Em>), and 2-4 d8s, called <StrongEm>thorns</StrongEm> and notated as{" "}
-          <StrongEm>t</StrongEm> (<Em>e.g., 1t, 3t</Em>). The GM needs 8 d6s.
-        </List.Item>
-        <List.Item>
-          <Strong>Sheets</Strong> : Character, GM, and reference sheets are available at{" "}
-          <ExternalLink href="#">
-            <StrongEm>odditypress.com</StrongEm>
-          </ExternalLink>{" "}
-          or{" "}
-          <ExternalLink href="https://drivethrurpg.com">
-            <StrongEm>drivethrurpg.com</StrongEm>
-          </ExternalLink>
-          . Links to supported VTTs and online tools are on the website. A smaller version of the
-          blank character sheet can be found in the back.
-        </List.Item>
-        <List.Item>
-          <Strong>Safety</Strong> : To help everyone feel comfortable with the themes within your
-          campaigns, use the{" "}
-          <ExternalLink href="https://drive.google.com/drive/folders/114jRmhzBpdqkAlhmveis0nmW73qkAZCj">
-            <StrongEm>TTRPG Safety Toolkit</StrongEm>
-          </ExternalLink>
-          .
-        </List.Item>
-      </List>
-      <SectionHeading>Conventions in This Book:</SectionHeading>
-      <List>
-        <List.Item>
-          <Strong>System Terms</Strong> : These are <Strong>bolded</Strong> when first introduced or
-          when clarity is needed. Otherwise, they're not specifically styled. Emphasis is shown with{" "}
-          <Em>italics</Em>, sometimes <StrongEm>boldly</StrongEm>. When unsure, reference the index
-          in the back.
-        </List.Item>
-        <List.Item>
-          <Strong>Pools</Strong> : In <Em>Grimwild</Em>, “pool” always refers to diminishing pools
-          (pg. 13), differing from its broader use in other RPGs.
-        </List.Item>
-        <List.Item>
-          <Strong>D66 Tables</Strong> : These are 6x6 random tables. Roll 2d6: one die for the tens
-          place, the other for the ones place (<Em>e.g., 1 and 3 is 13 or 31</Em>
-          ). Look at both results (<Em>13 = column 1, row 3; 31 = column 3, row 1</Em>) and choose
-          the one that grabs you.
-        </List.Item>
-        <List.Item>
-          <Strong>Crucibles</Strong> : These are d66 tables that provide a few words to smash
-          together for inspiration. Interpret them literally or figuratively. Re-roll if needed.
-        </List.Item>
-        <List.Item>
-          <Strong>The Reader</Strong> : This book addresses the reader as “you,” typically from the
-          player perspective. In Chapter 3, “you” is the GM perspective.
-        </List.Item>
-        <List.Item>
-          <Strong>Made with Moxie</Strong> : Most of chapters 1 and 2 are the core Moxie system.
-        </List.Item>
-      </List>
+      <Section title="To Play, You Need:">
+        <List>
+          <List.Item>
+            <Strong>Players</Strong> : You need one person as the gamemaster (GM) and some players,{" "}
+            <Em>ideally three or four</Em>. Guidelines for solo and duet play are in{" "}
+            <Em>Ch. 7: Extras</Em>.
+          </List.Item>
+          <List.Item>
+            <Strong>Time</Strong> : Sessions work best at 3 hours. For longer sessions, consider
+            using <Strong>downtime</Strong> (pg. 16) to break them up and reset per-session rules.
+          </List.Item>
+          <List.Item>
+            <Strong>Rules</Strong> : All players should know the core rules, including GM rules.
+            They're short, free, and referenced on the sheets. It makes play go much more smoothly.
+          </List.Item>
+          <List.Item>
+            <Strong>Understanding</Strong> : Read the rules once, then re-read them again. They'll
+            make more sense.
+          </List.Item>
+          <List.Item>
+            <Strong>Dice</Strong> : Each player needs 4-6 d6s, notated as <StrongEm>d</StrongEm> (
+            <Em>e.g., 2d, 4d</Em>), and 2-4 d8s, called <StrongEm>thorns</StrongEm> and notated as{" "}
+            <StrongEm>t</StrongEm> (<Em>e.g., 1t, 3t</Em>). The GM needs 8 d6s.
+          </List.Item>
+          <List.Item>
+            <Strong>Sheets</Strong> : Character, GM, and reference sheets are available at{" "}
+            <ExternalLink href="#">
+              <StrongEm>odditypress.com</StrongEm>
+            </ExternalLink>{" "}
+            or{" "}
+            <ExternalLink href="https://drivethrurpg.com">
+              <StrongEm>drivethrurpg.com</StrongEm>
+            </ExternalLink>
+            . Links to supported VTTs and online tools are on the website. A smaller version of the
+            blank character sheet can be found in the back.
+          </List.Item>
+          <List.Item>
+            <Strong>Safety</Strong> : To help everyone feel comfortable with the themes within your
+            campaigns, use the{" "}
+            <ExternalLink href="https://drive.google.com/drive/folders/114jRmhzBpdqkAlhmveis0nmW73qkAZCj">
+              <StrongEm>TTRPG Safety Toolkit</StrongEm>
+            </ExternalLink>
+            .
+          </List.Item>
+        </List>
+      </Section>
+      <Section title="Conventions in This Book:">
+        <List>
+          <List.Item>
+            <Strong>System Terms</Strong> : These are <Strong>bolded</Strong> when first introduced
+            or when clarity is needed. Otherwise, they're not specifically styled. Emphasis is shown
+            with <Em>italics</Em>, sometimes <StrongEm>boldly</StrongEm>. When unsure, reference the
+            index in the back.
+          </List.Item>
+          <List.Item>
+            <Strong>Pools</Strong> : In <Em>Grimwild</Em>, “pool” always refers to diminishing pools
+            (pg. 13), differing from its broader use in other RPGs.
+          </List.Item>
+          <List.Item>
+            <Strong>D66 Tables</Strong> : These are 6x6 random tables. Roll 2d6: one die for the
+            tens place, the other for the ones place (<Em>e.g., 1 and 3 is 13 or 31</Em>
+            ). Look at both results (<Em>13 = column 1, row 3; 31 = column 3, row 1</Em>) and choose
+            the one that grabs you.
+          </List.Item>
+          <List.Item>
+            <Strong>Crucibles</Strong> : These are d66 tables that provide a few words to smash
+            together for inspiration. Interpret them literally or figuratively. Re-roll if needed.
+          </List.Item>
+          <List.Item>
+            <Strong>The Reader</Strong> : This book addresses the reader as “you,” typically from
+            the player perspective. In Chapter 3, “you” is the GM perspective.
+          </List.Item>
+          <List.Item>
+            <Strong>Made with Moxie</Strong> : Most of chapters 1 and 2 are the core Moxie system.
+          </List.Item>
+        </List>
+      </Section>
       <Heading level={3} id="gameplay-overview">
         Gameplay Overview
       </Heading>
@@ -221,66 +223,70 @@ const Chapter01 = () => {
         you'll encounter throughout the rules. Don't worry about understanding all of this right
         now!
       </Text>
-      <SectionHeading>Setting up the Game</SectionHeading>
-      <Text>
-        <StrongEm>As a group</StrongEm>, form an <Strong>adventuring party</Strong> by choosing a
-        few key words that clearly say <Em>what your party is</Em> and <Em>what it's not</Em>. Your
-        PCs have already adventured together, each fitting into the party concept in some way. This
-        cuts right to the story in progress, ready to jump into your next adventure.
-      </Text>
-      <Text>
-        Make characters by choosing two <Strong>backgrounds</Strong> that reflect your past, like
-        your heritage and professions, along with an <Strong>adventurer path</Strong> that grants a
-        powerful <Strong>core talent</Strong>. Assign <Strong>stats</Strong>,{" "}
-        <Strong>traits</Strong>, and <Strong>desires</Strong>, then forge <Strong>bonds</Strong>{" "}
-        with the other PCs. Establish group and character <Strong>story arcs</Strong>, which you
-        play towards to drive the story.
-      </Text>
-      <SectionHeading>Playing the Game</SectionHeading>
-      <Text>
-        <StrongEm>As a player</StrongEm>, describe what your character thinks, feels, and does. When
-        you try something risky, you make an <Strong>action roll</Strong>. When the GM puts you in
-        direct danger, you make a <Strong>defense roll</Strong>. You can also make a{" "}
-        <Strong>montage roll</Strong> to skip past parts you don't want to play out in detail. Rolls
-        are made with a handful of d6s equal to a stat, keeping the highest to set the{" "}
-        <Strong>outcome</Strong>: <Strong>perfect</Strong>, <Strong>messy</Strong>, or{" "}
-        <Strong>grim</Strong>. Rolling two 6s is a <Strong>critical</Strong> and you choose a bonus.
-        Difficulty and damage add one or more d8s called <Strong>thorns</Strong> to your roll, which
-        might <Strong>cut</Strong> the outcome down a level. If a grim gets cut, it's a{" "}
-        <Strong>disaster</Strong> and things get really bad for you!
-      </Text>
-      <Text>
-        Use your creative freedom to add <Strong>set dressing</Strong> to scenes to play off of, and
-        a narrative currency called <Strong>story</Strong> to declare significant{" "}
-        <Strong>story details</Strong> to push the fiction. Earn <Strong>spark</Strong> by
-        introducing character-related complications called <Strong>tangles</Strong> and facing
-        adversity, then spend it to gain a bonus on rolls.
-      </Text>
-      <Text>
-        After each session, you earn <Strong>experience</Strong> (XP) towards increasing in{" "}
-        <Strong>level</Strong>, which grants new <Strong>talents</Strong>.
-      </Text>
-      <SectionHeading>Running the Game</SectionHeading>
-      <Text>
-        <StrongEm>As the GM</StrongEm>, present dilemmas and drama, then let the players come up
-        with solutions. Keep the spotlight moving to give everyone screen time and prompt the
-        players to describe their actions. Map the fiction to rules, and make rulings to fill in
-        gaps. Open the door wide for collaboration and enjoy the story.
-      </Text>
-      <Text>
-        Use <Strong>GM moves</Strong> as tools and guiding principles to act as the world and pace
-        the story. <Strong>Impact moves</Strong> hit the PCs with direct consequences. They require{" "}
-        <Strong>prompting</Strong> from <Strong>foreshadowing</Strong>, grim rolls, or by spending{" "}
-        <Strong>suspense</Strong>, gained from making <Strong>suspense moves</Strong> or holding off
-        on making a prompted impact move.
-      </Text>
-      <Text>
-        Make <Strong>story rolls</Strong> to disclaim decision-making and use the{" "}
-        <Strong>GM crucible</Strong> to help come up with ideas. Control the camera to create a
-        cinematic feel, zooming in and out on what's important. Use{" "}
-        <Strong>diminishing pools</Strong> to create and track tension and{" "}
-        <Strong>challenges</Strong> to represent the toughest, most interesting obstacles PCs face.
-      </Text>
+      <Section title="Setting up the Game">
+        <Text>
+          <StrongEm>As a group</StrongEm>, form an <Strong>adventuring party</Strong> by choosing a
+          few key words that clearly say <Em>what your party is</Em> and <Em>what it's not</Em>.
+          Your PCs have already adventured together, each fitting into the party concept in some
+          way. This cuts right to the story in progress, ready to jump into your next adventure.
+        </Text>
+        <Text>
+          Make characters by choosing two <Strong>backgrounds</Strong> that reflect your past, like
+          your heritage and professions, along with an <Strong>adventurer path</Strong> that grants
+          a powerful <Strong>core talent</Strong>. Assign <Strong>stats</Strong>,{" "}
+          <Strong>traits</Strong>, and <Strong>desires</Strong>, then forge <Strong>bonds</Strong>{" "}
+          with the other PCs. Establish group and character <Strong>story arcs</Strong>, which you
+          play towards to drive the story.
+        </Text>
+      </Section>
+      <Section title="Playing the Game">
+        <Text>
+          <StrongEm>As a player</StrongEm>, describe what your character thinks, feels, and does.
+          When you try something risky, you make an <Strong>action roll</Strong>. When the GM puts
+          you in direct danger, you make a <Strong>defense roll</Strong>. You can also make a{" "}
+          <Strong>montage roll</Strong> to skip past parts you don't want to play out in detail.
+          Rolls are made with a handful of d6s equal to a stat, keeping the highest to set the{" "}
+          <Strong>outcome</Strong>: <Strong>perfect</Strong>, <Strong>messy</Strong>, or{" "}
+          <Strong>grim</Strong>. Rolling two 6s is a <Strong>critical</Strong> and you choose a
+          bonus. Difficulty and damage add one or more d8s called <Strong>thorns</Strong> to your
+          roll, which might <Strong>cut</Strong> the outcome down a level. If a grim gets cut, it's
+          a <Strong>disaster</Strong> and things get really bad for you!
+        </Text>
+        <Text>
+          Use your creative freedom to add <Strong>set dressing</Strong> to scenes to play off of,
+          and a narrative currency called <Strong>story</Strong> to declare significant{" "}
+          <Strong>story details</Strong> to push the fiction. Earn <Strong>spark</Strong> by
+          introducing character-related complications called <Strong>tangles</Strong> and facing
+          adversity, then spend it to gain a bonus on rolls.
+        </Text>
+        <Text>
+          After each session, you earn <Strong>experience</Strong> (XP) towards increasing in{" "}
+          <Strong>level</Strong>, which grants new <Strong>talents</Strong>.
+        </Text>
+      </Section>
+      <Section title="Running the Game">
+        <Text>
+          <StrongEm>As the GM</StrongEm>, present dilemmas and drama, then let the players come up
+          with solutions. Keep the spotlight moving to give everyone screen time and prompt the
+          players to describe their actions. Map the fiction to rules, and make rulings to fill in
+          gaps. Open the door wide for collaboration and enjoy the story.
+        </Text>
+        <Text>
+          Use <Strong>GM moves</Strong> as tools and guiding principles to act as the world and pace
+          the story. <Strong>Impact moves</Strong> hit the PCs with direct consequences. They
+          require <Strong>prompting</Strong> from <Strong>foreshadowing</Strong>, grim rolls, or by
+          spending <Strong>suspense</Strong>, gained from making <Strong>suspense moves</Strong> or
+          holding off on making a prompted impact move.
+        </Text>
+        <Text>
+          Make <Strong>story rolls</Strong> to disclaim decision-making and use the{" "}
+          <Strong>GM crucible</Strong> to help come up with ideas. Control the camera to create a
+          cinematic feel, zooming in and out on what's important. Use{" "}
+          <Strong>diminishing pools</Strong> to create and track tension and{" "}
+          <Strong>challenges</Strong> to represent the toughest, most interesting obstacles PCs
+          face.
+        </Text>
+      </Section>
       <Heading level={2} id="play-with-moxie">
         Play with Moxie
       </Heading>
@@ -293,139 +299,143 @@ const Chapter01 = () => {
         towards keeping the pace flowing quickly and the action dramatic. The other half is in your
         hands, the players at the table, and the attitude you all approach the game with.
       </Text>
-      <SectionHeading variant="solid">Play Cinematically</SectionHeading>
-      <Text>
-        <StrongEm>Trust in the collaborative process</StrongEm>. Everyone at the table adds details
-        into the story. You have to work together and play off of each other or the game, and the
-        story you're telling, will fall flat.
-      </Text>
-      <Text>
-        <StrongEm>Use the camera, your shared imagination</StrongEm>. Each player has two
-        perspectives, from your character and as the audience watching this TV show. Use the camera
-        and vivid description to paint a cool scene in everyone's mind.
-      </Text>
-      <Text>
-        <StrongEm>Tell us what it looks like, before and after your rolls</StrongEm>. Give details
-        about what you do, don't just leave it at broad statements. Zoom in and out. Use the camera
-        to show things outside of your own character as well—pan around, cut to other scenes, and
-        describe NPCs. Invoke cinematic vibes and create great scenes.
-      </Text>
-      <SectionHeading variant="solid">Play in Good Faith</SectionHeading>
-      <Text>
-        <StrongEm>Don't be a weasel</StrongEm>. Do what your character would do, then let the GM map
-        it back to the rules. Don't overdo it trying to work your way into better rolls. The fun is
-        letting the story flow naturally. When you ask the rules what happens next, follow where it
-        points with enthusiasm.
-      </Text>
-      <Text>
-        <StrongEm>Separate player and character knowledge</StrongEm>. It's more fun when everyone
-        knows what's going on in the game. Don't keep secrets from each other, keep them from
-        characters. As a player, be aware of what your character knows and doesn't know and play
-        towards both.
-      </Text>
-      <Text>
-        <StrongEm>Use the meta-channel sparingly</StrongEm>. This is conversation about the game
-        between players. It's unavoidable, but minimize it to keep that shared imagination in sync
-        at the table. For anything longer than a quick question, call for a pause to talk things
-        through, a clean break point to resume from later.
-      </Text>
-      <Text>
-        <StrongEm>Know the rules</StrongEm>. Everyone can get a copy of the game PDF (
-        <Em>it's free!</Em>). The rules say a lot about the types of stories to be told with the
-        game, and the less time you spend talking about the rules, the more time you have for
-        roleplaying. Making a cheat sheet on rules you often forget can be a big help, or even just
-        skimming the book pre-game.
-      </Text>
-      <SectionHeading variant="solid">Play to Tell a Story</SectionHeading>
-      <Text>
-        Think of the game as a series of improv prompts, posed by yourselves and the rules. When you
-        respond to them, consider the following:
-      </Text>
-      <List>
-        <List.Item>
-          <Em>What would my character do?</Em>
-        </List.Item>
-        <List.Item>
-          <Em>What would make for a cool scene?</Em>
-        </List.Item>
-        <List.Item>
-          <Em>What would move the story forward?</Em>
-        </List.Item>
-        <List.Item>
-          <Em>What opens the door to get others involved?</Em>
-        </List.Item>
-      </List>
-      <Text>
-        <StrongEm>Don't talk yourself out of fun</StrongEm>. The first idea that jumps into your
-        head is often the one you should go with. Don't overthink or rationalize yourself out of it.
-        Like any great TV show character, go where the fun lies. Great stories involve excitement,
-        danger, and hard choices.
-      </Text>
-      <Text>
-        <StrongEm>Open doors and step through them</StrongEm>. The best scenes involve characters
-        playing off of each other, so make chances for others to get involved. When someone invites
-        you into a scene, step through that door—even if it means a bit of mental gymnastics to
-        justify your character's actions. And as long as you step through the door at times,
-        remember that it can be just as interesting to close the door instead.
-      </Text>
-      <Text>
-        <StrongEm>Work the spotlight</StrongEm>. There's no turn order of any kind, but there is
-        screen time. Strive to make sure everyone gets their fair share, including yourself.
-      </Text>
-      <List>
-        <List.Item>
-          <Strong>Grab the spotlight</Strong> when there's a lull or you have a great idea.
-        </List.Item>
-        <List.Item>
-          <Strong>Share the spotlight</Strong> by opening doors or following up on another PC's
-          actions.
-        </List.Item>
-        <List.Item>
-          <Strong>Pass the spotlight</Strong> when you've been holding it too long.
-        </List.Item>
-        <List.Item>
-          <Strong>Point the spotlight</Strong> to see another PC's response or what they've been up
-          to.
-        </List.Item>
-        <List.Item>
-          <Strong>Never steal the spotlight</Strong>. Everyone works hard to set up their moment.
-        </List.Item>
-      </List>
-      <Text>
-        <StrongEm>Don't play to win, play to tell stories</StrongEm>. Work towards the same goal—to
-        tell a great story where everyone's character has a chance to grow. Failure isn't losing,
-        it's just another opportunity to have a great scene. Of course, your character wants to
-        succeed! However, your goal as a player is keeping the story interesting. Play into the bad
-        luck just as you do the good to help ensure you craft compelling stories.
-      </Text>
-      <SectionHeading variant="solid">Play Characters That Grow</SectionHeading>
-      <Text>
-        <StrongEm>Leave lots of blank space</StrongEm>. Your PC starts with a past and connections
-        to the world, but it's best as latticework. Learn who they are through play. Leave space for
-        the other PCs and story to fit in.
-      </Text>
-      <Text>
-        <StrongEm>Don't be afraid to change</StrongEm>. PCs often go through hell. Any dramatic
-        story has adversity. Let what happens change who they are. Announce what your PC's thinking,
-        especially big shifts. If nobody else at the table knows, it's not really happening in that
-        shared imagination.
-      </Text>
-      <Text>
-        <StrongEm>Don't be afraid to stay the same</StrongEm>. Some aspects of your character might
-        be immutable. That's also part of what makes a great character. There can be those things
-        they will stick to, even to the bitter end. Just make sure it's worth it, and fun. Don't die
-        on small hills—die on entertaining ones.
-      </Text>
-      <Text>
-        <StrongEm>Make time for smaller moments</StrongEm>. Quiet time, a conversation about
-        nothing, introspection, reflection—these make for great scenes to flesh out your characters
-        and the world. Don't just rush from action scene to action scene.
-      </Text>
-      <Text>
-        <StrongEm>Most importantly, do stuff</StrongEm>! Find reasons to get into the spotlight,
-        push story arcs forward, and make fun scenes. When there's no opportunity, add some details
-        to the story to create one!
-      </Text>
+      <Section title="Play Cinematically" titleVariant="solid">
+        <Text>
+          <StrongEm>Trust in the collaborative process</StrongEm>. Everyone at the table adds
+          details into the story. You have to work together and play off of each other or the game,
+          and the story you're telling, will fall flat.
+        </Text>
+        <Text>
+          <StrongEm>Use the camera, your shared imagination</StrongEm>. Each player has two
+          perspectives, from your character and as the audience watching this TV show. Use the
+          camera and vivid description to paint a cool scene in everyone's mind.
+        </Text>
+        <Text>
+          <StrongEm>Tell us what it looks like, before and after your rolls</StrongEm>. Give details
+          about what you do, don't just leave it at broad statements. Zoom in and out. Use the
+          camera to show things outside of your own character as well—pan around, cut to other
+          scenes, and describe NPCs. Invoke cinematic vibes and create great scenes.
+        </Text>
+      </Section>
+      <Section title="Play in Good Faith" titleVariant="solid">
+        <Text>
+          <StrongEm>Don't be a weasel</StrongEm>. Do what your character would do, then let the GM
+          map it back to the rules. Don't overdo it trying to work your way into better rolls. The
+          fun is letting the story flow naturally. When you ask the rules what happens next, follow
+          where it points with enthusiasm.
+        </Text>
+        <Text>
+          <StrongEm>Separate player and character knowledge</StrongEm>. It's more fun when everyone
+          knows what's going on in the game. Don't keep secrets from each other, keep them from
+          characters. As a player, be aware of what your character knows and doesn't know and play
+          towards both.
+        </Text>
+        <Text>
+          <StrongEm>Use the meta-channel sparingly</StrongEm>. This is conversation about the game
+          between players. It's unavoidable, but minimize it to keep that shared imagination in sync
+          at the table. For anything longer than a quick question, call for a pause to talk things
+          through, a clean break point to resume from later.
+        </Text>
+        <Text>
+          <StrongEm>Know the rules</StrongEm>. Everyone can get a copy of the game PDF (
+          <Em>it's free!</Em>). The rules say a lot about the types of stories to be told with the
+          game, and the less time you spend talking about the rules, the more time you have for
+          roleplaying. Making a cheat sheet on rules you often forget can be a big help, or even
+          just skimming the book pre-game.
+        </Text>
+      </Section>
+      <Section title="Play to Tell a Story" titleVariant="solid">
+        <Text>
+          Think of the game as a series of improv prompts, posed by yourselves and the rules. When
+          you respond to them, consider the following:
+        </Text>
+        <List>
+          <List.Item>
+            <Em>What would my character do?</Em>
+          </List.Item>
+          <List.Item>
+            <Em>What would make for a cool scene?</Em>
+          </List.Item>
+          <List.Item>
+            <Em>What would move the story forward?</Em>
+          </List.Item>
+          <List.Item>
+            <Em>What opens the door to get others involved?</Em>
+          </List.Item>
+        </List>
+        <Text>
+          <StrongEm>Don't talk yourself out of fun</StrongEm>. The first idea that jumps into your
+          head is often the one you should go with. Don't overthink or rationalize yourself out of
+          it. Like any great TV show character, go where the fun lies. Great stories involve
+          excitement, danger, and hard choices.
+        </Text>
+        <Text>
+          <StrongEm>Open doors and step through them</StrongEm>. The best scenes involve characters
+          playing off of each other, so make chances for others to get involved. When someone
+          invites you into a scene, step through that door—even if it means a bit of mental
+          gymnastics to justify your character's actions. And as long as you step through the door
+          at times, remember that it can be just as interesting to close the door instead.
+        </Text>
+        <Text>
+          <StrongEm>Work the spotlight</StrongEm>. There's no turn order of any kind, but there is
+          screen time. Strive to make sure everyone gets their fair share, including yourself.
+        </Text>
+        <List>
+          <List.Item>
+            <Strong>Grab the spotlight</Strong> when there's a lull or you have a great idea.
+          </List.Item>
+          <List.Item>
+            <Strong>Share the spotlight</Strong> by opening doors or following up on another PC's
+            actions.
+          </List.Item>
+          <List.Item>
+            <Strong>Pass the spotlight</Strong> when you've been holding it too long.
+          </List.Item>
+          <List.Item>
+            <Strong>Point the spotlight</Strong> to see another PC's response or what they've been
+            up to.
+          </List.Item>
+          <List.Item>
+            <Strong>Never steal the spotlight</Strong>. Everyone works hard to set up their moment.
+          </List.Item>
+        </List>
+        <Text>
+          <StrongEm>Don't play to win, play to tell stories</StrongEm>. Work towards the same
+          goal—to tell a great story where everyone's character has a chance to grow. Failure isn't
+          losing, it's just another opportunity to have a great scene. Of course, your character
+          wants to succeed! However, your goal as a player is keeping the story interesting. Play
+          into the bad luck just as you do the good to help ensure you craft compelling stories.
+        </Text>
+      </Section>
+      <Section title="Play Characters That Grow" titleVariant="solid">
+        <Text>
+          <StrongEm>Leave lots of blank space</StrongEm>. Your PC starts with a past and connections
+          to the world, but it's best as latticework. Learn who they are through play. Leave space
+          for the other PCs and story to fit in.
+        </Text>
+        <Text>
+          <StrongEm>Don't be afraid to change</StrongEm>. PCs often go through hell. Any dramatic
+          story has adversity. Let what happens change who they are. Announce what your PC's
+          thinking, especially big shifts. If nobody else at the table knows, it's not really
+          happening in that shared imagination.
+        </Text>
+        <Text>
+          <StrongEm>Don't be afraid to stay the same</StrongEm>. Some aspects of your character
+          might be immutable. That's also part of what makes a great character. There can be those
+          things they will stick to, even to the bitter end. Just make sure it's worth it, and fun.
+          Don't die on small hills—die on entertaining ones.
+        </Text>
+        <Text>
+          <StrongEm>Make time for smaller moments</StrongEm>. Quiet time, a conversation about
+          nothing, introspection, reflection—these make for great scenes to flesh out your
+          characters and the world. Don't just rush from action scene to action scene.
+        </Text>
+        <Text>
+          <StrongEm>Most importantly, do stuff</StrongEm>! Find reasons to get into the spotlight,
+          push story arcs forward, and make fun scenes. When there's no opportunity, add some
+          details to the story to create one!
+        </Text>
+      </Section>
       <Heading level={2} id="core-rules">
         Core Rules
       </Heading>
@@ -1337,75 +1347,78 @@ const Chapter01 = () => {
           </Em>
         </Muted>
       </Text>
-      <SectionHeading variant="solid">Cantrips</SectionHeading>
-      <Text>
-        <Strong>Cantrips</Strong> are set dressing, minor effects that don't require rolls. Success
-        is automatic.
-      </Text>
-      <Text muted>
-        A fire cantrip lights a candle. The brooms sweep the room clean for you. You talk to the
-        flower and it starts to bloom.
-      </Text>
-      <Text>
-        <StrongEm>Cantrip utility</StrongEm> lets you flavor other action rolls with cantrips, or
-        even use them to replace gear when using relevant touchstones. This reasonably expands
-        vantage. You roll the stat you'd normally roll for the now-possible action, like Brawn or
-        Agility to swing a conjured sword.
-      </Text>
-      <SectionHeading variant="solid">Spells</SectionHeading>
-      <Text>
-        <Strong>Spells</Strong> have effects equal to an action roll, results one person with the
-        right training and tools can achieve. They're the baseline magnitude of magic.
-      </Text>
-      <List>
-        <List.Item>
-          <Muted>
-            Just like sticking an arrow in a bugbear, a spell can blast it with flames or enchant
-            their ally to backstab them. [Result: The bugbear is dead.]
-          </Muted>
-        </List.Item>
-        <List.Item>
-          <Muted>
-            Just like picking a lock or smashing it apart, a spell can melt through it with acid or
-            let you phase through the door. [Result: You get past the lock.]
-          </Muted>
-        </List.Item>
-        <List.Item>
-          <Muted>
-            Just like outplaying someone at a game, a spell can read your opponent's mind or commune
-            with your ancestors for help. [Result: You win the match.]
-          </Muted>
-        </List.Item>
-      </List>
-      <SectionHeading variant="solid">Potent Spells</SectionHeading>
-      <Text>
-        <Strong>Potent spells</Strong> accomplish more than a normal spell—
-        <StrongEm>they give potency and broaden vantage</StrongEm>. A potent spell can achieve
-        effects equal to an entire group working together, as with normal potency. You can attempt
-        jaw-dropping effects (+3t/difficulty). A normally +1t or +2t task has{" "}
-        <Em>greater effect</Em> (critical bonus), and a +0t roll is automatic.
-      </Text>
-      <List>
-        <List.Item>
-          <Muted>
-            Normally, fighting this group of goblins would be extremely difficult (+2t), but a
-            potent spell <Strong>Fireball</Strong> is like a whole group fighting them (+2t→+0t,
-            plus greater effect!).
-          </Muted>
-        </List.Item>
-        <List.Item>
-          <Muted>
-            Normally, someone couldn't bust down this thick stone wall, but a potent spell{" "}
-            <Strong>Thunderous Boom</Strong> can do it (+3t→+0t).
-          </Muted>
-        </List.Item>
-        <List.Item>
-          <Muted>
-            Normally, your nemesis would never help you (+3t), but a potent spell{" "}
-            <Strong>Charm</Strong> can convince them (+3t→+0t).
-          </Muted>
-        </List.Item>
-      </List>
+      <Section title="Cantrips" titleVariant="solid">
+        <Text>
+          <Strong>Cantrips</Strong> are set dressing, minor effects that don't require rolls.
+          Success is automatic.
+        </Text>
+        <Text muted>
+          A fire cantrip lights a candle. The brooms sweep the room clean for you. You talk to the
+          flower and it starts to bloom.
+        </Text>
+        <Text>
+          <StrongEm>Cantrip utility</StrongEm> lets you flavor other action rolls with cantrips, or
+          even use them to replace gear when using relevant touchstones. This reasonably expands
+          vantage. You roll the stat you'd normally roll for the now-possible action, like Brawn or
+          Agility to swing a conjured sword.
+        </Text>
+      </Section>
+      <Section title="Spells" titleVariant="solid">
+        <Text>
+          <Strong>Spells</Strong> have effects equal to an action roll, results one person with the
+          right training and tools can achieve. They're the baseline magnitude of magic.
+        </Text>
+        <List>
+          <List.Item>
+            <Muted>
+              Just like sticking an arrow in a bugbear, a spell can blast it with flames or enchant
+              their ally to backstab them. [Result: The bugbear is dead.]
+            </Muted>
+          </List.Item>
+          <List.Item>
+            <Muted>
+              Just like picking a lock or smashing it apart, a spell can melt through it with acid
+              or let you phase through the door. [Result: You get past the lock.]
+            </Muted>
+          </List.Item>
+          <List.Item>
+            <Muted>
+              Just like outplaying someone at a game, a spell can read your opponent's mind or
+              commune with your ancestors for help. [Result: You win the match.]
+            </Muted>
+          </List.Item>
+        </List>
+      </Section>
+      <Section title="Potent Spells" titleVariant="solid">
+        <Text>
+          <Strong>Potent spells</Strong> accomplish more than a normal spell—
+          <StrongEm>they give potency and broaden vantage</StrongEm>. A potent spell can achieve
+          effects equal to an entire group working together, as with normal potency. You can attempt
+          jaw-dropping effects (+3t/difficulty). A normally +1t or +2t task has{" "}
+          <Em>greater effect</Em> (critical bonus), and a +0t roll is automatic.
+        </Text>
+        <List>
+          <List.Item>
+            <Muted>
+              Normally, fighting this group of goblins would be extremely difficult (+2t), but a
+              potent spell <Strong>Fireball</Strong> is like a whole group fighting them (+2t→+0t,
+              plus greater effect!).
+            </Muted>
+          </List.Item>
+          <List.Item>
+            <Muted>
+              Normally, someone couldn't bust down this thick stone wall, but a potent spell{" "}
+              <Strong>Thunderous Boom</Strong> can do it (+3t→+0t).
+            </Muted>
+          </List.Item>
+          <List.Item>
+            <Muted>
+              Normally, your nemesis would never help you (+3t), but a potent spell{" "}
+              <Strong>Charm</Strong> can convince them (+3t→+0t).
+            </Muted>
+          </List.Item>
+        </List>
+      </Section>
       <Heading level={3} id="touchstones">
         Touchstones
       </Heading>
@@ -1474,241 +1487,244 @@ const Chapter01 = () => {
           get across the chasm with an action.
         </Text>
       </Panel>
-      <SectionHeading>Examples</SectionHeading>
-      <Text>
-        Below are some touchstones and how their effectiveness increases with the magnitude of
-        magic.
-      </Text>
-      <Table textSize="small" variant="striped" fullWidth>
-        <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell align="left" allCaps>
-              Touchstone
-            </Table.HeaderCell>
-            <Table.HeaderCell align="left" allCaps>
-              Cantrip
-            </Table.HeaderCell>
-            <Table.HeaderCell align="left" allCaps>
-              Spell
-            </Table.HeaderCell>
-            <Table.HeaderCell align="left" allCaps>
-              Potent Spell
-            </Table.HeaderCell>
-            <Table.HeaderCell align="left" allCaps>
-              Ritual
-            </Table.HeaderCell>
-          </Table.Row>
-        </Table.Head>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Shimmering Vision</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Flash of light</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Simple illusion</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Complex illusion</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Permanent illusion</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Jovial Wings</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Glide downstairs</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Soar up a wall</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Fly to the clouds</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Grow real wings</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Shadow sorcery</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Snuff a light</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Blind a foe</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Summon darkness</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Eternal night</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Healing domain</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Heal a headache</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Heal a mark</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Heal harm</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Regrow a limb</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Warding domain</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Block the rain</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Shield an ally</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Shield a group</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Build a town wall</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Fiend patron</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Summon hellflies</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Summon imp</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Call a hellhound</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Summon demon</Em>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>
-              <StrongEm>Air primordial</StrongEm>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Scatter leaves</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Push off a cliff</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Carry up a cliffside</Em>
-            </Table.Cell>
-            <Table.Cell>
-              <Em>Craft a tornado</Em>
-            </Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-      <Text>
-        <Strong smallCaps>Touchstone Limitations</Strong>: When you take a magic talent, have a
-        discussion with the GM about what your magic can and can't do. Clearly defining it in this
-        way makes the magic more fun to play with—{" "}
-        <StrongEm>creativity thrives within limitations</StrongEm>. If a PC's magic feels too broad
-        during the campaign, consider discussing new limitations to keep it balanced and engaging.
-      </Text>
-      <Text>
-        <Muted size="medium">
-          <Em>
-            A shadow sorcerer might limit their magic so shadows can never cause physical harm, or
-            they might make them tangible but useless in direct sunlight. Most limitations arise
-            naturally from the touchstones.
-          </Em>
-        </Muted>
-      </Text>
-      <SectionHeading variant="solid">Spellcasting Rulings</SectionHeading>
-      <Text>
-        Magic's a freeform system, built on flexibility and creative rulings from the GM, with the
-        understanding that its freedom is meant to preserve the feeling of magic. While this system
-        can be exploited in unfun ways aimed at “winning,” it relies on you buying into your magic
-        touchstones and the magnitudes of magic. <StrongEm>Don't be a weasel</StrongEm>
-        —play in good faith and have fun with the freedom it gives you. With that in mind, here are
-        some common rulings for various situations involving magic:
-      </Text>
-      <Text>
-        <Strong>Magic Trappings</Strong>: Discuss with the GM how your casting appears, its visual
-        style, movements you make, and tools you use. All magic is clear and evident—trying to hide
-        it is extremely difficult at best, but usually impossible. Losing implements or being
-        hindered can deny permission to cast or inflict thorns.
-      </Text>
-      <Text>
-        <Strong>Magic on Defense Rolls</Strong>: The GM chooses the stat for defense rolls, and can
-        choose to let you use spellcasting. This counts as set dressing and doesn't cost a resource,
-        like dice dropped from a pool. If the GM calls for another stat, but you have a clear
-        spell-based counter, you can ask them if you have time to cast a spell instead. This is a
-        spell as usual and it's the GM's choice if you have time.
-      </Text>
-      <Text>
-        <Strong>Assisting with Magic</Strong>: Using magic to assist a roll is just set dressing
-        with no cost—just keep the narration reasonable (the weaker end of a spell). Remember you're
-        assisting. If you're making the action roll on a group level, cast as usual.
-      </Text>
-      <Text>
-        <Strong>Detecting Magic</Strong>: With a relevant touchstone, you can recognize magic
-        easily. Without one, it's harder, though magic ability counts as a factor. Without training,
-        the magic must be very obvious to be noticed.
-      </Text>
-      <Text>
-        <Strong>Dispelling Magic</Strong>: Anyone aware that something is magic can try to dispel
-        it. This does not require training—you can cast a spell with relevant touchstones that
-        counters it, cause enough of a disturbance to it (smashing the arcane shield with a
-        battleaxe, shaking someone until they're no longer charmed), or outsmarting the magic's
-        logic in some way (throwing water on a fire spell). Creativity should be rewarded here.
-      </Text>
-      <Text>
-        <Strong>Healing Magic</Strong>: Spells can clear marks, heal minor conditions, or calm a vex
-        response. Potent spells can pull off +3t/<Em>impossible</Em> healing, such as healing harm
-        instantly or curing major conditions{" "}
-        <Muted>mend a broken bone, but not a severed arm</Muted>. Rituals are needed for more
-        extreme conditions like regrowing limbs, curing blindness, or removing deep trauma.
-      </Text>
-      <Text>
-        <Strong>Resurrection</Strong>: Bringing back the dead is a costly, extremely risky ritual
-        rarely worth the price you'll surely have to pay. Tread carefully.
-      </Text>
-      <Text>
-        <Strong>Buffs &amp; Debuffs</Strong>: Spells that help or hinder are considered on a
-        case-by-case basis, with the player and GM working together. As a starting point, a buff can
-        apply the effects of a <StrongEm>critical</StrongEm>:{" "}
-        <Em>greater effect—secondary effect—setup</Em>. Debuffs can do the same for anyone working
-        against the foe. They can also add vantage <Muted>the ability to fly, invisibility</Muted>.
-        Potent buffs might last longer, affect multiple targets, make +0t rolls automatically
-        successful, or allow for a potent feat. Get creative with applying the mechanics and capture
-        the feeling the spell is going for.
-      </Text>
-      <Text>
-        <Strong>Magic Duration</Strong>: As a rule of thumb, a spell lasts just a moment, maybe two,
-        and a potent spell lasts for a scene. This is judged by the GM based on the intended effect,
-        which you balance against the magnitude of spell.
-      </Text>
-      <Text>
-        <Strong>Potions</Strong>: Magical items, like potions, that allow you to use them as tools
-        require an action to apply, such as rolling Agility to throw and hit someone with a potion.
-        The efficacy of a potion is usually automatic, based on what tier of potion it is, but you
-        can make a story roll if it's unclear. The more powerful the potion, the more dice you roll
-        for the story roll.
-      </Text>
+      <Section title="Examples">
+        <Text>
+          Below are some touchstones and how their effectiveness increases with the magnitude of
+          magic.
+        </Text>
+        <Table textSize="small" variant="striped" fullWidth>
+          <Table.Head>
+            <Table.Row>
+              <Table.HeaderCell align="left" allCaps>
+                Touchstone
+              </Table.HeaderCell>
+              <Table.HeaderCell align="left" allCaps>
+                Cantrip
+              </Table.HeaderCell>
+              <Table.HeaderCell align="left" allCaps>
+                Spell
+              </Table.HeaderCell>
+              <Table.HeaderCell align="left" allCaps>
+                Potent Spell
+              </Table.HeaderCell>
+              <Table.HeaderCell align="left" allCaps>
+                Ritual
+              </Table.HeaderCell>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Shimmering Vision</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Flash of light</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Simple illusion</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Complex illusion</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Permanent illusion</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Jovial Wings</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Glide downstairs</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Soar up a wall</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Fly to the clouds</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Grow real wings</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Shadow sorcery</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Snuff a light</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Blind a foe</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Summon darkness</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Eternal night</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Healing domain</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Heal a headache</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Heal a mark</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Heal harm</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Regrow a limb</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Warding domain</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Block the rain</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Shield an ally</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Shield a group</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Build a town wall</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Fiend patron</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Summon hellflies</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Summon imp</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Call a hellhound</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Summon demon</Em>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>
+                <StrongEm>Air primordial</StrongEm>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Scatter leaves</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Push off a cliff</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Carry up a cliffside</Em>
+              </Table.Cell>
+              <Table.Cell>
+                <Em>Craft a tornado</Em>
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+        <Text>
+          <Strong smallCaps>Touchstone Limitations</Strong>: When you take a magic talent, have a
+          discussion with the GM about what your magic can and can't do. Clearly defining it in this
+          way makes the magic more fun to play with—{" "}
+          <StrongEm>creativity thrives within limitations</StrongEm>. If a PC's magic feels too
+          broad during the campaign, consider discussing new limitations to keep it balanced and
+          engaging.
+        </Text>
+        <Text>
+          <Muted size="medium">
+            <Em>
+              A shadow sorcerer might limit their magic so shadows can never cause physical harm, or
+              they might make them tangible but useless in direct sunlight. Most limitations arise
+              naturally from the touchstones.
+            </Em>
+          </Muted>
+        </Text>
+      </Section>
+      <Section title="Spellcasting Rulings" titleVariant="solid">
+        <Text>
+          Magic's a freeform system, built on flexibility and creative rulings from the GM, with the
+          understanding that its freedom is meant to preserve the feeling of magic. While this
+          system can be exploited in unfun ways aimed at “winning,” it relies on you buying into
+          your magic touchstones and the magnitudes of magic. <StrongEm>Don't be a weasel</StrongEm>
+          —play in good faith and have fun with the freedom it gives you. With that in mind, here
+          are some common rulings for various situations involving magic:
+        </Text>
+        <Text>
+          <Strong>Magic Trappings</Strong>: Discuss with the GM how your casting appears, its visual
+          style, movements you make, and tools you use. All magic is clear and evident—trying to
+          hide it is extremely difficult at best, but usually impossible. Losing implements or being
+          hindered can deny permission to cast or inflict thorns.
+        </Text>
+        <Text>
+          <Strong>Magic on Defense Rolls</Strong>: The GM chooses the stat for defense rolls, and
+          can choose to let you use spellcasting. This counts as set dressing and doesn't cost a
+          resource, like dice dropped from a pool. If the GM calls for another stat, but you have a
+          clear spell-based counter, you can ask them if you have time to cast a spell instead. This
+          is a spell as usual and it's the GM's choice if you have time.
+        </Text>
+        <Text>
+          <Strong>Assisting with Magic</Strong>: Using magic to assist a roll is just set dressing
+          with no cost—just keep the narration reasonable (the weaker end of a spell). Remember
+          you're assisting. If you're making the action roll on a group level, cast as usual.
+        </Text>
+        <Text>
+          <Strong>Detecting Magic</Strong>: With a relevant touchstone, you can recognize magic
+          easily. Without one, it's harder, though magic ability counts as a factor. Without
+          training, the magic must be very obvious to be noticed.
+        </Text>
+        <Text>
+          <Strong>Dispelling Magic</Strong>: Anyone aware that something is magic can try to dispel
+          it. This does not require training—you can cast a spell with relevant touchstones that
+          counters it, cause enough of a disturbance to it (smashing the arcane shield with a
+          battleaxe, shaking someone until they're no longer charmed), or outsmarting the magic's
+          logic in some way (throwing water on a fire spell). Creativity should be rewarded here.
+        </Text>
+        <Text>
+          <Strong>Healing Magic</Strong>: Spells can clear marks, heal minor conditions, or calm a
+          vex response. Potent spells can pull off +3t/<Em>impossible</Em> healing, such as healing
+          harm instantly or curing major conditions{" "}
+          <Muted>mend a broken bone, but not a severed arm</Muted>. Rituals are needed for more
+          extreme conditions like regrowing limbs, curing blindness, or removing deep trauma.
+        </Text>
+        <Text>
+          <Strong>Resurrection</Strong>: Bringing back the dead is a costly, extremely risky ritual
+          rarely worth the price you'll surely have to pay. Tread carefully.
+        </Text>
+        <Text>
+          <Strong>Buffs &amp; Debuffs</Strong>: Spells that help or hinder are considered on a
+          case-by-case basis, with the player and GM working together. As a starting point, a buff
+          can apply the effects of a <StrongEm>critical</StrongEm>:{" "}
+          <Em>greater effect—secondary effect—setup</Em>. Debuffs can do the same for anyone working
+          against the foe. They can also add vantage <Muted>the ability to fly, invisibility</Muted>
+          . Potent buffs might last longer, affect multiple targets, make +0t rolls automatically
+          successful, or allow for a potent feat. Get creative with applying the mechanics and
+          capture the feeling the spell is going for.
+        </Text>
+        <Text>
+          <Strong>Magic Duration</Strong>: As a rule of thumb, a spell lasts just a moment, maybe
+          two, and a potent spell lasts for a scene. This is judged by the GM based on the intended
+          effect, which you balance against the magnitude of spell.
+        </Text>
+        <Text>
+          <Strong>Potions</Strong>: Magical items, like potions, that allow you to use them as tools
+          require an action to apply, such as rolling Agility to throw and hit someone with a
+          potion. The efficacy of a potion is usually automatic, based on what tier of potion it is,
+          but you can make a story roll if it's unclear. The more powerful the potion, the more dice
+          you roll for the story roll.
+        </Text>
+      </Section>
       <Heading level={3} id="rituals">
         Rituals
       </Heading>
@@ -2116,38 +2132,40 @@ const Chapter01 = () => {
           be recharged by satisfying a specific anchor, like a ritual.
         </List.Item>
       </List>
-      <SectionHeading variant="solid">Arcana Rulings</SectionHeading>
-      <Text>
-        Arcana are as flexible as spellcasting—if not more so—and demand just as much creativity and
-        GM rulings when used. Here are some examples:
-      </Text>
-      <Text>
-        <Strong>Wands and similar</Strong>: Bestow spellcasting ability on those wielding them. They
-        have limited usage, a power pool rolled to cast from them. They don't require training to
-        use.
-      </Text>
-      <Text>
-        <Strong>Potions and similar</Strong>: Potions have a magnitude one level higher than its
-        tier. <Em>A Minor Healing Potion</Em> can accomplish what a spell can (heal a mark).{" "}
-        <Em>Major potions</Em> are potent spell effects and Mythic potions are ritual-level effects.
-      </Text>
-      <Text>
-        <Strong>Scrolls</Strong>: Single-use arcana that match the tier of their effects, unlike
-        other consumables. Lacking vantage to cast spells means you take thorns casting from them.
-        Scrolls are also highly sought after for learning spells with the wizard's Spellcraft talent
-        (<Em>pg. 76</Em>).
-      </Text>
-      <Text>
-        <Strong>Crafting Arcana</Strong>: The act of binding magic to items requires a ritual and a
-        source of magic with the proper touchstones to make it. A ritual of creation generally takes
-        far longer, though is often less dangerous, than merely achieving the same effect through a
-        ritual.
-      </Text>
-      <Text>
-        <Strong>Purchasing Arcana</Strong>: Prices depend entirely on the seller's desires, usually
-        something other than coin. Finding one for sale is exceedingly rare, but you might locate
-        someone willing to craft it for you for the right price.
-      </Text>
+      <Section title="Arcana Rulings" titleVariant="solid">
+        <Text>
+          Arcana are as flexible as spellcasting—if not more so—and demand just as much creativity
+          and GM rulings when used. Here are some examples:
+        </Text>
+        <Text>
+          <Strong>Wands and similar</Strong>: Bestow spellcasting ability on those wielding them.
+          They have limited usage, a power pool rolled to cast from them. They don't require
+          training to use.
+        </Text>
+        <Text>
+          <Strong>Potions and similar</Strong>: Potions have a magnitude one level higher than its
+          tier. <Em>A Minor Healing Potion</Em> can accomplish what a spell can (heal a mark).{" "}
+          <Em>Major potions</Em> are potent spell effects and Mythic potions are ritual-level
+          effects.
+        </Text>
+        <Text>
+          <Strong>Scrolls</Strong>: Single-use arcana that match the tier of their effects, unlike
+          other consumables. Lacking vantage to cast spells means you take thorns casting from them.
+          Scrolls are also highly sought after for learning spells with the wizard's Spellcraft
+          talent (<Em>pg. 76</Em>).
+        </Text>
+        <Text>
+          <Strong>Crafting Arcana</Strong>: The act of binding magic to items requires a ritual and
+          a source of magic with the proper touchstones to make it. A ritual of creation generally
+          takes far longer, though is often less dangerous, than merely achieving the same effect
+          through a ritual.
+        </Text>
+        <Text>
+          <Strong>Purchasing Arcana</Strong>: Prices depend entirely on the seller's desires,
+          usually something other than coin. Finding one for sale is exceedingly rare, but you might
+          locate someone willing to craft it for you for the right price.
+        </Text>
+      </Section>
       <Panel title="List of Arcana">
         <Text>
           In <Strong>Chapter 7: Extras</Strong>, you can find 12 pages of minor, major, and mythic

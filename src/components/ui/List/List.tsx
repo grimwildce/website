@@ -21,9 +21,10 @@ const List = ({
 }: ListProps) => {
   const Tag: ListTag = variant === "ordered" ? "ol" : "ul";
 
-  const tagCss = classNames("pl-6", getSpacingSize(spacing), getListColumns(columns), {
+  const tagCss = classNames(getSpacingSize(spacing), getListColumns(columns), {
     "list-disc": variant === "unordered",
-    "list-decimal": variant === "ordered"
+    "list-decimal": variant === "ordered",
+    "pl-6": variant !== "blank"
   });
 
   return (

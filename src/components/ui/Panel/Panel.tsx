@@ -1,6 +1,6 @@
 import { hasChildElementOfType } from "@/utils/childElements";
 import { type DepthValue } from "@/utils/depth";
-import { getFlexSize, type FlexSize } from "@/utils/flexSize";
+import { getFlexAndGridOptions, type FlexAndGridOptions } from "@/utils/flexAndGrid";
 import { getPaddingSize, type PaddingSize } from "@/utils/padding";
 import { getSpacingSize, type SpacingSize } from "@/utils/spacing";
 import { getTextSize, type TextSize } from "@/utils/textSize";
@@ -14,7 +14,6 @@ type PanelProps = {
   depth?: DepthValue;
   textSize?: TextSize;
   variant?: VariantType;
-  flex?: FlexSize;
   border?: boolean;
   centerTitle?: boolean;
   rowBorders?: boolean;
@@ -22,7 +21,7 @@ type PanelProps = {
   spacing?: SpacingSize;
   padding?: PaddingSize;
   children: ReactNode;
-};
+} & FlexAndGridOptions;
 
 const Panel = ({
   title,
@@ -32,11 +31,11 @@ const Panel = ({
   border,
   centerTitle,
   rowBorders,
-  flex,
   titleNormalCaps,
   spacing = "sm",
   padding = "md",
-  children
+  children,
+  ...flexAndGridOptions
 }: PanelProps) => {
   const hasTitle = typeof title !== "undefined";
   const hasPanelRows = hasChildElementOfType(children, "Panel.Row");
@@ -44,7 +43,7 @@ const Panel = ({
   const containerCss = classNames(
     "flex flex-col shrink-0",
     getTextSize(textSize),
-    getFlexSize(flex),
+    getFlexAndGridOptions(flexAndGridOptions),
     {
       "border-b-2": border,
       "border-t-2": !hasTitle && border
@@ -54,6 +53,7 @@ const Panel = ({
     "flex justify-center": centerTitle
   });
   const contentCss = classNames(
+    "flex-1",
     !hasPanelRows && getSpacingSize(spacing),
     !hasPanelRows && getPaddingSize(padding),
     {
