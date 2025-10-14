@@ -26,8 +26,12 @@
   @apply bg-slate-200 dark:bg-slate-700;
 }
 
-@utility bg-checked {
+@utility bg-accent {
   @apply bg-cyan-400 dark:bg-cyan-600;
+}
+
+@utility bg-accent-2 {
+  @apply bg-cyan-500 dark:bg-cyan-700;
 }
 
 @utility border-solid {
@@ -44,6 +48,10 @@
 
 @utility border-muted {
   @apply border-slate-300 dark:border-slate-700;
+}
+
+@utility text-accent-color {
+  @apply text-cyan-400 dark:text-cyan-600;
 }
 
 @utility text-solid-color {

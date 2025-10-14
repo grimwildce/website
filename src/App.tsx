@@ -11,7 +11,7 @@ const navigation: AppNavigationItem[] = [
     name: "Grimwild Community Edition",
     href: "/grimwild",
     children: [
-      { name: "About", href: "/grimwild/about" },
+      { name: "About", href: "/grimwild" },
       { name: "Chapter 1: Gameplay", href: "/grimwild/chapter-1" },
       { name: "Chapter 2: GM Toolkit", href: "/grimwild/chapter-2" },
       { name: "Chapter 3: Adventurers", href: "/grimwild/chapter-3" },

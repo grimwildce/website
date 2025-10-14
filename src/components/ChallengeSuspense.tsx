@@ -11,7 +11,7 @@ const ChallengeSuspense = ({ size = "medium" }: ChallengeSuspenseProps) => {
   const id2 = useId();
 
   const inputCss = classNames(
-    "appearance-none rounded-full border-2 border-strong bg-input checked:bg-checked",
+    "appearance-none rounded-full border-2 border-strong bg-input checked:bg-accent",
     {
       "size-3": size === "small",
       "size-4": size === "medium"
