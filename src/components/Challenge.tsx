@@ -11,13 +11,14 @@ import { type ReactNode } from "react";
 type WidthSize = "small" | "medium" | "large" | "full";
 type ChallengeProps = {
   title: string;
-  poolSize: 4 | 6 | 8;
+  poolSize?: 4 | 6 | 8;
   textSize?: TextSize;
   width?: WidthSize;
   traits?: string[];
   moves?: string[];
   failState?: string;
   depth?: DepthValue;
+  noSuspense?: boolean;
   references?: ReferenceItem[];
 };
 
@@ -30,6 +31,7 @@ const Challenge = ({
   moves = [],
   failState,
   depth = 1,
+  noSuspense,
   references = []
 }: ChallengeProps) => {
   const hasTraits = traits.length > 0;
@@ -52,11 +54,14 @@ const Challenge = ({
     <div className={containerCss}>
       <div className="relative bg-solid text-solid-color font-bold px-4 py-1 rounded-t-sm">
         <SmallCaps>
-          {poolSize}d | {title}
+          {poolSize && <>{poolSize}d | </>}
+          {title}
         </SmallCaps>
-        <div className="absolute -bottom-3 right-1">
-          <ChallengeSuspense />
-        </div>
+        {!noSuspense && (
+          <div className="absolute -bottom-3 right-1">
+            <ChallengeSuspense />
+          </div>
+        )}
       </div>
       {hasPanels && <ReferenceList className={referencesCss} references={references} />}
 
